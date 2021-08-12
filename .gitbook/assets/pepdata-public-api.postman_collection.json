@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ee6b6b94-fdd4-4a47-87d1-7591e3ef2956",
+		"name": "PEPData - Public API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Validations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/get_validations",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"get_validations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ignore_duplicates\": 1,\r\n    \"name\": \"Test Public API\",\r\n    \"birth_date\": \"2010-10-10\",\r\n    \"country\": \"Alemanha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/add_validation",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"add_validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apply Rules",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/apply_rules",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"apply_rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search IPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"António Costa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/search_iperson",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"search_iperson"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "key {{API_KEY}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cc793513-e6c3-42c3-b3c8-26420f4a0381",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b2171f88-fd06-40eb-a496-334146526d29",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "3345edb5-96b8-4715-a270-1c927e472848",
+			"key": "API_KEY",
+			"value": "API_KEY"
+		},
+		{
+			"id": "79f40f54-9307-491a-915c-48ab8eb6d8ee",
+			"key": "BASE_URL",
+			"value": "https://www.pepdata.pt"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

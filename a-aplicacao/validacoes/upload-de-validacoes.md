@@ -35,9 +35,7 @@ Una vez finalizada la carga de archivos, todos las nuevas [valida](../../glossar
 * Las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) que existen en el nombre, \(como "de", "da", "y", etc.\) no cambian los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
 * Las abreviaturas son compatibles. Sin embargo, éstas no pueden ir precedidas de un punto.Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
 * Todos los puntos anteriores se han aplicado para que el proceso sea lo más sólido posible. No obstante, le recomendamos que intente introducir nombres lo más parecidos al original.
-{% endhint %}
 
-{% hint style="info" %}
 #### País
 
 * Este campo se analiza de forma independiente, y sólo se comprueba si el país introducido está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Así, este campo puede tener diferentes significados, como: origen de los fondos del cliente, lugar de residencia fiscal o cualquier otro que considere relevante

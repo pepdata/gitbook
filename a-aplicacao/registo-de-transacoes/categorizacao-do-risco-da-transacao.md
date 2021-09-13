@@ -1,16 +1,16 @@
-# Categorização do risco da transação
+# Categorización del riesgo de transacción
 
-## Metodologia
+## Metodología
 
-O modelo de risco criado pela PEPData foi desenvolvido de forma a ser flexível, mantendo um grau de simplicidade que o permite ser facilmente compreendido.   
-Este é composto por 3 categorias distintas de risco: baixo, médio e alto. Cada transação é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:
+El modelo de riesgo creado por PEPData ha sido desarrollado para ser flexible, pero manteniendo un grado de simplicidad que permite su fácil comprensión.   
+Se compone de 3 categorías de riesgo distintas: bajo, medio y alto. Cada operación se clasifica en las distintas categorías de riesgo teniendo en cuenta los siguientes criterios:
 
-* Existência de suspeição: 
-  * Caso suspeite da documentação apresentada ou da transação em si 
-* Montante: 
-  * Caso o montante seja superior a 15.000€
-* Combinação entre Método de pagamento e Montante
-  * Caso o método de pagamento seja numerário e o montante seja superior a 3000€
+* Existencia de sospecha: 
+  * Si sospecha de la documentación presentada o de la propia transacción
+* Importe: 
+  * si el importe supera los 15.000€
+* Combinación de Metodo de Pago y Importe
+  * Si la forma de pago es en efectivo y el importe es superior a 3000€
 
-Nota: o nosso algoritmo de cálculo de risco está em constante desenvolvimento. Caso tenha alguma proposta de melhoria ou especificidade da sua área profissional não hesite em [contactar-nos](../../outros/contactos.md).
+Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica en su área profesional, no dude en [contactarnos](../../outros/contactos.md).
 

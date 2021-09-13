@@ -1,20 +1,20 @@
-# Registo de transações
+# Registro de Transacciones
 
-Nesta página, devem ser registadas todos as transações que tenham sido efetuadas ou mediadas pela sua organização.  
+En esta página deben registrarse todas las transacciones realizadas o mediadas por su organización.
 
 {% hint style="info" %}
-Embora existam transações de baixo valor que a lei não obriga a registar, a PEPData recomenda que registe tantas transações quanto consiga, uma vez que o sistema efetua o cálculo do valor acumulado por cada cliente, afetando este o seu risco.
+Aunque hay operaciones de bajo valor que la ley no obliga a registrar, PEPData recomienda registrar todas las operaciones que se puedan, ya que el sistema calcula el valor acumulado de cada cliente, afectando a su riesgo.
 {% endhint %}
 
-O processo inicia-se ao criar um "Registo rápido", que lhe permite criar rapidamente uma transação no sistema. Para tal, apenas necessita de preencher o campo "Designação", que serve como identificador da transação a que se refere. Exemplo: "Venda de imóvel T2, Lisboa". 
+El proceso comienza con la creación de un "registro rápido", que le permite crear rápidamente una transacción en el sistema. Para ello, sólo tiene que rellenar el campo "Título", que sirve como identificador de la transacción a la que se refiere. Ejemplo: "Venta de la propiedad T2, Lisboa".
 
-Após ter criado a transação, esta ficará disponível numa tabela, podendo o questionário que lhe respeita ser acedido através do botão "▶". Pode, ainda, utilizar o botão “🗑️" para apagar transações.
+Una vez creada la transacción, estará disponible en una tabla y se podrá acceder al cuestionario relacionado a través del botón "▶". También puede utilizar el botón “🗑️"para eliminar transacciones.
 
-![Tabela de transa&#xE7;&#xF5;es](../../.gitbook/assets/image%20%2821%29.png)
+![Tabela de transacciones](../../.gitbook/assets/image%20%2821%29.png)
 
-Após submissão do questionário da transação, irão ser criados automaticamente todos os "Registos rápidos" dos intervenientes na transação, com exceção da sua própria empresa. Estes registos rápidos poderão ser acedidos na página de [Registo de Clientes](../registo-de-clientes/). 
+Después de enviar el cuestionario de la transacción, se crearán automáticamente todos los "Registros rápidos" de los participantes en la transacción, a excepción de su propia empresa. Se puede acceder a estos registros rápidos en el [Registro de Clientes](../registo-de-clientes/). 
 
-Os questionários já submetidos poderão ser visualizados através do botão "👁". 
+Los cuestionarios ya presentados pueden verse a través del botón "👁". 
 
-Note que o registo de uma transação só se encontra verdadeiramente concluído após submissão do respetivo questionário e de todos os questionários dos seus intervenientes.
+Tenga en cuenta que el registro de una transacción sólo está realmente completo tras la presentación del respectivo cuestionario y de todos los cuestionarios de sus participantes.
 

@@ -1,65 +1,65 @@
-# Análise manual
+# Análisis manual
 
-Na [página de validações](./), pode completar uma validação através do respetivo botão “👁”, que lhe dá acesso a uma janela de análise.
+En la  [página de valida](./)ciones, puede completar una validación a través del botón correspondiente “👁”, que le da acceso a una ventana de análisis.
 
-Esta janela poderá sugerir nomes de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) relevantes, com o respetivo [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) relativo ao nome da [validação](../../glossario/glossario-aplicacao.md#validacao). 
+Esta ventana puede sugerir nombres de [personas id](../../glossario/glossario-aplicacao.md#pessoa-identificavel)entificables relevantes, con su [grado de s](../../glossario/glossario-aplicacao.md#grau-de-semelhanca)imilitud en relación con el nombre da [valida](../../glossario/glossario-aplicacao.md#validacao)ción. 
 
-![Janela de an&#xE1;lise manual](../../.gitbook/assets/image%20%2810%29.png)
+![Ventana de an&#xE1;lisis manual](../../.gitbook/assets/image%20%2810%29.png)
 
-Na linha de cada [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), pode ver o seu perfil através do botão “👁” ou definir uma correspondência através do botão “✓”.   
-Caso não exista uma correspondência, ou nenhuma das sugestões da aplicação esteja correta, pode validar o nome como não sendo identificável através do botão “✗ Não identificável”. 
+En la línea de cada [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able, puede ver o su perfil a través del botón “👁” o establecer una coincidencia mediante el botón “✓”.   
+Si no hay ninguna coincidencia, o ninguna de las sugerencias de la aplicación es correcta, puede validar el nombre como no identificable mediante el botón "✗ No identificable"
 
-Uma [validação](../../glossario/glossario-aplicacao.md#validacao) está concluída após definir se existe correspondência entre esta e uma pessoa identificável que conste na base de dados da PEPData.
+Una [valida](../../glossario/glossario-aplicacao.md#validacao)ción está completa una vez que se ha establecido una coincidencia entre ella y una persona identificable en la base de datos PEPData.
 
 {% hint style="info" %}
-### Como são encontrados os resultados sugeridos?
+### ¿Cómo se encuentran los resultados sugeridos?
 
-#### Por nome
+#### Por nombre
 
-Todos os nomes que formam o nome da validação têm que constar no nome da [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) que aparece como resultado, com exceção das [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "e", etc.\). Exemplificando:
+Todos los nombres que forman el nombre de validación deben estar en la [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able que aparece como resultado, a excepción de las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "y", etc.\). Por ejemplo:
 
-1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
-2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
-3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
+1. "João Pedro Silva" puede resultar en el nombre "João Pedro Soares da Silva".
+2. "João Pedro Pereira" **no** puede resultar en el nombre "João Pedro Soares da Silva", ya que no tiene el nombre "Pereira".
+3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que se ignora la [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da".
 
-Abreviaturas, caso existam, são consideradas. Exemplificando:
+Se consideran las abreviaturas, si las hay. Por ejemplo:
 
-1. "João P Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
+1. "João P Silva" puede resultar en el nombre "João Pedro Soares da Silva".
 
-#### Por data de nascimento
+#### Por fecha de nacimiento
 
-A data de nascimento da validação, caso exista, é utilizada para filtrar os resultados. Exemplificando:
+La fecha de nacimiento de la validación, si la hay, se utiliza para filtrar los resultados. Por ejemplo:
 
-1. Caso tenha introduzido a data de nascimento "01/01/1990" na validação, só irão aparecer [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) com a mesma data de nascimento ou sem informação relativa à data de nascimento.
+1. Si ha introducido la fecha de nacimiento "01/01/1990" en la validación, sólo aparecerá lo siguiente [personas identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)ables con la misma fecha de nacimiento o sin información sobre la fecha de nacimiento.
 
-#### Por limite de resultados
+#### Por límite de resultados
 
-No máximo, são-lhe mostrados os 20 resultados com maior grau de semelhança. 
+Como máximo, se le muestran los 20 resultados con mayor grado de similitud.
 
-#### Por opções auxiliares
+#### Por opciones auxiliares
 
-As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes.md): 
+Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configura](../configuracoes.md)ción: 
 
-* Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
-* Os nomes introduzidos contêm sempre o último apelido na última posição.
+* Los nombres introducidos siempre contienen el primer nombre en la primera posición.
+* Los nombres introducidos siempre contienen el último apellido en la última posición.
 
-Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações. 
+Cuando estas opciones están activas, permiten que el sistema considere que el nombre y los apellidos introducidos se corresponden siempre con el nombre y los apellidos de la persona, lo que permite obtener mejores resultados en estas situaciones.
 
-Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.  
+Estas opciones deben estar en consonancia con la calidad de los datos que recoge de sus clientes. 
 {% endhint %}
 
-## Outras funcionalidades
+## Otras funcionalidades
 
-### Pesquisa Manual
+### Búsqueda Manual
 
-A pesquisa manual serve para efetuar uma pesquisa rápida do nome que consta na [validação](../../glossario/glossario-aplicacao.md#validacao), sem a aplicação de qualquer filtro. Esta funcionalidade irá ser removida brevemente.
+La búsqueda manual se utiliza para realizar una búsqueda rápida del nombre en la [valida](../../glossario/glossario-aplicacao.md#validacao)ción, sin aplicar ningún filtro. Esta funcionalidad se eliminará pronto.
 
-### Adicionar Pessoa
+### Agregar Persona
 
-Caso tenha a certeza que uma determinada [validação](../../glossario/glossario-aplicacao.md#validacao) deva ser considerada como pessoa identificável e esta não se encontre nas sugestões, poderá adicioná-la à base de dados da PEPData. Após a adição, será então possível considerar a [validação](../../glossario/glossario-aplicacao.md#validacao) como sendo identificável.
+Si está seguro de que una determinada [valida](../../glossario/glossario-aplicacao.md#validacao)ción debe considerarse como una persona identificable y no está en las sugerencias, puede añadirla a la base de datos PEPData. Después de la adición, será posible considerar la [valida](../../glossario/glossario-aplicacao.md#validacao)ción como identificable.
 
 {% hint style="info" %}
-A pessoa adicionada por si apenas será visível para a sua organização. A PEPData, no futuro, irá rever o perfil da mesma. Caso esta pessoa seja [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), segundo a lei em vigor, a PEPData irá levantar a restrição e passará a disponibilizá-la a todos os clientes.
+La persona agregada por usted sólo será visible para su organización. PEPData revisará su perfil en el futuro. Si esta persona es [identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able, según la ley actual, PEPData levantará la restricción y la pondrá a disposición de todos los clientes.
 {% endhint %}
 
  

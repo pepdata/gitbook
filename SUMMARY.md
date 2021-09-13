@@ -1,23 +1,23 @@
 # Table of contents
 
-* [Introdução](README.md)
-* [A segurança dos seus dados](a-seguranca-dos-seus-dados.md)
+* [Introducción](README.md)
+* [La seguridad de sus datos](a-seguranca-dos-seus-dados.md)
 
 ## Glossário
 
-* [Glossário da Aplicação](glossario/glossario-aplicacao.md)
-* [Glossário Legal \(Portugal\)](glossario/glossario-legal-portugal.md)
+* [Glosario de la Aplicación](glossario/glossario-aplicacao.md)
+* [Glosario Legal \(Portugal\)](glossario/glossario-legal-portugal.md)
 
 ## A aplicação
 
-* [Registo de transações](a-aplicacao/registo-de-transacoes/README.md)
-  * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
-* [Registo de clientes](a-aplicacao/registo-de-clientes/README.md)
-  * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
-* [Validações](a-aplicacao/validacoes/README.md)
-  * [Adição manual](a-aplicacao/validacoes/adicao-manual.md)
-  * [Análise manual](a-aplicacao/validacoes/analise-manual.md)
-  * [Importação de validações](a-aplicacao/validacoes/upload-de-validacoes.md)
+* [Registro de Transacciones](a-aplicacao/registo-de-transacoes/README.md)
+  * [Categorización del riesgo de transacción](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
+* [Registro de clientes](a-aplicacao/registo-de-clientes/README.md)
+  * [Clasificación del riesgo de las personas físicas/colectivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
+* [Validaciones](a-aplicacao/validacoes/README.md)
+  * [Adición manual](a-aplicacao/validacoes/adicao-manual.md)
+  * [Análisis manual](a-aplicacao/validacoes/analise-manual.md)
+  * [Importación de validaciones](a-aplicacao/validacoes/upload-de-validacoes.md)
   * [Aplicação de regras](a-aplicacao/validacoes/aplicacao-de-regras.md)
   * [Relatórios individuais de validação](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
   * [Exportação de validações](a-aplicacao/validacoes/download-de-validacoes.md)

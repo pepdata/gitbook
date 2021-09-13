@@ -1,11 +1,11 @@
 ---
 description: >-
-  Esta página contém o significado de vários conceitos legais que são relevantes
-  para a área combate ao de branqueamento de capitais e financiamento do
-  terrorismo, de acordo com a legislação portuguesa.
+  Esta página contiene el significado de varios conceptos jurídicos relevantes
+  en el ámbito de la lucha contra el blanqueo de capitales y la financiación del
+  terrorismo, de acuerdo con la legislación po
 ---
 
-# Glossário Legal \(Portugal\)
+# Glosario Legal \(Portugal\)
 
 ### Pessoa Politicamente Exposta
 
@@ -51,7 +51,7 @@ Pessoa singular que, não sendo qualificada como [pessoa politicamente exposta](
 
 
 
-### Pessoa Reconhecida como Estreitamente Associada
+Persona reconocida como estrechamente asociada.
 
 1. Qualquer pessoa singular, conhecida como comproprietária, com [pessoa politicamente exposta](glossario-legal-portugal.md#pessoa-politicamente-exposta), de uma pessoa coletiva ou de um centro de interesses coletivos sem personalidade jurídica;
 2. Qualquer pessoa singular que seja proprietária de capital social ou detentora de direitos de voto de uma pessoa coletiva, ou de património de um centro de interesses coletivos sem personalidade jurídica, conhecidos como tendo por beneficiário efetivo [pessoa politicamente exposta](glossario-legal-portugal.md#pessoa-politicamente-exposta);

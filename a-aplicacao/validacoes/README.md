@@ -1,50 +1,50 @@
-# Validações
+# Validaciones
 
-Esta página ajuda-o a determinar se os seus clientes, potenciais clientes ou beneficiários são [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel), servindo também como repositório de toda a informação relacionada com os mesmos. A PEPData denomina cada nome adicionado por si como sendo uma [validação](../../glossario/glossario-aplicacao.md#validacao).
+Esta página le ayuda a determinar si sus clientes, prospectos o beneficiarios son [pe](../../glossario/glossario-aplicacao.md#pessoa-identificavel)rsonas indentificables, También sirve como depósito de toda la información relacionada con ellos. PEPData llama a cada nombre agregado por usted como [valida](../../glossario/glossario-aplicacao.md#validacao)ción.
 
-![Tabela de valida&#xE7;&#xF5;es](../../.gitbook/assets/image%20%2814%29.png)
+![Tabla de validaciones](../../.gitbook/assets/image%20%2814%29.png)
 
-## Adição, determinação e estados de validações
+Estados de adición, determinación y validación
 
-As [validações](../../glossario/glossario-aplicacao.md#validacao) podem ser adicionadas [manualmente](adicao-manual.md), uma a uma, ou [automaticamente](upload-de-validacoes.md), o que lhe possibilita adicionar centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez.
+las [valida](../../glossario/glossario-aplicacao.md#validacao)ciones se pueden agregar [manualmente](adicao-manual.md), una por una, o [automáticamente](upload-de-validacoes.md), lo que le permite agregar cientos de miles de [valida](../../glossario/glossario-aplicacao.md#validacao)ciones a la vez.
 
-Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_. 
+Una vez agregada, una [valida](../../glossario/glossario-aplicacao.md#validacao)ción tendrá su estado como _Incompleta_, lo que significa que aún no se ha determinado si corresponde a una [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able. Esta determinación, al igual que la adición, también puede hacerse [manualmente](analise-manual.md), una por una, o [automáticamente](aplicacao-de-regras.md), lo que permite determinar cientos de miles de [valida](../../glossario/glossario-aplicacao.md#validacao)ciones a la vez.Después de esta operación, el estado de [valida](../../glossario/glossario-aplicacao.md#validacao)ción cambiará _Completo_. 
 
-Uma validação _Completa_ poderá ser: 
+Una validación _Completa_ podría ser: 
 
-* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData ou o seu país seja sancionado. 
-* Completa - Não Identificada: caso não tenha existido correspondência com uma pessoa identificável da base de dados da PEPData e o seu país não seja sancionado.
+* Completa - Identificado: si ha habido correspondencia con una persona identificable de la base de datos de PEPData o su país está sancionado.
+* Completa - No identificado: si no ha habido correspondencia con una persona identificable de la base de datos de PEPData y su país no está sancionado.
 
-## Validações que necessitam de atenção
+## Validaciones que necesitan atención
 
-A base de dados de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) da PEPData está constantemente a ser atualizada, fazendo com que existam diariamente novas pessoas a ser introduzidas. Estas podem também ser removidas da plataforma, caso deixe de existir motivo para continuarem a ser identificadas, ex: ter passado 12 meses desde a última vez que ocuparam um cargo relevante e não terem qualquer outra [classificação](../../glossario/glossario-aplicacao.md#classificacao).
+La base de datos de PEPData de [p](../../glossario/glossario-aplicacao.md#pessoa-identificavel)ersonas identificables se actualiza constantemente, por lo que cada día se agrega nuevas personas. También pueden ser retirados de la plataforma si ya no hay razón para seguir identificados, por ejemplo, si han pasado 12 meses desde que ocuparon un puesto relevante por última vez y no tienen otra [classifica](../../glossario/glossario-aplicacao.md#classificacao)ción.
 
-Neste sentido, cada vez que existam atualizações que requeiram a sua atenção, exemplo: uma validação que identificou como PEP ter deixado de o ser, as validações afetadas irão passar a ser sinalizadas como "Precisam de atenção".
+En este sentido, cada vez que haya actualizaciones que requieran su atención, por ejemplo: una validación que usted identificó como PEP ya no es PEP, las validaciones afectadas se marcarán como "requieren atención".
 
 {% hint style="info" %}
-Esta sinalização não altera de qualquer modo a decisão tomada anteriormente em relação à validação.   
-Exemplo: caso uma validação esteja como _Completa – não identificada_ e tenha sido adicionada uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) com o mesmo nome, a validação irá ser sinalizada mas irá continuar como _Completa – não identificada_.   
-A aplicação, neste ponto, procura apenas auxiliar o utilizador, ficando a decisão de determinar a validação de maneira diferente do seu lado.
+Esta señal no modifica en absoluto la decisión tomada anteriormente sobre la validación.   
+Ejemplo: si una validación es _Completa_ - no identificada y una [pe](../../glossario/glossario-aplicacao.md#pessoa-identificavel)rsona identificable con el mismo nombre, la validación se marcará pero permanecerá como _Completada_ - _no identificada_.  
+La aplicación, en este punto, sólo busca ayudar al usuario, dejando la decisión de determinar la validación de manera diferente de su parte.
 {% endhint %}
 
-## Alteração e eliminação de validações
+Modificación y supresión de validaciones
 
-Caso pretenda alterar uma [validação](../../glossario/glossario-aplicacao.md#validacao) que já se encontre completa, poderá carregar no botão “✗", voltando esta ao estado _Incompleto_.
+Si desea cambiar una [valida](../../glossario/glossario-aplicacao.md#validacao)ción que ya está completa, puede pulsar el botón "✗", volverá a la _Incompleto._
 
-Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#validacao), poderá sempre carregar no botão “🗑️". Note que apenas poderá apagar validações com estado _Incompleto_. Caso pretenda apagar uma validação completa, terá de a cancelar primeiro \(ver passo anterior\). 
+Si desea eliminar una [valida](../../glossario/glossario-aplicacao.md#validacao)ción, siempre puede presionar el botón “🗑️".Tenga en cuenta que sólo puede eliminar las validaciones con estado _Incompleto_. Si desea eliminar una validación completa, debe cancelarla primero \(véase el paso anterior\).
 
 ## Filtros
 
-Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado ou origem. Por pré-definição, quando abre a página são mostradas todas as validações _incompletas._ 
+En esta página, también hay filtros que permiten mostrar las [valida](../../glossario/glossario-aplicacao.md#validacao)ciones en cuanto a su estado u origen. Por defecto, todas las validaciones incompletas se muestran al abrir la página.
 
-![Filtros de valida&#xE7;&#xF5;es](../../.gitbook/assets/image%20%281%29.png)
+![Filtros de validaciones](../../.gitbook/assets/image%20%281%29.png)
 
-Caso utilize os filtros para incluir as [validações](../../glossario/glossario-aplicacao.md#validacao) _Completas_, poderá ainda visualizar o seu resultado através de ícones:
+Si usa los filtros para incluir  [valida](../../glossario/glossario-aplicacao.md#validacao)ciones _Completas_, aún puede ver su resultado a través de íconos:
 
-* Avatar azul: significa que foi encontrada uma correspondência com uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) da base de dados da PEPData. Pode carregar neste ícone para abrir o perfil da mesma.
-* Avatar translúcido: significa que não foi encontrada correspondência.
-* Globo azul: significa que o país inserido na validação se encontra sancionado.
-* Globo translúcido: significa que o país inserido na validação não se encontra sancionado.
+* Avatar azul: significa que se encontró una [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able de la base de datos da PEPData. Puede pulsar este icono para abrir su perfil.
+* Avatar translúcido: significa que no se ha encontrado ninguna coincidencia.
+* Globo azul: significa que el país introducido en la validación está sancionado.
+* Globo translúcido: significa que el país introducido en la validación no está sancionado
 
-![Exemplo de valida&#xE7;&#xF5;es completas](../../.gitbook/assets/image%20%284%29.png)
+![Ejemplo de validaciones completas](../../.gitbook/assets/image%20%284%29.png)
 

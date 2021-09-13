@@ -1,35 +1,42 @@
-# A segurança dos seus dados
+# La seguridad de sus datos
 
-A segurança e privacidade dos seus dados é prioridade máxima da PEPData.  
-Não referimos isto de animo leve nem apenas para parecer bem: compreendemos a sensibilidade da informação que coloca na nossa plataforma e assumimos o nosso dever de protege-la. 
+La seguridad y privacidad de sus datos es la máxima prioridad de PEPData.
 
-É por essa razão que:
+No mencionamos esto a la ligera o sólo para quedar bien: entendemos la sensibilidad de la información que publica en nuestra plataforma y aceptamos nuestro deber de protegerla.
 
-* Restringimos ao máximo o acesso aos seus dados
+Es por eso:
 
-  * Apenas o próprio utilizador, os membros da sua organização e o DPO \(encarregado da proteção de dados\) da PEPData têm acesso aos dados que insere na plataforma.
-  * O DPO da PEPData apenas pode aceder aos seus dados com a sua autorização, para fins de suporte.
-  * Não partilhamos os seus dados com nenhuma organização terceira, independentemente do contrato ou protocolo em que a sua utilização da plataforma se insere.
-  * Não partilhamos, sequer, os seus dados internamente na PEPData. Todo o desenvolvimento da aplicação é feita utilizando dados anonimizados. 
-  * Todos os acessos à sua conta são monitorizados e registados.
+* Restringimos al máximo el acceso a sus datos.
 
-* Utilizamos as ferramentas ao nosso dispor para aumentar a segurança dos nossos sistemas
+  * -Solo el propio usuario, los miembros de su organización y el DPO \(responsable de la protección de datos\) de PEPData tienen acceso a los datos que introduce en la plataforma.
+  * O DPO da PEPData solo puede acceder a sus datos con su permiso, con fines de soporte.
+  * No compartimos sus datos con ninguna organización de terceros, independientemente del contrato o protocolo en el que se registre su uso de la plataforma.
+  * Ni siquiera compartimos sus datos internamente en PEPData. Todo el desarrollo de la aplicación se realiza con datos anónimos.
+  * Todos los accesos a su cuenta son supervisados y registrados.
 
-  * Todas as interações que tem com o site da PEPData são feitas através de [HTTPS](https://en.wikipedia.org/wiki/HTTPS) de forma a assegurar que a informação é transmitida de forma encriptada.
-  * Todas as cópias de segurança são realizadas recorrendo a encriptação.
-  *  Todos os nossos servidores dispõe de _firewall_ para apenas permitir a entrada e saída do tráfego pretendido.
-  * O acesso aos nossos servidores é altamente restrito e é apenas efetuado a partir de [SSH](https://pt.wikipedia.org/wiki/Secure_Shell).
+* Utilizamos las herramientas a nuestro alcance para aumentar la seguridad de nuestros sistemas
+
+  * Todas las interacciones que tiene con el sitio web de PEPData se realizan a través de HTTPS para garantizar que la información se transmite de forma encriptada.
+  * Todas las copias de seguridad se realizan con encriptación.
+  *  Todos nuestros servidores tienen un  _firewall_
+
+    para permitir únicamente la entrada y salida del tráfico deseado.
+
+  * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de SSH.
   * Não guardamos a sua password, utilizamos um sistema de _hash_ e [_salt_](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29).
-  * Monitorizamos continuamente os nossos sistemas.
+  * Supervisamos continuamente nuestros sistemas.
 
-* Trabalhamos continuamente para aumentar a segurança dos nossos sistemas
+* Trabajamos continuamente para aumentar la seguridad de nuestros sistemas
 
-  * Todos os nossos programadores têm formação contínua na área de segurança informática.
-  * Todas as alterações à plataforma são revistas por, pelo menos, outra pessoa antes de serem colocadas em ambiente de produção.
-  * Contratamos empresas terceiras que testam e auditam continuamente a segurança dos nossos sistemas e processos.
+  * Todos nuestros programadores reciben formación continua en materia de seguridad informática.
+  * Todos los cambios en la plataforma son revisados por al menos otra persona antes de ponerlos en el entorno de producción.
+  * Contratamos a empresas externas que prueban y auditan continuamente la seguridad de nuestros sistemas y procesos.
 
-* Residência dos dados
-  * Os dados inseridos na plataforma residem em países da União Europeia, garantindo a adequação com o Regulamento Geral sobre a Proteção de Dados \(RGPD\). Os servidores de produção residem em Dublin, no _datacenter_ da Amazon AWS e os servidores de backup residem em Amsterdão, no _datacenter_ da Backblaze. Ambos os fornecedores têm certificados SOC-2.
+
+
+  Residencia de los datos
+
+* * Los datos introducidos en la plataforma residen en países de la UE, lo que garantiza el cumplimiento del Reglamento General de Protección de Datos \(RGPD\). Los servidores de producción residen en Dublín en el centro de datos de Amazon AWS y los servidores de copia de seguridad residen en Ámsterdam en el centro de datos de Backblaze. Ambos proveedores tienen la certificación SOC-2.
 
 
 

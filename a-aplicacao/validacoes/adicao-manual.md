@@ -1,26 +1,26 @@
-# Adição manual
+# Adición manual
 
-Na [página de validações](./), pode adicionar manualmente uma validação através do botão “+ Adicionar validação”, que lhe dá acesso a uma janela para o fazer.
+En la  [página de valid](./)ciones, Puede agregar manualmente una validación a través del botón "+ Agregar validación", que le da acceso a una ventana para hacerlo
 
-Nesta janela pode preencher informação relativa ao nome, data de nascimento e país da pessoa que pretende validar.  
+En esta ventana puede rellenar la información relativa al nombre, la fecha de nacimiento y el país de la persona que desea validar.
 
 ![](../../.gitbook/assets/add-validation.gif)
 
 {% hint style="info" %}
-### O que devo saber antes de introduzir informação?
+###  ¿Qué debo saber antes de introducir la información?
 
 #### Nome
 
-* No mínimo, apenas são permitidos nomes de pessoas com pelo menos 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes.  Estes requisitos mínimos existem de forma a garantir que o sistema tem a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é identificável. 
-* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.  Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
-* Para além dos acima mencionados,  apenas são aceites espaços \(" "\), hífenes \("-"\) ou apóstrofes \(" ' "\).   
-* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome \(como "de", "da", "e", etc.\) não alteram os resultados apresentados no processo de análise.  Exemplificando:  "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
-* Abreviaturas são suportadas. No entanto, estas não poderão ser procedidas com um ponto. Exemplificando:  "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
-* Todos os pontos anteriores foram implementados de forma a tornar o processo o mais robusto possível. No entanto, recomendamos que tente introduzir nomes o mais próximo do original quanto possível.
+* Como mínimo, sólo se permiten nombres de personas con al menos 2 nombres y fecha de nacimiento. Si no tiene información sobre la fecha de nacimiento, debe introducir al menos 3 nombres. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es identificable.
+* Se admiten todos los caracteres latinos, su acentuación y sus mayúsculas, sin alterar los resultados mostrados en el proceso de análisis. Por lo tanto, puede introducir el nombre en el formato que más le convenga. Por ejemplo: "Ines Marçal Romão" equivaldrá a introducir "ines marcal romao".
+* Aparte de los mencionados, sólo se aceptan espacios \(" "\), guiones \("-"\) o apóstrofes \(" ' "\).
+* Las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes en el nombre \(como "de", "da", "y", etc.\) no alteran los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
+* Las abreviaturas son compatibles. Sin embargo, no se puede proceder con un punto final. Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
+* Todos los puntos anteriores se han aplicado para que el proceso sea lo más sólido posible. Sin embargo, le recomendamos que intente introducir nombres lo más parecidos al original.
 
 #### País
 
-* Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante. Nota: caso o país associado a uma [validação](../../glossario/glossario-aplicacao.md#validacao) se encontre [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), a [validação](../../glossario/glossario-aplicacao.md#validacao) irá herdar esta [classificação](../../glossario/glossario-aplicacao.md#classificacao), independentemente de corresponder a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Uma [validação](../../glossario/glossario-aplicacao.md#validacao) pode ter múltiplas classificações distintas. 
+* Este campo se analiza de forma independiente, y sólo se verifica si el país introducido está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Así, este campo puede tener diferentes significados, como: origen de los fondos del cliente, lugar de residencia fiscal o cualquier otro que considere relevante. Nota: Nota: Si el país asociado a una [valida](../../glossario/glossario-aplicacao.md#validacao)ción está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), a [validac](../../glossario/glossario-aplicacao.md#validacao)ión heredará esta [clasifica](../../glossario/glossario-aplicacao.md#classificacao)ción, independientemente de que corresponda a una [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able. Una [valida](../../glossario/glossario-aplicacao.md#validacao)ción puede tener varias clasificaciones distintas. 
 {% endhint %}
 
 Após preenchimento da informação, existem duas opções, que são acedidas clicando nos botões com o mesmo nome:

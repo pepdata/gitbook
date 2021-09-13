@@ -1,20 +1,20 @@
-# Registo de clientes
+# Registro de clientes
 
-Nesta página, devem ser registados todos os clientes da organização, bem como intervenientes nas transações que tenham ocorrido. 
+En esta página deben registrarse todos los clientes de la organización, así como los implicados en las transacciones realizadas.
 
-De momento, é possível fazer o registo das seguintes pessoas:
+Por el momento, es posible registrar a las siguientes personas:
 
-* Pessoas singulares
-  * Cliente \(pessoa singular\)
-  * Representantes de pessoas singulares ou coletivas
-  * Beneficiários efetivos
-* Pessoas coletivas
-  * Cliente \(pessoa coletiva\)
-  * Pessoas coletivas titulares de participações no capital de outras pessoas coletivas
+* Personas físicas 
+  * Cliente \(persona física\)
+  * Representantes de personas físicas o jurídicas
+  * Beneficiarios efectivos
+* Personas jurídicas
+  * Cliente \(persona jurídica\)
+  * Personas jurídicas que participan en el capital de otras personas jurídicas
 
-O processo de registo inicia-se ao criar um "Registo rápido", que lhe permite criar rapidamente uma pessoa no sistema. Para tal, apenas necessita de preencher o tipo de pessoa, o seu nome e NIF/NIPC.
+El proceso de registro comienza con la creación de un "registro rápido", que permite crear rápidamente una persona en el sistema. Para ello, sólo tiene que rellenar el tipo de persona, su nombre y su número de NIF/NIPC.
 
-Após ter criado a pessoa, esta ficará disponível numa tabela, podendo o questionário que lhe respeita ser acedido através do botão "▶".
+Después de haber creado la persona, ésta estará disponible en una tabla, y se podrá acceder al cuestionario que le concierne a través del botón "▶".
 
 ![Tabela de clientes](../../.gitbook/assets/image%20%2816%29.png)
 
@@ -24,15 +24,15 @@ Os questionários já submetidos poderão ser visualizados através do botão "�
 
 Note que o registo de uma pessoa coletiva só se encontra verdadeiramente concluído após submissão do respetivo questionário e de todos os questionários dos seus beneficiários efetivos.
 
-## Apagar registos
+## Eliminar registros
 
-Pode utilizar o botão “🗑️" para apagar registos. 
+Puede utilizar el botón “🗑️" para eliminar registros. 
 
-No entanto, é importante referir que um registo apenas pode ser apagado caso não esteja referenciado por outros registos. Caso tente apagar um registo que está referenciado, a aplicação irá mostrar-lhe todos os registos que o referenciam e que necessitam de ser apagados/alterados previamente.
+Sin embargo, es importante tener en cuenta que un registro sólo puede ser eliminado si no está referenciado por otros registros. Si intenta eliminar un registro referenciado, la aplicación le mostrará todos los registros que lo referencian y que deben ser eliminados/modificados previamente.
 
 {% hint style="info" %}
-**O beneficiário efetivo/representante de uma empresa mudou, como posso apagar o registo da pessoa anterior?**
+El beneficiario/representante de una empresa ha cambiado, ¿cómo puedo eliminar el registro de la persona anterior?
 
-Neste caso, deve alterar o questionário da empresa, atualizando os seus beneficiários efetivos/representantes. Após alteração, já deverá poder apagar o registo do anterior beneficiário efetivo/representante, assumindo que este não está referenciado noutras empresas por si registadas.
+En este caso, debe cambiar el cuestionario de la empresa, actualizando sus beneficiarios/representantes. Tras el cambio, debería poder eliminar el registro del anterior beneficiario/representante, asumiendo que no esté referenciado en otras empresas registradas por usted.
 {% endhint %}
 

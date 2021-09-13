@@ -18,7 +18,7 @@ Na [página de validações](./), pode exportar validações para diferentes for
 O ficheiro exportado possui as seguintes colunas:
 
 * **Id**: identificador único relativo à [validação](../../glossario/glossario-aplicacao.md#validacao). 
-* **Source**: Origem da validação. Pode ter os valores “Manual” ou “Automatic”, dependendo se a [validação](../../glossario/glossario-aplicacao.md#validacao) foi adicionada [manualmente](analise-manual.md) ou através da [importação de validações](upload-de-validacoes.md), respetivamente. 
+* **Source**: Origem da validação. Pode ter os valores “Manual” ou “Automatic”, dependendo se a [validação](../../glossario/glossario-aplicacao.md#validacao) foi adicionada [manualmente](analise-manual.md) ou através da [importação de validações](importacao-de-validacoes.md), respetivamente. 
 * **Name**: Nome introduzido, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao). 
 * **Birth\_Date**: Data de nascimento introduzida, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao): formato dd-mm-yyyy.
 * **Country**: País introduzido, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao). 

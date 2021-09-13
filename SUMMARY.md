@@ -17,7 +17,7 @@
 * [Validações](a-aplicacao/validacoes/README.md)
   * [Adição manual](a-aplicacao/validacoes/adicao-manual.md)
   * [Análise manual](a-aplicacao/validacoes/analise-manual.md)
-  * [Importação de validações](a-aplicacao/validacoes/upload-de-validacoes.md)
+  * [Importação de validações](a-aplicacao/validacoes/importacao-de-validacoes.md)
   * [Aplicação de regras](a-aplicacao/validacoes/aplicacao-de-regras.md)
   * [Relatórios individuais de validação](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
   * [Exportação de validações](a-aplicacao/validacoes/download-de-validacoes.md)

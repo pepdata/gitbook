@@ -16,15 +16,6 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 {% endhint %}
 
 {% hint style="info" %}
-### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
-
-* Verifique se o nome, data de nascimento e país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
-* Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](upload-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
-* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o [aqui ](upload-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
-* Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
-{% endhint %}
-
-{% hint style="info" %}
 ### O que devo saber antes de introduzir informação?
 
 #### Nome
@@ -40,6 +31,15 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 * Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante.
 * Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166), nome comum ou nome oficial de cada país.  Nota: caso o país associado a uma [validação](../../glossario/glossario-aplicacao.md#validacao) se encontre sancionado, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá herdar esta classificação, independentemente de corresponder a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Uma [validação](../../glossario/glossario-aplicacao.md#validacao) pode ter múltiplas [classificações](../../glossario/glossario-aplicacao.md#classificacao) distintas. 
+{% endhint %}
+
+{% hint style="info" %}
+### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
+
+* Verifique se o nome, data de nascimento e país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
+* Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](upload-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
+* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o [aqui ](upload-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
+* Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
 {% endhint %}
 
 ## Assistente de correção 

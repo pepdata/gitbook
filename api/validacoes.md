@@ -1,12 +1,12 @@
-# Validações
+# Validaciones
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/get\_validations" %}
 {% api-method-summary %}
-Obter validações
+Obtener validaciones
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para obter validações.
+Endpoint para obtener validaciones.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -19,20 +19,20 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="page" type="number" required=false %}
-Página das validações  
+Página de validaciones  
 Default: 1
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="source" type="string" required=false %}
-Origem das validações  
+Origen de las validaciones  
 Default: all  
-Valores possíveis: all, upload, manual
+Valores posibles: all, upload, manual
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-Estado das validações   
+Estado de validación  
 Default: incomplete  
-Valores possíveis: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
+Valores posibles: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -89,29 +89,29 @@ Validações obtidas com sucesso.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **id**: id da validação.
-* **name**: nome da validação.
-* **birth\_date**: data de nascimento da validação.
-* **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
-* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado ](../glossario/glossario-aplicacao.md#pais-sancionado)\(1\) ou não \(0\).
-* **source**: origem da validação. 
-* **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável \(1\) ou não \(0\).
-* **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
-* **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao) \(1\) ou não \(0\).
+* **id**: id de validación.
+* **name**: nombre de validación.
+* **birth\_date**: fecha de nacimiento de la validación.
+* **id\_country**: país de validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+* **country\_sanctioned**: booleano que describe si el país de validación está sancionado \(1\) o no \(0\).
+* **source**: origen de la validación.
+* **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
+* **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación.
+* **decision**: booleano que describe si ha habido una coincidencia con una persona identificable \(1\) o no \(0\).
+* **id\_iperson**: id de la persona identificable correspondiente. null si no se ha encontrado ninguna coincidencia.
+* **determined\_at**: la fecha en la que se determinó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
+* **determined\_by**: id del usuario que ha [determinado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación.
+* **needs\_attention**: booleano que describe si la validación necesita atención \(1\) o no \(0\).
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/add\_validation" %}
 {% api-method-summary %}
-Adicionar validação
+Agregar validación
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para adicionar uma validação.
+Endpoint para agregar una validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -124,24 +124,24 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="ignore\_duplicates" type="boolean" required=false %}
-Instrução para ignorar a verificação de duplicados.  
+Instrucción para omitir el control por duplicado.  
 Formato: 0/1  
 Default: 0
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=true %}
-Nome da validação
+Nombre de validación
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="birth\_date" type="string" required=false %}
-Data de nascimento da validação.   
+Fecha  de nacimiento de la validación.  
 Formato: yyyy-mm-dd  
 Default: null
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="country" type="string" required=false %}
-País da validação.   
-Formato: Nome do país \(ver nota abaixo\)  
+País de la validación.   
+Formato: Nombre del país \(véase la nota más abajo\)  
 Default: null
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -182,25 +182,25 @@ A validação a adicionar já se encontra na base de dados.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **id**: id da validação criada.
+* **id**: id de la validación creada.
 
 {% hint style="info" %}
 #### Country
 
-* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), sempre que possível.
+* Hay muchas formas diferentes de escribir el nombre de cada país. La aplicación PEPData puede identificar todos los nombres de países presentes en la [Lista dos Estados, territórios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm).Sin embargo, para garantizar una mayor solidez, recomendamos el uso del formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), siempre que sea posible.
 {% endhint %}
 
 
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/analyze\_validation" %}
 {% api-method-summary %}
-Analisar validação
+Analizar la validación
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para consultar os resultados obtidos da análise de uma validação.
+Endpoint para consultar los resultados obtenidos del análisis de una validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -213,7 +213,7 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Id da validação
+Id de la validación
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -221,7 +221,7 @@ Id da validação
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Resultados da análise de validação obtidos com sucesso.
+Resultados del análisis de validación obtenidos con éxito.
 {% endapi-method-response-example-description %}
 
 ```
@@ -251,20 +251,20 @@ Resultados da análise de validação obtidos com sucesso.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **id**: id da pessoa identificável.
-* **name**: nome da pessoa identificável.
-* **birth\_date**: data de nascimento da pessoa identificável.
-* **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **id**: identificación de la persona identificable.
+* **name**: nombre de la persona identificable.
+* **birth\_date**: fecha de nacimiento de la persona identificable.
+* **score**: [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/determine\_validation" %}
 {% api-method-summary %}
-Determinação de validação
+Determinación de la validación
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para submeter uma validação.
+Endpoint para enviar una validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -277,11 +277,11 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Id da validação
+Id de validación
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id\_iperson" type="string" required=false %}
-Id da pessoa identificável correspondente. 
+Id de la persona identificable correspondiente. 
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -289,7 +289,7 @@ Id da pessoa identificável correspondente.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A validação foi submetida com sucesso.
+ La validación ha sido enviada con éxito.
 {% endapi-method-response-example-description %}
 
 ```
@@ -306,11 +306,11 @@ A validação foi submetida com sucesso.
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/cancel\_validation" %}
 {% api-method-summary %}
-Cancelar determinação de validação
+Cancelación de la determinación de la validación
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para cancelar a determinação de uma validação.
+Endpoint para cancelar la determinación de una validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -323,7 +323,7 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Id da validação
+Id de validación
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -331,11 +331,10 @@ Id da validação
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A determinação da validação foi cancelada com sucesso.
+La determinación de la validación se ha anulado con éxito.
 {% endapi-method-response-example-description %}
 
 ```
-{
     "data": {},
     "version": "0.1",
     "timestamp": 1588599744111
@@ -348,11 +347,11 @@ A determinação da validação foi cancelada com sucesso.
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/delete\_validation" %}
 {% api-method-summary %}
-Apagar validação
+Eliminar la validación
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para apagar uma validação.
+Endpoint para eliminar una validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -365,7 +364,7 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Id da validação
+Id de validación
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -373,7 +372,7 @@ Id da validação
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A validação foi apagada com sucesso.
+La validación ha sido eliminada con éxito
 {% endapi-method-response-example-description %}
 
 ```
@@ -389,16 +388,16 @@ A validação foi apagada com sucesso.
 {% endapi-method %}
 
 {% hint style="info" %}
-Apenas pode apagar validações [incompletas](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes). Caso pretenda apagar uma validação completa, terá primeiro de cancelar a sua [determinação](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes).
+Sólo se pueden eliminar las validaciones [incompletas](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes). Si desea eliminar una validación completa, primero debe cancelar su [determinación](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes).
 {% endhint %}
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/apply\_rules" %}
 {% api-method-summary %}
-Aplicação das regras
+Aplicación de las reglas
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para aplicação das regras de validação.
+Endpoint para la aplicación de las reglas de validación.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -413,7 +412,7 @@ key \[API\_KEY\]
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-As regras começaram a ser aplicadas. 
+Las reglas han empezado a aplicarse.
 {% endapi-method-response-example-description %}
 
 ```
@@ -430,15 +429,15 @@ As regras começaram a ser aplicadas.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **time\_to\_conclusion**: tempo **previsto** para a conclusão da aplicação das regras, em segundos.
+* **time\_to\_conclusion**: tiempo **estimado** para completar la aplicación de las reglas, en segundos.
 
 {% hint style="warning" %}
-A leitura da documentação relativa à [aplicação das regras de validação](../a-aplicacao/validacoes/aplicacao-de-regras.md) é fortemente recomendada, uma vez que a aplicação sem a sua correta compreensão poderá provocar alterações indesejadas.
+Se recomienda fuertemente leer la documentación sobre la [aplicación de    las reglas de validación](../a-aplicacao/validacoes/aplicacao-de-regras.md), ya que aplicarlas sin una comprensión adecuada puede conducir a cambios no deseados.
 {% endhint %}
 
 {% hint style="info" %}
-A [aplicação de regras](../a-aplicacao/validacoes/aplicacao-de-regras.md) pode demorar alguns minutos até se encontrar concluída, dependendo do número de validações incompletas existentes. O tempo de conclusão estimado é devolvido na resposta.
+A [aplicación de la regla](../a-aplicacao/validacoes/aplicacao-de-regras.md) puede tardar varios minutos en completarse, dependiendo del número de validaciones incompletas existentes. El tiempo estimado de finalización se devuelve en la respuesta.
 {% endhint %}
 

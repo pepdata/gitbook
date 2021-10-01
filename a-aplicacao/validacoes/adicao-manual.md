@@ -1,6 +1,6 @@
 # Adición manual
 
-En la  [página de valid](./)ciones, Puede agregar manualmente una validación a través del botón "+ Agregar validación", que le da acceso a una ventana para hacerlo
+En la  [página de validaciones](./), puede agregar manualmente una validación a través del botón "+ Agregar validación", que le da acceso a una ventana para hacerlo
 
 En esta ventana puede rellenar la información relativa al nombre, la fecha de nacimiento y el país de la persona que desea validar.
 
@@ -20,18 +20,18 @@ En esta ventana puede rellenar la información relativa al nombre, la fecha de n
 
 #### País
 
-* Este campo se analiza de forma independiente, y sólo se verifica si el país introducido está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Así, este campo puede tener diferentes significados, como: origen de los fondos del cliente, lugar de residencia fiscal o cualquier otro que considere relevante. Nota: Nota: Si el país asociado a una [valida](../../glossario/glossario-aplicacao.md#validacao)ción está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), a [validac](../../glossario/glossario-aplicacao.md#validacao)ión heredará esta [clasifica](../../glossario/glossario-aplicacao.md#classificacao)ción, independientemente de que corresponda a una [persona identific](../../glossario/glossario-aplicacao.md#pessoa-identificavel)able. Una [valida](../../glossario/glossario-aplicacao.md#validacao)ción puede tener varias clasificaciones distintas. 
+* Este campo se analiza de forma independiente, y sólo se verifica si el país introducido está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Así, este campo puede tener diferentes significados, como: origen de los fondos del cliente, lugar de residencia fiscal o cualquier otro que considere relevante. Nota: Nota: Si el país asociado a una[ validación](../../glossario/glossario-aplicacao.md#validacion) está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), a[ validación](../../glossario/glossario-aplicacao.md#validacion) heredará esta [clasificación](../../glossario/glossario-aplicacao.md#clasificacion), independientemente de que corresponda a una[ persona identificable. ](../../glossario/glossario-aplicacao.md#persona-identificable)Una[ validación](../../glossario/glossario-aplicacao.md#validacion) puede tener varias clasificaciones distintas. 
 {% endhint %}
 
-Após preenchimento da informação, existem duas opções, que são acedidas clicando nos botões com o mesmo nome:
+Después de rellenar la información, hay dos opciones, a las que se accede pulsando los botones con el mismo nombre:
 
-#### Adicionar e analisar
+**Agregar y analizar**
 
-Adiciona a [validação](../../glossario/glossario-aplicacao.md#sancionado) ao sistema e abre imediatamente a sua janela de análise manual.
+Agrega la[ validación](../../glossario/glossario-aplicacao.md#validacion) al sistema y abre inmediatamente su ventana de análisis manual.
 
-#### Adicionar 
+#### Agregar 
 
-Adiciona a [validação](../../glossario/glossario-aplicacao.md#validacao) ao sistema, mas mantém a janela de adição manual aberta para que possa adicionar vários nomes seguidos.
+Agrega la [validación](../../glossario/glossario-aplicacao.md#validacao) al sistema, pero mantiene abierta la ventana de adición manual para que pueda agregar varios nombres seguidos.
 
 
 

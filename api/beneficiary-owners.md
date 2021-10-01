@@ -1,16 +1,16 @@
-# Beneficiários Efetivos
+# Beneficiários Efectivos
 
 {% hint style="warning" %}
-Esta secção ainda se encontra na versão **beta**.
+Esta sección está todavía en versión **beta**.
 {% endhint %}
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/compare\_beneficiary\_owners" %}
 {% api-method-summary %}
-Comparação de beneficiários efetivos com o RCBE
+Comparación de los beneficiarios reales con el RCBE
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para comparar beneficiários efetivos com o portal do RCBE.
+Endpoint para comparar los beneficiarios reales con el portal RCBE.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,15 +23,15 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="vatin" type="string" required=true %}
-NIPC da organização a comparar
+CIF de la organización a comparar
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="beneficiary\_onwers" type="array" required=true %}
-Cada elemento deve conter o seguinte formato:   
+Cada elemento debe contener el siguiente formato:  
 {   
-     "name": "Nome completo da pessoa",   
+     "name": "Nombre completo de la persona",   
      "birth\_date": "DD/MM/YYYY",  
-     "capital\_percentage": \(Opcional\) valor do capital, em %. Exemplo: 91.725  
+     "capital\_percentage": \(Opcional\) valor del capital, en %. Ejemplo: 91.725  
 }
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -40,7 +40,7 @@ Cada elemento deve conter o seguinte formato:
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Ficheiro PDF com o comprovativo de consulta, resultados da comparação com o portal do RCBE e comprovativo da submissão dos resultados.
+Archivo PDF con la prueba de la consulta, los resultados de la comparación con el portal RCBE y la prueba de la presentación de los resultados.
 {% endapi-method-response-example-description %}
 
 ```

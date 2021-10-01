@@ -6,7 +6,7 @@
 ## Glossário
 
 * [Glosario de la Aplicación](glossario/glossario-aplicacao.md)
-* [Glosario Legal \(Portugal\)](glossario/glossario-legal-portugal.md)
+* [Glosario Legal \(España\)](glossario/glossario-legal-portugal.md)
 
 ## A aplicação
 
@@ -18,21 +18,21 @@
   * [Adición manual](a-aplicacao/validacoes/adicao-manual.md)
   * [Análisis manual](a-aplicacao/validacoes/analise-manual.md)
   * [Importación de validaciones](a-aplicacao/validacoes/upload-de-validacoes.md)
-  * [Aplicação de regras](a-aplicacao/validacoes/aplicacao-de-regras.md)
-  * [Relatórios individuais de validação](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
-  * [Exportação de validações](a-aplicacao/validacoes/download-de-validacoes.md)
-* [Pesquisa](a-aplicacao/pesquisa.md)
-* [Histórico](a-aplicacao/historico.md)
-* [Configurações](a-aplicacao/configuracoes.md)
-* [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
+  * [Aplicación de reglas](a-aplicacao/validacoes/aplicacao-de-regras.md)
+  * [Informes de validación individuales](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
+  * [Exportación de la validación](a-aplicacao/validacoes/download-de-validacoes.md)
+* [Búsqueda](a-aplicacao/pesquisa.md)
+* [Historial](a-aplicacao/historico.md)
+* [Configuraciones](a-aplicacao/configuracoes.md)
+* [Administración de Usuarios](a-aplicacao/administracao-de-utilizadores.md)
 
 ## API
 
-* [Visão geral](api/visao-geral.md)
-* [Validações](api/validacoes.md)
-* [Pesquisa](api/pesquisa.md)
-* [Beneficiários Efetivos](api/beneficiary-owners.md)
-* [Exemplos de utilização](api/exemplos-de-utilizacao.md)
+* [Visión general](api/visao-geral.md)
+* [Validaciones](api/validacoes.md)
+* [Búsqueda](api/pesquisa.md)
+* [Beneficiários Efectivos](api/beneficiary-owners.md)
+* [Ejemplos de utilización](api/exemplos-de-utilizacao.md)
 
 ## Relatórios
 
@@ -41,7 +41,7 @@
 ## Outros
 
 * [Contactos](outros/contactos.md)
-* [Fontes relevantes](outros/fontes-relevantes.md)
-* [Termos e Condições](outros/termos-e-condicoes.md)
-* [Política de Privacidade](outros/politica-de-privacidade.md)
+* [Fuentes relevantes](outros/fontes-relevantes.md)
+* [Condiciones Generales](outros/termos-e-condicoes.md)
+* [Política de Privacidad](outros/politica-de-privacidade.md)
 

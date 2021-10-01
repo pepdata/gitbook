@@ -1,20 +1,19 @@
-# Relatórios individuais de validação
+# Informes de validación individuales
 
-Na [página de validações](./), pode fazer download das validações completas, de forma individual, em formato pdf, através do botão![](../../.gitbook/assets/image%20%2819%29.png), que se encontra na mesma linha da validação.
+En la  [página de validaciones](./), puede descargar las validaciones completas individualmente en formato pdf utilizando el botón![](../../.gitbook/assets/image%20%2819%29.png), que está en la misma línea que la validación.
 
-O documento pdf resultante contém toda a informação associada à validação em questão, podendo ser utilizado para arquivo dentro da sua organização. 
+El documento pdf resultante contiene toda la información asociada a la validación en cuestión y puede utilizarse para archivar dentro de su organización.
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
 
 {% hint style="warning" %}
-Cada organização tem acesso a um número limitado de downloads, que depende da sua subscrição a esta funcionalidade.
+Cada organización tiene acceso a un número limitado de descargas, que depende de su suscripción a esta función.
 
-**Como funciona a contagem da utilização desta funcionalidade?**  
-A contabilização da utilização desta funcionalidade é feita **por download efetuado** e não por validação.  
-A primeira vez que efetuar download de uma relatório individual de validação, a aplicação inicia a contagem, tendo 30 dias para realizar downloads até atingir o seu limite. Após os 30 dias, a aplicação descarta a contagem anterior. O processo volta a repetir-se a partir do momento em que volte a realizar outro download.  
-{% endhint %}
+¿**Como funciona el recuento del uso de esta funcionalidad?**  
+El uso de esta función se contabiliza por cada **descarga realizada** y no por cada validación. La primera vez que se descarga un informe de validación individual, la aplicación empieza a contar, disponiendo de 30 días de descarga hasta llegar al límite. Después de 30 días, la aplicación descarta el recuento anterior. El proceso se repite de nuevo a partir del momento en que se realiza otra descarga.
 
  
+{% endhint %}
 
 ## 
 

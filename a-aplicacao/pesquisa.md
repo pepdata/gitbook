@@ -1,27 +1,29 @@
-# Pesquisa
+# Búsqueda
 
-Esta página permite-lhe pesquisar por nome, listando todas as [pessoas identificáveis](../glossario/glossario-aplicacao.md#pessoa-identificavel) com nomes semelhantes ao introduzido.
+Esta página le permite buscar por nombre, listando todas las [personas identificables](../glossario/glossario-aplicacao.md#pessoa-identificavel) con nombres similares al introducido
 
-Na listagem de resultados irão aparecer os nomes e datas de nascimento das pessoas encontradas, podendo ver o seu perfil através do botão “👁”.
+La lista de resultados mostrará los nombres y las fechas de nacimiento de las personas encontradas, y podrá ver su perfil haciendo clic en el botón “👁”.
 
 ![P&#xE1;gina de pesquisa](../.gitbook/assets/search.gif)
 
 {% hint style="info" %}
-### Como são encontrados os resultados sugeridos?
+### ¿Cómo se encuentran los resultados sugeridos?
 
-#### Por nome
+#### Por nombre
 
-Todos os nomes que formam o nome da [validação](../glossario/glossario-aplicacao.md#validacao) têm que constar no nome da [pessoa identificável ](../glossario/glossario-aplicacao.md#pessoa-identificavel)que aparece como resultado. Exemplificando:
+Todos los nombres que forman el nombre de [validación](../glossario/glossario-aplicacao.md#validacao) deben estar a nombre de la [persona identificable ](../glossario/glossario-aplicacao.md#pessoa-identificavel)que aparece como resultado. Ejemplificando:
+{% endhint %}
 
-1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
-2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
+{% hint style="info" %}
+1. "João Pedro Silva" puede dar lugar al nombre "João Pedro Soares da Silva".
+2. "João Pedro Pereira" **no** puede dar lugar al nombre "João Pedro Soares da Silva", ya que no tiene el nombre "Pereira".
 
-Abreviaturas, caso existam, são consideradas. Exemplificando:
+Se consideran las abreviaturas, si las hay. Ejemplificando:
 
-1. "João P Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
+1. "João P Silva" puede dar lugar al nombre "João Pedro Soares da Silva".
 
-#### Por limite de resultados
+#### Por límite de resultados
 
-No máximo, são-lhe mostrados os 25 resultados com maior [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca). 
+Como máximo, se le muestran los 25 resultados con mayor [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca). 
 {% endhint %}
 

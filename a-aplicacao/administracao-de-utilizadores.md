@@ -1,32 +1,32 @@
-# Administração de Utilizadores
+# Administración de Usuarios
 
 {% hint style="warning" %}
-Esta página só se encontra disponível para os responsáveis de cada organização.
+Esta página sólo está disponible para los responsables de cada organización.
 {% endhint %}
 
-Esta página permite-lhe visualizar todos os membros da sua organização, gerir o seu acesso à aplicação e adicionar novos utilizadores.
+Esta página le permite ver todos los miembros de su organización, gestionar su acceso a la aplicación y agregar nuevos usuarios.
 
-![P&#xE1;gina de administra&#xE7;&#xE3;o de utilizadores](../.gitbook/assets/image%20%289%29.png)
+![P&#xE1;gina de administraci&#xF3;n de usuarios](../.gitbook/assets/image%20%289%29.png)
 
-## Adicionar utilizadores
+## Agregar Usuarios
 
-Pode adicionar manualmente um utilizador à sua organização através do botão “+ Adicionar utilizador”, que lhe dá acesso a uma janela para o fazer.
+Puede agregar manualmente un usuario a su organización utilizando el botón "+ Agregar usuario", que le da acceso a una ventana para hacerlo.
 
-Após a adição, o utilizador irá receber um email com todas as instruções de acesso à plataforma.
+Tras la adición, el usuario recibirá un correo electrónico con todas las instrucciones para acceder a la plataforma.
 
 {% hint style="info" %}
-Caso o novo utilizador não receba o email após alguns minutos, por favor verifique a caixa de SPAM.
+Si el nuevo usuario no recibe el correo electrónico después de unos minutos, compruebe la casilla de SPAM.
 {% endhint %}
 
-## Gestão de permissões
+## Gestión de permisos
 
-Pode alterar a acesso à plataforma por parte de qualquer utilizador da sua organização clicando no ícone da permissão que pretende desativar ou ativar.
+Puede cambiar el acceso a la plataforma para cualquier usuario de su organización haciendo clic en el icono del permiso que desea desactivar o activar.
 
-Caso desative a permissão de Login, o utilizador afetado deixará de conseguir aceder à plataforma.
+Si desactiva el permiso de inicio de sesión, el usuario afectado ya no podrá acceder a la plataforma.
 
 {% hint style="info" %}
-### Como posso apagar um utilizador?
+### ¿Como puedo eliminar un usuario?
 
-Os utilizadores criados na plataforma da PEPData não podem ser apagados de forma a preservar o seu [histórico](historico.md) das suas ações. No entanto, pode desabilitar o acesso a um utilizador da plataforma desativando a sua permissão de Login. Deste modo, o seu [histórico](historico.md) irá permanecer intacto mas o utilizador em questão deixará de ter acesso aos dados da sua organização.
+Los usuarios creados en la plataforma PEPData no pueden ser eliminados para preservar el [historial](historico.md) de sus acciones. Sin embargo, puede desactivar el acceso a un usuario de la plataforma desactivando su permiso de inicio de sesión. De este modo, su [historial](historico.md) permanecerá intacto pero el usuario en cuestión ya no tendrá acceso a los datos de su organización. 
 {% endhint %}
 

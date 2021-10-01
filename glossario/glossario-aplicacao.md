@@ -10,11 +10,11 @@ description: >-
 
 [P](glossario-legal-portugal.md#pessoa-reconhecida-como-estreitamente-associada)ersona reconocida como estrechamente asociada.
 
-### Classificación
+### Clasificación
 
-Classe o conjunto de clases asignadas a una [persona identific](glossario-aplicacao.md#pessoa-identificavel)able, que pueden  ser:
+Clase o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#pessoa-identificavel), que pueden  ser:
 
-1. [Pe](glossario-legal-portugal.md#pessoa-politicamente-exposta)rsona Expuesta Politicamente \(PEP\)
+1. [Persona con responsabilidade pública](glossario-legal-portugal.md#pessoa-politicamente-exposta) \(PRP\)
 2. [Familiar](glossario-aplicacao.md#familiar)
 3. [Asociado](glossario-aplicacao.md#associado)
 4. [Sancionado](glossario-aplicacao.md#sancionado)
@@ -24,32 +24,32 @@ Classe o conjunto de clases asignadas a una [persona identific](glossario-aplica
 
 ### Familiar
 
-[Membro de la família](glossario-legal-portugal.md#membro-proximo-da-familia) cercana.
+[Membro de la família cercana.](glossario-aplicacao.md#familiar)
 
 
 
 ###  **Grado de similitud**
 
-Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas \(como "de", "da", "e", etc.\) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
+Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "e", etc.\) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
 
 
 
 ### Ocupación
 
-rabajo o profesión de una persona identificable. Consta de un cargo, un órgano y una organización..
+Trabajo o profesión de una [persona identificable](glossario-aplicacao.md#persona-identificable). Consta de un [cargo](glossario-aplicacao.md#ocupacion), un [órgano](glossario-aplicacao.md#organo) y una [organización](glossario-aplicacao.md#organizacion).
 
 
 
 ### Organización
 
-Empresa ou entidad estatal.   
+Empresa o entidad del Estado.   
 Ejemplos: Gobierno Portugués, Academia de la Fuerza Aérea, TAP.
 
 
 
-### Organo
+### Órgano
 
-Departamento, división o subdivisión dentro de una organización.
+Departamento, división o subdivisión dentro de una [organización](glossario-aplicacao.md#organizacion).
 
  Ejemplos: Departamento Administrativo y Financiero, División de Planificación, Órgano de Gestión.
 
@@ -57,17 +57,17 @@ Departamento, división o subdivisión dentro de una organización.
 
 ### País sancionado
 
-País tercer de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo según la UE o tiene sanciones por parte de EE.UU.
+País tercer de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado) o tiene sanciones por parte de EE.UU.
 
 ### Persona Identificable
 
-Persona que, por sus acciones, ocupaciones, relaciones familiares o corporativas, necesite de ser identificada, de conformidad con la ley.
+Persona que, por sus [acciones](glossario-aplicacao.md#validacion), [ocupaciones](glossario-aplicacao.md#ocupacion), relaciones familiares o corporativas, necesite de ser identificada, de conformidad con la ley.
 
 
 
 ### Regla
 
-Norma, definida por el usuario de la aplicación, que define cómo se aplicará la clasificación automática de las validaciones
+Norma, definida por el usuario de la aplicación, que define cómo se aplicará la [clasificación](../a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md) automática de las [validaciones](../a-aplicacao/validacoes/).
 
 
 
@@ -82,7 +82,9 @@ Persona cuyo nombre aparece en una de las siguientes listas:
 
 ### Validación
 
-Una persona agregada por el usuario de la aplicación, que puede coincidir o no con una persona identificable en la base de datos PEPData. Se puede analizar una validación viendo las personas identificables sugeridas por la aplicación como posible coincidencia. Se puede determinar una validación estipulando si hay una coincidencia entre ella y una persona identificable.
+Una persona agregada por el usuario de la aplicación, que puede coincidir o no con una [persona identificable](glossario-aplicacao.md#persona-identificable) en la base de datos PEPData. 
+
+Se puede analizar una validación viendo las [personas identificables](glossario-aplicacao.md#persona-identificable) sugeridas por la aplicación como posible coincidencia. Se puede determinar una validación estipulando si hay una coincidencia entre ella y una [persona identificable.](glossario-aplicacao.md#persona-identificable)
 
 
 

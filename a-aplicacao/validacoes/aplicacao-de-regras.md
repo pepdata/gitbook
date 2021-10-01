@@ -1,68 +1,68 @@
-# Aplicação de regras
+# Aplicación de reglas
 
-Na [página de validações](./), pode realizar uma análise automática de cada validação que se encontre com um estado incompleto, através do botão “Aplicar Regras”. 
+En la  [página de validaciones](./), puede realizar un análisis automático de cada validación que tenga un estado incompleto, a través del botón "Aplicar reglas". 
 
-{% hint style="info" %}
-Por pré-definição, as regras a aplicar estão desabilitadas, tendo de ser ativadas por si através da [página de configurações](../configuracoes.md). No entanto, antes de o fazer, a leitura da seguinte informação é fortemente recomendada, uma vez que a aplicação das regras de validação, sem a sua correta compreensão, poderá provocar alterações indesejadas e complicadas ou impossíveis de reverter.
+{% hint style="warning" %}
+Por defecto, las reglas a aplicar están desactivadas y deben ser activadas por usted a través del [página de configuración](../configuracoes.md). Sin embargo, antes de hacerlo, se recomienda encarecidamente la lectura de la siguiente información, ya que la aplicación de las reglas de validación, sin su correcta comprensión, puede provocar cambios no deseados y complicados o imposibles de revertir.
 {% endhint %}
 
-## Regras de validação
+Reglas  de validación
 
-Existem duas regras de validação, que podem ser ativadas ou desativadas na [página de configurações](../configuracoes.md): 
+Hay dos reglas de validación, que se pueden activar o desactivar en la [página de configuración](../configuracoes.md): 
 
-1. Considerar como não identificáveis os nomes que não tenham correspondência. 
-2. Considerar como identificáveis todos os nomes com apenas uma correspondência possível e um elevado [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+1. Considera como no identificables los nombres que no tienen correspondencia. 
+2. Considera como identificables todos los nombres con una solo correspondencia posible y un alto [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
-No máximo, as regras serão aplicadas a 80.000 [validações](../../glossario/glossario-aplicacao.md#validacao) de cada vez. 
+Como máximo, las reglas se aplicarán a 80.000 [validaciones](../../glossario/glossario-aplicacao.md#validacao) a la vez. 
 
 {% hint style="info" %}
-### Como funciona a aplicação de regras?
+### Como funciona la aplicación de las reglas?
 
-Neste exemplo, considere que ambas as regras de validação se encontram ativas. Assim sendo, ao carregar em "Aplicar regras", o sistema irá proceder do seguinte modo, para cada [validação](../../glossario/glossario-aplicacao.md#validacao) incompleta:
+En este ejemplo, considere que ambas reglas de validación están activas. Así pues, al hacer clic en "Aplicar reglas", el sistema procederá de la siguiente manera, para cada [validación](../../glossario/glossario-aplicacao.md#validacao) incompleta:
 
-1. Procura na base de dados da PEPData todas as pessoas identificáveis com um nome similar ao da [validação](../../glossario/glossario-aplicacao.md#validacao).
-2. Através do passo anterior, e obtida uma lista de resultados sugeridos, como descrito na nota seguinte: 
-   1. Caso não existam resultados sugeridos, uma vez que a regra 1 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como não sendo identificável.
-   2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes.md#threshold-de-validacao), uma vez que a regra 2 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
-   3. Caso exista apenas um resultado e o [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja inferior ou igual ao [threshold de validação](../configuracoes.md#threshold-de-validacao), esta irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
-   4. Caso existam múltiplos resultados a [validação](../../glossario/glossario-aplicacao.md#validacao) irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
+1. Busca en la base de datos PEPData todas las personas identificables con un nombre similar al de la [validación](../../glossario/glossario-aplicacao.md#validacao).
+2. Mediante el paso anterior, se obtiene una lista de resultados sugeridos, como se describe en la siguiente nota:
+   1. Si no hay coincidencias sugeridas, porque la regla 1 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como no identificable.
+   2. Si sólo hay un resultado y su [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es mayor que el [threshold de validación](../configuracoes.md#threshold-de-validacao), porque la regla 2 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como identificable. 
+   3. Si sólo hay un resultado y el [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es inferior o igual al [threshold de validación](../configuracoes.md#threshold-de-validacao), la validación quedará incompleta y habrá que realizar un [análisis manual](analise-manual.md).
+   4. Si existen varios resultados, la [validación](../../glossario/glossario-aplicacao.md#validacao) quedará incompleta y será necesario un [análisis manual](analise-manual.md).
 {% endhint %}
 
 {% hint style="info" %}
-### Como são encontrados os resultados sugeridos?
+### ¿Cómo se encuentran los resultados sugeridos?
 
-#### Por nome
+#### Por nombre
 
-Todos os nomes que formam o nome da [validação](../../glossario/glossario-aplicacao.md#validacao) têm que constar no nome da pessoa identificável que aparece como resultado, com exceção das partículas \(como "de", "da", "e", etc.\). Exemplificando:
+Todos los nombres que forman o nombre de [validación](../../glossario/glossario-aplicacao.md#validacao) deben que estar en el nombre de la persona identificable que aparece como resultado, a excepción de las partículas \(como "de", "y", etc.\). Ejemplificando:
 
-1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
-2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
-3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
+1. "João Pedro Silva" puede dar lugar al nombre "João Pedro Soares da Silva".
+2. "João Pedro Pereira" **no** puede dar lugar al nombre "João Pedro Soares da Silva", ya que no tiene el nombre "Pereira".
+3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que la [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" se ignora.
 
-Abreviaturas, caso existam, são consideradas. Exemplificando:
+Se consideran las abreviaturas, si las hay. Por ejemplo:
 
-1. "João P Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
+1. "João P Silva" puede dar lugar al nombre "João Pedro Soares da Silva".
 
-#### Por data de nascimento
+#### Por fecha de nacimiento
 
-A data de nascimento da [validação](../../glossario/glossario-aplicacao.md#validacao), caso exista, é utilizada para filtrar os resultados. Exemplificando:
+La fecha de nacimiento de la [validación](../../glossario/glossario-aplicacao.md#validacao), si la hay, se utiliza para filtrar los resultados. Por ejemplo:
 
-1. Caso tenha introduzido a data de nascimento "01/01/1990" na [validação](../../glossario/glossario-aplicacao.md#validacao), só irão aparecer pessoas identificáveis com a mesma data de nascimento ou sem informação relativa à data de nascimento.
+Si ha introducido la fecha de nacimiento "01/01/1990" en la [validación](../../glossario/glossario-aplicacao.md#validacao), sólo aparecerán personas identificables con la misma fecha de nacimiento o sin información sobre la fecha de nacimiento.
 
-#### Por limite de resultados
+#### Por límite de resultados
 
-No máximo, são-lhe mostrados os 20 resultados com maior [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca). 
+Como máximo, se le muestran los 20 resultados con mayor [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca). 
 
-#### Por opções auxiliares
+#### Por opciones auxiliares
 
-As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes.md): 
+Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configuración](../configuracoes.md): 
 
-* Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
-* Os nomes introduzidos contêm sempre o último apelido na última posição.
+* Los nombres introducidos siempre contienen el primer nombre en la primera posición.
+* Los nombres introducidos siempre contienen el último apellido en la última posición.
 
-Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações. 
+Cuando estas opciones están activas, permiten que el sistema considere que el nombre y los apellidos introducidos se corresponden siempre con el nombre y los apellidos de la persona, lo que permite obtener mejores resultados en estas situaciones.
 
-Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.  
+Estas opciones deben estar en consonancia con la calidad de los datos que recoge de sus clientes.
 {% endhint %}
 
 ## 

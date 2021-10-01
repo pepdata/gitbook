@@ -1,9 +1,9 @@
-# Fontes relevantes
+# Fuentes relevantes
 
-* [Portal BCFT](https://www.portalbcft.pt/) - Portal que agrega informação referente ao combate ao branqueamento de capitais e financiamento do terrorismo em Portugal.
-* [Lei 83/2017](https://dre.pt/home/-/dre/108021178/details/maximized) - Lei que regula e estabelece medidas preventivas de combate ao branqueamento de capitais e ao financiamento do terrorismo, transpondo a Diretiva 2015/849/EU, do Parlamento Europeu.
-* [Lei 89/2017](https://dre.pt/home/-/dre/108028571/details/maximized) - Lei que aprova o Regime Jurídico do Registo Central do Beneficiário Efetivo, transpondo o capítulo III da Diretiva \(UE\) 2015/849, do Parlamento Europeu e do Conselho, de 20 de maio de 2015, e procedendo à alteração de Códigos e outros diplomas legais.
-* [Lei 58/2020](https://dre.pt/home/-/dre/141382321/details/maximized) - Atualização da lei 83/2017, a 31 de Agosto de 2020. Esta lei transpõe a Diretiva \(UE\) 2018/843 do Parlamento Europeu e do Conselho, de 30 de maio de 2018, que altera a Diretiva \(UE\) 2015/849 relativa à prevenção da utilização do sistema financeiro para efeitos de branqueamento de capitais ou de financiamento do terrorismo.
+* [Portal BCFT](https://www.portalbcft.pt/) - Portal que reúne información sobre la lucha contra el blanqueo de capitales y la financiación del terrorismo en Portugal.
+* [Lei 83/2017](https://dre.pt/home/-/dre/108021178/details/maximized) - Ley por la que se regulan y establecen medidas preventivas de lucha contra el blanqueo de capitales y la financiación del terrorismo, que transpone la Directiva 2015/849/UE, del Parlamento Europeo.
+* [Lei 89/2017](https://dre.pt/home/-/dre/108028571/details/maximized) -Ley por la que se aprueba el Régimen Jurídico del Registro Central del Beneficiario Efectivo, por la que se transpone el Capítulo III de la Directiva \(UE\) 2015/849, del Parlamento Europeo y del Consejo, de 20 de mayo de 2015, y se modifican Códigos y otros diplomas jurídicos.
+* [Lei 58/2020](https://dre.pt/home/-/dre/141382321/details/maximized) - Actualización de la ley 83/2017 el 31 de agosto de 2020. Esta ley transpone la Directiva \(UE\) 2018/843 del Parlamento Europeo y del Consejo, de 30 de mayo de 2018, por la que se modifica la Directiva \(UE\) 2015/849 relativa a la prevención de la utilización del sistema financiero para el blanqueo de capitales o la financiación del terrorismo.
 
 
 

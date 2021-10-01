@@ -1,36 +1,36 @@
-# Histórico
+# Historial
 
-Esta página permite-lhe visualizar todos os eventos relevantes que ocorreram dentro da sua organização.
+Esta página le permite ver todos los eventos relevantes que han tenido lugar en su organización.
 
-Na listagem de eventos irá aparecer a data e descrição de cada evento, podendo ver os detalhes de cada evento através do botão “👁”.
+En la lista de eventos aparecerá la fecha y la descripción de cada evento, pudiendo ver los detalles de cada evento a través del botón “👁”.
 
-![P&#xE1;gina de hist&#xF3;rico](../.gitbook/assets/image%20%287%29.png)
+![P&#xE1;gina de historial](../.gitbook/assets/image%20%287%29.png)
 
-## Tipo de eventos registados
+## Tipo de eventos registrados
 
-### Validações
+### Validaciones
 
-* Adição, remoção, cancelamento e submissão.
+* Adición, eliminación, cancelación y envío.
 
-### Utilizador
+### Usuario
 
-* Inicio de sessão, adição de novo utilizador e pesquisa efetuada.
+* Iniciar sesión, agregar un nuevo usuario y realizar una búsqueda.
 
-### Pessoa Identificável
+**Persona Identificable**
 
-* Adição e visita de perfil.
+* Agregar y visitar un perfil.
 
 {% hint style="info" %}
-Os detalhes de cada evento poderão fornecer informação bastante relevante para fins de auditoria. Ao realizar uma pesquisa, por exemplo, são guardados os resultados que lhe foram apresentados no momento em que pesquisou.
+Los detalles de cada evento pueden proporcionar información muy relevante a efectos de auditoría. Cuando usted realiza una búsqueda, por ejemplo, se almacenan los resultados que se le presentaron en el momento de la búsqueda.
 {% endhint %}
 
-## Outras funcionalidades
+### Otras funcionalidades
 
-### Exportação do Histórico 
+### Exportación de Historial 
 
-Através do botão “Exportar PDF”, pode exportar para um PDF todo o histórico visível que lhe é visível.
+Con el botón "Exportar PDF", se puede exportar todo el historial visible a un PDF.
 
-### Pesquisa do Histórico 
+### Pesquisa de Historial 
 
-Através da barra de pesquisa, pode escrever qualquer expressão que pretenda utilizar para filtrar os eventos mostrados. Pode filtrar por descrição do evento ou por data.
+A través de la barra de búsqueda, puedes escribir cualquier expresión que quiera utilizar para filtrar los eventos mostrados. Puede filtrar por descripción del evento o por fecha.
 

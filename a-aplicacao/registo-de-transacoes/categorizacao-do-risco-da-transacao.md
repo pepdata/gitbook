@@ -9,7 +9,7 @@ Se compone de 3 categorías de riesgo distintas: bajo, medio y alto. Cada operac
   * Si sospecha de la documentación presentada o de la propia transacción
 * Importe: 
   * si el importe supera los 15.000€
-* Combinación de Metodo de Pago y Importe
+* Combinación de Método de Pago e Importe
   * Si la forma de pago es en efectivo y el importe es superior a 3000€
 
 Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica en su área profesional, no dude en [contactarnos](../../outros/contactos.md).

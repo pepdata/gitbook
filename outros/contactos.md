@@ -1,8 +1,8 @@
 # Contactos
 
-Caso tenha questões que não conseguiu esclarecer, tenha propostas de melhoria, reclamações ou elogios, não hesite em contactar-nos. 
+Si tiene preguntas que no ha podido aclarar, tiene propuestas de mejora, quejas o felicitaciones, no dude en ponerse en contacto con nosotros.
 
-### ✉ Email: [info@pepdata.pt](mailto:info@pepdata.pt) 
+### ✉ Correo electrónico: [info@pepdata.pt](mailto:info@pepdata.pt) 
 
-Teremos sempre todo o gosto em poder ajudar!
+Siempre estaremos disponibles para ayudar!
 

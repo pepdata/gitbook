@@ -1,12 +1,12 @@
-# Pesquisa
+# Búsqueda
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/search\_iperson" %}
 {% api-method-summary %}
-Pesquisa de pessoa identificável
+Búsqueda de Persona Identificable
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para pesquisar uma pessoa identificável.
+Endpoint para buscar una persona identificable.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -19,11 +19,11 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-Nome da pessoa a pesquisar
+Nombre de la persona que se busca
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="birth\_date" type="string" required=false %}
-Data de nascimento da validação.   
+Fecha de nacimiento de la validación.   
 Formato: yyyy-mm-dd  
 Default: null
 {% endapi-method-parameter %}
@@ -33,7 +33,7 @@ Default: null
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Pesquisa realizada com sucesso.
+Búsqueda completada con éxito.
 {% endapi-method-response-example-description %}
 
 ```
@@ -67,26 +67,26 @@ Pesquisa realizada com sucesso.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **id**: id da pessoa identificável.
-* **name**: nome da pessoa identificável.
-* **birth\_date**: data de nascimento da pessoa identificável.
-* **death\_date**: data de morte da pessoa identificável.
-* **id\_country**: país primário da pessoa identificável, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
-* **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **id**: id de la persona identificable.
+* **name**: nombre de la persona identificable.
+* **birth\_date**: fecha de nacimiento de la persona identificable.
+* **death\_date**: fecha de la muerte de la persona identificable.
+* **id\_country**: país principal de la persona identificable, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+* **score**: [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}
-De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa.md).
+Para obtener los mejores resultados, se recomienda leer la documentación relativa a su área de [búsqueda](../a-aplicacao/pesquisa.md).
 {% endhint %}
 
 {% api-method method="post" host="https://www.pepdata.com/api" path="/search\_organizations" %}
 {% api-method-summary %}
-Pesquisa de organizações sancionadas
+Búsqueda de organizaciones sancionadas
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Endpoint para pesquisar uma organização sancionada.
+Endpoint para buscar una organización sancionada.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -99,7 +99,7 @@ key \[API\_KEY\]
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-Nome da organização a pesquisar
+Nombre de la organización a buscar
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -107,7 +107,7 @@ Nome da organização a pesquisar
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Pesquisa realizada com sucesso.
+Búsqueda completada con éxito.
 {% endapi-method-response-example-description %}
 
 ```
@@ -129,19 +129,19 @@ Pesquisa realizada com sucesso.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Legenda
+### Leyenda
 
-* **name**: nome da organização sancionada.
-* **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **name**: nombre de la organización sancionada.
+* **score**: [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}
-Este endpoint executa uma pesquisa nas organizações presentes nas seguintes listas de sanções internacionais:
+Este endpoint realiza una búsqueda en organizaciones presentes en las siguientes listas de sanciones internacionales:
 
 * United Nations Security Council Consolidated List
 * EU Financial Sanctions Database
 * OFAC Specially Designated Nationals and Blocked Persons List
 * HM Treasury Financial Sanctions Targets
 
-**Importante:** de momento, o nome da organização deverá coincidir com o nome presente na lista de sanções para que sejam devolvidos resultados.
+**Importante:** por el momento, el nombre de la organización debe coincidir con el de la lista de sanciones para que se devuelven resultados.
 {% endhint %}
 

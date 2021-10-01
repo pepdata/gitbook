@@ -1,30 +1,30 @@
-# Visão geral
+# Visión general
 
-A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa.md) e realizar operações relativas às [validações](../a-aplicacao/validacoes/). 
+La API PEPData puede utilizarse para buscar y realizar operaciones relacionadas con las [validaciones](../a-aplicacao/validacoes/). 
 
-A sua documentação é técnica e orientada para programadores. Caso apenas pretenda ler sobre a aplicação poderá fazê-lo na [secção correspondente](../a-aplicacao/validacoes/).
+Su documentación es técnica y está orientada a los programadores. Si sólo quiere leer sobre la aplicación, puede hacerlo en la [sección correspondiente](../a-aplicacao/validacoes/).
 
-## Autenticação
+## Autenticación
 
-A autenticação através da PEPData API v0.1 apenas pode ser realizada via chave de autenticação. 
+La autenticación a través de la PEPData API v0.1 sólo puede realizarse a través de la clave de autenticación.
 
-Cada utilizador pode ver e alterar a sua chave no seu perfil. Uma chave pode ser alterada mas a nova irá invalidar a anterior. Só existe, por isso, uma chave ativa a cada momento.
+Cada usuario solo puede ver y cambiar su clave en su perfil. Se puede cambiar una clave, pero la nueva clave invalidará la anterior. Por lo tanto, sólo hay una clave activa en todo momento.
 
-O chave ativa deve ser utilizado na secção `Headers` do HTTP request. Exemplificando:
+La clave activa debe utilizarse en la sección `Headers` de HTTP request. Ejemplificando:
 
 ```bash
 curl -H "Authorization: key [API_KEY]" https://www.pepdata.com/api/[endpoint_url]
 ```
 
 {% hint style="info" %}
-A sua chave de autenticação possui os mesmos privilégios que o seu utilizador. É por isso essencial que a mantenha segura. Não partilhe a sua chave com terceiros: tenha especial atenção para não a enviar por email nem a colocar num repositório de código.
+Su clave de autenticación tiene los mismos privilegios que su usuario. Por lo tanto, es esencial que lo mantenga segura. No comparta su clave con terceros: tenga especial cuidado de no enviarla por correo electrónico o ponerla en un repositorio de código.
 {% endhint %}
 
-## Estrutura
+## Estructura
 
-Toda a comunicação realizada com a API deve ser realizada através de objetos JSON, estando as respostas sempre codificadas em UTF-8.
+Toda la comunicación con la API debe realizarse a través de objetos JSON, con las respuestas siempre codificadas en UTF-8.
 
-No caso de sucesso, API irá seguir a seguinte estrutura de resposta:
+En caso de éxito, la API seguirá la siguiente estructura de respuesta:
 
 ```bash
 {
@@ -34,22 +34,22 @@ No caso de sucesso, API irá seguir a seguinte estrutura de resposta:
 }
 ```
 
-### Legenda
+### Leyenda
 
-* data: objeto que contém a informação requisitada.
-* version: versão atual da API.
-* timestamp: data a que a resposta do servidor foi efetuada, sob a forma de número de milisegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* fecha: objeto que contiene la información solicitada.
+* versión: versión actual de la API.
+* timestamp: la fecha en la que se produjo la respuesta del servidor, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 
-## Datas
+## Fechas
 
-Todas as datas utilizadas, com exceção do campo _timestamp_ referido anteriormente, seguem os seguintes padrões:
+Todas las fechas utilizadas, a excepción  del campo _timestamp_ mencionado anteriormente, siguen las siguientes normas:
 
-* Datas com o sufixo "\_at" representam unix millisecond timestamps \(milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC\)
-* Datas com o sufixo "\_date" representam calendar dates no formato [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) YYYY-MM-DD.
+* Las fechas con el sufijo "\_at" representan unix millisecond timestamps \(milisegundos desde el 1 de enero de 1970 00:00:00 UTC\)
+* Las fechas con el sufijo "\_date" representan calendar dates en formato [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) YYYY-MM-DD.
 
-## Paginação
+## Paginación
 
-Alguns endpoints devolvem resultados de forma paginada. Neste caso, a formatação do objeto do parâmetro _data_ irá ser a seguinte:
+Algunos endpoints devuelven resultados en forma paginada. En este caso, el formato de objeto de parámetro _data \(datos\)_ irá será el siguiente:
 
 ```bash
 {
@@ -62,24 +62,24 @@ Alguns endpoints devolvem resultados de forma paginada. Neste caso, a formataç�
 }
 ```
 
-### Legenda
+### Leyenda
 
-* items: os items correspondentes à informação solicitada.
-* page: número da página à qual os items pertencem.
+* elementos: los elementos correspondientes a la información solicitada.
+* page: número de la página a la que pertenecen los elementos.
 * max\_results\_per\_page: número máximo de resultados por página.
-* total: o número de resultados existentes.
+* total: el número de resultados existentes.
 
-## Erros
+## Errores
 
-A PEPData utiliza os códigos de resposta HTTP convencionais para indicar o sucesso ou a falha de cada API request.
+PEPData utiliza códigos de respuesta HTTP convencionales para indicar el éxito o el fallo de cada solicitud de la API.
 
-Como regra geral:
+Como regla general:
 
-* Códigos no intervalo `2xx` indicam sucesso.
-* Códigos no intervalo `4xx` indicam uma utilização incorreta ou incompleta dos parâmetros.\(exemplos: um parâmetro obrigatório foi omitido, o endpoint não existe, o token de autenticação não é válido\).
-* Códigos no intervalo `5xx` indicam um erro nos servidores da PEPData.
+* Los códigos en el intervalo 2xx indican éxito.
+* Los códigos del intervalo 4xx indican un uso incorrecto o incompleto de los parámetros \(ejemplos: se ha omitido un parámetro obligatorio, el endpoint no existe, el token de autenticación no es válido\).
+* Los códigos en el intervalo 5xx indican un error en los servidores de PEPData.
 
-A PEPData devolve a mensagem de erro com o seguinte formato:
+PEPData devuelve el mensaje de error con el siguiente formato:
 
 ```bash
 {
@@ -90,14 +90,14 @@ A PEPData devolve a mensagem de erro com o seguinte formato:
 ```
 
 {% hint style="info" %}
-Exceções: Erros 401, 403, 404 e 500 devem ser processados como tal, devendo a resposta ser ignorada.
+Excepciones: Los errores 401, 403, 404 y 500 deben ser procesados como tales y la respuesta debe ser ignorada.
 {% endhint %}
 
-## Configuração para o Postman
+## Configuración para Postman
 
-Caso deseje efetuar um teste rápido aos endpoints da API da PEPData, criámos uma configuração para o [Postman](https://www.postman.com/downloads/) que contém alguns exemplos básicos.
+Si desea realizar una prueba rápida de los endpoints de la API PEPData, hemos creado una configuración para [Postman](https://www.postman.com/downloads/) que contiene algunos ejemplos básicos.
 
 {% file src="../.gitbook/assets/pepdata-public-api.postman\_collection \(1\).json" caption="PEPData API Configuration" %}
 
-Uma vez importada a configuração no Postman, irá precisar de definir a variável `API_KEY` no separador de Autorização.
+Una vez importada la configuración en Postman, deberá establecer la variable `API_KEY` en la pestaña Autorización.
 

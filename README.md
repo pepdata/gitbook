@@ -1,6 +1,6 @@
 # Introducción
 
-La aplicatión [PEPData](https://www.pepdata.com/) es una plataforma que, además de permitirle el aceso a una lista exclusiva de decenas de miles de personas identificables, tiene funcionalidades creadas específicamente para el mercado portugués, permitiendo a nuestros clientes tener una solución a la medida de sus necesidades en el cumplimiento de la legislación sobre blanqueo de capitales y financiación del terrorismo.
+La aplicatión [PEPData](https://www.pepdata.com/) es una plataforma que, además de permitirle el aceso a una lista exclusiva de decenas de miles de personas identificables, permitiendo a nuestros clientes tener una solución a la medida de sus necesidades en el cumplimiento de la legislación sobre blanqueo de capitales y financiación del terrorismo.
 
 Aunque el uso de la aplicación [PEPData ](https://www.pepdata.com/)sea simple, el contexto en el que encaja y la comprensión de los problemas que resuelve pueden ser un desafío para los nuevos usuarios.
 

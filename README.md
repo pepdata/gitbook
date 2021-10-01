@@ -1,13 +1,8 @@
 # Introducción
 
-{% hint style="warning" %}
-The translation of this knowledge base is still in progress, thanks for you patience!   
-For the non-translated pages, we recommend you visit them through this [website](https://translate.google.com/translate?hl=&sl=pt&tl=es&u=https%3A%2F%2Fdocs.pepdata.com%2Fv%2Fespanol%2F).
-{% endhint %}
+La aplicatión [PEPData](https://www.pepdata.com/) es una plataforma que, además de permitirle el aceso a una lista exclusiva de decenas de miles de personas identificables, tiene funcionalidades creadas específicamente para el mercado portugués, permitiendo a nuestros clientes tener una solución a la medida de sus necesidades en el cumplimiento de la legislación sobre blanqueo de capitales y financiación del terrorismo.
 
-La aplicaión [PEPData ](https://www.pepdata.com/)es una plataforma que, además de permitirle el aceso a una lista exclusiva de decenas de miles de personas identificables, tiene funcionalidades creadas específicamente para el mercado portugués, permitiendo a nuestros clientes tener una solución a la medida de sus necesidades en el cumplimiento de la legislación sobre blanqueo de capitales y financiación del terrorismo.
-
-Aunque el uso de la aplicación[ PEPData](https://www.pepdata.com/) sea simple, el contexto en el que encaja y la comprensión de los problemas que resuelve pueden ser un desafío para los nuevos usuarios.
+Aunque el uso de la aplicación [PEPData ](https://www.pepdata.com/)sea simple, el contexto en el que encaja y la comprensión de los problemas que resuelve pueden ser un desafío para los nuevos usuarios.
 
 Por eso desarrollamos este repositorio de conocimiento que sirve como guía para el uso de la plataforma, con el fin de que su experiencia sea lo más clara e sencilla posible.
 

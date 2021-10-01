@@ -8,23 +8,23 @@ description: >-
 
 ### Asociado
 
-[P](glossario-legal-portugal.md#pessoa-reconhecida-como-estreitamente-associada)ersona reconocida como estrechamente asociada.
+[Persona reconocida como estrechamente asociada](glosario-legal.md#persona-reconocida-como-estrechamente-asociada).
 
 ### Clasificación
 
-Clase o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#pessoa-identificavel), que pueden  ser:
+Classe o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#persona-identificable), que pueden  ser:
 
-1. [Persona con responsabilidade pública](glossario-legal-portugal.md#pessoa-politicamente-exposta) \(PRP\)
+1. [Persona con Responsabilidad Pública ](glosario-legal.md#pessoa-politicamente-exposta)\(PRP\)
 2. [Familiar](glossario-aplicacao.md#familiar)
 3. [Asociado](glossario-aplicacao.md#associado)
 4. [Sancionado](glossario-aplicacao.md#sancionado)
-5. [Titular de Otro](glossario-legal-portugal.md#titular-de-outros-cargos-politicos-ou-publicos)s[ Cargos Políticos o Públicos](glossario-legal-portugal.md#titular-de-outros-cargos-politicos-ou-publicos)
+5. [Titular de Otros](glosario-legal.md#titular-de-outros-cargos-politicos-ou-publicos)[ Cargos Políticos o Públicos](glosario-legal.md#titular-de-outros-cargos-politicos-ou-publicos)
 
 
 
 ### Familiar
 
-[Membro de la família cercana.](glossario-aplicacao.md#familiar)
+[Membro de la família cercana](glosario-legal.md#membro-proximo-da-familia).
 
 
 
@@ -36,7 +36,7 @@ Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de 
 
 ### Ocupación
 
-Trabajo o profesión de una [persona identificable](glossario-aplicacao.md#persona-identificable). Consta de un [cargo](glossario-aplicacao.md#ocupacion), un [órgano](glossario-aplicacao.md#organo) y una [organización](glossario-aplicacao.md#organizacion).
+Trabajo o profesión de una [persona identificable](glossario-aplicacao.md#persona-identificable). Consta de un cargo, un [órgano](glossario-aplicacao.md#organo) y una [organización.](glossario-aplicacao.md#organizacion)
 
 
 
@@ -57,7 +57,7 @@ Departamento, división o subdivisión dentro de una [organización](glossario-a
 
 ### País sancionado
 
-País tercer de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado) o tiene sanciones por parte de EE.UU.
+País tercer de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE ](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado)o tiene sanciones por parte de EE.UU.
 
 ### Persona Identificable
 
@@ -67,7 +67,7 @@ Persona que, por sus [acciones](glossario-aplicacao.md#validacion), [ocupaciones
 
 ### Regla
 
-Norma, definida por el usuario de la aplicación, que define cómo se aplicará la [clasificación](../a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md) automática de las [validaciones](../a-aplicacao/validacoes/).
+Norma, definida por el usuario de la aplicación, que define cómo se aplicará la [clasificación](glossario-aplicacao.md#classificacion) automática de las [validaciones](glossario-aplicacao.md#validacion).
 
 
 
@@ -82,9 +82,7 @@ Persona cuyo nombre aparece en una de las siguientes listas:
 
 ### Validación
 
-Una persona agregada por el usuario de la aplicación, que puede coincidir o no con una [persona identificable](glossario-aplicacao.md#persona-identificable) en la base de datos PEPData. 
-
-Se puede analizar una validación viendo las [personas identificables](glossario-aplicacao.md#persona-identificable) sugeridas por la aplicación como posible coincidencia. Se puede determinar una validación estipulando si hay una coincidencia entre ella y una [persona identificable.](glossario-aplicacao.md#persona-identificable)
+Una persona agregada por el usuario de la aplicación, que puede coincidir o no con una [persona identificable](glossario-aplicacao.md#persona-identificable) en la base de datos PEPData. Se puede analizar una validación viendo las [personas identificables](glossario-aplicacao.md#persona-identificable) sugeridas por la aplicación como posible coincidencia. Se puede determinar una validación estipulando si hay una coincidencia entre ella y una [persona identificable](glossario-aplicacao.md#persona-identificable).
 
 
 

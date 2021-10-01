@@ -22,8 +22,8 @@ Es por eso:
 
     para permitir únicamente la entrada y salida del tráfico deseado.
 
-  * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de [SSH](https://pt.wikipedia.org/wiki/Secure_Shell).
-  * Não guardamos a sua password, utilizamos um sistema de _hash_ e [_salt_](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29).
+  * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de SSH.
+  * No almacenamos su contraseña, utilizamos un [sistema de](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29) _hash_ y [_salt_](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29).
   * Supervisamos continuamente nuestros sistemas.
 
 * Trabajamos continuamente para aumentar la seguridad de nuestros sistemas

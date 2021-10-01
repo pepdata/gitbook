@@ -20,7 +20,11 @@ Después de haber creado la persona, ésta estará disponible en una tabla, y se
 
 En el caso de las personas jurídicas, tras la presentación del cuestionario, se crearán automáticamente todos los "Registros Rápidos" de sus beneficiarios efectivos y/o representantes si han sido identificados.
 
+En el caso de las personas jurídicas, tras la presentación del cuestionario, se crearán automáticamente todos los "Registros Rápidos" de sus beneficiarios efectivos y/o representantes si han sido identificados.
+
 Los cuestionarios ya presentados pueden verse a través del botón "👁". 
+
+Tenga en cuenta que el registro de una entidad jurídica sólo está realmente completo después de la presentación de su cuestionario y de los cuestionarios de todos sus beneficiarios efectivos.
 
 Tenga en cuenta que el registro de una entidad jurídica sólo está realmente completo después de la presentación de su cuestionario y de los cuestionarios de todos sus beneficiarios efectivos.
 

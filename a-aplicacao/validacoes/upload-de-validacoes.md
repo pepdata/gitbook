@@ -1,18 +1,19 @@
 # Importación de validaciones
 
-En la [página de validaciones](./), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacao) para agregar. Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
+En la [página de validaciones](../configuracoes.md#validacoes), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacion) para agregar. Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
 
-Una vez finalizada la carga de archivos, todos las nuevas [validaciones](../../glossario/glossario-aplicacao.md#validacao) aparecerán  en la [página de validaciones](./).
+Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./).
 
 {% hint style="info" %}
 ### ¿Cuáles son las especificaciones del archivo de carga?
 
-* Sólo se permiten las extensiones .csv ou .txt.
-* Una [validación](../../glossario/glossario-aplicacao.md#validacao) por línea.
-* Una [validación](../../glossario/glossario-aplicacao.md#validacao) debe seguir o formato: Nombre, Fecha de nacimiento, País. Cualquiera de los siguientes ejemplos representa una validación en el formato correcto:  André Pinheiro, 31-12-1980, Portugal  Ricardo Sousa Vieira Armando Rui Pinto, , Rusia Armando Tavares Rocha Tenga en cuenta que, en el segundo ejemplo, se agregó una coma adicional porque no hay fecha de nacimiento.
-* La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy. 
-* Limitado a 700.000 líneas/[validaciones](../../glossario/glossario-aplicacao.md#validacao) por archivo.
-* A codificación del archivo debe ser utf-8 o ANSI 
+* Sólo se permiten las extensões .csv ou .txt.
+* Una [validación](../../glossario/glossario-aplicacao.md#validacion) por línea.
+* Una[ validación](../../glossario/glossario-aplicacao.md#validacion) debe seguir el formato: Nombre, Fecha de nacimiento, País. 
+* Cualquiera de los siguientes ejemplos representa una validación en el formato correcto:  André Pinheiro, 31-12-1980, Portugal  Ricardo Sousa Vieira Armando Rui Pinto, , Rusia Armando Tavares Rocha Tenga en cuenta que, en el segundo ejemplo, se agregó una coma adicional porque no hay fecha de nacimiento.
+* La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.
+* Limitado a 700.000 líneas/[validaciones](../../glossario/glossario-aplicacao.md#validacion) por archivo.
+* A codificación del archivo debe ser utf-8 ou ANSI 
 {% endhint %}
 
 {% hint style="info" %}

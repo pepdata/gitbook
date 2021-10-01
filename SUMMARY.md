@@ -6,7 +6,7 @@
 ## Glossário
 
 * [Glosario de la Aplicación](glossario/glossario-aplicacao.md)
-* [Glosario Legal \(España\)](glossario/glossario-legal-portugal.md)
+* [Glosario Legal \(España\)](glossario/glosario-legal.md)
 
 ## A aplicação
 
@@ -33,10 +33,6 @@
 * [Búsqueda](api/pesquisa.md)
 * [Beneficiários Efectivos](api/beneficiary-owners.md)
 * [Ejemplos de utilización](api/exemplos-de-utilizacao.md)
-
-## Relatórios
-
-* [Relatório CMVM para Auditores](relatorios/relatorio-cmvm-para-auditores.md)
 
 ## Outros
 

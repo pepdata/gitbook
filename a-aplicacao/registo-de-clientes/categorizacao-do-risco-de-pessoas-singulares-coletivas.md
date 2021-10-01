@@ -13,7 +13,7 @@ Se compone de 3 categorías de riesgo distintas: bajo, medio y alto. Cada person
   * Si el país de constitución o en el que realiza la mayor parte de sus operaciones está sancionado
 * Paraísos fiscales
   * Si la persona física es residente en un país considerado como de "régimen fiscal privilegiado" por la ley 
-* Clasificación como [persona identificable](../../glossario/glossario-aplicacao.md#pessoa-identificavel).
+* Clasificación como [persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable).
 * Clasificación como [persona sancionada](../../glossario/glossario-aplicacao.md#sancionado)
 
 ### Personas jurídicas
@@ -21,14 +21,14 @@ Se compone de 3 categorías de riesgo distintas: bajo, medio y alto. Cada person
 * Existencia de sospecha
   * Si sospecha de la documentación presentada o de la propia persona jurídica
 * Países sancionados 
-  * Si el país de constitución o en el que realiza la mayor parte de sus operaciones está sancionado
+  * Caso o país de constituição ou país onde realiza a maioria das operações seja sancionado
 * Paraísos fiscales
   * Si el país de constitución o el país donde se realizan la mayoría de las operaciones se considera que tiene un "régimen fiscal privilegiado" por la legislación 
 * Otros criterios geográficos
   * Si no tiene domicilio social en territorio nacional
 * Clasificación de la actividad económica
-  * Si alguno de los CNAE de la persona jurídica se considere de alto riesgo
-* Clasificación como [persona sancionada](../../glossario/glossario-aplicacao.md#sancionado).
+  * Si alguno de los CNEA de la persona jurídica se considere de alto riesgo
+* Classificación como [persona sancionada](../../glossario/glossario-aplicacao.md#sancionado)
 
 Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica para su área profesional, no dude en [contactarnos](../../outros/contactos.md).
 

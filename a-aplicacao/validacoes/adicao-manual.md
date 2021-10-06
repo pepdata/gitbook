@@ -14,7 +14,7 @@ En esta ventana puede rellenar la información relativa al nombre, la fecha de n
 * Como mínimo, sólo se permiten nombres de personas con al menos 2 nombres y fecha de nacimiento. Si no tiene información sobre la fecha de nacimiento, debe introducir al menos 3 nombres. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es identificable.
 * **Se admiten** todos los [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC_8859-1), su acentuación y sus mayúsculas, sin alterar los resultados mostrados en el proceso de análisis. Por lo tanto, puede introducir el nombre en el formato que más le convenga. Por ejemplo: "Ines Marçal Romão" equivaldrá a introducir "ines marcal romao".
 * Aparte de los mencionados, sólo se aceptan espacios \(" "\), guiones \("-"\) o apóstrofes \(" ' "\).
-* Las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes en el nombre \(como "de", "da", "y", etc.\) no alteran los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
+* Las partículas existentes en el nombre \(como "de", "da", "y", etc.\) no alteran los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
 * Las abreviaturas son compatibles. Sin embargo, no se puede proceder con un punto final. Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
 * Todos los puntos anteriores se han aplicado para que el proceso sea lo más sólido posible. Sin embargo, le recomendamos que intente introducir nombres lo más parecidos al original.
 
@@ -22,8 +22,6 @@ En esta ventana puede rellenar la información relativa al nombre, la fecha de n
 
 * Este campo se analiza de forma independiente, y sólo se verifica si el país introducido está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Así, este campo puede tener diferentes significados, como: origen de los fondos del cliente, lugar de residencia fiscal o cualquier otro que considere relevante. Nota: Nota: Si el país asociado a una[ validación](../../glossario/glossario-aplicacao.md#validacion) está [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), a [validación](../../glossario/glossario-aplicacao.md#validacion) heredará esta[ clasificación](../../glossario/glossario-aplicacao.md#validacion), independientemente de que corresponda a una[ persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable). Una[ validación](../../glossario/glossario-aplicacao.md#validacion) puede tener varias clasificaciones distintas. 
 {% endhint %}
-
-Después de rellenar la información, hay dos opciones, a las que se accede pulsando los botones con el mismo nombre:
 
 Después de rellenar la información, hay dos opciones, a las que se accede pulsando los botones con el mismo nombre:
 

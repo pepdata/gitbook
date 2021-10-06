@@ -38,7 +38,7 @@ Para obtener los mejores resultados, le recomendamos que lea la documentación r
 
 #### Ventajas
 
-* e permite crear una "cartera de clientes" en la aplicación PEPData, que le permite recibir futuras alertas en caso de cambio de estatus como persona identificable.
+* Permite crear una "cartera de clientes" en la aplicación PEPData, que le permite recibir futuras alertas en caso de cambio de estatus como persona identificable.
 * Todas tus decisiones se registran en la aplicación PEPData y pueden exportarse para su uso futuro.
 * Puede determinar cientos de miles de validaciones a la vez.
 * Permite validar los [países sancionados](../glossario/glossario-aplicacao.md#pais-sancionado).

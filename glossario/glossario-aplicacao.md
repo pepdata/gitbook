@@ -30,7 +30,7 @@ Classe o conjunto de clases asignadas a una [persona identificable](glossario-ap
 
 ###  **Grado de similitud**
 
-Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "e", etc.\) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
+Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas \(como "de", "da", "e", etc.\) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
 
 
 

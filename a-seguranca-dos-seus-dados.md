@@ -22,8 +22,8 @@ Es por eso:
 
     para permitir únicamente la entrada y salida del tráfico deseado.
 
-  * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de SSH.
-  * No almacenamos su contraseña, utilizamos un [sistema de](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29) _hash_ y [_salt_](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29).
+  * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de [SSH](https://pt.wikipedia.org/wiki/Secure_Shell).
+  * No almacenamos su contraseña, utilizamos un sistema de _hash_ y [_salt_](https://pt.wikipedia.org/wiki/Sal_%28criptografia%29).
   * Supervisamos continuamente nuestros sistemas.
 
 * Trabajamos continuamente para aumentar la seguridad de nuestros sistemas
@@ -32,11 +32,8 @@ Es por eso:
   * Todos los cambios en la plataforma son revisados por al menos otra persona antes de ponerlos en el entorno de producción.
   * Contratamos a empresas externas que prueban y auditan continuamente la seguridad de nuestros sistemas y procesos.
 
-
-
-  Residencia de los datos
-
-* * Los datos introducidos en la plataforma residen en países de la UE, lo que garantiza el cumplimiento del Reglamento General de Protección de Datos \(RGPD\). Los servidores de producción residen en Dublín en el centro de datos de Amazon AWS y los servidores de copia de seguridad residen en Ámsterdam en el centro de datos de Backblaze. Ambos proveedores tienen la certificación SOC-2.
+* Residencia de los datos
+  * Los datos introducidos en la plataforma residen en países de la UE, lo que garantiza el cumplimiento del Reglamento General de Protección de Datos \(RGPD\). Los servidores de producción residen en Dublín en el centro de datos de Amazon AWS y los servidores de copia de seguridad residen en Ámsterdam en el centro de datos de Backblaze. Ambos proveedores tienen la certificación SOC-2.
 
 
 

@@ -11,7 +11,7 @@ Este repositorio también recopila diversa información legal relevante , por lo
 
 
 {% hint style="info" %}
-En el panel izquierdo puede navegar por las diferentes secciones de este repositorio.
+En el panel izquierdo puede navegar por las diferentes secciones de este repositorio. 
 
 En el texto, haciendo clic en las palabras resaltadas en rojo, lo redireccionará a su fuente o significado.
 {% endhint %}

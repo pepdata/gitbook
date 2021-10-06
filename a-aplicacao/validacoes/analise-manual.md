@@ -16,11 +16,11 @@ Una[ validación ](../../glossario/glossario-aplicacao.md#validacion)está compl
 
 #### Por nombre
 
-Todos los nombres que forman el nombre de validación deben estar en la [persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable) que aparece como resultado, a excepción de las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "y", etc.\). Por ejemplo:
+Todos los nombres que forman el nombre de validación deben estar en la [persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable) que aparece como resultado, a excepción de las partículas \(como "de", "da", "y", etc.\). Por ejemplo:
 
 1. "João Pedro Silva" puede resultar en el nombre "João Pedro Soares da Silva".
 2. "João Pedro Pereira" **no** puede resultar en el nombre "João Pedro Soares da Silva", ya que no tiene el nombre "Pereira".
-3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que se ignora la [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da".
+3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que se ignora la partícula "da".
 
 Se consideran las abreviaturas, si las hay. Por ejemplo:
 

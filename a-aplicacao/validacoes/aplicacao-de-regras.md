@@ -6,7 +6,7 @@ En la  [página de validaciones](./), puede realizar un análisis automático de
 Por defecto, las reglas a aplicar están desactivadas y deben ser activadas por usted a través del [página de configuración](../configuracoes.md). Sin embargo, antes de hacerlo, se recomienda encarecidamente la lectura de la siguiente información, ya que la aplicación de las reglas de validación, sin su correcta comprensión, puede provocar cambios no deseados y complicados o imposibles de revertir.
 {% endhint %}
 
-Reglas  de validación
+### Reglas  de validación
 
 Hay dos reglas de validación, que se pueden activar o desactivar en la [página de configuración](../configuracoes.md): 
 
@@ -37,7 +37,7 @@ Todos los nombres que forman o nombre de [validación](../../glossario/glossario
 
 1. "João Pedro Silva" puede dar lugar al nombre "João Pedro Soares da Silva".
 2. "João Pedro Pereira" **no** puede dar lugar al nombre "João Pedro Soares da Silva", ya que no tiene el nombre "Pereira".
-3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que la [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" se ignora.
+3. "João Pedro da Silva" puede resultar en el nombre "João Pedro Silva" ya que la partícula "da" se ignora.
 
 Se consideran las abreviaturas, si las hay. Por ejemplo:
 

@@ -32,6 +32,10 @@ Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
   * &#x20;address\_city
 * Os campos nace\_codes e countries\_operations podem conter múltiplos países, desde que separados por ponto e vírgula ";"
 
+{% hint style="warning" %}
+Assegure-se que o nome da organização não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+{% endhint %}
+
 ### Ficheiro das pessoas singulares
 
 * Deve conter uma pessoa singular por linha

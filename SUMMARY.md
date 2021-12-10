@@ -6,13 +6,14 @@
 ## Glossário
 
 * [Glossário da Aplicação](glossario/glossario-aplicacao.md)
-* [Glossário Legal \(Portugal\)](glossario/glossario-legal-portugal.md)
+* [Glossário Legal (Portugal)](glossario/glossario-legal-portugal.md)
 
 ## A aplicação
 
 * [Registo de transações](a-aplicacao/registo-de-transacoes/README.md)
   * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
 * [Registo de clientes](a-aplicacao/registo-de-clientes/README.md)
+  * [Importação de clientes (v2)](a-aplicacao/registo-de-clientes/importacao-de-clientes-v2.md)
   * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
 * [Validações](a-aplicacao/validacoes/README.md)
   * [Adição manual](a-aplicacao/validacoes/adicao-manual.md)
@@ -44,4 +45,3 @@
 * [Fontes relevantes](outros/fontes-relevantes.md)
 * [Termos e Condições](outros/termos-e-condicoes.md)
 * [Política de Privacidade](outros/politica-de-privacidade.md)
-

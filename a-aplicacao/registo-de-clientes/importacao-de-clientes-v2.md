@@ -65,5 +65,6 @@ Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
   * capital\_percentage
   * voting\_rights\_percentage
 * O campo position\_in\_company __ pode ter texto livre ou beneficial\_owner, no caso da relação ser enquanto beneficiário efetivo
+* Os campos capital\_percentage e voting\_rights\_percentage apenas devem possuir valores caso o campo position\_in\_company __ seja o de beneficial\_owner
 * Todos os números de contribuinte, tanto de organizações como de indivíduos, devem já existir no sistema, sendo este o último ficheiro a carregar
 

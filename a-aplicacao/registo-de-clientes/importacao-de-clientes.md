@@ -47,26 +47,34 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
+#### Ficheiro exemplo
+
+{% file src="../../.gitbook/assets/organizations.csv" %}
+
 ### Ficheiro das pessoas singulares
 
 * Deve conter uma pessoa singular por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                | Notas                                                              |
-| --------------------- | ------------------------------------------------------------------ |
-| **name**              |                                                                    |
-| **vat\_number**       |                                                                    |
-| email                 |                                                                    |
-| birth\_date           |                                                                    |
-| nationalities         | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos. |
-| place\_of\_birth      |                                                                    |
-| address\_type         | Valores aceites: residence, fiscal\_residence e headquarters       |
-| address\_country      |                                                                    |
-| address\_postal\_code |                                                                    |
-| address               |                                                                    |
-| address\_door         |                                                                    |
-| address\_district     |                                                                    |
-| address\_city         |                                                                    |
+| Campos                | Notas                                                                                                                                                           |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**              |                                                                                                                                                                 |
+| **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659 |
+| email                 |                                                                                                                                                                 |
+| birth\_date           |                                                                                                                                                                 |
+| nationalities         | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                                                                                              |
+| place\_of\_birth      |                                                                                                                                                                 |
+| address\_type         | Valores aceites: residence, fiscal\_residence e headquarters                                                                                                    |
+| address\_country      |                                                                                                                                                                 |
+| address\_postal\_code |                                                                                                                                                                 |
+| address               |                                                                                                                                                                 |
+| address\_door         |                                                                                                                                                                 |
+| address\_district     |                                                                                                                                                                 |
+| address\_city         |                                                                                                                                                                 |
+
+#### Ficheiro exemplo
+
+{% file src="../../.gitbook/assets/individuals.csv" %}
 
 ### Ficheiro das relações entre pessoas singulares e organizações
 
@@ -81,3 +89,6 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | capital\_percentage         | Apenas pode ser preenchido caso o valor do campo position\_in\_company seja beneficial\_owner   |
 | voting\_rights\_percentage  | Apenas pode ser preenchido caso o valor do campo position\_in\_company seja beneficial\_owner   |
 
+#### Ficheiro exemplo
+
+{% file src="../../.gitbook/assets/relationships.csv" %}

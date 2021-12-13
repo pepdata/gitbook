@@ -1,48 +1,52 @@
 # Validações
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/get\_validations" %}
-{% api-method-summary %}
-Obter validações
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/get_validations" method="post" summary="Obter validações" %}
+{% swagger-description %}
 Endpoint para obter validações.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="page" type="number" required=false %}
-Página das validações  
+{% swagger-parameter in="body" name="page" type="number" %}
+Página das validações
+
+\
+
+
 Default: 1
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="source" type="string" required=false %}
-Origem das validações  
-Default: all  
+{% swagger-parameter in="body" name="source" type="string" %}
+Origem das validações
+
+\
+
+
+Default: all
+
+\
+
+
 Valores possíveis: all, upload, manual
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="status" type="string" required=false %}
-Estado das validações   
-Default: incomplete  
-Valores possíveis: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="status" type="string" %}
+Estado das validações 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Validações obtidas com sucesso.
-{% endapi-method-response-example-description %}
+\
 
+
+Default: incomplete
+
+\
+
+
+Valores possíveis: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Validações obtidas com sucesso." %}
 ```
 {
     "data": {
@@ -84,75 +88,81 @@ Validações obtidas com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
 * **id**: id da validação.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
-* **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
-* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado ](../glossario/glossario-aplicacao.md#pais-sancionado)\(1\) ou não \(0\).
-* **source**: origem da validação. 
+* **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado ](../glossario/glossario-aplicacao.md#pais-sancionado)(1) ou não (0).
+* **source**: origem da validação.&#x20;
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável \(1\) ou não \(0\).
+* **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável (1) ou não (0).
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao) \(1\) ou não \(0\).
+* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao) (1) ou não (0).
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/add\_validation" %}
-{% api-method-summary %}
-Adicionar validação
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Adicionar validação" %}
+{% swagger-description %}
 Endpoint para adicionar uma validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="ignore\_duplicates" type="boolean" required=false %}
-Instrução para ignorar a verificação de duplicados.  
-Formato: 0/1  
+{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
+Instrução para ignorar a verificação de duplicados.
+
+\
+
+
+Formato: 0/1
+
+\
+
+
 Default: 0
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 Nome da validação
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="birth\_date" type="string" required=false %}
-Data de nascimento da validação.   
-Formato: yyyy-mm-dd  
+{% swagger-parameter in="body" name="birth_date" type="string" %}
+Data de nascimento da validação. 
+
+\
+
+
+Formato: yyyy-mm-dd
+
+\
+
+
 Default: null
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="country" type="string" required=false %}
-País da validação.   
-Formato: Nome do país \(ver nota abaixo\)  
+{% swagger-parameter in="body" name="country" type="string" %}
+País da validação. 
+
+\
+
+
+Formato: Nome do país (ver nota abaixo)
+
+\
+
+
 Default: null
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Validação adicionada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Validação adicionada com sucesso." %}
 ```
 
 {
@@ -163,13 +173,9 @@ Validação adicionada com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-A validação a adicionar já se encontra na base de dados.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="A validação a adicionar já se encontra na base de dados." %}
 ```
 {
     "message": "Esta validação parece já existir na base de dados"
@@ -177,10 +183,8 @@ A validação a adicionar já se encontra na base de dados.
     "timestamp": X 
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
@@ -189,41 +193,25 @@ A validação a adicionar já se encontra na base de dados.
 {% hint style="info" %}
 #### Country
 
-* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), sempre que possível.
+* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), sempre que possível.
 {% endhint %}
 
 
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/analyze\_validation" %}
-{% api-method-summary %}
-Analisar validação
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/analyze_validation" method="post" summary="Analisar validação" %}
+{% swagger-description %}
 Endpoint para consultar os resultados obtidos da análise de uma validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Id da validação
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Resultados da análise de validação obtidos com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Resultados da análise de validação obtidos com sucesso." %}
 ```
 {
     "data": {
@@ -246,10 +234,8 @@ Resultados da análise de validação obtidos com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
@@ -258,40 +244,24 @@ Resultados da análise de validação obtidos com sucesso.
 * **birth\_date**: data de nascimento da pessoa identificável.
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/determine\_validation" %}
-{% api-method-summary %}
-Determinação de validação
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/determine_validation" method="post" summary="Determinação de validação" %}
+{% swagger-description %}
 Endpoint para submeter uma validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Id da validação
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="id\_iperson" type="string" required=false %}
+{% swagger-parameter in="body" name="id_iperson" type="string" %}
 Id da pessoa identificável correspondente. 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A validação foi submetida com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A validação foi submetida com sucesso." %}
 ```
 {
     "data": {},
@@ -299,41 +269,23 @@ A validação foi submetida com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/cancel\_validation" %}
-{% api-method-summary %}
-Cancelar determinação de validação
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/cancel_validation" method="post" summary="Cancelar determinação de validação" %}
+{% swagger-description %}
 Endpoint para cancelar a determinação de uma validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Id da validação
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A determinação da validação foi cancelada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A determinação da validação foi cancelada com sucesso." %}
 ```
 {
     "data": {},
@@ -341,41 +293,23 @@ A determinação da validação foi cancelada com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/delete\_validation" %}
-{% api-method-summary %}
-Apagar validação
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/delete_validation" method="post" summary="Apagar validação" %}
+{% swagger-description %}
 Endpoint para apagar uma validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="body" name="id" type="string" %}
 Id da validação
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-A validação foi apagada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="A validação foi apagada com sucesso." %}
 ```
 {
     "data": {},
@@ -383,39 +317,23 @@ A validação foi apagada com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 Apenas pode apagar validações [incompletas](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes). Caso pretenda apagar uma validação completa, terá primeiro de cancelar a sua [determinação](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes).
 {% endhint %}
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/apply\_rules" %}
-{% api-method-summary %}
-Aplicação das regras
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/apply_rules" method="post" summary="Aplicação das regras" %}
+{% swagger-description %}
 Endpoint para aplicação das regras de validação.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-As regras começaram a ser aplicadas. 
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="As regras começaram a ser aplicadas. " %}
 ```
 {
     "data": {
@@ -425,10 +343,8 @@ As regras começaram a ser aplicadas.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
@@ -441,4 +357,3 @@ A leitura da documentação relativa à [aplicação das regras de validação](
 {% hint style="info" %}
 A [aplicação de regras](../a-aplicacao/validacoes/aplicacao-de-regras.md) pode demorar alguns minutos até se encontrar concluída, dependendo do número de validações incompletas existentes. O tempo de conclusão estimado é devolvido na resposta.
 {% endhint %}
-

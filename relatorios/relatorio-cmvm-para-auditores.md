@@ -20,17 +20,17 @@ O Relatório CMVM já se encontra disponível para aquisição. Consulte a pági
 1. Aceder à página "Questionário CMVM"
 2. Preencher o questionário elaborado pela PEPData
 3. Elaborar e efetuar o carregamento de 3 ficheiros, cada um com as seguintes propriedades:
-   1. **Pessoas Associadas e Colaboradores da SROC (Pessoas singulares) **
+   1. **Pessoas Associadas e Colaboradores da SROC (Pessoas singulares)**&#x20;
       1. Nome completo&#x20;
       2. Data de nascimento (opcional)
       3. Nacionalidade: País &#x20;
-   2. **Clientes (Pessoas coletivas) **
+   2. **Clientes (Pessoas coletivas)**&#x20;
       1. Nome empresa (sem vírgulas)
       2. NIPC da empresa&#x20;
       3. Novo cliente: coloque **1** caso o cliente tenha sido angariado no ano de referência ou **0** caso contrário
       4. País da sede da empresa&#x20;
       5. CAE principal
-   3. **Pessoas Associadas aos Clientes (Pessoas singulares) **
+   3. **Pessoas Associadas aos Clientes (Pessoas singulares)**&#x20;
       1. Nome completo&#x20;
       2. Data de nascimento (opcional)
       3. País de residência fiscal&#x20;

@@ -1,41 +1,33 @@
 # Pesquisa
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/search\_iperson" %}
-{% api-method-summary %}
-Pesquisa de pessoa identificável
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/search_iperson" method="post" summary="Pesquisa de pessoa identificável" %}
+{% swagger-description %}
 Endpoint para pesquisar uma pessoa identificável.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 Nome da pessoa a pesquisar
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="birth\_date" type="string" required=false %}
-Data de nascimento da validação.   
-Formato: yyyy-mm-dd  
+{% swagger-parameter in="body" name="birth_date" type="string" %}
+Data de nascimento da validação. 
+
+\
+
+
+Formato: yyyy-mm-dd
+
+\
+
+
 Default: null
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Pesquisa realizada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {
@@ -62,10 +54,8 @@ Pesquisa realizada com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
@@ -73,43 +63,27 @@ Pesquisa realizada com sucesso.
 * **name**: nome da pessoa identificável.
 * **birth\_date**: data de nascimento da pessoa identificável.
 * **death\_date**: data de morte da pessoa identificável.
-* **id\_country**: país primário da pessoa identificável, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+* **id\_country**: país primário da pessoa identificável, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}
 De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa.md).
 {% endhint %}
 
-{% api-method method="post" host="https://www.pepdata.com/api" path="/search\_organizations" %}
-{% api-method-summary %}
-Pesquisa de organizações sancionadas
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/search_organizations" method="post" summary="Pesquisa de organizações sancionadas" %}
+{% swagger-description %}
 Endpoint para pesquisar uma organização sancionada.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-key \[API\_KEY\]
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter in="body" name="name" type="string" %}
 Nome da organização a pesquisar
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Pesquisa realizada com sucesso.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {
@@ -124,10 +98,8 @@ Pesquisa realizada com sucesso.
     "timestamp": 1588599744111
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Legenda
 
@@ -144,4 +116,3 @@ Este endpoint executa uma pesquisa nas organizações presentes nas seguintes li
 
 **Importante:** de momento, o nome da organização deverá coincidir com o nome presente na lista de sanções para que sejam devolvidos resultados.
 {% endhint %}
-

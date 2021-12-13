@@ -21,15 +21,16 @@ Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
   * **name**
   * **vat\_number**
   * corporate\_object
+  * foundation\_date
   * nace\_codes
-  * country\_constitution
-  * countries\_operations
+  * constitution\_country
+  * operations\_countries
   * address\_country
   * address\_postal\_code
   * address
   * address\_door&#x20;
   * address\_district
-  * &#x20;address\_city
+  * address\_city
 * Os campos nace\_codes e countries\_operations podem conter múltiplos países, desde que separados por ponto e vírgula ";"
 
 {% hint style="warning" %}
@@ -54,7 +55,7 @@ Assegure-se que o nome da organização não possui vírgulas, caso contrário a
   * address
   * address\_door&#x20;
   * address\_district
-  * &#x20;address\_city
+  * address\_city
 * O campo nationalities pode conter múltiplos países, desde que separados por ponto e vírgula ";"
 
 ### Ficheiro das relações entre pessoas singulares e organizações

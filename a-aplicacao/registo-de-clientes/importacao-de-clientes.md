@@ -62,7 +62,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659 |
 | email                 |                                                                                                                                                                 |
 | birth\_date           |                                                                                                                                                                 |
-| nationalities         | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                                                                                              |
+| nationalities         | Separados por ponto e vírgula caso existam múltiplos                                                                                                            |
 | place\_of\_birth      |                                                                                                                                                                 |
 | address\_type         | Valores aceites: residence, fiscal\_residence e headquarters                                                                                                    |
 | address\_country      |                                                                                                                                                                 |

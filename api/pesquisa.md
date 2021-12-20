@@ -64,6 +64,7 @@ Default: null
 * **birth\_date**: data de nascimento da pessoa identificável.
 * **death\_date**: data de morte da pessoa identificável.
 * **id\_country**: país primário da pessoa identificável, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **source**: fonte da lista de sanções, caso exista: EU, OFAC, HMTreasury ou UN.
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}

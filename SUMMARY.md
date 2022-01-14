@@ -24,7 +24,8 @@
   * [Exportação de validações](a-aplicacao/validacoes/download-de-validacoes.md)
 * [Pesquisa](a-aplicacao/pesquisa.md)
 * [Histórico](a-aplicacao/historico.md)
-* [Configurações](a-aplicacao/configuracoes.md)
+* [Configurações](a-aplicacao/configuracoes/README.md)
+  * [Configurações do risco](a-aplicacao/configuracoes/configuracoes-do-risco.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
 
 ## API

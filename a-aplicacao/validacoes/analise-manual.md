@@ -2,12 +2,12 @@
 
 Na [página de validações](./), pode completar uma validação através do respetivo botão “👁”, que lhe dá acesso a uma janela de análise.
 
-Esta janela poderá sugerir nomes de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) relevantes, com o respetivo [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) relativo ao nome da [validação](../../glossario/glossario-aplicacao.md#validacao). 
+Esta janela poderá sugerir nomes de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) relevantes, com o respetivo [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) relativo ao nome da [validação](../../glossario/glossario-aplicacao.md#validacao).&#x20;
 
-![Janela de an&#xE1;lise manual](../../.gitbook/assets/image%20%2810%29.png)
+![Janela de análise manual](<../../.gitbook/assets/image (10).png>)
 
-Na linha de cada [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), pode ver o seu perfil através do botão “👁” ou definir uma correspondência através do botão “✓”.   
-Caso não exista uma correspondência, ou nenhuma das sugestões da aplicação esteja correta, pode validar o nome como não sendo identificável através do botão “✗ Não identificável”. 
+Na linha de cada [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), pode ver o seu perfil através do botão “👁” ou definir uma correspondência através do botão “✓”. \
+Caso não exista uma correspondência, ou nenhuma das sugestões da aplicação esteja correta, pode validar o nome como não sendo identificável através do botão “✗ Não identificável”.&#x20;
 
 Uma [validação](../../glossario/glossario-aplicacao.md#validacao) está concluída após definir se existe correspondência entre esta e uma pessoa identificável que conste na base de dados da PEPData.
 
@@ -16,11 +16,11 @@ Uma [validação](../../glossario/glossario-aplicacao.md#validacao) está conclu
 
 #### Por nome
 
-Todos os nomes que formam o nome da validação têm que constar no nome da [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) que aparece como resultado, com exceção das [partículas](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/) \(como "de", "da", "e", etc.\). Exemplificando:
+Todos os nomes que formam o nome da validação têm que constar no nome da [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) que aparece como resultado, com exceção das [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) (como "de", "da", "e", etc.). Exemplificando:
 
 1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
 2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
-3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
+3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
 
 Abreviaturas, caso existam, são consideradas. Exemplificando:
 
@@ -34,18 +34,18 @@ A data de nascimento da validação, caso exista, é utilizada para filtrar os r
 
 #### Por limite de resultados
 
-No máximo, são-lhe mostrados os 20 resultados com maior grau de semelhança. 
+No máximo, são-lhe mostrados os 20 resultados com maior grau de semelhança.&#x20;
 
 #### Por opções auxiliares
 
-As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes.md): 
+As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes/):&#x20;
 
 * Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
 * Os nomes introduzidos contêm sempre o último apelido na última posição.
 
-Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações. 
+Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.&#x20;
 
-Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.  
+Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes. &#x20;
 {% endhint %}
 
 ## Outras funcionalidades
@@ -62,5 +62,4 @@ Caso tenha a certeza que uma determinada [validação](../../glossario/glossario
 A pessoa adicionada por si apenas será visível para a sua organização. A PEPData, no futuro, irá rever o perfil da mesma. Caso esta pessoa seja [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), segundo a lei em vigor, a PEPData irá levantar a restrição e passará a disponibilizá-la a todos os clientes.
 {% endhint %}
 
- 
-
+&#x20;

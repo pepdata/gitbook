@@ -42,6 +42,7 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 | address\_door         |                                                                    |
 | address\_district     |                                                                    |
 | address\_city         |                                                                    |
+| has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente              |
 
 {% hint style="warning" %}
 Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.

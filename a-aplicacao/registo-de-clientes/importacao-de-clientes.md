@@ -29,7 +29,7 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 
 | Campos                | Notas                                                                                           |
 | --------------------- | ----------------------------------------------------------------------------------------------- |
-| id\_private           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                      |
+| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                      |
 | **name**              |                                                                                                 |
 | **vat\_number**       |                                                                                                 |
 | invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção. |
@@ -62,7 +62,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 
 | Campos                | Notas                                                                                                                                                           |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id\_private           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                      |
+| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                      |
 | **name**              |                                                                                                                                                                 |
 | **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659 |
 | email                 | Email da pessoa singular.                                                                                                                                       |

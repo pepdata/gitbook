@@ -27,22 +27,25 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 * Deve conter uma organização por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                | Notas                                                              |
-| --------------------- | ------------------------------------------------------------------ |
-| **name**              |                                                                    |
-| **vat\_number**       |                                                                    |
-| corporate\_object     |                                                                    |
-| foundation\_date      |                                                                    |
-| nace\_codes           | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos. |
-| constitution\_country |                                                                    |
-| operations\_countries | Separados por ponto e vírgula caso existam múltiplos               |
-| address\_country      |                                                                    |
-| address\_postal\_code |                                                                    |
-| address               |                                                                    |
-| address\_door         |                                                                    |
-| address\_district     |                                                                    |
-| address\_city         |                                                                    |
-| has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente              |
+| Campos                | Notas                                                                                           |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| id\_private           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                      |
+| **name**              |                                                                                                 |
+| **vat\_number**       |                                                                                                 |
+| invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção. |
+| corporate\_object     |                                                                                                 |
+| foundation\_date      |                                                                                                 |
+| nace\_codes           | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                              |
+| constitution\_country |                                                                                                 |
+| operations\_countries | Separados por ponto e vírgula caso existam múltiplos                                            |
+| address\_country      |                                                                                                 |
+| address\_postal\_code |                                                                                                 |
+| address               |                                                                                                 |
+| address\_door         |                                                                                                 |
+| address\_district     |                                                                                                 |
+| address\_city         |                                                                                                 |
+| has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente                                           |
+| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente                                           |
 
 {% hint style="warning" %}
 Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
@@ -59,9 +62,11 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 
 | Campos                | Notas                                                                                                                                                           |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_private           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                      |
 | **name**              |                                                                                                                                                                 |
 | **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659 |
-| email                 |                                                                                                                                                                 |
+| email                 | Email da pessoa singular.                                                                                                                                       |
+| invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção.                                                                 |
 | birth\_date           |                                                                                                                                                                 |
 | nationalities         | Separados por ponto e vírgula caso existam múltiplos                                                                                                            |
 | place\_of\_birth      |                                                                                                                                                                 |
@@ -72,6 +77,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | address\_door         |                                                                                                                                                                 |
 | address\_district     |                                                                                                                                                                 |
 | address\_city         |                                                                                                                                                                 |
+| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente                                                                                                           |
 
 #### Ficheiro exemplo
 

@@ -27,25 +27,28 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 * Deve conter uma organização por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                | Notas                                                                                           |
-| --------------------- | ----------------------------------------------------------------------------------------------- |
-| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                      |
-| **name**              |                                                                                                 |
-| **vat\_number**       |                                                                                                 |
-| invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção. |
-| corporate\_object     |                                                                                                 |
-| foundation\_date      |                                                                                                 |
-| nace\_codes           | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                              |
-| constitution\_country |                                                                                                 |
-| operations\_countries | Separados por ponto e vírgula caso existam múltiplos                                            |
-| address\_country      |                                                                                                 |
-| address\_postal\_code |                                                                                                 |
-| address               |                                                                                                 |
-| address\_door         |                                                                                                 |
-| address\_district     |                                                                                                 |
-| address\_city         |                                                                                                 |
-| has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente                                           |
-| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente                                           |
+| Campos                | Notas                                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                                                                          |
+| **name**              |                                                                                                                                                                                                                                     |
+| **vat\_number**       |                                                                                                                                                                                                                                     |
+| responsible\_email    | Email do utilizador que irá ficar responsável pelo questionário do cliente. Tem de ser um utilizador inserido na sua organização.                                                                                                   |
+| invited\_email        | Email da pessoa a convidar para preenchimento do questionário. Nota: o convite terá de ser enviado manualmente, após a inserção.                                                                                                    |
+| corporate\_object     |                                                                                                                                                                                                                                     |
+| foundation\_date      |                                                                                                                                                                                                                                     |
+| nace\_codes           | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                  |
+| constitution\_country |                                                                                                                                                                                                                                     |
+| operations\_countries | Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                               |
+| is\_identified        | 0, no caso de não existir identificação.                                                                                                                                                                                            |
+| address\_country      |                                                                                                                                                                                                                                     |
+| address\_postal\_code |                                                                                                                                                                                                                                     |
+| address               |                                                                                                                                                                                                                                     |
+| address\_door         |                                                                                                                                                                                                                                     |
+| address\_district     |                                                                                                                                                                                                                                     |
+| address\_city         |                                                                                                                                                                                                                                     |
+| has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente.                                                                                                                                                                              |
+| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente.                                                                                                                                                                              |
+| adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious_\__allegations; new\_light_\__convictions |
 
 {% hint style="warning" %}
 Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
@@ -60,24 +63,27 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 * Deve conter uma pessoa singular por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                | Notas                                                                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                      |
-| **name**              |                                                                                                                                                                 |
-| **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659 |
-| email                 | Email da pessoa singular.                                                                                                                                       |
-| invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção.                                                                 |
-| birth\_date           |                                                                                                                                                                 |
-| nationalities         | Separados por ponto e vírgula caso existam múltiplos                                                                                                            |
-| place\_of\_birth      |                                                                                                                                                                 |
-| address\_type         | Valores aceites: residence, fiscal\_residence e headquarters                                                                                                    |
-| address\_country      |                                                                                                                                                                 |
-| address\_postal\_code |                                                                                                                                                                 |
-| address               |                                                                                                                                                                 |
-| address\_door         |                                                                                                                                                                 |
-| address\_district     |                                                                                                                                                                 |
-| address\_city         |                                                                                                                                                                 |
-| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente                                                                                                           |
+| Campos                | Notas                                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                                                                          |
+| **name**              |                                                                                                                                                                                                                                     |
+| **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659                                                                     |
+| responsible\_email    | Email do utilizador que irá ficar responsável pelo questionário do cliente. Tem de ser um utilizador inserido na sua organização.                                                                                                   |
+| invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção.                                                                                                                                     |
+| email                 | Email da pessoa singular.                                                                                                                                                                                                           |
+| birth\_date           |                                                                                                                                                                                                                                     |
+| nationalities         | Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                               |
+| place\_of\_birth      |                                                                                                                                                                                                                                     |
+| is\_identified        | 0, no caso de não existir identificação.                                                                                                                                                                                            |
+| address\_type         | Valores aceites: residence, fiscal\_residence e headquarters.                                                                                                                                                                       |
+| address\_country      |                                                                                                                                                                                                                                     |
+| address\_postal\_code |                                                                                                                                                                                                                                     |
+| address               |                                                                                                                                                                                                                                     |
+| address\_door         |                                                                                                                                                                                                                                     |
+| address\_district     |                                                                                                                                                                                                                                     |
+| address\_city         |                                                                                                                                                                                                                                     |
+| has\_adverse\_media   | 1 ou 0, caso existam sucursais ou não, respetivamente.                                                                                                                                                                              |
+| adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious_\__allegations; new\_light_\__convictions |
 
 #### Ficheiro exemplo
 

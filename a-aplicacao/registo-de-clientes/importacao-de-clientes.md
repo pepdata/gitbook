@@ -47,7 +47,6 @@ Após a criação destes 3 ficheiros, poderá proceder à sua importação atrav
 | address\_district     |                                                                                                                                                                                                                                     |
 | address\_city         |                                                                                                                                                                                                                                     |
 | has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente.                                                                                                                                                                              |
-| has\_adverse\_media   | 1 ou 0, caso existam notícias adversas ou não, respetivamente.                                                                                                                                                                      |
 | adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious_\__allegations; new\_light_\__convictions |
 
 {% hint style="warning" %}
@@ -82,7 +81,6 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | address\_door         |                                                                                                                                                                                                                                     |
 | address\_district     |                                                                                                                                                                                                                                     |
 | address\_city         |                                                                                                                                                                                                                                     |
-| has\_adverse\_media   | 1 ou 0, caso existam notícias adversas ou não, respetivamente.                                                                                                                                                                      |
 | adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious_\__allegations; new\_light_\__convictions |
 
 #### Ficheiro exemplo

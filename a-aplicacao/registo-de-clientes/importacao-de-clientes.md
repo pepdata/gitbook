@@ -92,13 +92,13 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 * Deve conter uma relação por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                         | Notas                                                                                  |
-| ------------------------------ | -------------------------------------------------------------------------------------- |
-| **organization\_vat\_number**  | Este valor já deve existir no sistema                                                  |
-| **individual\_vat\_number**    | Este valor já deve existir no sistema                                                  |
-| **position\_in\_organization** | Pode ter texto livre ou "owner", no caso da relação ser enquanto beneficiário efetivo. |
-| capital\_percentage            | Apenas pode ser preenchido caso o valor do campo position\_in\_company seja "owner".   |
-| voting\_rights\_percentage     | Apenas pode ser preenchido caso o valor do campo position\_in\_company seja "owner".   |
+| Campos                         | Notas                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------- |
+| **organization\_vat\_number**  | Este valor já deve existir no sistema                                                     |
+| **individual\_vat\_number**    | Este valor já deve existir no sistema                                                     |
+| **position\_in\_organization** | Pode ter texto livre ou "owner", no caso da relação ser enquanto beneficiário efetivo.    |
+| capital\_percentage            | Apenas pode ser preenchido caso o valor do campo position\_in\_organization seja "owner". |
+| voting\_rights\_percentage     | Apenas pode ser preenchido caso o valor do campo position\_in\_organization seja "owner". |
 
 #### Ficheiro exemplo
 

@@ -1,3 +1,3 @@
-organization_vat_number, individual_vat_number, position_in_organization, capital_percentage, voting_rights_percentage
+organization_vat_number, vat_number, position_in_organization, capital_percentage, voting_rights_percentage
 531910180, 248754009, owner, 20, 15
 502215119, 248244124, Administrador

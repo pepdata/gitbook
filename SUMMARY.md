@@ -13,6 +13,7 @@
 * [Registo de transações](a-aplicacao/registo-de-transacoes/README.md)
   * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
 * [Registo de clientes](a-aplicacao/registo-de-clientes/README.md)
+  * [Perguntas frequentes](a-aplicacao/registo-de-clientes/perguntas-frequentes.md)
   * [Importação de clientes](a-aplicacao/registo-de-clientes/importacao-de-clientes.md)
   * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
 * [Validações](a-aplicacao/validacoes/README.md)

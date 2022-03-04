@@ -46,6 +46,10 @@ Default: incomplete
 Valores possíveis: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="id" type="string" %}
+Id da validação
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="Validações obtidas com sucesso." %}
 ```
 {

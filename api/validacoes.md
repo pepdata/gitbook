@@ -38,7 +38,7 @@ Estado das validações
 \
 
 
-Default: incomplete
+Default: all
 
 \
 
@@ -48,6 +48,10 @@ Valores possíveis: all, complete, complete_identified, complete_not_identified,
 
 {% swagger-parameter in="body" name="id" type="string" %}
 Id da validação
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_custom" type="string" %}
+Id personalizável da validação
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validações obtidas com sucesso." %}
@@ -67,7 +71,8 @@ Id da validação
                 "id_iperson": null,
                 "determined_at": null,
                 "determined_by": null,
-                "needs_attention": 0
+                "needs_attention": 0,
+                "id_custom": "ID1"
             },
             {
                 "id": "01a0ae72-bff9-47df-a7ec-843a7524d67e", 
@@ -81,7 +86,8 @@ Id da validação
                 "id_iperson": "d37903e9-589b-4db8-a9e0-efd69d89bf6b",
                 "determined_at": 1588009503831,
                 "determined_by": "0d874a7f-a94b-4b0c-ba48-47a278f12065",
-                "needs_attention": 0
+                "needs_attention": 0,
+                "id_custom": null
             }
         ],
         "page": 1,
@@ -110,6 +116,7 @@ Id da validação
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao) (1) ou não (0).
+* **id\_custom**: id personalizável inserido pelo utilizador.
 
 {% hint style="info" %}
 **id\_country**
@@ -170,6 +177,10 @@ Formato: Nome do país (ver nota abaixo)
 
 
 Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_custom" type="string" %}
+Id personalizável da validação
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validação adicionada com sucesso." %}

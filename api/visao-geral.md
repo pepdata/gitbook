@@ -1,14 +1,14 @@
 # Visão geral
 
-A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa.md) e realizar operações relativas às [validações](../a-aplicacao/validacoes/). 
+A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa.md), realizar operações relativas às [validações](../a-aplicacao/validacoes/), a beneficiários efetivos e utilizadores da plataforma.&#x20;
 
 A sua documentação é técnica e orientada para programadores. Caso apenas pretenda ler sobre a aplicação poderá fazê-lo na [secção correspondente](../a-aplicacao/validacoes/).
 
 ## Autenticação
 
-A autenticação através da PEPData API v0.1 apenas pode ser realizada via chave de autenticação. 
+A autenticação através da PEPData API v0.1 apenas pode ser realizada via chave de autenticação.&#x20;
 
-Cada utilizador pode ver e alterar a sua chave no seu perfil. Uma chave pode ser alterada mas a nova irá invalidar a anterior. Só existe, por isso, uma chave ativa a cada momento.
+Cada utilizador pode ver e alterar a sua chave na sua página de perfil. Uma chave pode ser alterada mas a nova irá invalidar a anterior. Só existe, por isso, uma chave ativa a cada momento, por utilizador.
 
 O chave ativa deve ser utilizado na secção `Headers` do HTTP request. Exemplificando:
 
@@ -42,14 +42,14 @@ No caso de sucesso, API irá seguir a seguinte estrutura de resposta:
 
 ## Datas
 
-Todas as datas utilizadas, com exceção do campo _timestamp_ referido anteriormente, seguem os seguintes padrões:
+As datas que constam nas propriedades doravante mencionadas seguem os seguintes formatos:
 
-* Datas com o sufixo "\_at" representam unix millisecond timestamps \(milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC\)
-* Datas com o sufixo "\_date" representam calendar dates no formato [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) YYYY-MM-DD.
+* Propriedades com o sufixo "\_at"  ou o nome _timestamp_ representam unix millisecond timestamps (milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC)
+* Propriedades com o sufixo "\_date" representam calendar dates no formato [ISO 8601](https://en.wikipedia.org/wiki/ISO\_8601) YYYY-MM-DD.
 
 ## Paginação
 
-Alguns endpoints devolvem resultados de forma paginada. Neste caso, a formatação do objeto do parâmetro _data_ irá ser a seguinte:
+Alguns endpoints devolvem múltiplos resultados, podendo fazê-lo de forma paginada. Neste caso, a formatação do objeto do parâmetro _data_ irá ser a seguinte:
 
 ```bash
 {
@@ -76,7 +76,7 @@ A PEPData utiliza os códigos de resposta HTTP convencionais para indicar o suce
 Como regra geral:
 
 * Códigos no intervalo `2xx` indicam sucesso.
-* Códigos no intervalo `4xx` indicam uma utilização incorreta ou incompleta dos parâmetros.\(exemplos: um parâmetro obrigatório foi omitido, o endpoint não existe, o token de autenticação não é válido\).
+* Códigos no intervalo `4xx` indicam uma utilização incorreta ou incompleta dos parâmetros.(exemplos: um parâmetro obrigatório foi omitido, o endpoint não existe, o token de autenticação não é válido).
 * Códigos no intervalo `5xx` indicam um erro nos servidores da PEPData.
 
 A PEPData devolve a mensagem de erro com o seguinte formato:
@@ -90,14 +90,15 @@ A PEPData devolve a mensagem de erro com o seguinte formato:
 ```
 
 {% hint style="info" %}
-Exceções: Erros 401, 403, 404 e 500 devem ser processados como tal, devendo a resposta ser ignorada.
+Casos especiais: Erros 401, 403, 404 e 500 devem ser processados como tal, devendo a resposta ser ignorada.
 {% endhint %}
 
 ## Configuração para o Postman
 
 Caso deseje efetuar um teste rápido aos endpoints da API da PEPData, criámos uma configuração para o [Postman](https://www.postman.com/downloads/) que contém alguns exemplos básicos.
 
-{% file src="../.gitbook/assets/pepdata-public-api.postman\_collection \(1\).json" caption="PEPData API Configuration" %}
+{% file src="../.gitbook/assets/pepdata-public-api.postman_collection (1).json" %}
+PEPData API Configuration
+{% endfile %}
 
 Uma vez importada a configuração no Postman, irá precisar de definir a variável `API_KEY` no separador de Autorização.
-

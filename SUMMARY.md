@@ -34,7 +34,7 @@
 * [Visão geral](api/visao-geral.md)
 * [Validações](api/validacoes.md)
 * [Pesquisa](api/pesquisa.md)
-* [Beneficiários Efetivos](api/beneficiary-owners.md)
+* [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)
 * [Exemplos de utilização](api/exemplos-de-utilizacao.md)
 

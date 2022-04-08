@@ -94,7 +94,7 @@ NIPC da organização a comparar
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="vatin" type="string" %}
+{% swagger-parameter in="body" name="vatin" type="string" required="true" %}
 NIPC da organização a tratar
 {% endswagger-parameter %}
 

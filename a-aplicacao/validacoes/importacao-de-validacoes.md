@@ -9,12 +9,12 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 * Apenas as extensões .csv ou .txt são permitidas.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: Nome, Data de nascimento, País.\
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: Nome, Data de nascimento, País, ID.\
   Qualquer um dos seguintes exemplos abaixo representa uma validação no formato correto:\
-  André Pinheiro, 31-12-1980, Portugal \
+  André Pinheiro, 31-12-1980, Portugal, 281075964\
   Ricardo Sousa Vieira Armando Rui Pinto, , Rússia\
-  Armando Tavares Rocha\
-  Note que, no 2º exemplo, foi colocada uma vírgula extra por não existir data de nascimento.
+  Armando Tavares Rocha, , , IDX\
+  Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento.
 * &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;
 * Limitado a 700.000 linhas/[validações](../../glossario/glossario-aplicacao.md#validacao) por ficheiro. &#x20;
 * A codificação do ficheiro deve ser utf-8 ou ANSI&#x20;

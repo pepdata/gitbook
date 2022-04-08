@@ -2,7 +2,7 @@
 
 Na [página de validações](./), pode adicionar manualmente uma validação através do botão “+ Adicionar validação”, que lhe dá acesso a uma janela para o fazer.
 
-Nesta janela pode preencher informação relativa ao nome, data de nascimento e país da pessoa que pretende validar. &#x20;
+Nesta janela pode preencher informação relativa ao nome, data de nascimento, país e um identificador (ID) da pessoa que pretende validar.  Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.&#x20;
 
 ![](../../.gitbook/assets/add-validation.gif)
 

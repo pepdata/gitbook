@@ -21,36 +21,59 @@ NIPC da organização a comparar
 ```javascript
 {
     "data": {
-        id_iberinform_0: {
+        "id_iberinform_0": {
             status: 'found',
             matches: [rcbe_person_0],
             divergences
         },
-        id_iberinform_1: {
+        "id_iberinform_1": {
             status: 'ambiguous',
             matches: [rcbe_person_1, rcbe_person_2],
             divergences
         },
-        id_iberinform_2: {
+        "id_iberinform_2": {
             status: 'ambiguous',
             matches: [rcbe_person_3],  //same as id_iberinform_3 match
             divergences
         },
-        id_iberinform_3: {
+        "id_iberinform_3": {
             status: 'ambiguous',
             matches: [rcbe_person_3],  //same as id_iberinform_2 match
             divergences
         },
-        id_iberinform_4: {
+        "id_iberinform_4": {
             status: 'not_found',
             matches: [],
             divergences
         },
-        '': {
+        "": {
             status: 'not_found',
             matches: [rcbe_person_4, rcbe_person_5],
             divergences
-        }
+        },
+        "rcbe_response": [
+            {
+		"name": "nome da pessoa",
+		"birth_date": "DD/MM/YYYY",
+		"nationality": "País_1; País_2;",
+		"is_minor": "Não",
+		"is_accompanied": "Não",
+		"has_property_or_control": "Sim/Não",
+		"asset_types": "Ações ou Quotas/Outros direitos de participação",
+		"capital_percentage": "X %",
+		"ownership_type",
+		"ownership_structure",
+		"has_voting_rights": "Sim/Não",
+		"exerts_control",
+		"is_top_manager",
+		"is_founder": "Sim/Não",
+		"is_administrator": "Sim/Não",
+		"is_beneficiary",
+		"has_control": "Sim/Não",
+		"is_curator": "Sim/Não",
+		"has_founder_admin_curator_category"
+	    }
+        ],
     },
     "version": "0.1",
     "timestamp": 1588599744111

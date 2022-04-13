@@ -9,12 +9,26 @@ Esta secção ainda se encontra na versão **beta**.
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" required="true" %}
+{% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="vatin" required="true" %}
+{% swagger-parameter in="body" name="vatin" required="true" type="string" %}
 NIPC da organização a comparar
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="include_rcbe_response" type="boolean" %}
+Instrução para incorporar a resposta do RCBE.
+
+\
+
+
+Formato: 0/1
+
+\
+
+
+Default: 0
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

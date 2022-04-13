@@ -25,17 +25,24 @@ Para incorporar um fator de risco na sua fórmula basta arrastá-lo para a área
 
 Existem fatores de risco simples, cujo valor se apura tendo em conta apenas um valor e compostos, cujo valor se apura tendo em conta a aplicação de uma função a múltiplos valores.&#x20;
 
-Os seguintes fatores de risco compostos são computados da seguinte forma:
+Estão disponíveis os seguintes fatores de risco na aplicação:
 
 * Fórmula de risco para pessoas singulares
   * **Classificação da pessoa singular**: no caso de existência de várias classificações, os seus níveis de risco são somados ou é considerado apenas o nível mais elevado, consoante se definida no separador "Pessoas Identificáveis" a função Soma ou Máximo, respetivamente.
   * **Nacionalidades**: no caso de existência de várias, é considerado apenas o nível de risco mais elevado.
+  * **Local de nascimento**
+  * **País de residência**
+  * **Existência de notícias adversas**
 * Fórmula de risco para pessoas coletivas
   * **Setores de atividade**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Países de operações**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Classificação da pessoa coletiva**: no caso de existência de várias classificações, os seus níveis de risco são somados ou é considerado apenas o nível mais elevado, consoante se definida no separador "Pessoas Identificáveis" a função Soma ou Máximo, respetivamente.
   * **Representantes da pessoa coletiva**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Beneficiários efetivos**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
+  * **País de constituição**
+  * **País da sede**
+  * **Data de fundação**
+  * **Existência de notícias adversas**
 
 #### Sintaxe da fórmula
 

@@ -12,10 +12,10 @@
 
 * [Registo de transações](a-aplicacao/registo-de-transacoes/README.md)
   * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
-* [Registo de clientes](a-aplicacao/registo-de-clientes/README.md)
-  * [Perguntas frequentes](a-aplicacao/registo-de-clientes/perguntas-frequentes.md)
-  * [Importação de clientes](a-aplicacao/registo-de-clientes/importacao-de-clientes.md)
-  * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
+* [Registos de clientes](a-aplicacao/customer-registrations/README.md)
+  * [Perguntas frequentes](a-aplicacao/customer-registrations/perguntas-frequentes.md)
+  * [Importação de clientes](a-aplicacao/customer-registrations/importacao-de-clientes.md)
+  * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/customer-registrations/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
 * [Validações](a-aplicacao/validacoes/README.md)
   * [Adição manual](a-aplicacao/validacoes/adicao-manual.md)
   * [Análise manual](a-aplicacao/validacoes/analise-manual.md)
@@ -33,6 +33,7 @@
 
 * [Visão geral](api/visao-geral.md)
 * [Validações](api/validacoes.md)
+* [Registos](api/registrations.md)
 * [Pesquisa](api/pesquisa.md)
 * [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)

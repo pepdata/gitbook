@@ -102,7 +102,6 @@ Default: 0
 //
 // divergences: {
 //    name: boolean,
-//    birth_date: boolean,
 //    shares_percentage: boolean,
 // }
 ```

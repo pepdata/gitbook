@@ -5,7 +5,7 @@
 Endpoint para obter validações.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
@@ -62,7 +62,7 @@ Id personalizável da validação
             {
                 "id": "2a206d4a-0a5d-4a04-9a0c-cadae6e2cffa", 
                 "name": "Lisa Fidalgo Corte-Real",
-                "birth_date": "01-08-1986",
+                "birth_date": "1986-01-08",
                 "id_country": "PT",
                 "source": "Manual",
                 "added_at": 1588003603593,
@@ -91,7 +91,7 @@ Id personalizável da validação
             }
         ],
         "page": 1,
-        "max_results_per_page": 50
+        "max_results_per_page": 50,
         "total": 2
     },
     "version": "0.1",

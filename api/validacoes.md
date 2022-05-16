@@ -71,7 +71,7 @@ Id personalizável da validação
                 "id_iperson": null,
                 "determined_at": null,
                 "determined_by": null,
-                "needs_attention": 0,
+                "needs_attention": false,
                 "id_custom": "ID1"
             },
             {
@@ -82,11 +82,11 @@ Id personalizável da validação
                 "source": "Automatic",
                 "added_at": 1588008603595,
                 "added_by": "839a5871-fa0e-470a-af42-9110f8ef5b27",,
-                "decision": 1,
+                "decision": true,
                 "id_iperson": "d37903e9-589b-4db8-a9e0-efd69d89bf6b",
                 "determined_at": 1588009503831,
                 "determined_by": "0d874a7f-a94b-4b0c-ba48-47a278f12065",
-                "needs_attention": 0,
+                "needs_attention": false,
                 "id_custom": null
             }
         ],
@@ -107,15 +107,15 @@ Id personalizável da validação
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
 * **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado ](../glossario/glossario-aplicacao.md#pais-sancionado)(1) ou não (0).
+* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
 * **source**: origem da validação.&#x20;
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável (1) ou não (0).
+* **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
-* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao) (1) ou não (0).
+* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao).
 * **id\_custom**: id personalizável inserido pelo utilizador.
 
 {% hint style="info" %}

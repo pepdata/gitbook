@@ -1,14 +1,10 @@
 # Exemplos de utilização
 
-{% hint style="warning" %}
-A API da PEPData encontra-se na versão **beta**. Caso deseje ser um dos nossos testers, por favor envie um email para [geral@pepdata.pt](mailto:geral@pepdata.pt).
-{% endhint %}
-
 Existem duas maneiras distintas de utilizar a API da PEPData. Esta página irá procurar descrever ambos os modos e apresentar as suas vantagens e desvantagens para que possa decidir de maneira informada qual a mais adequada às suas necessidades.
 
 ## Pesquisa
 
-Corresponde ao exemplo mais básico de utilização. Para seguir esta via, apenas necessita de utilizar o endpoint de [pesquisa de pessoa identificável](pesquisa.md#pesquisa-de-pessoa-identificavel). 
+Corresponde ao exemplo mais básico de utilização. Para seguir esta via, apenas necessita de utilizar o endpoint de [pesquisa de pessoa identificável](pesquisa.md#pesquisa-de-pessoa-identificavel).&#x20;
 
 Este endpoint aceita um nome e uma data de nascimento como inputs e devolve os resultados de pesquisa que mais se assemelham aos termos pesquisados. De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa.md).
 
@@ -21,7 +17,7 @@ Após receção dos resultados, poderá processá-los internamente de forma a de
 
 #### Desvantagens
 
-* Não permite criar uma "carteira de clientes" na aplicação da PEPData, que lhe possibilita receber alertas futuros no caso de uma alteração de estado enquanto [pessoa identificável](../glossario/glossario-aplicacao.md#pessoa-identificavel).  
+* Não permite criar uma "carteira de clientes" na aplicação da PEPData, que lhe possibilita receber alertas futuros no caso de uma alteração de estado enquanto [pessoa identificável](../glossario/glossario-aplicacao.md#pessoa-identificavel). &#x20;
 * Obriga-o a ter de criar critérios internos para a validação das pessoas pesquisadas, não ficando a sua decisão guardada na aplicação da PEPData.
 * Apenas pode pesquisar uma pessoa de cada vez.
 * Não permite validar [países sancionados](../glossario/glossario-aplicacao.md#pais-sancionado).
@@ -30,7 +26,7 @@ Após receção dos resultados, poderá processá-los internamente de forma a de
 
 Corresponde ao exemplo mais avançado de utilização. Para seguir esta via, necessita de utilizar vários [endpoints de validação](validacoes.md). A título de exemplo, propõe-se o seguinte fluxo de trabalho:
 
-1. Adicione cada pessoa a validar através do endpoint `/add_validation`. Este aceita o nome, a data de nascimento e o país da pessoa, criando assim uma [validação](../glossario/glossario-aplicacao.md#validacao). 
+1. Adicione cada pessoa a validar através do endpoint `/add_validation`. Este aceita o nome, a data de nascimento e o país da pessoa, criando assim uma [validação](../glossario/glossario-aplicacao.md#validacao).&#x20;
 2. Quando necessitar, aplique as [regras de validação](../a-aplicacao/validacoes/aplicacao-de-regras.md#regras-de-validacao) pretendidas através do endpoint `/apply_rules`. Estas irão permitir a [determinação](../a-aplicacao/validacoes/#adicao-e-determinacao-de-validacoes) de todas as [validações](../glossario/glossario-aplicacao.md#validacao) que se enquadrem nas regras que definiu.
 3. As validações que permaneceram incompletas são mais difíceis de determinar e provavelmente necessitam de atenção humana. Recomenda-se, por isso, que sejam determinadas manualmente na aplicação da PEPData. No entanto, poderá fazê-lo através da API, recorrendo ao endpoint `/determine_validation`.
 
@@ -38,7 +34,7 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 
 #### Vantagens
 
-* Permite criar uma "carteira de clientes" na aplicação da PEPData, que lhe possibilita receber alertas futuros no caso de uma alteração de estado enquanto pessoa identificável.  
+* Permite criar uma "carteira de clientes" na aplicação da PEPData, que lhe possibilita receber alertas futuros no caso de uma alteração de estado enquanto pessoa identificável. &#x20;
 * Todas as suas decisões ficam registadas na aplicação da PEPData, podendo ser exportadas para utilização futura.
 * Pode determinar centenas de milhares de validações de cada vez.
 * Permite validar [países sancionados](../glossario/glossario-aplicacao.md#pais-sancionado).
@@ -47,4 +43,3 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 
 * Solução mais complexa de implementar.
 * Não adequada no caso de precisar de pesquisar pessoas em tempo real.
-

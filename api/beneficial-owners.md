@@ -23,12 +23,12 @@ Instrução para incorporar a resposta do RCBE.
 \
 
 
-Formato: 0/1
+Formato: false/true
 
 \
 
 
-Default: 0
+Default: false
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}

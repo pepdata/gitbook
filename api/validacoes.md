@@ -362,6 +362,18 @@ key [API_KEY]
 ```
 {% endswagger-response %}
 
+{% swagger-response status="200: OK" description="Não existem validações elegíveis para aplicar as regras." %}
+```javascript
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1654613096539,
+        "message": "Não existem validações elegíveis para aplicar as regras."
+    }
+}
+```
+{% endswagger-response %}
+
 {% swagger-response status="400: Bad Request" description="As regras já se encontram a ser aplicadas." %}
 ```javascript
 {

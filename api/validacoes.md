@@ -361,6 +361,18 @@ key [API_KEY]
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="As regras já se encontram a ser aplicadas." %}
+```javascript
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1588599744111,
+        "message": "Esta operação já está em progresso. Por favor aguarde até estar completa."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Legenda

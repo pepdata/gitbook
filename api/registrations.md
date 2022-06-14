@@ -1,10 +1,10 @@
 # Registos
 
 {% hint style="warning" %}
-Esta secção da API ainda está em desenvolvimento, pelo que poderá sofrer alterações consideráveis.
+Esta secção da API ainda está em desenvolvimento, pelo que poderá sofrer alterações consideráveis. Esta página encontra-se em desenvolvimento.
 {% endhint %}
 
-{% swagger method="post" path="get_questionnaires" baseUrl="https://www.pepdata.com/api" summary="Obter registos" %}
+{% swagger method="post" path="/get_questionnaires" baseUrl="https://www.pepdata.com/api" summary="Obter registos" %}
 {% swagger-description %}
 Endpoint para obter os registos de clientes e transações.
 {% endswagger-description %}
@@ -63,3 +63,106 @@ key [API_KEY]
 {% endswagger-response %}
 {% endswagger %}
 
+### Legenda
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/add_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Adição de um registo" %}
+{% swagger-description %}
+Endpoint para adicionar um registo de clientes e transações.
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/edit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Edição de um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/delete_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Eliminação um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/unsubmit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Cancelar a submissão de um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/send_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Enviar um convite de preenchimento do registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/cancel_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Cancelar um convite de preenchimento do registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/assign_user_to_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Atribuir um utilizador a um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/edit_questionnaire_approval_state" baseUrl="https://www.pepdata.com/api" summary="Editar o estado de aprovação de um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/revert_questionnaire_risk" baseUrl="https://www.pepdata.com/api" summary="Reverter o risco de um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.
+
+{% swagger method="post" path="/reset_questionnaire_needs_attention" baseUrl="https://www.pepdata.com/api" summary="Redefinir o estado "Precisam de atenção" de um registo" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **id**: id do registo.

@@ -16,7 +16,7 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
   Armando Tavares Rocha, , , IDX\
   Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento.
 * &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;
-* Limitado a 700.000 linhas/[validações](../../glossario/glossario-aplicacao.md#validacao) por ficheiro. &#x20;
+* Limitado a 500.000 linhas/[validações](../../glossario/glossario-aplicacao.md#validacao) por ficheiro. &#x20;
 * A codificação do ficheiro deve ser utf-8 ou ANSI&#x20;
 {% endhint %}
 
@@ -83,7 +83,7 @@ Neste caso, sugerimos as seguintes soluções:
 4. Guardar.
 5. Voltar a fazer upload do ficheiro na plataforma da PEPData.
 
-****[**Notepad++**](https://notepad-plus-plus.org)****
+****[**Notepad++**](https://notepad-plus-plus.org/)****
 
 1. Abrir o ficheiro em questão.&#x20;
 2. Codificação/Encoding -> Converter para ANSI ou UTF-8, dependendo da codificação atual.

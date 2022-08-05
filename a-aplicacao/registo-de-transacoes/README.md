@@ -10,11 +10,10 @@ El proceso comienza con la creación de un "registro rápido", que le permite cr
 
 Una vez creada la transacción, estará disponible en una tabla y se podrá acceder al cuestionario relacionado a través del botón "▶". También puede utilizar el botón “🗑️"para eliminar transacciones.
 
-![Tabla de transacciones](../../.gitbook/assets/image%20%2821%29.png)
+![Tabla de transacciones](../../.gitbook/assets/transações.jpg)
 
-Después de enviar el cuestionario de la transacción, se crearán automáticamente todos los "Registros rápidos" de los participantes en la transacción, a excepción de su propia empresa. Se puede acceder a estos registros rápidos en el [Registro de Clientes](../registo-de-clientes/). 
+Después de enviar el cuestionario de la transacción, se crearán automáticamente todos los "Registros rápidos" de los participantes en la transacción, a excepción de su propia empresa. Se puede acceder a estos registros rápidos en el [Registro de Clientes](../registo-de-clientes/).&#x20;
 
-Los cuestionarios ya presentados pueden verse a través del botón "👁". 
+Los cuestionarios ya presentados pueden verse a través del botón "👁".&#x20;
 
 Tenga en cuenta que el registro de una transacción sólo está realmente completo tras la presentación del respectivo cuestionario y de todos los cuestionarios de sus participantes.
-

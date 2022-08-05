@@ -3,12 +3,12 @@
 * [Introducción](README.md)
 * [La seguridad de sus datos](a-seguranca-dos-seus-dados.md)
 
-## Glossário
+## Glosario <a href="#glossario" id="glossario"></a>
 
 * [Glosario de la Aplicación](glossario/glossario-aplicacao.md)
-* [Glosario Legal \(España\)](glossario/glosario-legal.md)
+* [Glosario Legal (España)](glossario/glosario-legal.md)
 
-## A aplicação
+## La Aplicación <a href="#a-aplicacao" id="a-aplicacao"></a>
 
 * [Registro de Transacciones](a-aplicacao/registo-de-transacoes/README.md)
   * [Categorización del riesgo de transacción](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
@@ -23,7 +23,7 @@
   * [Exportación de la validación](a-aplicacao/validacoes/download-de-validacoes.md)
 * [Búsqueda](a-aplicacao/pesquisa.md)
 * [Historial](a-aplicacao/historico.md)
-* [Configuraciones](a-aplicacao/configuracoes.md)
+* [Configuración](a-aplicacao/configuracoes.md)
 * [Administración de Usuarios](a-aplicacao/administracao-de-utilizadores.md)
 
 ## API
@@ -31,13 +31,12 @@
 * [Visión general](api/visao-geral.md)
 * [Validaciones](api/validacoes.md)
 * [Búsqueda](api/pesquisa.md)
-* [Beneficiários Efectivos](api/beneficiary-owners.md)
+* [Titulares Reales](api/beneficiary-owners.md)
 * [Ejemplos de utilización](api/exemplos-de-utilizacao.md)
 
-## Outros
+## Otros <a href="#outros" id="outros"></a>
 
 * [Contactos](outros/contactos.md)
 * [Fuentes relevantes](outros/fontes-relevantes.md)
 * [Condiciones Generales](outros/termos-e-condicoes.md)
 * [Política de Privacidad](outros/politica-de-privacidade.md)
-

@@ -6,7 +6,7 @@ Esta página sólo está disponible para los responsables de cada organización.
 
 Esta página le permite ver todos los miembros de su organización, gestionar su acceso a la aplicación y agregar nuevos usuarios.
 
-![P&#xE1;gina de administraci&#xF3;n de usuarios](../.gitbook/assets/image%20%289%29.png)
+![Página de administración de usuarios](../.gitbook/assets/utilizadores.jpg)
 
 ## Agregar Usuarios
 
@@ -27,6 +27,5 @@ Si desactiva el permiso de inicio de sesión, el usuario afectado ya no podrá a
 {% hint style="info" %}
 ### ¿Como puedo eliminar un usuario?
 
-Los usuarios creados en la plataforma PEPData no pueden ser eliminados para preservar el [historial](historico.md) de sus acciones. Sin embargo, puede desactivar el acceso a un usuario de la plataforma desactivando su permiso de inicio de sesión. De este modo, su [historial](historico.md) permanecerá intacto pero el usuario en cuestión ya no tendrá acceso a los datos de su organización. 
+Los usuarios creados en la plataforma PEPData no pueden ser eliminados para preservar el [historial](historico.md) de sus acciones. Sin embargo, puede desactivar el acceso a un usuario de la plataforma desactivando su permiso de inicio de sesión. De este modo, su [historial](historico.md) permanecerá intacto pero el usuario en cuestión ya no tendrá acceso a los datos de su organización.&#x20;
 {% endhint %}
-

@@ -12,9 +12,9 @@ description: >-
 
 ### Clasificación
 
-Classe o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#persona-identificable), que pueden  ser:
+Clase o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#persona-identificable), que pueden  ser:
 
-1. [Persona con Responsabilidad Pública ](glosario-legal.md#pessoa-politicamente-exposta)\(PRP\)
+1. [Persona con Responsabilidad Pública ](glosario-legal.md#pessoa-politicamente-exposta)(PRP)
 2. [Familiar](glossario-aplicacao.md#familiar)
 3. [Asociado](glossario-aplicacao.md#associado)
 4. [Sancionado](glossario-aplicacao.md#sancionado)
@@ -24,13 +24,13 @@ Classe o conjunto de clases asignadas a una [persona identificable](glossario-ap
 
 ### Familiar
 
-[Membro de la família cercana](glosario-legal.md#membro-proximo-da-familia).
+[Miembro de la família cercana](glosario-legal.md#membro-proximo-da-familia).
 
 
 
-###  **Grado de similitud**
+### &#x20;**Grado de similitud**
 
-Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas \(como "de", "da", "e", etc.\) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
+Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas (como "de", "da", "e", etc.) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
 
 
 
@@ -42,7 +42,7 @@ Trabajo o profesión de una [persona identificable](glossario-aplicacao.md#perso
 
 ### Organización
 
-Empresa o entidad del Estado.   
+Empresa o entidad del Estado. \
 Ejemplos: Gobierno Portugués, Academia de la Fuerza Aérea, TAP.
 
 
@@ -51,13 +51,13 @@ Ejemplos: Gobierno Portugués, Academia de la Fuerza Aérea, TAP.
 
 Departamento, división o subdivisión dentro de una [organización](glossario-aplicacao.md#organizacion).
 
- Ejemplos: Departamento Administrativo y Financiero, División de Planificación, Órgano de Gestión.
+&#x20;Ejemplos: Departamento Administrativo y Financiero, División de Planificación, Órgano de Gestión.
 
 
 
 ### País sancionado
 
-País tercer de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE ](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado)o tiene sanciones por parte de EE.UU.
+Tercer país de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE ](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado)o tiene sanciones por parte de EE.UU.
 
 ### Persona Identificable
 
@@ -75,14 +75,12 @@ Norma, definida por el usuario de la aplicación, que define cómo se aplicará 
 
 Persona cuyo nombre aparece en una de las siguientes listas:
 
-* [Naciones Unidas \(ONU\)](https://www.un.org/securitycouncil/)
-* [Unión Europea \(UE\)](https://www.sanctionsmap.eu/#/main)
-* [Departamento del Tesoro de Estados Unidos \(OFAC\) ](https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx)
-* [Tesoro de Su Majestad del Reino Unido \(HM Treasury\)](https://www.gov.uk/government/organisations/hm-treasury)
+* [Naciones Unidas (ONU)](https://www.un.org/securitycouncil/)
+* [Unión Europea (UE)](https://www.sanctionsmap.eu/#/main)
+* [Departamento del Tesoro de Estados Unidos (OFAC) ](https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx)
+* [Tesoro de Su Majestad del Reino Unido (HM Treasury)](https://www.gov.uk/government/organisations/hm-treasury)
 
 ### Validación
 
 Una persona agregada por el usuario de la aplicación, que puede coincidir o no con una [persona identificable](glossario-aplicacao.md#persona-identificable) en la base de datos PEPData. Se puede analizar una validación viendo las [personas identificables](glossario-aplicacao.md#persona-identificable) sugeridas por la aplicación como posible coincidencia. Se puede determinar una validación estipulando si hay una coincidencia entre ella y una [persona identificable](glossario-aplicacao.md#persona-identificable).
-
-
 

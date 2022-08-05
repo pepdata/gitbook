@@ -4,14 +4,14 @@ Esta página le permite buscar por nombre, listando todas las [personas identifi
 
 La lista de resultados mostrará los nombres y las fechas de nacimiento de las personas encontradas, y podrá ver su perfil haciendo clic en el botón “👁”.
 
-![P&#xE1;gina de pesquisa](../.gitbook/assets/search.gif)
+![](../.gitbook/assets/pesquisa.gif)
 
 {% hint style="info" %}
 ### ¿Cómo se encuentran los resultados sugeridos?
 
 #### Por nombre
 
-Todos los nombres que forman el nombre de [validación](../glossario/glossario-aplicacao.md#validacao) deben estar a nombre de la [persona identificable ](../glossario/glossario-aplicacao.md#pessoa-identificavel)que aparece como resultado. Ejemplificando:
+Todos los nombres y apellidos que forman el nombre de [validación](../glossario/glossario-aplicacao.md#validacao) deben estar en el nombre y apellidos de la [persona identificable ](../glossario/glossario-aplicacao.md#pessoa-identificavel)que aparece como resultado. Ejemplo:
 {% endhint %}
 
 {% hint style="info" %}
@@ -24,6 +24,5 @@ Se consideran las abreviaturas, si las hay. Ejemplificando:
 
 #### Por límite de resultados
 
-Como máximo, se le muestran los 25 resultados con mayor [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca). 
+Como máximo, se le muestran los 25 resultados con mayor [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).&#x20;
 {% endhint %}
-

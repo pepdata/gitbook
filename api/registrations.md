@@ -369,7 +369,9 @@ Id do registo ou transação
 {% endswagger-response %}
 {% endswagger %}
 
-
+{% hint style="warning" %}
+**Importante:** Poderá obter um erro ao eliminar um registo caso este tenha dependências com outros registos.
+{% endhint %}
 
 {% swagger method="post" path="/unsubmit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Cancelar a submissão de um registo" %}
 {% swagger-description %}

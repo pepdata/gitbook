@@ -373,13 +373,19 @@ Id do registo ou transação
 {% swagger-response status="200: OK" description="Submissão do registo de clientes ou transações cancelada foi cancelada com sucesso." %}
 ```javascript
 {
-    // Response
+    risk: 0
 }
 ```
 {% endswagger-response %}
 {% endswagger %}
 
+{% hint style="warning" %}
+Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.
+{% endhint %}
 
+### Legenda
+
+* **risk:** risco recalculado do registo de clientes ou transações.
 
 {% swagger method="post" path="/send_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Enviar um convite de preenchimento do registo" %}
 {% swagger-description %}

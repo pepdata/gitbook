@@ -409,6 +409,10 @@ Língua em que deve ser enviado o convite
 
 
 
+Default: pt-PT
+
+
+
 Valores aceites:
 
 **pt-PT** (Português)

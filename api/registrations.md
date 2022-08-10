@@ -134,7 +134,7 @@ NIF/NIPC do registo
 Id personalizável do registo
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="type" type="string" %}
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
 Tipo do registo
 
 

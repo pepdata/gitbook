@@ -30,7 +30,7 @@ Clase o conjunto de clases asignadas a una [persona identificable](glossario-apl
 
 ### &#x20;**Grado de similitud**
 
-Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas (como "de", "da", "e", etc.) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "joao silva lopes" y "João da Silva e Lopes" es del 100%.
+Porcentaje de similitud entre dos nombres, que puede variar entre 0, en caso de que los nombres sean totalmente diferentes, y 100%, en caso de que los nombres sean iguales. Este resultado se calcula mediante un algoritmo diseñado por PEPData que, en el proceso de comparación, ignora las diferencias de acentuación, las mayúsculas y la existencia de partículas (como "de", "da", "e", etc.) lo que lo hace más robusto. Ejemplo: el grado de similitud entre los nombres "juan ramon lucas gutierrez" y "Juan Ramón de Lucas y Gutiérrez" es del 100%.
 
 
 
@@ -43,7 +43,7 @@ Trabajo o profesión de una [persona identificable](glossario-aplicacao.md#perso
 ### Organización
 
 Empresa o entidad del Estado. \
-Ejemplos: Gobierno Portugués, Academia de la Fuerza Aérea, TAP.
+Ejemplos: Gobierno de España, Ejército del aire.
 
 
 
@@ -57,7 +57,7 @@ Departamento, división o subdivisión dentro de una [organización](glossario-a
 
 ### País sancionado
 
-Tercer país de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE ](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado)o tiene sanciones por parte de EE.UU.
+Otro país de alto riesgo que presenta deficiencias estratégicas en el régimen de lucha contra el blanqueo de capitales y la financiación del terrorismo [según la UE ](https://www.portalbcft.pt/pt-pt/content/pa%C3%ADses-terceiros-de-risco-elevado)o tiene sanciones por parte de EE.UU.
 
 ### Persona Identificable
 

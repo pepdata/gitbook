@@ -2,7 +2,7 @@
 
 La seguridad y privacidad de sus datos es la máxima prioridad de PEPData.
 
-No mencionamos esto a la ligera o sólo para quedar bien: entendemos la sensibilidad de la información que publica en nuestra plataforma y aceptamos nuestro deber de protegerla.
+No decimos esto a la ligera o sólo para quedar bien: entendemos la sensibilidad de la información que publica en nuestra plataforma y asumimos nuestro deber de protegerla.
 
 Por eso:
 
@@ -19,9 +19,7 @@ Por eso:
 
     * Todas las interacciones que tiene con el sitio web de PEPData se realizan a través de [HTTPS](https://en.wikipedia.org/wiki/HTTPS) para garantizar que la información se transmite de forma encriptada.
     * Todas las copias de seguridad se realizan con encriptación.
-    *   &#x20;Todos nuestros servidores tienen un  _firewall_
-
-        para permitir únicamente la entrada y salida del tráfico deseado.
+    * &#x20;Todos nuestros servidores tienen un  _firewall_ para permitir únicamente la entrada y salida del tráfico deseado.
     * El acceso a nuestros servidores está muy restringido y sólo se realiza a través de [SSH](https://pt.wikipedia.org/wiki/Secure\_Shell).
     * No almacenamos su contraseña, utilizamos un sistema de _hash_ y [_salt_](https://pt.wikipedia.org/wiki/Sal\_\(criptografia\)).
     * Supervisamos continuamente nuestros sistemas.

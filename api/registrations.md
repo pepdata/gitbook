@@ -134,6 +134,20 @@ NIF/NIPC do registo
 Id personalizável do registo
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="type" type="string" %}
+Tipo do registo
+
+
+
+Valores aceites:
+
+**individual** (Registo de pessoa individual)
+
+**organization** ( Registo de pessoa coletiva)
+
+**transaction** (Transação)
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="questionnaire_data" type="json" %}
 **Consoante cada tipo de registo**, são necessários objetos diferentes:
 

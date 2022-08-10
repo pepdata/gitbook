@@ -13,4 +13,4 @@ Existem diferentes formas de criar registos de clientes ou transações:
 Existem diferentes formas de obter o risco do registo criado:
 
 * Manual - Abertura do registo, escolhendo-o da lista presente no menu de **Registo de Clientes** ou **Registo Transações**.
-* **API Pública** - Através da função [`get_questionnaires`](../../api/registrations.md#obter-registos) especificando o id do registo que quer consular.
+* **API Pública** - Através da função [`get_questionnaires`](../../api/registrations.md#obter-registos) especificando o `id` do registo que quer consultar.

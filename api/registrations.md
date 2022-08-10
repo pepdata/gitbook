@@ -534,7 +534,7 @@ key [API_KEY]
 Id do registo ou transação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="approval_state" type="integer" required="true" %}
+{% swagger-parameter in="body" name="approval_state" type="string" required="true" %}
 Estado de aprovação
 
 

@@ -16,6 +16,7 @@
   * [Perguntas frequentes](a-aplicacao/customer-registrations/perguntas-frequentes.md)
   * [Importação de clientes](a-aplicacao/customer-registrations/importacao-de-clientes.md)
   * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/customer-registrations/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
+  * [Criação de registo de clientes ou transações e obtenção do risco](a-aplicacao/customer-registrations/criacao-de-registo-de-clientes-ou-transacoes-e-obtencao-do-risco.md)
 * [Validações](a-aplicacao/validacoes/README.md)
   * [Adição manual](a-aplicacao/validacoes/adicao-manual.md)
   * [Análise manual](a-aplicacao/validacoes/analise-manual.md)

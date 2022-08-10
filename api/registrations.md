@@ -357,7 +357,11 @@ key [API_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" type="string" required="true" name="id" %}
-Id do registo ou transação
+Id do registo ou transação 
+
+[#obter-registos](registrations.md#obter-registos "mention")
+
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="O registo de clientes ou transações foi apagado com sucesso." %}

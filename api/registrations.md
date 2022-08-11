@@ -57,7 +57,7 @@ Default: 1
                 "assigned_to": null,
                 "approval_state": null,
                 "approval_change_reason": null,
-                "risk": 1,
+                "risk": 2.5,
                 "risk_change_reason": null,
                 "needs_attention": 0,
                 "id_custom": "ID1"

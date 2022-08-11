@@ -51,4 +51,8 @@ O registo dos seus clientes e transações permite-lhe registar toda a a informa
 1. Adicione o cliente ou transação através do endpoint [`/add_questionnaire`](registrations.md#adicao-de-um-registo). Este endpoint aceita várias propriedades enviadas num objeto `questionnaire_data`, permitindo-lhe popular uma grande parte dos campos disponíveis logo no momento da criação do registo.\
    Esta função irá retornar o `id` do cliente ou transação criado(a).
 2. Depois, poderá obter a informação sobre o registo através da função [`get_questionnaires`](registrations.md#obter-registos) iterando ao longo das páginas existentes ou especificando o `id` do registo que acabou de criar.\
-   Esta função devolve [informação completa](registrations.md#legenda) sobre o cliente ou transação que está a consultar.
+   Esta função devolve [informação completa](registrations.md#legenda), incluindo o risco, relativo aos seus clientes ou transações.
+
+{% hint style="info" %}
+Caso o valor do risco seja consultado imediatamente após a inserção, o seu valor apenas irá contemplar a análise dos campos acabados de inserir via API. Existem ainda outros campos que, de momento, podem apenas ser editados através da aplicação. Caso tenha alguma necessidade em particular não hesite em falar connosco.
+{% endhint %}

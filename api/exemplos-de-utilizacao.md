@@ -1,6 +1,6 @@
 # Exemplos de utilização
 
-Existem duas maneiras distintas de utilizar a API da PEPData. Esta página irá procurar descrever ambos os modos e apresentar as suas vantagens e desvantagens para que possa decidir de maneira informada qual a mais adequada às suas necessidades.
+Existem várias maneiras distintas de utilizar a API da PEPData. Esta página irá procurar descrever alguns exemplos e apresentar as suas vantagens e desvantagens para que possa decidir, de maneira informada, como adequar a utilização da API às suas necessidades.
 
 ## Pesquisa
 
@@ -44,19 +44,11 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 * Solução mais complexa de implementar.
 * Não adequada no caso de precisar de pesquisar pessoas em tempo real.
 
-## Criação de registos de clientes ou transações e obtenção do risco
+## Registos e obtenção do risco
 
-Corresponde ao exemplo mais avançado de utilização. Para seguir esta via necessita de utilizar pelo menos dois [endpoints de registos](registrations.md). A título de exemplo, propõe-se o seguinte fluxo de trabalho:
+O registo dos seus clientes e transações permite-lhe registar toda a a informação necessária para o cumprimento da lei, obtendo ainda um [score de risco](../a-aplicacao/customer-registrations/categorizacao-do-risco-de-pessoas-singulares-coletivas.md) associado a cada registo. Para o fazer, necessita de utilizar pelo menos dois [endpoints de registos](registrations.md). Exemplificando:
 
-1. Adicione o registo ou transação através do endpoint [`/add_questionnaire`](registrations.md#adicao-de-um-registo). Este endpoint aceita várias propriedades enviadas num objeto `questionnaire_data`. \
-   Esta função irá retornar o `id` do registo ou transação criado(a).
-2. Depois, poderá obter a informação sobre o registo através da função [`get_questionnaires`](registrations.md#obter-registos) especificando o `id` do registo que acabou de criar.\
-   Esta função devolve [informação completa](registrations.md#legenda) sobre o registo ou transação que está a consultar.
-
-#### Vantagens
-
-* Permite a criação de múltiplos registos na aplicação da PEPData.
-
-#### Desvantagens
-
-* Nem todos os campos do registo são permitidos na criação do mesmo. Podendo ter que abrir o registo para o completar na aplicação da PEPData.
+1. Adicione o cliente ou transação através do endpoint [`/add_questionnaire`](registrations.md#adicao-de-um-registo). Este endpoint aceita várias propriedades enviadas num objeto `questionnaire_data`, permitindo-lhe popular uma grande parte dos campos disponíveis logo no momento da criação do registo.\
+   Esta função irá retornar o `id` do cliente ou transação criado(a).
+2. Depois, poderá obter a informação sobre o registo através da função [`get_questionnaires`](registrations.md#obter-registos) iterando ao longo das páginas existentes ou especificando o `id` do registo que acabou de criar.\
+   Esta função devolve [informação completa](registrations.md#legenda) sobre o cliente ou transação que está a consultar.

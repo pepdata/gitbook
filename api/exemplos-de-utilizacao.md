@@ -43,3 +43,20 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 
 * Solução mais complexa de implementar.
 * Não adequada no caso de precisar de pesquisar pessoas em tempo real.
+
+## Criação de registos de clientes ou transações e obtenção do risco
+
+Corresponde ao exemplo mais avançado de utilização. Para seguir esta via necessita de utilizar pelo menos dois [endpoints de registos](registrations.md). A título de exemplo, propõe-se o seguinte fluxo de trabalho:
+
+1. Adicione o registo ou transação através do endpoint [`/add_questionnaire`](registrations.md#adicao-de-um-registo). Este endpoint aceita várias propriedades enviadas num objeto `questionnaire_data`. \
+   Esta função irá retornar o `id` do registo ou transação criado(a).
+2. Depois, poderá obter a informação sobre o registo através da função [`get_questionnaires`](registrations.md#obter-registos) especificando o `id` do registo que acabou de criar.\
+   Esta função devolve [informação completa](registrations.md#legenda) sobre o registo ou transação que está a consultar.
+
+#### Vantagens
+
+* Permite a criação de múltiplos registos na aplicação da PEPData.
+
+#### Desvantagens
+
+* Nem todos os campos do registo são permitidos na criação do mesmo. Podendo ter que abrir o registo para o completar na aplicação da PEPData.

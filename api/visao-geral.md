@@ -57,8 +57,7 @@ Alguns endpoints devolvem múltiplos resultados, podendo fazê-lo de forma pagin
         ...
     ],
     "page": X,
-    "max_results_per_page": Y,
-    "total": Z
+    "max_results_per_page": Y
 }
 ```
 

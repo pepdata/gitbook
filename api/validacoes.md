@@ -93,8 +93,7 @@ Id personalizável da validação
             }
         ],
         "page": 1,
-        "max_results_per_page": 50,
-        "total": 2
+        "max_results_per_page": 50
     },
     "version": "0.1",
     "timestamp": 1588599744111

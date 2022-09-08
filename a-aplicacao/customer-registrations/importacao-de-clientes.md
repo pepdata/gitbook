@@ -4,15 +4,11 @@ A nova importação de clientes permite-lhe, com facilidade e rapidez, fazer o u
 
 Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
 
-* Organizações
-  * Ficheiro com os seus clientes organizacionais
-* Pessoas singulares
-  * Ficheiro com os membros da administração e beneficiários efetivos dos seus clientes
-* Relações entre pessoas singulares e organizações
-  * Ficheiro que mapeia as relações entre as organizações e as pessoas singulares mencionadas anteriormente
-  * Este deve ser o último ficheiro a ser importado, só sendo aceite caso os dois restantes já tenham sido inseridos
+* Transações de bens
+* Transações de serviços
+* Transações de Subscrição de Fundos/Oportunidades
 
-Após a criação destes 3 ficheiros, poderá proceder à sua importação através do botão "Importar Registos", presente na página "Registo de Clientes".
+Após a criação de um ou mais destes ficheiros, poderá proceder à sua importação através do botão "Importar Registos", presente na página "Registo de Transações".
 
 ## Detalhes dos ficheiros a importar
 

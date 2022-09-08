@@ -11,6 +11,7 @@
 ## A aplicação
 
 * [Registo de transações](a-aplicacao/registo-de-transacoes/README.md)
+  * [Importação de transações](a-aplicacao/registo-de-transacoes/importacao-de-transacoes.md)
   * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
 * [Registos de clientes](a-aplicacao/customer-registrations/README.md)
   * [Perguntas frequentes](a-aplicacao/customer-registrations/perguntas-frequentes.md)

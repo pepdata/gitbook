@@ -26,7 +26,7 @@ Neste momento, encontram-se disponíveis as seguintes secções de informação:
 
 ## Como funciona
 
-1. Pesquise manualmente ou importe um ficheiro com nome e/ou o NIPC das organizações a investigar
+1. Pesquise manualmente ou importe um ficheiro com o NIPC e/ou o nome das organizações a investigar
 2. Defina as secções de informação que pretende obter
 3. Submeta o pedido de investigação
 4. O pedido será, logo que possível, aprovado por um gestor da PEPData
@@ -40,9 +40,9 @@ Neste momento, encontram-se disponíveis as seguintes secções de informação:
 <summary>Quais as características do ficheiro a carregar?</summary>
 
 O ficheiro a carregar deverá ter, na primeira linha, os campos: "vat\_number" e/ou "name" das organizações a investigar. Exemplo:\
-name, vat\_number \
-PEPDATA, 514932295\
-IBERINFORM, ESA28382927
+vat\_number, name\
+514932295, PEPDATA\
+ESA28382927, IBERINFORM
 
 </details>
 

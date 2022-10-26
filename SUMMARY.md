@@ -16,6 +16,7 @@
   * [Perguntas Frecuentes](a-aplicacao/registo-de-clientes/perguntas-frecuentes.md)
   * [Importación de Clientes](a-aplicacao/registo-de-clientes/importacion-de-clientes.md)
   * [Clasificación del riesgo de las personas físicas/colectivas](a-aplicacao/registo-de-clientes/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
+* [Investigación](a-aplicacao/investigacion.md)
 * [Validaciones](a-aplicacao/validacoes/README.md)
   * [Adición manual](a-aplicacao/validacoes/adicao-manual.md)
   * [Análisis manual](a-aplicacao/validacoes/analise-manual.md)

@@ -101,3 +101,21 @@ PEPData API Configuration
 {% endfile %}
 
 Uma vez importada a configuração no Postman, irá precisar de definir a variável `API_KEY` no separador de Autorização.
+
+### FAQs
+
+<details>
+
+<summary>Como posso encontrar a minha chave para o acesso por API?</summary>
+
+A chave para aceder através da API está disponível no seu perfil. Basta gerá-la carregando no botão, e copiá-la para estabelecer a ligação que pretender.
+
+</details>
+
+<details>
+
+<summary>Além da API, que outros tipos de acesso existem?</summary>
+
+A PEPData dispões de três tipos de acessos. Pode aceder à aplicação através do nosso website, por ligação por API ou ainda através do download de lista. Este último acesso é normalmente utilizador por cliente com um maior número de dados.
+
+</details>

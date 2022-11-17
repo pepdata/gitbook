@@ -14,7 +14,6 @@
   * [Importação de transações](a-aplicacao/registo-de-transacoes/importacao-de-transacoes.md)
   * [Categorização do risco da transação](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
 * [Registos de clientes](a-aplicacao/customer-registrations/README.md)
-  * [Perguntas frequentes](a-aplicacao/customer-registrations/perguntas-frequentes.md)
   * [Importação de clientes](a-aplicacao/customer-registrations/importacao-de-clientes.md)
   * [Categorização do risco de pessoas singulares/coletivas](a-aplicacao/customer-registrations/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
 * [Investigação](a-aplicacao/research.md)
@@ -47,6 +46,7 @@
 
 ## Outros
 
+* [FAQs Gerais](outros/faqs-gerais.md)
 * [Contactos](outros/contactos.md)
 * [Fontes relevantes](outros/fontes-relevantes.md)
 * [Termos e Condições](outros/termos-e-condicoes.md)

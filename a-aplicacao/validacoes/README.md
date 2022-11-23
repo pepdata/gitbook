@@ -47,3 +47,66 @@ Si usa los filtros para incluir [validaciones ](../../glossario/glossario-aplica
 * Globo translúcido: significa que el país introducido en la validación no está sancionado
 
 ![Ejemplo de validaciones completas](../../.gitbook/assets/validações-feitas.jpg)
+
+### FAQs
+
+<details>
+
+<summary>¿Todos los clientes tienen acceso a la función de validaciones?</summary>
+
+No. Esta funcionalidad es de pago, por lo que es exclusiva para quienes la hayan adquirido.
+
+</details>
+
+<details>
+
+<summary>El estado de mi cliente ha cambiado. ¿Puedo validarlo de nuevo?</summary>
+
+Sí. Cuando reciba una notificación de que el estado de un cliente ha cambiado, puede volver al menú de validaciones y ver los detalles de esa persona.
+
+</details>
+
+<details>
+
+<summary>¿Sólo es posible buscar por nombre?</summary>
+
+La búsqueda puede realizarse con dos nombres y/o fecha de nacimiento y país. Estos datos se utilizan para cumplir plenamente con la ley RGPD.
+
+</details>
+
+<details>
+
+<summary>No he obtenido ningún resultado en mi búsqueda, ¿por qué?</summary>
+
+Si no obtiene ningún resultado, significa que en las listas de plataforma no hay ningún nombre con algún grado de similitud con el nombre introducido. En este caso, se le puede considerar una persona "no identificable".
+
+Si está seguro de que esta persona es identificable, puede consultar: «[¿Para qué sirve el botón "añadir persona"?](./#undefined)»
+
+</details>
+
+<details>
+
+<summary>¿Para qué sirve el botón "añadir persona"?</summary>
+
+El botón "añadir persona" se utiliza para poner a una persona bajo vigilancia si usted la reconoce como PRP, miembro de la familia o asociado de PRP, pero que aún no figura en la plataforma. De este modo, puede añadir directamente una persona a su base de datos y validarla automáticamente.
+
+</details>
+
+<details>
+
+<summary>¿Por qué alguien no está todavía en la lista PRP?</summary>
+
+Cuando el nombre que busca aún no está disponible en las listas de PEPData, es porque la fuente oficial aún no está disponible. Todas las fuentes utilizadas por PEPData son oficiales y se comprueban regularmente, actualizando nuestras listas de forma permanente.
+
+</details>
+
+<details>
+
+<summary>Sólo conozco apellidos abreviados (por ejemplo, P., T. M.), ¿obtengo resultados?</summary>
+
+Sí, puede obtener resultados con abreviaturas. Sin embargo, también es importante definir bien las reglas de validación para no obtener resultados engañosos. Para que los resultados sean más fiables, el nombre debe estar completo o tener al menos dos nombres completos y la fecha de nacimiento. &#x20;
+
+Cuanto más completos sean los datos introducidos, menos falsos positivos obtendrá.&#x20;
+
+</details>
+

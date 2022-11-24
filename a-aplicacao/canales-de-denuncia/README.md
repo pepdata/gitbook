@@ -17,8 +17,8 @@ Existen requisitos legales que obligan a las empresas a disponer de canales inte
 
 Se trata de soluciones sencillas y 100% online para denuncias anónimas, que permiten informar de situaciones como la corrupción, los prejuicios, la violencia y el abuso de poder. En PEPData tenemos:
 
-* Un canal de Denuncias Interno, donde la información es elevada de forma segura al responsable de su organización;
-* Un Canal de Denuncias Externo, en el que la información se envía directamente para que la analice nuestro equipo de abogados.
+* Un [canal de Denuncias Interno](canal-de-denuncias-interno.md), donde la información es elevada de forma segura al responsable de su organización;
+* Un [canal de Denuncias Externo](canal-de-denuncias-interno-de-gestion-externa.md), en el que la información se envía directamente para que la analice nuestro equipo de abogados.
 
 ### FAQs
 
@@ -26,11 +26,11 @@ Se trata de soluciones sencillas y 100% online para denuncias anónimas, que per
 
 <summary>¿Cuál es la diferencia entre los dos canales de denuncia interna de PEPData?</summary>
 
-El Canal de Denuncias de Gestión Interna es un canal sencillo, que envía automáticamente la información al responsable de su organización de forma anónima y segura.
+El [Canal de Denuncias de Gestión Interna](canal-de-denuncias-interno.md) es un canal sencillo, que envía automáticamente la información al responsable de su organización de forma anónima y segura.
 
 En este caso, corresponde al responsable de su organización ocuparse de todos los procesos siguientes exigidos por la ley.
 
-El Canal de Denuncias Interno de Gestión Externa Funciona de la misma forma, pero el informe interno se envía directamente a una entidad externa a su organización. Esta entidad tramitará todos los procedimientos dentro de los plazos legales desde el momento en que se reciba la denuncia.
+El [Canal de Denuncias Interno de Gestión Externa](canal-de-denuncias-interno-de-gestion-externa.md) Funciona de la misma forma, pero el informe interno se envía directamente a una entidad externa a su organización. Esta entidad tramitará todos los procedimientos dentro de los plazos legales desde el momento en que se reciba la denuncia.
 
 En este caso concreto la entidad es Quismondo y Asociados.
 
@@ -40,7 +40,7 @@ En este caso concreto la entidad es Quismondo y Asociados.
 
 <summary>¿Cuál es la ventaja del canal de denuncia interno de gestión externa?</summary>
 
-La principal ventaja el Canal de Denuncias Interno de Gestión Externa es que todos los trámites exigidos por la ley tras recibir una denuncia son realizados por un equipo de abogados especializados.
+La principal ventaja el [Canal de Denuncias Interno de Gestión Externa](canal-de-denuncias-interno-de-gestion-externa.md) es que todos los trámites exigidos por la ley tras recibir una denuncia son realizados por un equipo de abogados especializados.
 
 </details>
 

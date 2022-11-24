@@ -3,12 +3,12 @@
 En la  [página de validaciones](./), puede realizar un análisis automático de cada validación que tenga un estado incompleto, a través del botón "Aplicar reglas".&#x20;
 
 {% hint style="warning" %}
-Por defecto, las reglas a aplicar están desactivadas y deben ser activadas por usted a través de la [página de configuración](../configuracoes.md). Sin embargo, antes de hacerlo, se recomienda encarecidamente la lectura de la siguiente información, ya que la aplicación de las reglas de validación, sin su correcta comprensión, puede provocar cambios no deseados y complicados o imposibles de revertir.
+Por defecto, las reglas a aplicar están desactivadas y deben ser activadas por usted a través de la [página de configuración](../configuracoes/). Sin embargo, antes de hacerlo, se recomienda encarecidamente la lectura de la siguiente información, ya que la aplicación de las reglas de validación, sin su correcta comprensión, puede provocar cambios no deseados y complicados o imposibles de revertir.
 {% endhint %}
 
 ### Reglas  de validación
 
-Hay dos reglas de validación, que se pueden activar o desactivar en la [página de configuración](../configuracoes.md):&#x20;
+Hay dos reglas de validación, que se pueden activar o desactivar en la [página de configuración](../configuracoes/):&#x20;
 
 1. Considera como no identificables los nombres que no tienen correspondencia.&#x20;
 2. Considera como identificables todos los nombres con una solo correspondencia posible y un alto [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
@@ -23,8 +23,8 @@ En este ejemplo, considere que ambas reglas de validación están activas. Así 
 1. Busca en la base de datos PEPData todas las personas identificables con un nombre similar al de la [validación](../../glossario/glossario-aplicacao.md#validacao).
 2. Mediante el paso anterior, se obtiene una lista de resultados sugeridos, como se describe en la siguiente nota:
    1. Si no hay coincidencias sugeridas, porque la regla 1 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como no identificable.
-   2. Si sólo hay un resultado y su [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es mayor que el [threshold de validación](../configuracoes.md#threshold-de-validacao), porque la regla 2 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como identificable.&#x20;
-   3. Si sólo hay un resultado y el [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es inferior o igual al [threshold de validación](../configuracoes.md#threshold-de-validacao), la validación quedará incompleta y habrá que realizar un [análisis manual](analise-manual.md).
+   2. Si sólo hay un resultado y su [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es mayor que el [threshold de validación](../configuracoes/#threshold-de-validacao), porque la regla 2 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como identificable.&#x20;
+   3. Si sólo hay un resultado y el [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es inferior o igual al [threshold de validación](../configuracoes/#threshold-de-validacao), la validación quedará incompleta y habrá que realizar un [análisis manual](analise-manual.md).
    4. Si existen varios resultados, la [validación](../../glossario/glossario-aplicacao.md#validacao) quedará incompleta y será necesario un [análisis manual](analise-manual.md).
 {% endhint %}
 
@@ -55,7 +55,7 @@ Como máximo, se le muestran los 20 resultados con mayor [grado de similitud](..
 
 #### Por opciones auxiliares
 
-Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configuración](../configuracoes.md):&#x20;
+Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configuración](../configuracoes/):&#x20;
 
 * Los nombres introducidos siempre contienen el primer nombre en la primera posición.
 * Los nombres introducidos siempre contienen el último apellido en la última posición.

@@ -30,10 +30,14 @@
   * [Aplicación de reglas](a-aplicacao/validacoes/aplicacao-de-regras.md)
   * [Informes de validación individuales](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
   * [Exportación de la validación](a-aplicacao/validacoes/download-de-validacoes.md)
-* [Canales de Denuncia](a-aplicacao/canales-de-denuncia.md)
+* [Canales de Denuncia](a-aplicacao/canales-de-denuncia/README.md)
+  * [Canal de Denuncias Interno](a-aplicacao/canales-de-denuncia/canal-de-denuncias-interno.md)
+  * [Canal de Denuncias Interno de Gestión Externa](a-aplicacao/canales-de-denuncia/canal-de-denuncias-interno-de-gestion-externa.md)
 * [Búsqueda](a-aplicacao/pesquisa.md)
 * [Historial](a-aplicacao/historico.md)
-* [Configuración](a-aplicacao/configuracoes.md)
+* [Configuración](a-aplicacao/configuracoes/README.md)
+  * [Configuración del Formulario de Registro de Cliente](a-aplicacao/configuracoes/configuracion-del-formulario-de-registro-de-cliente.md)
+  * [Configuración de Riesgo](a-aplicacao/configuracoes/configuracion-de-riesgo.md)
 * [Administración de Usuarios](a-aplicacao/administracao-de-utilizadores.md)
 
 ## API

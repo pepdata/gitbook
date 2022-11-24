@@ -1,6 +1,6 @@
 # Importación de validaciones
 
-En la [página de validaciones](../configuracoes.md#validacoes), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacion) para agregar. Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
+En la [página de validaciones](../configuracoes/#validacoes), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacion) para agregar. Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
 
 Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./).
 

@@ -38,7 +38,7 @@ Como máximo, se le muestran los 20 resultados con mayor grado de similitud.
 
 #### Por opciones auxiliares
 
-Las siguientes opciones auxiliares pueden activarse o desactivarse en la[ página de configuración: ](../configuracoes.md#validacoes)
+Las siguientes opciones auxiliares pueden activarse o desactivarse en la[ página de configuración: ](../configuracoes/#validacoes)
 
 * Los nombres introducidos siempre contienen el primer nombre en la primera posición.
 * Los nombres introducidos siempre contienen el último apellido en la última posición.

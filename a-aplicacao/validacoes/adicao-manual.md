@@ -11,8 +11,8 @@ Nesta janela pode preencher informação relativa ao nome, data de nascimento, p
 
 #### Nome
 
-* No mínimo, apenas são permitidos nomes de pessoas com pelo menos 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
-  Estes requisitos mínimos existem de forma a garantir que o sistema tem a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é identificável.&#x20;
+* No mínimo, apenas são permitidos nomes de pessoas com pelo menos 2 nomes. No entanto, recomendamos que, no mínimo, sejam introduzidos 2 nomes e a data de nascimento. \
+  Esta recomendação existe para que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é identificável.&#x20;
 * Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente. \
   Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
 * Para além dos acima mencionados,  apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").  &#x20;

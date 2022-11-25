@@ -1,0 +1,2 @@
+transaction_name, id_custom, fund_name, value_in_euros, number_of_subscribed_participation_units, iban, swift, contact_email
+fund name, 0003, name of the fund, 0000000000, 1111111111, 2, , test@email.com

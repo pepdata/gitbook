@@ -11,6 +11,7 @@
 ## La Aplicación <a href="#a-aplicacao" id="a-aplicacao"></a>
 
 * [Registro de Transacciones](a-aplicacao/registo-de-transacoes/README.md)
+  * [Importación de Transacciones](a-aplicacao/registo-de-transacoes/importacion-de-transacciones.md)
   * [Categorización del riesgo de transacción](a-aplicacao/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
   * [Configuración del Formulario](a-aplicacao/registo-de-transacoes/configuracion-del-formulario.md)
 * [Registro de Clientes](a-aplicacao/registo-de-clientes/README.md)

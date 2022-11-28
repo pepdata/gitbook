@@ -51,6 +51,7 @@
 
 ## Otros <a href="#outros" id="outros"></a>
 
+* [FAQs Generales](outros/faqs-generales.md)
 * [Contactos](outros/contactos.md)
 * [Fuentes relevantes](outros/fontes-relevantes.md)
 * [Condiciones Generales](outros/termos-e-condicoes.md)

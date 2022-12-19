@@ -78,7 +78,7 @@ A pesquisa pode ser feita com dois nomes e/ou data de nascimento e país. Estes 
 
 <summary>Não obtive resultados na minha pesquisa, porquê?</summary>
 
-Se não obteve nenhum resultado, significa que nas listas da platagorma, não se encontra nenhum nome com algum grau de semelhança com o nome introduzido. Neste caso, poderá considerá-lo como pessoa "não identificável".
+Se não obteve nenhum resultado, significa que nas listas da plataforma, não se encontra nenhum nome com algum grau de semelhança com o nome introduzido. Neste caso, poderá considerá-lo como pessoa "não identificável".
 
 Se tiver a certeza que esta pessoa é identificável, peja a resposta à pergunta: [«Para que serve o botão "adicionar pessoa"?»](./#para-que-serve-o-botao-adicionar-pessoa)
 

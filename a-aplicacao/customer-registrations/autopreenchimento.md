@@ -1,6 +1,6 @@
 # Autopreenchimento
 
-Porque sabemos que nem sempre é fácil conseguir todos os dados de que precisa, desenvolvemos esta ferramenta da autopreenchimneto.
+Porque sabemos que nem sempre é fácil conseguir todos os dados de que precisa, desenvolvemos esta ferramenta de autopreenchimento.
 
 Esta é uma solução para preencher automaticamente os dados do registo do seu cliente relativamente a: beneficiários efetivos, dados gerais e estrutura de propriedade e controlo.
 

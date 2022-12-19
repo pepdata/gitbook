@@ -111,7 +111,7 @@ A identificação de pessoas singulares é efetuada com base num método de iden
 
 #### Base de dados
 
-A base de dados é proprietária e exclusiva da PEPData, sendo atualizada diariamente.\
+A base de dados é propriedade exclusiva da PEPData, sendo atualizada diariamente.\
 Esta base de dados possui as seguintes características:
 
 * \~130.000 [pessoas identificáveis](../glossario/glossario-aplicacao.md#pessoa-identificavel) portuguesas ([pessoas politicamente expostas](../glossario/glossario-legal-portugal.md#pessoa-politicamente-exposta), [membros próximos da família](../glossario/glossario-legal-portugal.md#membro-proximo-da-familia), [pessoas reconhecidas como estreitamente associadas](../glossario/glossario-legal-portugal.md#pessoa-reconhecida-como-estreitamente-associada) ou [titulares de outro cargo político ou público](../glossario/glossario-legal-portugal.md#titular-de-outros-cargos-politicos-ou-publicos))
@@ -126,7 +126,7 @@ Estão agregadas à base de dados da PEPData as seguintes listas de sanções in
 
 #### Algoritmo de comparação de nomes de pessoas
 
-O algoritmo utilizado na comparação de nomes é proprietário e exclusivo da PEPData.\
+O algoritmo utilizado na comparação de nomes é propriedade exclusiva da PEPData.\
 Este permite comparar dois nomes, computando um [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca) que é utilizado para aferir a semelhança entre os nomes inseridos pelo cliente e os nomes existentes na base de dados.
 
 #### Threshold de classificação

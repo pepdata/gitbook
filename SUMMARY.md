@@ -39,7 +39,7 @@
 * [Histórico](a-aplicacao/historico.md)
 * [Configurações](a-aplicacao/configuracoes/README.md)
   * [Modelação do Formulário de Registo de Cliente](a-aplicacao/configuracoes/modelacao-do-formulario-de-registo-de-cliente.md)
-  * [Configurações do risco](a-aplicacao/configuracoes/configuracoes-do-risco.md)
+  * [Configurações de risco](a-aplicacao/configuracoes/configuracoes-de-risco.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
 
 ## API

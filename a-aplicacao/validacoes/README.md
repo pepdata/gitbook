@@ -62,7 +62,7 @@ Não. Esta funcionalidade é paga, consequentemente é exclusiva para quem a adq
 
 <summary>O estado do meu cliente sofreu alterações. Posso validá-lo novamente?</summary>
 
-Sim. Quando receber a notificação de que um estado de cliente sofreu alterações, poe voltar ao menu de validações e ver os detalhes dessa pessoa.
+Sim. Quando receber a notificação de que um estado de cliente sofreu alterações, pode voltar ao menu de validações e ver os detalhes dessa pessoa.
 
 </details>
 

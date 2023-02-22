@@ -26,7 +26,7 @@ Actualmente están disponibles los siguientes apartados de información:
 
 ## Cómo funciona
 
-1. Busque manualmente o importe un archivo con el CIF y/o el nombre de las organizaciones a investigar
+1. Busque manualmente o importe un archivo con el país y el CIF y/o el nombre de las organizaciones a investigar
 2. Defina las secciones de información que desea obtener
 3. Presente la solicitud de investigación
 4. La solicitud será aprobada por un gestor de PEPData lo antes posible
@@ -39,10 +39,10 @@ Actualmente están disponibles los siguientes apartados de información:
 
 <summary>¿Cuáles son las características del archivo a cargar?</summary>
 
-El archivo que se cargue debe tener, en la primera línea, los campos: "vat\_number" y/o "name" de las organizaciones a investigar. Ejemplo:\
-vat\_mumber, name\
-514932295, PEPDATA\
-ESA28382927, IBERINFORM
+El archivo que se cargue debe tener, en la primera línea, los campos: "vat\_number" y/o "name" y "country" de las organizaciones a investigar. Ejemplo:\
+vat\_mumber, name; country\
+514932295, PEPDATA; Portugal\
+ESA28382927, IBERINFORM; Espanha
 
 </details>
 

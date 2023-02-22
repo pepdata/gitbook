@@ -39,7 +39,7 @@ Neste momento, encontram-se disponíveis as seguintes secções de informação:
 
 <summary>Quais as características do ficheiro a carregar?</summary>
 
-O ficheiro a carregar deverá ter, na primeira linha, os campos: "vat\_number" e/ou "name" das organizações a investigar. Exemplo:\
+O ficheiro a carregar deverá ter, na primeira linha, os campos: "vat\_number" e/ou "name" e "country" das organizações a investigar. Exemplo:\
 vat\_number; name; country\
 514932295; PEPDATA; Portugal\
 ESA28382927; IBERINFORM; Espanha

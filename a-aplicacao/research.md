@@ -26,7 +26,7 @@ Neste momento, encontram-se disponíveis as seguintes secções de informação:
 
 ## Como funciona
 
-1. Pesquise manualmente ou importe um ficheiro com o NIPC e/ou o nome das organizações a investigar
+1. Pesquise manualmente ou importe um ficheiro com o país e NIPC e/ou o nome das organizações a investigar
 2. Defina as secções de informação que pretende obter
 3. Submeta o pedido de investigação
 4. O pedido será, logo que possível, aprovado por um gestor da PEPData

@@ -1,14 +1,11 @@
 # Importação de clientes
 
-A nova importação de clientes permite-lhe, com facilidade e rapidez, fazer o upload dos seus clientes para a plataforma da PEPData, criando automaticamente um registo para cada cliente.
+A importação de clientes permite-lhe, com facilidade e rapidez, fazer o upload dos seus clientes para a plataforma da PEPData, criando automaticamente um registo para cada um.
 
 Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
 
-*   Organizações
-
-    * Ficheiro com os seus clientes empresa
-
-    com seus clientes organizacionais pessoas físicas Arquivo com os membros da administração e beneficiários efetivos Relações entre pessoas físicas e organizações Arquivo que mapeia as relações entre as organizações e os indivíduos mencionados acima Este deve ser o último arquivo a ser importado, só sendo aceito se os dois restantes já tiverem sido inseridos Após criar esses 3 arquivos, você pode importá-los usando o botão "Importar Registros" na página "Cadastro de Clientes".
+* Organizações
+  * Ficheiro que inclui os seus clientes empresa
 * Pessoas Sigulares
   * Ficheiro com os membros da administração ou beneficiários efetivos
 * Relações entre os clientes individuais e as organizações

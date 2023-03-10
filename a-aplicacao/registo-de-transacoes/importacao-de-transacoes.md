@@ -1,6 +1,6 @@
 # Importação de transações
 
-A nova importação de clientes permite-lhe, com facilidade e rapidez, fazer o upload dos seus clientes para a plataforma da PEPData, criando automaticamente um registo para cada cliente.
+A importação de tansações permite-lhe, com facilidade e rapidez, fazer o upload das suas transações para a plataforma da PEPData, criando automaticamente um registo para cada uma.
 
 Para tal, por favor divida a informação a importar em 3 ficheiros distintos:
 

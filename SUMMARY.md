@@ -36,6 +36,7 @@
   * [Canal de Denúncias Interno](a-aplicacao/canais-de-denuncia/canal-de-denuncias-interno.md)
   * [Canal de Denúncias Interno com Gestão Externa](a-aplicacao/canais-de-denuncia/canal-de-denuncias-interno-com-gestao-externa.md)
 * [Pesquisa](a-aplicacao/pesquisa.md)
+* [Adverse Media](a-aplicacao/adverse-media.md)
 * [Histórico](a-aplicacao/historico.md)
 * [Configurações](a-aplicacao/configuracoes/README.md)
   * [Modelação do Formulário de Registo de Cliente](a-aplicacao/configuracoes/modelacao-do-formulario-de-registo-de-cliente.md)

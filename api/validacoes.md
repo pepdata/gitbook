@@ -108,9 +108,8 @@ Id personalizável da validação
 * **vatin**: nif da validação.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
-* i**d\_country\_nationality**: código do país da nacionalidade.
-* i**d\_country\_address**: código do país de residência.
-* **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* i**d\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* i**d\_country\_address**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
 * **source**: origem da validação.&#x20;
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.

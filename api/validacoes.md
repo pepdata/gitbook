@@ -105,8 +105,11 @@ Id personalizável da validação
 ### Legenda
 
 * **id**: id da validação.
+* **vatin**: nif da validação.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
+* i**d\_country\_nationality**: código do país da nacionalidade.
+* i**d\_country\_address**: código do país de residência.
 * **id\_country**: país da validação, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
 * **source**: origem da validação.&#x20;
@@ -148,6 +151,10 @@ Formato: 0/1
 Default: 0
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="vatin" %}
+Nif da validação
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="name" type="string" %}
 Nome da validação
 {% endswagger-parameter %}
@@ -166,8 +173,8 @@ Formato: yyyy-mm-dd
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country" type="string" %}
-País da validação. 
+{% swagger-parameter in="body" name="country_nationality" type="string" %}
+País de nacionalidade da validação. 
 
 \
 
@@ -177,6 +184,13 @@ Formato: Nome do país (ver nota abaixo)
 \
 
 
+Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="country_address" %}
+País de residência da validação.
+
+Formato: Nome do país (ver nota abaixo)\
 Default: null
 {% endswagger-parameter %}
 

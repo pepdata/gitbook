@@ -94,9 +94,11 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 ### Leyenda
 
 * **id**: id de validación.
+* **vatin:** nif de la validación.
 * **name**: nombre de validación.
 * **birth\_date**: fecha de nacimiento de la validación.
-* **id\_country**: país de validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **id\_country\_nationality**: país de nacionalidad de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **id\_country\_address**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **country\_sanctioned**: booleano que describe si el país de validación está sancionado (1) o no (0).
 * **source**: origen de la validación.
 * **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
@@ -130,6 +132,10 @@ Formato: 0/1
 Default: 0
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="vatin" type="string" %}
+Nif de la validación
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="name" type="string" %}
 Nombre de validación
 {% endswagger-parameter %}
@@ -148,8 +154,8 @@ Formato: yyyy-mm-dd
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country" type="string" %}
-País de la validación. 
+{% swagger-parameter in="body" name="country_nationality" type="string" %}
+País de nacionalidad de la validación. 
 
 \
 
@@ -160,6 +166,24 @@ Formato: Nombre del país (véase la nota más abajo)
 
 
 Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="country_address" type="string" %}
+País de residencia de la validación. 
+
+\
+
+
+Formato: Nombre del país (véase la nota más abajo)
+
+\
+
+
+Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_custom" type="string" %}
+id personalizable de la validación
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validação adicionada com sucesso." %}

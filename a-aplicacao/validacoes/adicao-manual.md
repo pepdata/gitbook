@@ -2,7 +2,7 @@
 
 En la[ página de validaciones](./), puede agregar manualmente una validación a través del botón "+ Agregar validación", que le da acceso a una ventana para hacerlo
 
-En esta ventana puede rellenar la información relativa al nombre, la fecha de nacimiento y el país de la persona que desea validar.
+En esta ventana puede rellenar la información relativa al nombre, el nif, la fecha de nacimiento y los países de la persona que desea validar.
 
 ![](../../.gitbook/assets/gif-validação.gif)
 

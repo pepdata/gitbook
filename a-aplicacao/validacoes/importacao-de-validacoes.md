@@ -9,10 +9,10 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 * Apenas as extensões .csv ou .txt são permitidas.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: Nome, Data de nascimento, País, ID.\
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: Nome, Data de nascimento, País de Nacionalidade, País de Residência, ID, se não é identificável.\
   Qualquer um dos seguintes exemplos abaixo representa uma validação no formato correto:\
-  297592475, André Pinheiro, 31-12-1980, Portugal, Brasil, 281075964\
-  208032428, Ricardo Sousa Vieira Armando Rui Pinto, , Rússia\
+  297592475, André Pinheiro, 31-12-1980, Portugal, Brasil, 281075964, 0\
+  208032428, Ricardo Sousa Vieira Armando Rui Pinto, , Rússia, , 1\
   , Armando Tavares Rocha, , , IDX\
   Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento e/ou nif e país.
 * &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;

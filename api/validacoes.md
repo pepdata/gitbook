@@ -151,7 +151,7 @@ Default: 0
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="vatin" %}
-Nif da validação
+NIF da validação
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" %}

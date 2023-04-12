@@ -215,7 +215,7 @@ id personalizable de la validación
 * **id**: id de la validación creada.
 
 {% hint style="info" %}
-#### Country
+**id\_country\_nationality y id\_country\_address**&#x20;
 
 * Hay muchas formas diferentes de escribir el nombre de cada país. La aplicación PEPData puede identificar todos los nombres de países presentes en la [Lista de los Estados, territórios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm).Sin embargo, para garantizar una mayor solidez, recomendamos el uso del formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
 {% endhint %}

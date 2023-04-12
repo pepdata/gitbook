@@ -105,7 +105,7 @@ Id personalizável da validação
 ### Legenda
 
 * **id**: id da validação.
-* **vatin**: nif da validação.
+* **vatin**: NIF da validação.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
 * **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).

@@ -150,7 +150,7 @@ Formato: 0/1
 Default: 0
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="vatin" %}
+{% swagger-parameter in="body" name="vatin" type="string" %}
 NIF da validação
 {% endswagger-parameter %}
 
@@ -186,7 +186,7 @@ Formato: Nome do país (ver nota abaixo)
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_address" %}
+{% swagger-parameter in="body" name="country_address" type="string" %}
 País de residência da validação.
 
 Formato: Nome do país (ver nota abaixo)\

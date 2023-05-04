@@ -9,11 +9,11 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 * Apenas as extensões .csv ou .txt são permitidas.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: Nome, Data de nascimento, País de Nacionalidade, País de Residência, ID, se não é identificável.\
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: NIF, Nome, Data de nascimento, País de Nacionalidade, País de Residência, ID, se não é identificável.\
   Qualquer um dos seguintes exemplos abaixo representa uma validação no formato correto:\
   297592475, André Pinheiro, 31-12-1980, Portugal, Brasil, 281075964, 0\
   208032428, Ricardo Sousa Vieira Armando Rui Pinto, , Rússia, , 1\
-  , Armando Tavares Rocha, , , IDX\
+  , Armando Tavares Rocha, , , , IDX\
   Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento e/ou nif e país.
 * &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;
 * Limitado a 500.000 linhas/[validações](../../glossario/glossario-aplicacao.md#validacao) por ficheiro. &#x20;
@@ -83,7 +83,7 @@ Neste caso, sugerimos as seguintes soluções:
 4. Guardar.
 5. Voltar a fazer upload do ficheiro na plataforma da PEPData.
 
-****[**Notepad++**](https://notepad-plus-plus.org/)****
+[**Notepad++**](https://notepad-plus-plus.org/)
 
 1. Abrir o ficheiro em questão.&#x20;
 2. Codificação/Encoding -> Converter para ANSI ou UTF-8, dependendo da codificação atual.

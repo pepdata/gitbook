@@ -134,6 +134,11 @@ Default: 0
 
 {% swagger-parameter in="body" name="vatin" type="string" %}
 Nif de la validación
+
+\
+
+
+Default: null
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" %}
@@ -184,6 +189,11 @@ Default: null
 
 {% swagger-parameter in="body" name="id_custom" type="string" %}
 id personalizable de la validación
+
+\
+
+
+Default: null
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validação adicionada com sucesso." %}

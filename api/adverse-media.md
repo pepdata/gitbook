@@ -32,7 +32,6 @@ Nome entidade/pessoa a pesquisar
                     "source": "Panama Papers"
                 }
             ],
-            "count": 1
         },
         "google_adverse_media": {
             "items": [
@@ -43,7 +42,6 @@ Nome entidade/pessoa a pesquisar
                     "date": "2023-04-14"
                 }
             ],
-            "count": 1
         },
         "judicial_processes": {
             "items": [
@@ -58,7 +56,6 @@ Nome entidade/pessoa a pesquisar
                     "observations": "Execução Ordinária (Ag.Execução) Entrega Electrónica - Refª 12345678"
                 }
             ],
-            "count": 1
         }
     }
 }

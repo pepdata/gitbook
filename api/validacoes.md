@@ -250,6 +250,13 @@ key [API_KEY]
 Id da validação
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="include_iperson_details" type="boolean" %}
+Incluir informação acerca das classificações, ocupações e relações das pessoas identificáveis.\
+Formato: true/false
+
+Default: false
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="Resultados da análise de validação obtidos com sucesso." %}
 ```
 {
@@ -260,12 +267,58 @@ Id da validação
               "name": "João Pedro Silva",
               "birth_date": null,
               "score": 95
+              "classifications": [
+                    "PEP"
+                ],
+                "occupations": [
+                    {
+                        "organization": "Governo da República Portuguesa",
+                        "organ": "Ministério dos Negócios Estrangeiros",
+                        "position": "Ministro",
+                        "source": "https://test-link.com",
+                        "start_date": null,
+                        "end_date": null,
+                        "comments": null
+                    }
+                ],
+                "relationships": []
             },
             {
               "id": "BFFD688C-4618-048D-9C14-8887B1BDA173",
               "name": "João Pedro Pereira",
               "birth_date": "1933-05-25",
-              "score": 76
+              "score": 76,
+              "classifications": [
+                    "PEP",
+                    "Familiar"
+                ],
+                "occupations": [
+                    {
+                        "organization": "Governo da República Portuguesa",
+                        "organ": "Ministério dos Negócios Estrangeiros",
+                        "position": "Ministro",
+                        "source": "https://test-link.com",
+                        "start_date": "2005-01-01",
+                        "end_date": "2030-01-01",
+                        "comments": null
+                    }
+                ],
+                "relationships": [
+                    {
+                        "relationship_type": "son",
+                        "relationship_to": "Flávio Alberto Roldão",
+                        "source": "https://test-link.com",
+                        "end_date": null,
+                        "comments": null
+                    },
+                    {
+                        "relationship_type": "spouse",
+                        "relationship_to": "Albertina Hermínia da Corte",
+                        "source": "https://test-link.com",
+                        "end_date": null,
+                        "comments": null
+                    }
+                ]
             }
         ]
     },
@@ -282,6 +335,21 @@ Id da validação
 * **name**: nome da pessoa identificável.
 * **birth\_date**: data de nascimento da pessoa identificável.
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **classifications**: classificações da pessoa identificável.
+* **occupations**: lista de ocupações da pessoa identificável:
+  * **organization**: organização da ocupação.
+  * **organ**: orgão da ocupação.
+  * **position**: posição na ocupação.
+  * **source**: link da fonte que relaciona a pessoa identificável à ocupação.
+  * **start\_date:** data de início da ocupação.
+  * **end\_date:** data de fim da ocupação.
+  * **comments:** notas relevantes sobre a ocupação.
+* **relationships**: lista de relações da pessoa identificável
+  * **relationship\_type**: tipo de relação.
+  * **relationship\_to:** nome do familiar da pessoa identificável.
+  * **source:** link da fonte com informação sobre a relação.
+  * **end\_date:** data de fim da relação.
+  * **comments:** notas relevantes sobre a relação.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/determine_validation" method="post" summary="Determinação de validação" %}
 {% swagger-description %}

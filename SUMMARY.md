@@ -49,6 +49,7 @@
 * [Validações](api/validacoes.md)
 * [Registos](api/registrations.md)
 * [Pesquisa](api/pesquisa.md)
+* [Adverse Media](api/adverse-media.md)
 * [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)
 * [Exemplos de utilização](api/exemplos-de-utilizacao.md)

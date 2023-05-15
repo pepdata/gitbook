@@ -46,6 +46,7 @@
 * [Visión general](api/visao-geral.md)
 * [Validaciones](api/validacoes.md)
 * [Búsqueda](api/pesquisa.md)
+* [Medios Adversos](api/medios-adversos.md)
 * [Titulares Reales](api/beneficiary-owners.md)
 * [Ejemplos de utilización](api/exemplos-de-utilizacao.md)
 

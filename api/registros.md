@@ -249,3 +249,256 @@ _transaction_
 
 {% endswagger-response %}
 {% endswagger %}
+
+### Leyenda
+
+* **id:** Id del registro o transacción creada.
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire" summary="Edición de un registro" %}
+{% swagger-description %}
+Endpoint para editar un registro de clientes y transacciones.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="questionnaire_data" type="json" %}
+Solo puede editar el valor que necesita:
+
+Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnaire\_data) para ver qué propiedades se aceptan.
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Registro de clientes o transacciones editado" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/delete_questionnaire" summary="Eliminación de un registro" %}
+{% swagger-description %}
+Endpoint para eliminar un registro de clientes o transacciones.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" required="true" type="string" %}
+id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="El registro de clientes o transacciones fue eliminado con éxito" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% hint style="warning" %}
+**Importante**: Puede obtener un error al eliminar un registro si tiene dependencias con otros registros.
+{% endhint %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/unsubmit_questionnaire" summary="Anular el envío de un registro" %}
+{% swagger-description %}
+Endpoint para cancelar el envío de un registro de cliente o transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" %}
+id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="El registro de cliente o de transacciones se ha cancelado con éxito" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% hint style="warning" %}
+Cancelar el envío recalculará el riesgo de registro. Si tiene una categoría de riesgo configurada manualmente, se perderá.
+{% endhint %}
+
+### Leyenda
+
+* **risk:** riesgo recalculado de alta de clientes u operaciones.
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/send_questionnaire_invite" summary="Enviar una invitación para completar el registro" %}
+{% swagger-description %}
+Endpoint para enviar una invitación para completar un registro de cliente o transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="id" type="string" %}
+Id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="client_email" required="true" type="string" %}
+Correo del cliente invitado
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="language" type="string" required="true" %}
+Idioma en el que debe enviarse la invitación\
+
+
+Predeterminado: pt-PT\
+
+
+Valores aceptados:
+
+**pt-PT** (portugués)&#x20;
+
+**en** (inglés)&#x20;
+
+**es** (español)
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Invitación enviada con éxito" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/cancel_questionnaire_invite" summary="Cancelar una invitación para completar el registro" %}
+{% swagger-description %}
+Endpoint para cancelar la invitación para completar un registro de cliente o transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="client_email" required="true" type="string" %}
+Correo del cliente invitado
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Invitación cancelada con éxito" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/assign_user_to_questionnaire" summary="Asignar un usuario a un registro" %}
+{% swagger-description %}
+Endpoint para asignar un usuario a un registro de cliente o transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization " type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_user" type="string" required="true" %}
+Id de usuario
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="El usuario se ha asignado correctamente al registro de cliente o transacción." %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/assign_departments_to_questionnaire" summary="Asignar departamentos a un registro" %}
+{% swagger-description %}
+Endpoint para asignar departamentos a un cliente o registro de transacciones.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" %}
+Id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="departments" type="json" required="true" %}
+Array de departamentos\
+\
+Ejemplo:\
+\["Financiero"]
+
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Se han asignado departamentos al registro de clientes o transacciones con éxito." %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire_approval_state" summary="Editar el estado de aprobación de un registro" %}
+{% swagger-description %}
+Endpoint para editar el estado de aprobación de un cliente o registro de transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+id del regristro o transacción
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="approval_state" type="string" required="true" %}
+Estado de aprobación\
+
+
+Valores aceptados:\
+\-1 (Rechazado)\
+0 (Indeciso)\
+1 (aprobado)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="approval_change_reason" type="string" required="true" %}
+Justificación para cambiar el estado de aprobación
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="El estado de aprobación del registro de clientes o de la transacción se ha cambiado correctamente." %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/revert_questionnaire_risk" summary="Revertir el riesgo de un registro" %}
+{% swagger-description %}
+Endpoint para revertir el riesgo actual de un cliente o registro de transacciones.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Se revirtió con éxito el riesgo del registro de clientes o transacciones" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/reset_questionnaire_needs_attention" summary="Restablecer el estado "Necesita atención" de un registro" %}
+{% swagger-description %}
+Endpoint para restablecer el estado "Necesita atención" de un registro de cliente o transacción.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" %}
+Id del registro o transacción
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="El estado "Necesita atención" del registro de clientes o de transacciones se ha restablecido correctamente." %}
+
+{% endswagger-response %}
+{% endswagger %}

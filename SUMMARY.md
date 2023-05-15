@@ -48,6 +48,7 @@
 * [Búsqueda](api/pesquisa.md)
 * [Medios Adversos](api/medios-adversos.md)
 * [Titulares Reales](api/beneficiary-owners.md)
+* [Usuarios](api/usuarios.md)
 * [Ejemplos de utilización](api/exemplos-de-utilizacao.md)
 
 ## Otros <a href="#outros" id="outros"></a>

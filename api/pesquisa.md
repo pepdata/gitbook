@@ -71,7 +71,7 @@ Default: null
 De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa.md).
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/search_organizations" method="post" summary="Pesquisa de organizações sancionadas" %}
+{% swagger baseUrl="https://www.pepdata.com/api" path="/search_organization" method="post" summary="Pesquisa de organizações sancionadas" %}
 {% swagger-description %}
 Endpoint para pesquisar uma organização sancionada.
 {% endswagger-description %}

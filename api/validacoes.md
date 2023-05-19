@@ -353,10 +353,6 @@ Id de validación
 {% endswagger-response %}
 {% endswagger %}
 
-{% hint style="info" %}
-Sólo se pueden eliminar las validaciones [incompletas](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes). Si desea eliminar una validación completa, primero debe cancelar su [determinación](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes).
-{% endhint %}
-
 {% swagger baseUrl="https://www.pepdata.com/api" path="/apply_rules" method="post" summary="Aplicación de las reglas" %}
 {% swagger-description %}
 Endpoint para la aplicación de las reglas de validación.

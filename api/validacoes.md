@@ -427,10 +427,6 @@ Id da validação
 {% endswagger-response %}
 {% endswagger %}
 
-{% hint style="info" %}
-Apenas pode apagar validações [incompletas](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes). Caso pretenda apagar uma validação completa, terá primeiro de cancelar a sua [determinação](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes).
-{% endhint %}
-
 {% swagger baseUrl="https://www.pepdata.com/api" path="/apply_rules" method="post" summary="Aplicação das regras" %}
 {% swagger-description %}
 Endpoint para aplicação das regras de validação.

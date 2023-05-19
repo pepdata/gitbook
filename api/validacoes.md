@@ -306,29 +306,6 @@ Id de la persona identificable correspondiente.
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/cancel_validation" method="post" summary="Cancelación de la determinación de la validación" %}
-{% swagger-description %}
-Endpoint para cancelar la determinación de una validación.
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de validación
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="La determinación de la validación se ha anulado con éxito." %}
-```
-    "data": {},
-    "version": "0.1",
-    "timestamp": 1588599744111
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
 {% swagger baseUrl="https://www.pepdata.com/api" path="/delete_validation" method="post" summary="Eliminar la validación" %}
 {% swagger-description %}
 Endpoint para eliminar una validación.

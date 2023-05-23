@@ -199,11 +199,11 @@ _individual_
 
 `}`
 
-__
+
 
 _organization_
 
-__
+
 
 `{`
 
@@ -243,11 +243,11 @@ __
 
 `}`
 
-__
+
 
 _transaction_
 
-__
+
 
 `{`
 
@@ -277,9 +277,9 @@ __
 
 `}`
 
-__
 
-__
+
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registo ou transação criado/a." %}
@@ -420,7 +420,7 @@ Id do registo ou transação
 E-mail do cliente convidado
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="language" type="string" required="true" %}
+{% swagger-parameter in="body" name="language" type="string" required="false" %}
 Língua em que deve ser enviado o convite
 
 

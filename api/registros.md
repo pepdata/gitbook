@@ -343,7 +343,7 @@ Id del registro o transacción
 Correo del cliente invitado
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="language" type="string" required="true" %}
+{% swagger-parameter in="body" name="language" type="string" required="false" %}
 Idioma en el que debe enviarse la invitación\
 
 

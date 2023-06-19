@@ -4,7 +4,7 @@
 
 Na [página de validações](./), pode exportar validações para diferentes formatos, através do botão “Exportar”, que lhe dá acesso a uma janela de exportação.
 
-![Janela de download de validações](<../../.gitbook/assets/image (12) (1).png>)
+<figure><img src="../../.gitbook/assets/exportValidations (1).jpg" alt=""><figcaption><p>Janela para exportar validações</p></figcaption></figure>
 
 {% hint style="info" %}
 ### Sugestões
@@ -17,17 +17,25 @@ Na [página de validações](./), pode exportar validações para diferentes for
 
 O ficheiro exportado possui as seguintes colunas:
 
+* **Type**: Tipo da validação. Pode ter os valores "Individual" ou "Organization" dependendo se a validação diz respeito a uma pessoa individual ou coletiva.
 * **Id**: identificador único relativo à [validação](../../glossario/glossario-aplicacao.md#validacao).&#x20;
+* **Id\_Custom**: Identificador personalizável inserido pelo utilizador.
+* **Vatin**: Número de Identificação Fiscal associado à validação.
 * **Source**: Origem da validação. Pode ter os valores “Manual” ou “Automatic”, dependendo se a [validação](../../glossario/glossario-aplicacao.md#validacao) foi adicionada [manualmente](analise-manual.md) ou através da [importação de validações](importacao-de-validacoes.md), respetivamente.&#x20;
 * **Name**: Nome introduzido, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao).&#x20;
-* **Birth\_Date**: Data de nascimento introduzida, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao): formato dd-mm-yyyy.
-* **Country**: País introduzido, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao).&#x20;
-* **Identifiable\_Person**: 1 ou 0, caso a pessoa tenha sido [classificada](../../glossario/glossario-aplicacao.md#classificacao) como [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), ou não, respetivamente.&#x20;
-* **Id\_IPerson**: Identificador único relativo à pessoa identificada, caso a decisão tenha sido 1.&#x20;
-* **IPerson\_Classification**: Tipos de [classificação](../../glossario/glossario-aplicacao.md#classificacao) da pessoa identificada, separados por “;” no caso de vários. Estes podem ser: “PEP”, “Family Member”, “Associate” ou “Sanctioned X” em que X é a lista que identifica a pessoa como sancionada.&#x20;
-* **IPerson**: Informação acerca da pessoa identificada. Este campo possui a informação separada por “;”, seguindo o seguinte formato: nome; data de nascimento: formato dd-mm-yyyy; [ocupações](../../glossario/glossario-aplicacao.md#ocupacao) relevantes: formato cargo, [órgão](../../glossario/glossario-aplicacao.md#orgao), [organização](../../glossario/glossario-aplicacao.md#organizacao); países relevantes: formato país, relação com país.
-* **Identifiable\_Country**: 1 ou 0, caso a país da validação seja [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado), ou não, respetivamente.&#x20;
-* **Country\_Classification**: Listas onde o país se encontra sancionado, separadas por “;” no caso de várias. Formato: “Sanctioned X” em que X é a entidade que identifica a país como sancionado.
+* **Birth\_Date**: Data de nascimento introduzida, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao): formato dd-mm-yyyy. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **Country**: País introduzido, pelo utilizador, na [validação](../../glossario/glossario-aplicacao.md#validacao).
+* **Country\_Address**: País de morada associado à validação. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **Country\_Classifications**: Listas onde o país associado à validação se encontra sancionado, separadas por “;” no caso de várias. Formato: “Sanctioned X” em que X é a entidade que identifica a país como sancionado.
+* **Id\_IPerson**: Identificador único relativo à pessoa identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.&#x20;
+* **IPerson\_Classifications**: Tipos de [classificação](../../glossario/glossario-aplicacao.md#classificacao) da pessoa identificada, separados por “;” no caso de vários. Estes podem ser: “PEP”, “Family Member”, “Associate” ou “Sanctioned X” em que X é a lista que identifica a pessoa como sancionada. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.&#x20;
+* **IPerson\_Name**: Nome da pessoa identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **IPerson\_Birth\_Date**: Data de nascimento da pessoa identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **IPerson\_Occupations**: Ocupações associadas à pessoa identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **IPerson\_Family\_Relations**: Relações familiares entre a pessoa identificada e outras pessoas identificadas. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **IPerson\_Associate\_Relations**: Relações onde a pessoa identificada surge como "Associada" de outras pessoas identificadas. Esta coluna é usada apenas para guardar informação de validações de pessoas individuais.
+* **Id\_Iorganization**: Identificador único relativo à organização identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas coletivas.
+* **IOrganization\_Name**: Nome da organização identificada. Esta coluna é usada apenas para guardar informação de pessoas coletivas.
 * **Added\_At**: Data a que a [validação](../../glossario/glossario-aplicacao.md#validacao) foi adicionada: formato dd-mm-yyyy HH:MM:SS.&#x20;
 * **Added\_By**: Utilizador que adicionou a [validação](../../glossario/glossario-aplicacao.md#validacao): formato Nome (email).
 * **Determined\_At**: Data a que a [validação](../../glossario/glossario-aplicacao.md#validacao) foi determinada: formato dd-mm-yyyy HH:MM:SS.

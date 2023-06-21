@@ -141,30 +141,7 @@ Endpoint para adicionar uma validação.
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
-Instrução para ignorar a verificação de duplicados.
-
-\
-
-
-Formato: 0/1
-
-\
-
-
-Default: 0
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="vatin" type="string" %}
-NIF da validação
-
-\
-
-
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="name" type="string" %}
+{% swagger-parameter in="body" name="name" type="string" required="true" %}
 Nome da validação
 {% endswagger-parameter %}
 
@@ -182,7 +159,21 @@ Formato: yyyy-mm-dd
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_nationality" type="string" %}
+{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
+Instrução para ignorar a verificação de duplicados.
+
+\
+
+
+Formato: 0/1
+
+\
+
+
+Default: 0
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_country_nationality" type="string" %}
 País de nacionalidade da validação. 
 
 \
@@ -196,10 +187,19 @@ Formato: Nome do país (ver nota abaixo)
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_address" type="string" %}
+{% swagger-parameter in="body" name="id_country_address" type="string" %}
 País de residência da validação.
 
 Formato: Nome do país (ver nota abaixo)\
+Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="vatin" type="string" %}
+NIF da validação
+
+\
+
+
 Default: null
 {% endswagger-parameter %}
 
@@ -210,6 +210,15 @@ Id personalizável da validação
 
 
 Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="entity_type" type="string" %}
+Tipo de entidade, podendo ser: "individual" ou "organization"
+
+\
+
+
+Default: "individual"
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validação adicionada com sucesso." %}

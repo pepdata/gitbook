@@ -54,12 +54,9 @@ Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../g
 ### ¿Cuáles son las especificaciones del archivo de carga?
 
 * Una [validación](../../glossario/glossario-aplicacao.md#validacion) por línea.
-* Cualquiera de los siguientes ejemplos representa una validación en el formato correcto: \
-  297592475, André Pinheiro, 31-12-1980, Portugal, España, 123, 0 \
-  208032428, Ricardo Sousa Vieira Armando Rui Pinto, , , Rusia, , 1\
-  , Armando Tavares Rocha, , , , 456\
-  Tenga en cuenta que, en el segundo ejemplo, se agregó una coma adicional porque no hay fecha de nacimiento.
+* Una validación debe seguir el orden de los campos definidos en el encabezado.
 * La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.
+* Los números de identificación fiscal deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés,
 * La codificación del archivo debe ser utf-8 o ANSI.
 {% endhint %}
 
@@ -68,12 +65,12 @@ Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../g
 
 #### Nombre
 
-* Como mínimo, sólo se permiten 2 nombres: con nombre y primer apellido. Pero le sugerimos que ingrese al menos 2 nombres y la fecha de nacimiento, o nombre y primer y segundo apellido para que los resultados sean más correctos. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es [identificable](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
+* En el caso de validaciones relativas a personas físicas, sólo se permiten un mínimo de 2 nombres: con nombre y primer apellido. Pero le sugerimos que ingrese al menos 2 nombres y la fecha de nacimiento, o nombre y primer y segundo apellido para que los resultados sean más correctos. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es [identificable](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
 * Todos los [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), la acentuación y las mayúsculas **son** compatibles y no cambian los resultados mostrados en el proceso de análisis. Por lo tanto, puede introducir el nombre en el formato que más le convenga. \
   Por ejemplo: "Ines Marçal Romão" equivaldrá a introducir "ines marcal romao".
 * Aparte de los mencionados, sólo se aceptan espacios (" "), guiones ("-") o apóstrofes (" ' ").
-* Las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) que existen en el nombre, (como "de", "da", "y", etc.) no cambian los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
-* Las abreviaturas son compatibles. Sin embargo, éstas no pueden ir precedidas de un punto. Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
+* Las [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) que existen en el nombre de personas físicas, (como "de", "da", "y", etc.) no cambian los resultados presentados en el proceso de análisis. Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
+* Validaciones de personas físicas admiten nombres con abreviaturas . Sin embargo, éstas no pueden ir precedidas de un punto. Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
 * Todos los puntos anteriores se han aplicado para que el proceso sea lo más sólido posible. No obstante, le recomendamos que intente introducir nombres lo más parecidos al original.
 
 #### País
@@ -96,8 +93,14 @@ Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../g
 
 Si se produce un problema con los datos a introducir, aparecerá un asistente de corrección que identificará los errores encontrados en el fichero. El asistente de corrección sigue la siguiente lógica secuencial:
 
-1. Validación de los datos introducidos: nombre, fecha y país
-2. Comprobación de duplicados: si ya ha agregado una validación en el pasado, los datos que se introduzcan se considerarán duplicados. El usuario puede entonces elegir ignorar este tipo de error.
+1. Validación de fila de encabezado;
+2. Validación de los datos introducidos:
+   * name;
+   * birth\_date (en el caso de validaciones de personas físicas);
+   * country\_nationality (en el caso de validaciones de personas físicas);
+   * country (en el caso de validaciones de organizaciones);
+   * vat\_number
+3. Comprobación de duplicados: si ya ha agregado una validación en el pasado, los datos que se introduzcan se considerarán duplicados. El usuario puede entonces elegir ignorar este tipo de error.
 
 {% hint style="info" %}
 Nota: Debido a las limitaciones de espacio, si hay un gran número de errores o duplicados, es posible que no se muestren todos en el asistente de corrección. Tendrá que corregirlos y volver a cargarlos para ver los errores restantes.

@@ -1,0 +1,2 @@
+vat_number, name, birth_date, country_nationality, country_address, id_custom, unidentifiable
+297592475, André Pinheiro, 31-12-1980, Portugal, Brasil, 01, 0

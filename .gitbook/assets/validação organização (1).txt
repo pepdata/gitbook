@@ -1,2 +1,2 @@
 vat_number, name, country, id_custom, unidentifiable
-145095487, Livros e companhia, Portugal, 02, 0
+145095487, empresa importada, PT, 04, 0

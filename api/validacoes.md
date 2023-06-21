@@ -106,20 +106,25 @@ Id personalizável da validação
 
 * **id**: id da validação.
 * **vatin**: NIF da validação.
+* **source**: origem da validação.&#x20;
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
 * **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **id\_country\_address**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **country\_sanctioned**: booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
-* **source**: origem da validação.&#x20;
-* **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
+* **iperson\_classifications:**
+* **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
+* **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
+* **identifiable\_country:** booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
 * **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao).
+* **id\_organization:** id da organização que criou a validação.
 * **id\_custom**: id personalizável inserido pelo utilizador.
+* **entity\_type:** tipo da validação, podendo ser: "individual" ou "oraganization".
+* **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
+* **country\_nationality:** país de residência.
 
 {% hint style="info" %}
 **id\_country\_nationality e id\_country\_address**

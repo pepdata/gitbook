@@ -1,0 +1,2 @@
+vat_number, name, country, id_custom, unidentifiable
+145095487, empresa importada, PT, 04, 0

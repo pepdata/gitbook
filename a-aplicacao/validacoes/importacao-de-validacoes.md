@@ -4,10 +4,53 @@ Na [página de validações](./), pode fazer a importação automática de valid
 
 Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
 
+## Detalhes dos ficheiros a importar
+
+### Detalhes Gerais
+
+* A primeira linha deve conter o nome das colunas que representam a informação a importar
+* Extensão .txt ou .csv
+* Limitado a 500.000 linhas por cada importação
+
+### Ficheiro das organizações
+
+* Deve conter uma organização por linha
+* Propriedades aceites (obrigatórias a negrito):
+
+| Campos         | Notas                                                                       |
+| -------------- | --------------------------------------------------------------------------- |
+| vat\_number    |                                                                             |
+| **name**       |                                                                             |
+| country        | Suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166). |
+| id\_custom     | Identificador do cliente utilizado pela sua organização. Tem de ser único.  |
+| unidentifiable | 1 ou 0, caso seja não identificável.                                        |
+
+#### Ficheiro exemplo
+
+{% file src="../../.gitbook/assets/validação organização.txt" %}
+
+### Ficheiro das pessoas singulares
+
+* Deve conter uma pessoa singular por linha
+* Propriedades aceites (obrigatórias a negrito):
+
+| Campos               | Notas                                                                       |
+| -------------------- | --------------------------------------------------------------------------- |
+| vat\_number          |                                                                             |
+| **name**             |                                                                             |
+| birth\_date          |                                                                             |
+| country\_nationality | Suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166). |
+| country\_address     | Suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166). |
+| id\_custom           | Identificador do cliente utilizado pela sua organização. Tem de ser único.  |
+| unidentifiable       | 1 ou 0, caso seja não identificável.                                        |
+
+#### Ficheiro exemplo
+
+{% file src="../../.gitbook/assets/validação individual.txt" %}
+
 {% hint style="info" %}
 ### Quais as especificações do ficheiro de upload?
 
-* Apenas as extensões .csv ou .txt são permitidas.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: NIF, Nome, Data de nascimento, País de Nacionalidade, País de Residência, ID, se não é identificável.\
   Qualquer um dos seguintes exemplos abaixo representa uma validação no formato correto:\
@@ -16,7 +59,6 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
   , Armando Tavares Rocha, , , , IDX\
   Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento e/ou nif e país.
 * &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;
-* Limitado a 500.000 linhas/[validações](../../glossario/glossario-aplicacao.md#validacao) por ficheiro. &#x20;
 * A codificação do ficheiro deve ser utf-8 ou ANSI&#x20;
 {% endhint %}
 

@@ -1,0 +1,2 @@
+vat_number, name, birth_date, country_nationality, country_address, id_custom, unidentifiable
+181519356, Pessoa importada, 10/05/2000, PT, PT, 03, 0

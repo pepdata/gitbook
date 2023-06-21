@@ -378,8 +378,8 @@ key [API_KEY]
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_iperson" type="string" %}
-Id da pessoa identificável correspondente. 
+{% swagger-parameter in="body" name="id_entity" type="string" %}
+Id da pessoa ou organização identificável correspondente. 
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A validação foi submetida com sucesso." %}

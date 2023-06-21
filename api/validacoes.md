@@ -95,19 +95,25 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 
 * **id**: id de validación.
 * **vatin:** nif de la validación.
+* **source**: origen de la validación.
 * **name**: nombre de validación.
 * **birth\_date**: fecha de nacimiento de la validación.
 * **id\_country\_nationality**: país de nacionalidad de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **id\_country\_address**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **country\_sanctioned**: booleano que describe si el país de validación está sancionado (1) o no (0).
-* **source**: origen de la validación.
-* **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
-* **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación.
-* **decision**: booleano que describe si ha habido una coincidencia con una persona identificable (1) o no (0).
+* **decision**: booleano que describe si ha habido una coincidencia con una persona identificable.
 * **id\_iperson**: id de la persona identificable correspondiente. null si no se ha encontrado ninguna coincidencia.
+* **iperson\_classifications:** lista de clasificaciones de personas identificables.
+* **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
+* **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **determined\_at**: la fecha en la que se determinó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **determined\_by**: id del usuario que ha [determinado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación.
-* **needs\_attention**: booleano que describe si la validación necesita atención (1) o no (0).
+* **identifiable\_country:** booleano que describe si el país de validación está sancionado.
+* **needs\_attention**: booleano que describe si la validación necesita atención.
+* **id\_organization:** id de la organización que creó la validación.
+* **id\_custom:** identificación personalizable ingresada por el usuario.
+* **entity\_type:** tipo de validación, que puede ser: "individual" u "organization".
+* **id\_iorganization**: identificación de la organización identificable correspondiente. null si no hubo ninguna coincidencia.
+* **country\_nationality:** país de nacionalidad.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Agregar validación" %}
 {% swagger-description %}

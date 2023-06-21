@@ -46,7 +46,7 @@ Default: incomplete
 Valores posibles: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Validações obtidas com sucesso." %}
+{% swagger-response status="200" description="Validaciones obtenidas con éxito." %}
 ```
 {
     "data": {
@@ -208,7 +208,7 @@ Tipo de entidad, que puede ser: "individual" u "organization".
 Default: "individual"
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Validação adicionada com sucesso." %}
+{% swagger-response status="200" description="Validación añadida con éxito." %}
 ```
 
 {
@@ -221,7 +221,7 @@ Default: "individual"
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400" description="A validação a adicionar já se encontra na base de dados." %}
+{% swagger-response status="400" description="La validación a agregar ya está en la base de datos." %}
 ```
 {
     "message": "Esta validação parece já existir na base de dados"

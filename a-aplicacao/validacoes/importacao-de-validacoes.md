@@ -46,20 +46,16 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/validação individual.txt" %}
+{% file src="../../.gitbook/assets/validação individual (1).txt" %}
 
 {% hint style="info" %}
 ### Quais as especificações do ficheiro de upload?
 
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir o formato: NIF, Nome, Data de nascimento, País de Nacionalidade, País de Residência, ID, se não é identificável.\
-  Qualquer um dos seguintes exemplos abaixo representa uma validação no formato correto:\
-  297592475, André Pinheiro, 31-12-1980, Portugal, Brasil, 281075964, 0\
-  208032428, Ricardo Sousa Vieira Armando Rui Pinto, , Rússia, , 1\
-  , Armando Tavares Rocha, , , , IDX\
-  Note que, em alguns exemplos, foi colocada uma vírgula extra por não existir data de nascimento e/ou nif e país.
-* &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.&#x20;
-* A codificação do ficheiro deve ser utf-8 ou ANSI&#x20;
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir a ordem dos campos definidos no cabeçalho.&#x20;
+* &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.
+* Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês.
+* A codificação do ficheiro deve ser utf-8 ou ANSI.
 {% endhint %}
 
 {% hint style="info" %}
@@ -67,14 +63,14 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 #### Nome
 
-* No mínimo, apenas são permitidos nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
-  Estes requisitos mínimos existem de forma a garantir que o sistema tem a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
+* Em caso de validações respeitantes a pessoas singulares, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
+  Estes requisitos mínimos existem de forma a garantir que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
 * Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente. \
   Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
 * Para além dos acima mencionados,  apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").  &#x20;
-* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
+* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas singulares, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
   Exemplificando:  "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
-* Abreviaturas são suportadas. No entanto, estas não poderão ser procedidas com um ponto.\
+* As validações de pessoas singulares suportam abreviaturas no seu nome. No entanto, estas não poderão ser procedidas com um ponto.\
   Exemplificando:  "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
 * Todos os pontos anteriores foram implementados de forma a tornar o processo mais robusto possível. No entanto, recomendamos que tente introduzir nomes o mais próximo do original quanto possível.
 
@@ -98,7 +94,13 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente de correção que irá identificar os erros encontrados no ficheiro. O assistente de correção segue a seguinte lógica sequencial:
 
-1. Validação dos dados introduzidos: nome, data e país
+1. Validação dos dados introduzidos:&#x20;
+   * name;
+   * birth\_date (caso se trate de validações de pessoas singulares);
+   * country\_nationality (caso se trate de validações de pessoas singulares);
+   * country\_address (caso se trate de validações de pessoas singulares);
+   * country (caso se trate de validações de organizações;
+   * vat\_number
 2. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
 
 {% hint style="info" %}

@@ -113,7 +113,7 @@ Id personalizável da validação
 * **id\_country\_address**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
-* **iperson\_classifications:**
+* **iperson\_classifications:** lista de classificações da pessoa identificável.&#x20;
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.

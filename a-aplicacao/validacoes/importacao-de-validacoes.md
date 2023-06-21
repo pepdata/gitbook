@@ -53,7 +53,7 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir a ordem dos campos definidos no cabeçalho.&#x20;
-* &#x20;A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.
+* A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.
 * Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês.
 * A codificação do ficheiro deve ser utf-8 ou ANSI.
 {% endhint %}
@@ -94,14 +94,15 @@ Após o upload do ficheiro ter sido concluído, todas as novas [validações](..
 
 Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente de correção que irá identificar os erros encontrados no ficheiro. O assistente de correção segue a seguinte lógica sequencial:
 
-1. Validação dos dados introduzidos:&#x20;
+1. Validação da linha de cabeçalho;
+2. Validação dos dados introduzidos:&#x20;
    * name;
    * birth\_date (caso se trate de validações de pessoas singulares);
    * country\_nationality (caso se trate de validações de pessoas singulares);
    * country\_address (caso se trate de validações de pessoas singulares);
    * country (caso se trate de validações de organizações;
    * vat\_number
-2. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
+3. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
 
 {% hint style="info" %}
 Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros ou de duplicados, estes podem não ser todos mostrados no assistente de correção. Terá de efetuar a sua correção e refazer o upload para ver os erros restantes.

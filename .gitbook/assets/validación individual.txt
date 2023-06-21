@@ -1,0 +1,2 @@
+vat_number, name, birth_date, country_nationality, country_address, id_custom, unidentifiable
+181519356, Emma García, 10/05/2000, Spain, Spain, 01, 0

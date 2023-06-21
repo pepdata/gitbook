@@ -303,8 +303,8 @@ key [API_KEY]
 Id de validación
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_iperson" type="string" %}
-Id de la persona identificable correspondiente. 
+{% swagger-parameter in="body" name="id_entity" type="string" %}
+Id de la persona u organización identificable correspondiente. 
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" La validación ha sido enviada con éxito." %}

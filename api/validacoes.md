@@ -120,35 +120,12 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 Endpoint para agregar una validación.
 {% endswagger-description %}
 
+{% swagger-parameter in="body" name="name" type="string" required="true" %}
+Nombre de validación
+{% endswagger-parameter %}
+
 {% swagger-parameter in="header" name="Authentication" type="string" %}
 key [API_KEY]
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
-Instrucción para omitir el control por duplicado.
-
-\
-
-
-Formato: 0/1
-
-\
-
-
-Default: 0
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="vatin" type="string" %}
-Nif de la validación
-
-\
-
-
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="name" type="string" %}
-Nombre de validación
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="birth_date" type="string" %}
@@ -165,7 +142,21 @@ Formato: yyyy-mm-dd
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_nationality" type="string" %}
+{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
+Instrucción para omitir el control por duplicado.
+
+\
+
+
+Formato: 0/1
+
+\
+
+
+Default: 0
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_country_nationality" type="string" %}
 País de nacionalidad de la validación. 
 
 \
@@ -179,13 +170,22 @@ Formato: Nombre del país (véase la nota más abajo)
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_address" type="string" %}
+{% swagger-parameter in="body" name="id_country_address" type="string" %}
 País de residencia de la validación. 
 
 \
 
 
 Formato: Nombre del país (véase la nota más abajo)
+
+\
+
+
+Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="vatin" type="string" %}
+Nif de la validación
 
 \
 
@@ -200,6 +200,12 @@ id personalizable de la validación
 
 
 Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="entity_type" type="string" %}
+Tipo de entidad, que puede ser: "individual" u "organization".
+
+Default: "individual"
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validação adicionada com sucesso." %}

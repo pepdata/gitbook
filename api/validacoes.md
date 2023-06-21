@@ -124,7 +124,7 @@ Id personalizável da validação
 * **id\_custom**: id personalizável inserido pelo utilizador.
 * **entity\_type:** tipo da validação, podendo ser: "individual" ou "oraganization".
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
-* **country\_nationality:** país de residência.
+* **country\_nationality:** país de nacionalidade.
 
 {% hint style="info" %}
 **id\_country\_nationality e id\_country\_address**

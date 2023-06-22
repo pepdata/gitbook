@@ -122,7 +122,7 @@ Id personalizável da validação
 * **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao).
 * **id\_organization:** id da organização que criou a validação.
 * **id\_custom**: id personalizável inserido pelo utilizador.
-* **entity\_type:** tipo da validação, podendo ser: "individual" ou "oraganization".
+* **entity\_type:** tipo da validação, podendo ser: "individual" ou "organization".
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
 * **country\_nationality:** país de nacionalidade.
 

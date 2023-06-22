@@ -47,6 +47,10 @@ Ejemplos: Gobierno de España, Ejército del aire.
 
 
 
+### Organización identificable
+
+Empresa o entidad que necesite de ser identificada, de conformidad con la ley.
+
 ### Órgano
 
 Departamento, división o subdivisión dentro de una [organización](glossario-aplicacao.md#organizacion).

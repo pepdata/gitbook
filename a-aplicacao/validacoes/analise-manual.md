@@ -1,6 +1,6 @@
 # Análisis manual
 
-En la [ página de validaciones](./), puede completar una validación a través del botón correspondiente “👁”, que le da acceso a una ventana de análisis.
+En la [ página de validaciones](./), puede completar una validación a través del botón de la lupa, que le da acceso a una ventana de análisis.
 
 Esta ventana puede sugerir nombres de[ personas identificables](../../glossario/glossario-aplicacao.md#persona-identificable) relevantes, con su [grado de similitud ](../../glossario/glossario-aplicacao.md#grado-de-similitud)en relación con el nombre de[ validación](../../glossario/glossario-aplicacao.md#validacion).&#x20;
 

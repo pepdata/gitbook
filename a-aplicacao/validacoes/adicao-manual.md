@@ -6,27 +6,41 @@ Nesta janela, terá inicialmente de selecionar o tipo de validação a adicionar
 
 Após a seleção do tipo de validação, terá à disposição um conjunto de campos onde poderá preencher informação relativa à validação e que dependerão do tipo selecionado:
 
-Validação de pessoa singular:
+#### Validação de pessoa singular:
 
-* Nome
+| Campos                | Notas                                                                                                                                                       |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nome                  | Poderá ver [aqui](adicao-manual.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                           |
+| NIF                   | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
+| Data de Nascimento    |                                                                                                                                                             |
+| País de Nacionalidade |                                                                                                                                                             |
+| País de Morada        |                                                                                                                                                             |
+| ID                    | Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.                                |
 
-preencher informação relativa ao nome, nif, data de nascimento, países e um identificador (ID) da pessoa que pretende validar.  Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.&#x20;
+#### Validação de organização:
 
+| Campos | Notas                                                                                                                                                       |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nome   | Poderá ver [aqui](adicao-manual.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                           |
+| NIF    | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
+| País   |                                                                                                                                                             |
+| ID     | Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.                                |
 
+### Regras a cumprir
 
 {% hint style="info" %}
 ### O que devo saber antes de introduzir informação?
 
 #### Nome
 
-* No mínimo, apenas são permitidos nomes de pessoas com pelo menos 2 nomes. No entanto, recomendamos que, no mínimo, sejam introduzidos 2 nomes e a data de nascimento. \
+* Em caso de validações respeitantes a pessoas singulares, apenas são permitidos, no mínimo, nomes próprios com 2 nomes. No entanto, recomendamos que, no mínimo, sejam introduzidos 2 nomes e a data de nascimento. \
   Esta recomendação existe para que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é identificável.&#x20;
 * Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente. \
   Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
 * Para além dos acima mencionados,  apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").  &#x20;
-* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
+* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas singulares (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
   Exemplificando:  "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
-* Abreviaturas são suportadas. No entanto, estas não poderão ser procedidas com um ponto.\
+* As validações de pessoas singulares suportam abreviaturas no seu nome. No entanto, estas não poderão ser procedidas com um ponto.\
   Exemplificando:  "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
 * Todos os pontos anteriores foram implementados de forma a tornar o processo o mais robusto possível. No entanto, recomendamos que tente introduzir nomes o mais próximo do original quanto possível.
 
@@ -44,5 +58,5 @@ Adiciona a [validação](../../glossario/glossario-aplicacao.md#sancionado) ao s
 
 #### Adicionar&#x20;
 
-Adiciona a [validação](../../glossario/glossario-aplicacao.md#validacao) ao sistema, mas mantém a janela de adição manual aberta para que possa adicionar vários nomes seguidos.
+Adiciona a [validação](../../glossario/glossario-aplicacao.md#validacao) ao sistema e atualiza a grelha principal.
 

@@ -17,7 +17,14 @@ Luego de selecionar el tipo de validación, tendrá a su disposición un conjunt
 | País de Dirección    |                                                                                                                                                                                     |
 | ID                   | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
 
+#### Validación de organización:
 
+| Campos | Notas                                                                                                                                                                               |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nombre | [Aquí](adicao-manual.md#reglas-para-seguir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                |
+| CIF    | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
+| País   |                                                                                                                                                                                     |
+| ID     | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
 
 #### Reglas para seguir
 

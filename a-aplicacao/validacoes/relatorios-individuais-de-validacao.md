@@ -1,12 +1,14 @@
 # Informes de validación individuales
 
-En la  [página de validaciones](./), puede descargar las validaciones completas individualmente en formato pdf utilizando el botón<img src="../../.gitbook/assets/image (19).png" alt="" data-size="line">, que está en la misma línea que la validación.
+En la  [página de validaciones](./), puede descargar las validaciones completas individualmente en formato pdf utilizando el botón ![](<../../.gitbook/assets/exportar pdf (1).jpg>), que está en la misma línea que la validación.
 
 El documento pdf resultante contiene toda la información asociada a la validación en cuestión y puede utilizarse para archivar dentro de su organización.
 
-![](../../.gitbook/assets/validações.jpg)
+<figure><img src="../../.gitbook/assets/exportar pdfff ES.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
+Esta función de descarga de informes de validación individuales solo está disponible para validaciones de personas físicas.
+
 Cada organización tiene acceso a un número limitado de descargas, que depende de su suscripción a esta función.
 
 ¿**Como funciona el recuento del uso de esta funcionalidad?**\

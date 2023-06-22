@@ -56,7 +56,7 @@ Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../g
 * Una [validación](../../glossario/glossario-aplicacao.md#validacion) por línea.
 * Una validación debe seguir el orden de los campos definidos en el encabezado.
 * La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.
-* Los números de identificación fiscal deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés,
+* Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés,
 * La codificación del archivo debe ser utf-8 o ANSI.
 {% endhint %}
 

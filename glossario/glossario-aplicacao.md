@@ -50,6 +50,10 @@ Exemplos: Governo Português, Academia da Força Aérea, TAP.
 
 
 
+### Organização identificável
+
+Empresa ou entidade que necessite de ser identificada de acordo com a lei.
+
 ### Órgão
 
 Departamento, divisão ou subdivisão dentro de uma [organização](glossario-aplicacao.md#organizacao).\

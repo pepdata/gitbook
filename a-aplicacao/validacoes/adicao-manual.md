@@ -6,22 +6,33 @@ En esta ventana, deberá seleccionar inicialmente el tipo de validación a agreg
 
 Luego de selecionar el tipo de validación, tendrá a su disposición un conjunto de campos donde podrá llenar información referente a la validación y que dependerá del tipo selecionado:
 
+#### Validación de persona física:
+
+| Campos               | Notas                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nombre               | [Aquí](adicao-manual.md#reglas-para-seguir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                |
+| CIF                  | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
+| Fecha de Nacimiento  |                                                                                                                                                                                     |
+| País de Nacionalidad |                                                                                                                                                                                     |
+| País de Dirección    |                                                                                                                                                                                     |
+| ID                   | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
 
 
-En esta ventana puede rellenar la información relativa al nombre, el nif, la fecha de nacimiento y los países de la persona que desea validar.
+
+#### Reglas para seguir
 
 {% hint style="info" %}
 ### &#x20;¿Qué debo saber antes de introducir la información?
 
 #### Nombre
 
-* Como mínimo, sólo se permiten 2 nombres: con nombre y primer apellido. Pero le sugerimos que ingrese al menos 2 nombres y la fecha de nacimiento, o nombre y primer y segundo apellido para que los resultados sean más correctos. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es [identificable](../../glossario/glossario-aplicacao.md#pessoa-identificavel).
+* En el caso de validaciones relativas a personas físicas, sólo se permiten un mínimo de 2 nombres: con nombre y primer apellido. Pero le sugerimos que ingrese al menos 2 nombres y la fecha de nacimiento, o nombre y primer y segundo apellido para que los resultados sean más correctos. Estos requisitos mínimos existen para garantizar que el sistema tenga la capacidad de sugerir resultados relevantes cuando quiera analizar si la persona es [identificable](../../glossario/glossario-aplicacao.md#pessoa-identificavel).
 * **Se admiten** todos los [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), su acentuación y sus mayúsculas, sin alterar los resultados mostrados en el proceso de análisis. Por lo tanto, puede introducir el nombre en el formato que más le convenga.\
   Por ejemplo: "Ines Marçal Romão" equivaldrá a introducir "ines marcal romao".
 * Aparte de los mencionados, sólo se aceptan espacios (" "), guiones ("-") o apóstrofes (" ' ").
-* Las partículas existentes en el nombre (como "de", "da", "y", etc.) no alteran los resultados presentados en el proceso de análisis.\
+* Las partículas existentes en el nombre de personas físicas (como "de", "da", "y", etc.) no alteran los resultados presentados en el proceso de análisis.\
   Por ejemplo: "Rui Miguel do Rio" equivaldrá a introducir "Rui Miguel Rio".
-* Las abreviaturas son compatibles. Sin embargo, no se puede proceder con un punto final.\
+* Validaciones de personas físicas admiten nombres con abreviaturas. Sin embargo, no se puede proceder con un punto final.\
   Por ejemplo: "Rui M Rio" podría resultar en el nombre "Rui Miguel Rio".
 * Todos los puntos anteriores se han aplicado para que el proceso sea lo más sólido posible. Sin embargo, le recomendamos que intente introducir nombres lo más parecidos al original.
 
@@ -39,5 +50,5 @@ Agrega la[ validación](../../glossario/glossario-aplicacao.md#validacion) al si
 
 #### Agregar&#x20;
 
-Agrega la [validación](../../glossario/glossario-aplicacao.md#validacion) al sistema, pero mantiene abierta la ventana de adición manual para que pueda agregar varios nombres seguidos.
+Agrega la [validación](../../glossario/glossario-aplicacao.md#validacion) al sistema y actualiza la grilla principal.
 

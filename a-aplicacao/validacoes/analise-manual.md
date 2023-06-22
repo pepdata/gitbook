@@ -2,11 +2,15 @@
 
 En la [ página de validaciones](./), puede completar una validación a través del botón de la lupa, que le da acceso a una ventana de análisis.
 
-Esta ventana puede sugerir nombres de[ personas identificables](../../glossario/glossario-aplicacao.md#persona-identificable) relevantes, con su [grado de similitud ](../../glossario/glossario-aplicacao.md#grado-de-similitud)en relación con el nombre de[ validación](../../glossario/glossario-aplicacao.md#validacion).&#x20;
+Esta ventana puede sugerir nombres de[ personas identificables](../../glossario/glossario-aplicacao.md#persona-identificable) (en el caso de la validación de una persona física) u [organizaciones identificables](../../glossario/glossario-aplicacao.md#organizacion-identificable) (en el caso de la validación de una organización) relevantes, con su [grado de similitud ](../../glossario/glossario-aplicacao.md#grado-de-similitud)en relación con el nombre de[ validación](../../glossario/glossario-aplicacao.md#validacion).
 
-![Ventana de análisis manual](../../.gitbook/assets/validar.jpg)
+<figure><img src="../../.gitbook/assets/analisar validação ES.jpg" alt=""><figcaption><p>Ventana de análisis manual</p></figcaption></figure>
 
-En la línea de cada[ persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable), puede ver su perfil a través del botón “👁” o establecer una coincidencia mediante el botón “✓”. \
+En la línea de cada[ persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable), puede ver su perfil a través del botón “👁”, establecer una coincidencia mediante el botón “✓” o agregar/eliminar personas de la lista de non correspondencia usando los íconos de persona.
+
+Si se trata de una validación de organización, en cada línea de [organización identificable](../../glossario/glossario-aplicacao.md#organizacion-identificable), podrá definir una correspondencia mediante el botón “✓” o agregar/eliminar organizaciones de la lista de non correspondencia usando los íconos de edificio.
+
+\
 Si no hay ninguna coincidencia, o ninguna de las sugerencias de la aplicación es correcta, puede validar el nombre como no identificable mediante el botón "✗ No identificable"
 
 Una[ validación ](../../glossario/glossario-aplicacao.md#validacion)está completa una vez que se ha establecido una coincidencia entre ella y una persona identificable en la base de datos PEPData.
@@ -16,17 +20,19 @@ Una[ validación ](../../glossario/glossario-aplicacao.md#validacion)está compl
 
 #### Por nombre
 
-Todos los nombres que forman el nombre de validación deben estar en la [persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable) que aparece como resultado, a excepción de las partículas (como "de", "da", "y", etc.). Por ejemplo:
+En validaciones de personas físicas, todos los nombres que forman el nombre de validación deben estar en la [persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable) que aparece como resultado, a excepción de las partículas (como "de", "da", "y", etc.). Por ejemplo:
 
 1. "Juan Ignacio González" puede tener como resultado el nombre "João Pedro Soares da Silva".
 2. "Juan Ignacio González" **no** puede tener como resultado el nombre "Juan Ignacio de Miguel García", ya que no tiene el nombre "González".
 3. "Juan Ignacio de González" puede tener como resultado el nombre "Juan Ignacio González" ya que se ignora la partícula "de".
 
-Se consideran las abreviaturas, si las hay. Por ejemplo:
+En validaciones de personas físicas, las abreviaturas, si las hay, se consideran. Por ejemplo:
 
 1. "Juan I González" puede tener como resultado el nombre "Juan Ignacio González García".
 
-#### Por fecha de nacimiento
+En validaciones de organizaciones, la búsqueda intentará encontrar un resultado donde el nombre coincida exactamente con el nombre de la validación.
+
+#### Por fecha de nacimiento (válido solo para validaciones de personas físicas)
 
 La fecha de nacimiento de la validación, si la hay, se utiliza para filtrar los resultados. Por ejemplo:
 
@@ -34,9 +40,11 @@ La fecha de nacimiento de la validación, si la hay, se utiliza para filtrar los
 
 #### Por límite de resultados
 
-Como máximo, se le muestran los 20 resultados con mayor grado de similitud.
+En validaciones de personas físicas, como máximo, se le muestran los 20 resultados con mayor grado de similitud.
 
-#### Por opciones auxiliares
+En validaciones de organizaciones, se le presenta, si lo hay, un resultado cuyo nombre corresponde exactamente al nombre de la validación.
+
+#### Por opciones auxiliares (válido solo para validaciones de personas físicas)
 
 Las siguientes opciones auxiliares pueden activarse o desactivarse en la[ página de configuración: ](../configuracoes/#validacoes)
 
@@ -50,11 +58,7 @@ Estas opciones deben estar en consonancia con la calidad de los datos que recoge
 
 ## Otras funcionalidades
 
-### Búsqueda Manual
-
-La búsqueda manual se utiliza para realizar una búsqueda rápida del nombre en la[ validación](../../glossario/glossario-aplicacao.md#validacion), sin aplicar ningún filtro. Esta funcionalidad se eliminará pronto.
-
-### Agregar Persona
+### Agregar Persona (disponible en validaciones de personas físicas)
 
 Si está seguro de que una determinada[ validación](../../glossario/glossario-aplicacao.md#validacion) debe considerarse como una persona identificable y no está en las sugerencias, puede añadirla a la base de datos PEPData. Después de la adición, será posible considerar la[ validación](../../glossario/glossario-aplicacao.md#validacion) como identificable.
 

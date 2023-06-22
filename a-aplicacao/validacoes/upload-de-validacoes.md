@@ -1,8 +1,16 @@
 # Importación de validaciones
 
-En la [página de validaciones](../configuracoes/#validacoes), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacion) para agregar. Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
+En la [página de validaciones](../configuracoes/#validacoes), puede importar validaciones automáticamente utilizando el botón "Importar validaciones", que le da acceso a un explorador que le permite elegir el archivo que contiene las [validaciones](../../glossario/glossario-aplicacao.md#validacion) para agregar.
+
+Antes de elegir el archivo de importación, deverá elegir el tipo de validaciones a importar seleccionando el icono correspondiente:
+
+<figure><img src="../../.gitbook/assets/importar validacoes ES.jpg" alt=""><figcaption><p>Selección del tipo de validaciones a importar</p></figcaption></figure>
+
+Por defecto, ele tipo "Personas físicas" aparece como seleccionado. Para importar validaciones de organizaciones, deve seleccionar el icono en forma de edificio.
 
 Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./).
+
+Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
 
 ## Detalles de los archivos a importar
 
@@ -12,51 +20,49 @@ Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../g
 * Extensión .txt o .csv&#x20;
 * Limitado a 500 000 filas por importación
 
-### Archivo de organización
-
-* Debe contener una organización por línea&#x20;
-* Propiedades aceptadas (obligatorio en negrita):
-
-| Campos         | Notas                                                                        |
-| -------------- | ---------------------------------------------------------------------------- |
-| vat\_number    |                                                                              |
-| **name**       |                                                                              |
-| country        | Admite cualquier valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166).  |
-| id\_custom     | Identificador de cliente utilizado por su organización. Tiene que ser único. |
-| unidentifiable | 1 o 0, si no es identificable.                                               |
-
-#### Archivo de muestra
-
-{% file src="../../.gitbook/assets/validación de la organización.txt" %}
-
-### Fichero de personas naturales
+### Fichero de personas fisicas
 
 * Debe contener una persona física por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos               | Notas                                                                        |
-| -------------------- | ---------------------------------------------------------------------------- |
-| vat\_number          |                                                                              |
-| **name**             |                                                                              |
-| birth\_date          |                                                                              |
-| country\_nationality | Admite cualquier valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166).  |
-| country\_address     | Admite cualquier valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166).  |
-| id\_custom           | Identificador de cliente utilizado por su organización. Tiene que ser único. |
-| unidentifiable       | 1 o 0, si no es identificable.                                               |
+| Campos               | Notas                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number          | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
+| **name**             | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                           |
+| birth\_date          | La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                                             |
+| country\_nationality | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
+| country\_address     | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
+| id\_custom           | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
+| unidentifiable       | 1 o 0, si no es identificable.                                                                                                                                                      |
 
 #### Archivo de muestra
 
 {% file src="../../.gitbook/assets/validación individual.txt" %}
 
-#### Ficheiro exemplo
+### Archivo de organización
+
+* Debe contener una organización por línea&#x20;
+* Propiedades aceptadas (obligatorio en negrita):
+
+| Campos         | Notas                                                                                                                                                                               |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number    | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
+| **name**       | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                           |
+| country        | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
+| id\_custom     | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
+| unidentifiable | 1 o 0, si no es identificable.                                                                                                                                                      |
+
+#### Archivo de muestra
+
+{% file src="../../.gitbook/assets/validación de la organización.txt" %}
+
+### Regras a cumplir
 
 {% hint style="info" %}
 ### ¿Cuáles son las especificaciones del archivo de carga?
 
 * Una [validación](../../glossario/glossario-aplicacao.md#validacion) por línea.
 * Una validación debe seguir el orden de los campos definidos en el encabezado.
-* La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.
-* Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés.
 * La codificación del archivo debe ser utf-8 o ANSI.
 {% endhint %}
 

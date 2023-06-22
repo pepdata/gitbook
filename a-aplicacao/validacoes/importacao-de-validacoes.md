@@ -28,10 +28,10 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 | Campos               | Notas                                                                                                                                                       |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | vat\_number          | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| **name**             | Poderá ver aqui as regras a cumprir relativamente aos nomes.                                                                                                |
+| **name**             | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                |
 | birth\_date          | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                        |
-| country\_nationality | Poderá ver aqui as regras a cumprir relativamente aos países.                                                                                               |
-| country\_address     | Poderá ver aqui as regras a cumprir relativamente aos países.                                                                                               |
+| country\_nationality | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
+| country\_address     | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
 | id\_custom           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
 | unidentifiable       | 1 ou 0, caso seja não identificável.                                                                                                                        |
 
@@ -47,14 +47,16 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 | Campos         | Notas                                                                                                                                                       |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | vat\_number    | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| **name**       | Poderá ver aqui a regras a cumprir relativamente aos nomes.                                                                                                 |
-| country        | Poderá ver aqui as regras a cumprir relativamente aos países.                                                                                               |
+| **name**       | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) a regras a cumprir relativamente aos nomes.                                                 |
+| country        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
 | id\_custom     | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
 | unidentifiable | 1 ou 0, caso seja não identificável.                                                                                                                        |
 
 #### Ficheiro exemplo
 
 {% file src="../../.gitbook/assets/validação organização.txt" %}
+
+### Regras a cumprir
 
 {% hint style="info" %}
 ### Quais as especificações do ficheiro de upload?

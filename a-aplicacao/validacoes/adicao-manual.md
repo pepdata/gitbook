@@ -2,9 +2,17 @@
 
 Na [página de validações](./), pode adicionar manualmente uma validação através do botão “+ Adicionar validação”, que lhe dá acesso a uma janela para o fazer.
 
-Nesta janela pode preencher informação relativa ao nome, nif, data de nascimento, países e um identificador (ID) da pessoa que pretende validar.  Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.&#x20;
+Nesta janela, terá inicialmente de selecionar o tipo de validação a adicionar, escolhendo o ícone correspondente. Por defeito, aparece selecionado o tipo "Pessoa singular". Para adicionar uma validação de organização, terá de escolher o ícone em forma de edíficio.
 
-![](../../.gitbook/assets/add-validation.gif)
+Após a seleção do tipo de validação, terá à disposição um conjunto de campos onde poderá preencher informação relativa à validação e que dependerão do tipo selecionado:
+
+Validação de pessoa singular:
+
+* Nome
+
+preencher informação relativa ao nome, nif, data de nascimento, países e um identificador (ID) da pessoa que pretende validar.  Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.&#x20;
+
+
 
 {% hint style="info" %}
 ### O que devo saber antes de introduzir informação?

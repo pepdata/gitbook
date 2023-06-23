@@ -7,7 +7,7 @@ El documento pdf resultante contiene toda la información asociada a la validaci
 <figure><img src="../../.gitbook/assets/exportar pdfff ES.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Esta función de descarga de informes de validación individuales solo está disponible para validaciones de personas físicas.
+Esta función de descarga de informes de validación individuales solo está disponible para validaciones de personas.
 
 Cada organización tiene acceso a un número limitado de descargas, que depende de su suscripción a esta función.
 

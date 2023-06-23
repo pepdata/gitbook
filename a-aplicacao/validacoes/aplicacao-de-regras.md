@@ -20,11 +20,11 @@ Como máximo, las reglas se aplicarán a 80.000 [validaciones](../../glossario/g
 
 En este ejemplo, considere que ambas reglas de validación están activas. Así pues, al hacer clic en "Aplicar reglas", el sistema procederá de la siguiente manera, para cada [validación](../../glossario/glossario-aplicacao.md#validacao) incompleta:
 
-1. Busca en la base de datos PEPData todas las personas identificables con un nombre similar al de la [validación](../../glossario/glossario-aplicacao.md#validacao) de persona física e todas las organizaciones identificables con un nombre exactamente igual al de la [validación](../../glossario/glossario-aplicacao.md#validacion) de organización.
+1. Busca en la base de datos PEPData todas las personas identificables con un nombre similar al de la [validación](../../glossario/glossario-aplicacao.md#validacao) de persona e todas las organizaciones identificables con un nombre exactamente igual al de la [validación](../../glossario/glossario-aplicacao.md#validacion) de organización.
 2. Mediante el paso anterior, se obtiene una lista de resultados sugeridos, como se describe en la siguiente nota:
    1. Si no hay coincidencias sugeridas, porque la regla 1 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como no identificable.
-   2. Si sólo hay un resultado y su [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es mayor que el [threshold de validación](../configuracoes/#threshold-de-validacao) (en el caso de validaciones de personas físicas) o es exactamente igual a lo nombre de la validación (en el caso de validaciones de organizaciones), porque la regla 2 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como identificable.&#x20;
-   3. En el caso de validaciones de personas físicas, si sólo hay un resultado y el [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es inferior o igual al [threshold de validación](../configuracoes/#threshold-de-validacao), la validación quedará incompleta y habrá que realizar un [análisis manual](analise-manual.md).
+   2. Si sólo hay un resultado y su [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es mayor que el [threshold de validación](../configuracoes/#threshold-de-validacao) (en el caso de validaciones de personas) o es exactamente igual a lo nombre de la validación (en el caso de validaciones de organizaciones), porque la regla 2 está activa, la [validación](../../glossario/glossario-aplicacao.md#validacao) se establecerá como identificable.&#x20;
+   3. En el caso de validaciones de personas, si sólo hay un resultado y el [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) es inferior o igual al [threshold de validación](../configuracoes/#threshold-de-validacao), la validación quedará incompleta y habrá que realizar un [análisis manual](analise-manual.md).
    4. Si existen varios resultados, la [validación](../../glossario/glossario-aplicacao.md#validacao) quedará incompleta y será necesario un [análisis manual](analise-manual.md).
 {% endhint %}
 
@@ -33,19 +33,19 @@ En este ejemplo, considere que ambas reglas de validación están activas. Así 
 
 #### Por nombre
 
-En validaciones de personas físicas, todos los nombres que forman o nombre de [validación](../../glossario/glossario-aplicacao.md#validacao) deben que estar en el nombre de la persona identificable que aparece como resultado, a excepción de las partículas (como "de", "y", etc.). Ejemplo:
+En validaciones de personas, todos los nombres que forman o nombre de [validación](../../glossario/glossario-aplicacao.md#validacao) deben que estar en el nombre de la persona identificable que aparece como resultado, a excepción de las partículas (como "de", "y", etc.). Ejemplo:
 
 1. "Juan Ignacio González" puede dar lugar al nombre "Juan Ignacio de González".
 2. "Juan Ignacio González" **no** puede dar lugar al nombre "Juan Ignacio de Miguel García", ya que no tiene el nombre "González".
 3. "Juan Ignacio de González" puede tener como resultado el nombre "Juan Ignacio González" ya que se ignora la partícula "de".
 
-En validaciones de personas físicas, las abreviaturas, si las hay, se consideran. Por ejemplo:
+En validaciones de personas, las abreviaturas, si las hay, se consideran. Por ejemplo:
 
 1. "Juan I González" puede tener como resultado el nombre "Juan Ignacio González García".
 
 En validaciones de organizaciones, la búsqueda intentará encontrar un resultado donde el nombre coincida exactamente con el nombre de la validación.
 
-#### Por fecha de nacimiento (válido solo para validaciones de personas físicas)
+#### Por fecha de nacimiento (válido solo para validaciones de personas)
 
 La fecha de nacimiento de la [validación](../../glossario/glossario-aplicacao.md#validacao), si la hay, se utiliza para filtrar los resultados. Por ejemplo:
 
@@ -53,11 +53,11 @@ Si ha introducido la fecha de nacimiento "01/01/1990" en la [validación](../../
 
 #### Por límite de resultados&#x20;
 
-En validaciones de personas físicas, como máximo, se le muestran los 20 resultados con mayor [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+En validaciones de personas, como máximo, se le muestran los 20 resultados con mayor [grado de similitud](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 En validaciones de organizaciones, se le presenta, si lo hay, un resultado cuyo nombre corresponde exactamente al nombre de la validación.
 
-#### Por opciones auxiliares (válido solo para validaciones de personas físicas)
+#### Por opciones auxiliares (válido solo para validaciones de personas)
 
 Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configuración](../configuracoes/):&#x20;
 

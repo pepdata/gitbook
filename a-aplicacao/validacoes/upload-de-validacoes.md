@@ -6,7 +6,7 @@ Antes de elegir el archivo de importación, deverá elegir el tipo de validacion
 
 <figure><img src="../../.gitbook/assets/importar validacoes ES.jpg" alt=""><figcaption><p>Selección del tipo de validaciones a importar</p></figcaption></figure>
 
-Por defecto, ele tipo "Personas físicas" aparece como seleccionado. Para importar validaciones de organizaciones, deve seleccionar el icono en forma de edificio.
+La aplicación selecciona automáticamente el tipo "Personas físicas". Para importar validaciones de organizaciones, debe seleccionar el icono en forma de edificio.
 
 Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./).
 

@@ -20,11 +20,11 @@ No máximo, as regras serão aplicadas a 80.000 [validações](../../glossario/g
 
 Neste exemplo, considere que ambas as regras de validação se encontram ativas. Assim sendo, ao carregar em "Aplicar regras", o sistema irá proceder do seguinte modo, para cada [validação](../../glossario/glossario-aplicacao.md#validacao) incompleta:
 
-1. Procura na base de dados da PEPData todas as pessoas identificáveis com um nome similar ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de pessoa singular e todas as organizações identificadas com um nome exatamente igual ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de organização.
+1. Procura na base de dados da PEPData todas as pessoas identificáveis com um nome similar ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de pessoa e todas as organizações identificadas com um nome exatamente igual ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de organização.
 2. Através do passo anterior, e obtida uma lista de resultados sugeridos, como descrito na nota seguinte:&#x20;
    1. Caso não existam resultados sugeridos, uma vez que a regra 1 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como não sendo identificável.
-   2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes/#threshold-de-validacao) (no caso de validações de pessoas singulares) ou corresponda exatamente ao nome da validação (no caso de validações de organizações), uma vez que a regra 2 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
-   3. No caso de validações de pessoas singulares, caso exista apenas um resultado e o [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja inferior ou igual ao [threshold de validação](../configuracoes/#threshold-de-validacao), esta irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
+   2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes/#threshold-de-validacao) (no caso de validações de pessoas) ou corresponda exatamente ao nome da validação (no caso de validações de organizações), uma vez que a regra 2 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
+   3. No caso de validações de pessoass, caso exista apenas um resultado e o [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja inferior ou igual ao [threshold de validação](../configuracoes/#threshold-de-validacao), esta irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
    4. Caso existam múltiplos resultados a [validação](../../glossario/glossario-aplicacao.md#validacao) irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
 {% endhint %}
 
@@ -33,19 +33,19 @@ Neste exemplo, considere que ambas as regras de validação se encontram ativas.
 
 #### Por nome
 
-Nas validações de pessoas singulares, todos os nomes que formam o nome da [validação](../../glossario/glossario-aplicacao.md#validacao) têm que constar no nome da pessoa identificável que aparece como resultado, com exceção das partículas (como "de", "da", "e", etc.). Exemplificando:
+Nas validações de pessoas, todos os nomes que formam o nome da [validação](../../glossario/glossario-aplicacao.md#validacao) têm que constar no nome da pessoa identificável que aparece como resultado, com exceção das partículas (como "de", "da", "e", etc.). Exemplificando:
 
 1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
 2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
 3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
 
-Nas validações de pessoas singulares, as abreviaturas, caso existam, são consideradas. Exemplificando:
+Nas validações de pessoas, as abreviaturas, caso existam, são consideradas. Exemplificando:
 
 1. "João P Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
 
 No caso das validações de organizações, a pesquisa vai tentar encontrar algum resultado em que o nome corresponda exatamente ao nome da validação.
 
-#### Por data de nascimento (válido apenas para validações de pessoas singulares)
+#### Por data de nascimento (válido apenas para validações de pessoas)
 
 A data de nascimento da [validação](../../glossario/glossario-aplicacao.md#validacao), caso exista, é utilizada para filtrar os resultados. Exemplificando:
 
@@ -53,11 +53,11 @@ A data de nascimento da [validação](../../glossario/glossario-aplicacao.md#val
 
 #### Por limite de resultados
 
-No caso das validações de pessoas singulares, no máximo, são-lhe mostrados os 20 resultados com maior [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+No caso das validações de pessoas, no máximo, são-lhe mostrados os 20 resultados com maior [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 No caso das validações de organizações, é-lhe apresentado, caso exista, um resultado cujo nome corresponda exatamente ao nome da validação.&#x20;
 
-#### Por opções auxiliares (apenas válido para validações de pessoas singulares)
+#### Por opções auxiliares (apenas válido para validações de pessoas)
 
 As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes/):&#x20;
 

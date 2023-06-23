@@ -6,7 +6,7 @@ Antes de escolher o ficheiro de importação, terá de escolher o tipo de valida
 
 <figure><img src="../../.gitbook/assets/importa validations PT.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
-A aplicação seleciona automaticamente o tipo 'Pessoas singulares'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
+Por pré-definição, aparece selecionado o tipo 'Pessoas singulares'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
 
 Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
 

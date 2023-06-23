@@ -4,9 +4,9 @@ Na [página de validações](./), pode fazer a importação automática de valid
 
 Antes de escolher o ficheiro de importação, terá de escolher o tipo de validações a importar, selecionando o ícone correspondente:
 
-<figure><img src="../../.gitbook/assets/importa validations PT.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/import validacoes PT (1).jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
-Por pré-definição, aparece selecionado o tipo 'Pessoas singulares'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
+Por pré-definição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
 
 Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
 
@@ -20,9 +20,9 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Extensão .txt ou .csv
 * Limitado a 500.000 linhas por cada importação
 
-### Ficheiro das pessoas singulares
+### Ficheiro das pessoas
 
-* Deve conter uma pessoa singular por linha
+* Deve conter uma pessoa por linha
 * Propriedades aceites (obrigatórias a negrito):
 
 | Campos               | Notas                                                                                                                                                       |
@@ -71,20 +71,20 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 #### **Nome** <a href="#regras-dos-nomes" id="regras-dos-nomes"></a>
 
-* Em caso de validações respeitantes a pessoas singulares, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
+* Em caso de validações respeitantes a pessoas, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
   Estes requisitos mínimos existem de forma a garantir que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
 * Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente. \
   Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
 * Para além dos acima mencionados,  apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").  &#x20;
-* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas singulares, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
+* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
   Exemplificando:  "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
-* As validações de pessoas singulares suportam abreviaturas no seu nome. No entanto, estas não poderão ser procedidas com um ponto.\
+* As validações de pessoas suportam abreviaturas no seu nome. No entanto, estas não poderão ser procedidas com um ponto.\
   Exemplificando:  "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
 * Todos os pontos anteriores foram implementados de forma a tornar o processo mais robusto possível. No entanto, recomendamos que tente introduzir nomes o mais próximo do original quanto possível.
 
 #### País
 
-* Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante.
+* Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido (país de nacionalidade, no caso de pessoas, ou país, no caso de organizações) se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante.
 * Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país. \
   Nota: caso o país associado a uma [validação](../../glossario/glossario-aplicacao.md#validacao) se encontre sancionado, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá herdar esta classificação, independentemente de corresponder a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Uma [validação](../../glossario/glossario-aplicacao.md#validacao) pode ter múltiplas [classificações](../../glossario/glossario-aplicacao.md#classificacao) distintas.&#x20;
 {% endhint %}
@@ -92,7 +92,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 {% hint style="info" %}
 ### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
 
-* Verifique se o nome, data de nascimento e país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
+* Verifique se o nome, data de nascimento e campos relativos a países não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
 * Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
@@ -105,9 +105,9 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
 1. Validação da linha de cabeçalho;
 2. Validação dos dados introduzidos:&#x20;
    * name;
-   * birth\_date (caso se trate de validações de pessoas singulares);
-   * country\_nationality (caso se trate de validações de pessoas singulares);
-   * country\_address (caso se trate de validações de pessoas singulares);
+   * birth\_date (caso se trate de validações de pessoas);
+   * country\_nationality (caso se trate de validações de pessoas);
+   * country\_address (caso se trate de validações de pessoas);
    * country (caso se trate de validações de organizações;
    * vat\_number
 3. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.

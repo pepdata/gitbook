@@ -2,7 +2,7 @@
 
 En la[ página de validaciones](./), puede agregar manualmente una validación a través del botón "+ Agregar validación", que le da acceso a una ventana para hacerlo.
 
-En esta ventana, deberá seleccionar inicialmente el tipo de validación a agregar, eligiendo el icono correspondiente. Por defecto, se selecciona el tipo "Persona física". Para agregar una validación de organización, deberá elegir el icono en forma de edificio.
+En esta ventana, deberá seleccionar inicialmente el tipo de validación a agregar, eligiendo el icono correspondiente. La aplicación selecciona automáticamente el tipo "Persona física". Para agregar una validación de organización, deberá elegir el icono en forma de edificio.
 
 Luego de selecionar el tipo de validación, tendrá a su disposición un conjunto de campos donde podrá llenar información referente a la validación y que dependerá del tipo selecionado:
 

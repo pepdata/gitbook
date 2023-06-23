@@ -9,7 +9,7 @@ O documento pdf resultante contém toda a informação associada à validação 
 &#x20;
 
 {% hint style="warning" %}
-Esta funcionalidade de download do relatório individual está disponível apenas para validações de pessoas singulares.
+Esta funcionalidade de download do relatório individual está disponível apenas para validações de pessoas.
 
 Cada organização tem acesso a um número limitado de downloads, que depende da sua subscrição a esta funcionalidade.
 

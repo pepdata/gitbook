@@ -12,9 +12,9 @@ Após a seleção do tipo de validação, terá à disposição um conjunto de c
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Nome                  | Poderá ver [aqui](adicao-manual.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                           |
 | NIF                   | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| Data de Nascimento    |                                                                                                                                                             |
-| País de Nacionalidade |                                                                                                                                                             |
-| País de Morada        |                                                                                                                                                             |
+| Data de Nascimento    | A data de nascimento deve seguir o formato definido na [página de configurações](../configuracoes/).                                                        |
+| País de Nacionalidade | Poderá ver aqui as regras a cumprir relativamente aos [países](adicao-manual.md#regras-a-cumprir).                                                          |
+| País de Morada        | Poderá ver aqui as regras a cumprir relativamente aos [países](adicao-manual.md#regras-a-cumprir).                                                          |
 | ID                    | Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.                                |
 
 #### Validação de organização:
@@ -23,7 +23,7 @@ Após a seleção do tipo de validação, terá à disposição um conjunto de c
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Nome   | Poderá ver [aqui](adicao-manual.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                           |
 | NIF    | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| País   |                                                                                                                                                             |
+| País   | Poderá ver aqui as regras a cumprir relativamente aos [países](adicao-manual.md#regras-a-cumprir).                                                          |
 | ID     | Este ID é opcional e pode ter qualquer valor, não podendo, no entanto, ser repetido com outro que já tenha sido introduzido.                                |
 
 ### Regras a cumprir

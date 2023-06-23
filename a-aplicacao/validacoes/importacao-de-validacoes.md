@@ -6,7 +6,7 @@ Antes de escolher o ficheiro de importação, terá de escolher o tipo de valida
 
 <figure><img src="../../.gitbook/assets/importa validations PT.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
-Por defeito, aparece como selecionado o tipo 'Pessoas singulares'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
+A aplicação seleciona automaticamente o tipo 'Pessoas singulares'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
 
 Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
 
@@ -69,7 +69,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 {% hint style="info" %}
 ### O que devo saber antes de introduzir informação?
 
-#### Nome
+#### **Nome** <a href="#regras-dos-nomes" id="regras-dos-nomes"></a>
 
 * Em caso de validações respeitantes a pessoas singulares, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
   Estes requisitos mínimos existem de forma a garantir que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;

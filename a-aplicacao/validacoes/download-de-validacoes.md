@@ -34,8 +34,8 @@ O ficheiro exportado possui as seguintes colunas:
 * **IPerson\_Occupations**: Ocupações associadas à pessoa identificada, separadas por “;” no caso de serem várias. Esta coluna é usada apenas para guardar informação de validações de pessoas.
 * **IPerson\_Family\_Relations**: Relações familiares entre a pessoa identificada e outras pessoas identificadas, separadas por “;” no caso de serem várias. Esta coluna é usada apenas para guardar informação de validações de pessoas.
 * **IPerson\_Associate\_Relations**: Relações onde a pessoa identificada surge como "Associada" de outras pessoas identificadas, separadas por “;” no caso de serem várias. Esta coluna é usada apenas para guardar informação de validações de pessoas.
-* **Id\_Iorganization**: Identificador único relativo à organização identificada. Esta coluna é usada apenas para guardar informação de validações de pessoas coletivas.
-* **IOrganization\_Name**: Nome da organização identificada. Esta coluna é usada apenas para guardar informação de pessoas coletivas.
+* **Id\_Iorganization**: Identificador único relativo à organização identificada. Esta coluna é usada apenas para guardar informação de validações de organizações.
+* **IOrganization\_Name**: Nome da organização identificada. Esta coluna é usada apenas para guardar informação de organizações.
 * **Added\_At**: Data a que a [validação](../../glossario/glossario-aplicacao.md#validacao) foi adicionada: formato dd-mm-yyyy HH:MM:SS.&#x20;
 * **Added\_By**: Utilizador que adicionou a [validação](../../glossario/glossario-aplicacao.md#validacao): formato Nome (email).
 * **Determined\_At**: Data a que a [validação](../../glossario/glossario-aplicacao.md#validacao) foi determinada: formato dd-mm-yyyy HH:MM:SS.

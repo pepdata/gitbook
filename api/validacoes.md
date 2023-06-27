@@ -55,9 +55,8 @@ Id personalizável da validação
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validações obtidas com sucesso." %}
-```
-{
-    "data": {
+<pre><code><strong>{
+</strong>    "data": {
         "items": [
             {
                 "id": "2a206d4a-0a5d-4a04-9a0c-cadae6e2cffa", 
@@ -98,7 +97,7 @@ Id personalizável da validação
     "version": "0.1",
     "timestamp": 1588599744111
 }
-```
+</code></pre>
 {% endswagger-response %}
 {% endswagger %}
 
@@ -131,6 +130,90 @@ Id personalizável da validação
 
 * Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), sempre que possível.
 {% endhint %}
+
+{% swagger method="post" path="_alerts" baseUrl="https://www.pepdata.com/api/get" summary="Obter alertas das validações" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" %}
+Id da validação
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="ids_validations" type="string array" %}
+Array de ids de validações
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="status" type="string" %}
+Estado dos alertas
+
+Default: unresolved\
+Valores possíveis: all, resolved, unresolved
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="from" type="int" %}
+Data de início do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="until" type="int" %}
+Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Alertas das validações obtidos com sucesso" %}
+<pre><code><strong>{
+</strong>    "data": [
+        {
+            "id": "53fef9d4-e3d4-ed03-5e79-38ba066050f7",
+            "id_validation": "3462600c-8b9a-6384-c321-4587104ce0f1",
+            "name": "José Codinha Manso",
+            "birth_date": null,
+            "id_country_nationality": "JP",
+            "added_at": 1687873995707,
+            "resolved_at": null,
+            "resolved_by": null,
+            "status": "unresolved",
+            "reasons": [
+                "There is a new result that might match this validation: José Codinha Manso"
+            ],
+            "country_nationality": "Japan"
+        }
+    ],
+    "version": "0.1",
+    "timestamp": 1588599744111
+}
+</code></pre>
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Status de alerta inválido" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1588599744111,
+        "message": "O campo 'status' não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id do alerta.
+* **id\_validation:**  id da validação.
+* **name**: nome da pessoa identificável.
+* **birth\_date**: data de nascimento da pessoa identificável.
+* **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **added\_at**: data a que o alerta foi criado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **resolved\_at:** data a que o alerta foi resolvido, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **resolved\_by:** utilizador que resolveu o alerta.
+* **status:** estado do alerta.
+* **reasons**: lista de razões que responsáveis pela criação do alerta.
+* **country\_nationality:** país de nacionalidade.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Adicionar validação" %}
 {% swagger-description %}
@@ -248,8 +331,6 @@ Default: "individual"
 ### Legenda
 
 * **id**: id da validação criada.
-
-
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/analyze_validation" method="post" summary="Analisar validação" %}
 {% swagger-description %}

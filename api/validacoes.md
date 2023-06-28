@@ -131,14 +131,8 @@ key [API_KEY]
 {% swagger-parameter in="body" name="birth_date" type="string" %}
 Fecha  de nacimiento de la validación.
 
-\
-
-
-Formato: yyyy-mm-dd
-
-\
-
-
+**Parámetro solo utilizado en validaciones de personas.**\
+Formato: yyyy-mm-dd\
 Default: null
 {% endswagger-parameter %}
 
@@ -156,30 +150,28 @@ Formato: 0/1
 Default: 0
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_country_nationality" type="string" %}
-País de nacionalidad de la validación. 
+{% swagger-parameter in="body" name="country_nationality" type="string" %}
+País de nacionalidad de la validación.
 
-\
-
-
-Formato: Nombre del país (véase la nota más abajo)
-
-\
-
-
+**Parámetro solo utilizado en validaciones de personas.**\
+Formato: Nombre del país (véase la nota más abajo)\
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_country_address" type="string" %}
-País de residencia de la validación. 
+{% swagger-parameter in="body" name="country_address" type="string" %}
+País de residencia de la validación.
 
-\
+**Parámetro solo utilizado en validaciones de personas.**\
+Formato: Nombre del país (véase la nota más abajo)\
+Default: null
+{% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="country" %}
+País de la validación.
+
+**Parámetro solo utilizado en validaciones de organizaciones.**
 
 Formato: Nombre del país (véase la nota más abajo)
-
-\
-
 
 Default: null
 {% endswagger-parameter %}

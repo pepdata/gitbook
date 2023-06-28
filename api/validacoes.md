@@ -125,12 +125,6 @@ Id personalizável da validação
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
 * **country\_nationality:** país de nacionalidade.
 
-{% hint style="info" %}
-**id\_country\_nationality e id\_country\_address**
-
-* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), sempre que possível.
-{% endhint %}
-
 {% swagger method="post" path="_alerts" baseUrl="https://www.pepdata.com/api/get" summary="Obter alertas das validações" %}
 {% swagger-description %}
 
@@ -331,6 +325,12 @@ Default: "individual"
 ### Legenda
 
 * **id**: id da validação criada.
+
+{% hint style="info" %}
+**country\_nationality, country\_address e country**
+
+Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), sempre que possível.
+{% endhint %}
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/analyze_validation" method="post" summary="Analisar validação" %}
 {% swagger-description %}

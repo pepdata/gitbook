@@ -229,16 +229,10 @@ Nome da validação
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="birth_date" type="string" %}
-Data de nascimento da validação. 
+Data de nascimento da validação.
 
-\
-
-
-Formato: yyyy-mm-dd
-
-\
-
-
+**Parâmetro usado apenas em validações de pessoas.**\
+Formato: yyyy-mm-dd\
 Default: null
 {% endswagger-parameter %}
 
@@ -256,24 +250,30 @@ Formato: 0/1
 Default: 0
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_country_nationality" type="string" %}
-País de nacionalidade da validação. 
+{% swagger-parameter in="body" name="country_nationality" type="string" %}
+País de nacionalidade da validação.
 
-\
-
-
-Formato: Nome do país (ver nota abaixo)
-
-\
-
-
+**Parâmetro usado apenas em validações de pessoas.**\
+Formato: Nome do país (ver nota abaixo)\
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_country_address" type="string" %}
+{% swagger-parameter in="body" name="country_address" type="string" %}
 País de residência da validação.
 
+**Parâmetro usado apenas em validações de pessoas.**
+
 Formato: Nome do país (ver nota abaixo)\
+Default: null
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="country" %}
+País da validação.
+
+**Parâmetro usado apenas em validações de organizações.**
+
+Formato: Nome do país (ver nota abaixo)
+
 Default: null
 {% endswagger-parameter %}
 

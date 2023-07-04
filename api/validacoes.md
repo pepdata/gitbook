@@ -194,7 +194,7 @@ id personalizable de la validación
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="entity_type" type="string" %}
+{% swagger-parameter in="body" name="type" type="string" %}
 Tipo de entidad, que puede ser: "individual" u "organization".
 
 Default: "individual"

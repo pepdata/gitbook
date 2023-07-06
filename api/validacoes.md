@@ -127,11 +127,12 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 * **determined\_at**: la fecha en la que se determinó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **determined\_by**: id del usuario que ha [determinado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación.
 * **identifiable\_country:** booleano que describe si el país de validación está sancionado.
-* **needs\_attention**: booleano que describe si la validación necesita atención.
 * **id\_organization:** id de la organización que creó la validación.
 * **id\_custom:** identificación personalizable ingresada por el usuario.
 * **entity\_type:** tipo de validación, que puede ser: "individual" u "organization".
 * **id\_iorganization**: identificación de la organización identificable correspondiente. null si no hubo ninguna coincidencia.
+* **adverse\_media\_searched\_at:** fecha de la última búsqueda de noticias adversas asociadas al nombre de la validación.
+* **alerts:** alertas relacionadas con la validación y que aún están sin resolver.
 * **country\_nationality:** país de nacionalidad.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Agregar validación" %}

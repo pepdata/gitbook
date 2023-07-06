@@ -140,7 +140,7 @@ Id personalizável da validação
 * **entity\_type:** tipo da validação, podendo ser: "individual" ou "organization".
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
 * **adverse\_media\_searched\_at:** data da última procura de notícias adversas associadas ao nome da validação.
-* **Alerts:** alertas relacionados com a validação e que ainda estejam por resolver.
+* **alerts:** alertas relacionados com a validação e que ainda estejam por resolver.
 * **country\_nationality:** país de nacionalidade.
 
 {% swagger method="post" path="_alerts" baseUrl="https://www.pepdata.com/api/get" summary="Obter alertas das validações" %}

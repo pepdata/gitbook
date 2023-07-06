@@ -49,43 +49,62 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 {% swagger-response status="200" description="Validaciones obtenidas con éxito." %}
 ```
 {
+    "version": 0.1,
+    "timestamp": 1688640113263,
     "data": {
+        "page": 1,
+        "max_results_per_page": 50,
         "items": [
             {
-                "id": "2a206d4a-0a5d-4a04-9a0c-cadae6e2cffa", 
-                "name": "Lisa Fidalgo Corte-Real",
-                "birth_date": "01-08-1986",
-                "id_country": "PT",
-                "source": "Manual",
-                "added_at": 1588003603593,
-                "added_by": "839a5871-fa0e-470a-af42-9110f8ef5b27",
+                "id": "0984f9f1-1895-dc5b-6530-9075825225aa",
+                "vatin": "628579388",
+                "source": "Automatic",
+                "name": "António Jorge Melo Lourenço Neco Rodrigues Fernandes",
+                "birth_date": "1931-07-19",
+                "id_country_nationality": "PT",
+                "id_country_address": null,
                 "decision": null,
                 "id_iperson": null,
+                "iperson_classifications": null,
+                "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
+                "added_at": 1688639245750,
                 "determined_at": null,
                 "determined_by": null,
-                "needs_attention": 0
+                "identifiable_country": null,
+                "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
+                "id_custom": null,
+                "entity_type": "individual",
+                "id_iorganization": null,
+                "adverse_media_searched_at": null,
+                "alerts": [],
+                "country_nationality": "Portugal"
             },
             {
-                "id": "01a0ae72-bff9-47df-a7ec-843a7524d67e", 
-                "name": "Baltasar Lousada Vieira",
-                "birth_date": null,
-                "id_country": null,
+                "id": "a58dd84e-7e89-9904-5acf-2b1fbfcc8a31",
+                "vatin": "595596160",
                 "source": "Automatic",
-                "added_at": 1588008603595,
-                "added_by": "839a5871-fa0e-470a-af42-9110f8ef5b27",,
-                "decision": 1,
-                "id_iperson": "d37903e9-589b-4db8-a9e0-efd69d89bf6b",
-                "determined_at": 1588009503831,
-                "determined_by": "0d874a7f-a94b-4b0c-ba48-47a278f12065",
-                "needs_attention": 0
-            }
-        ],
-        "page": 1,
-        "max_results_per_page": 50
-        "total": 2
-    },
-    "version": "0.1",
-    "timestamp": 1588599744111
+                "name": "Maria Edite Nieto",
+                "birth_date": null,
+                "id_country_nationality": "PT",
+                "id_country_address": null,
+                "decision": null,
+                "id_iperson": null,
+                "iperson_classifications": null,
+                "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
+                "added_at": 1688639245750,
+                "determined_at": null,
+                "determined_by": null,
+                "identifiable_country": null,
+                "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
+                "id_custom": null,
+                "entity_type": "individual",
+                "id_iorganization": null,
+                "adverse_media_searched_at": null,
+                "alerts": [],
+                "country_nationality": "Portugal"
+            },
+        ]
+    }
 }
 ```
 {% endswagger-response %}

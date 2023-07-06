@@ -135,11 +135,12 @@ Id personalizável da validação
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_by**: id do utilizador que [determinou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **identifiable\_country:** booleano que descreve se o país da validação se encontra [sancionado](../glossario/glossario-aplicacao.md#pais-sancionado).
-* **needs\_attention**: booleano que descreve se a validação [precisa de atenção](../a-aplicacao/validacoes/#validacoes-que-necessitam-de-atencao).
 * **id\_organization:** id da organização que criou a validação.
 * **id\_custom**: id personalizável inserido pelo utilizador.
 * **entity\_type:** tipo da validação, podendo ser: "individual" ou "organization".
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
+* **adverse\_media\_searched\_at:** data da última procura de notícias adversas associadas ao nome da validação.
+* **Alerts:** alertas relacionados com a validação e que ainda estejam por resolver.
 * **country\_nationality:** país de nacionalidade.
 
 {% swagger method="post" path="_alerts" baseUrl="https://www.pepdata.com/api/get" summary="Obter alertas das validações" %}

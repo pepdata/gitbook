@@ -270,15 +270,65 @@ Default: "individual"
 
 ### Leyenda
 
+* **id**: id de la alerta.
+* **id\_alidation:**  id de validación.
+* **name**: nombre de la persona idenficiable.
+* **birth\_date**: fecah de nacimiento de la persona identificable.
+* **id\_country\_nationality**: código del país de la nacionalidad, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **added\_at**: fecha en que se creó la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
+* **resolved\_at:** fecha en que se resolvió la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
+* **resolved\_by:** usuario que resolvió la alerta.
+* **status:** estado de la alerta.
+* **reasons**: lista de motivos responsables de la creación de la alerta.
+* **country\_nationality:** país de nacionalidad.
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_alerts" summary="Obtener validaciones" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
+key [API_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" %}
+Id de la validación
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="ids_validations" type="string array" %}
+Array de ids de validaciónes
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="status" type="string" %}
+Estado de alertas Predeterminado: sin resolver Valores posibles: todos, resueltos, no resueltos
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="from" type="int" %}
+Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="until" type="int" %}
+Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Alertas de validación obtenidas con éxito" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="estado de alertas inválido" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+### Leyenda
+
 * **id**: id de la validación creada.
 
 {% hint style="info" %}
-**country\_nationality, country\_address y country**&#x20;
+**country\_nationality, country\_address e country**
 
-* Hay muchas formas diferentes de escribir el nombre de cada país. La aplicación PEPData puede identificar todos los nombres de países presentes en la [Lista de los Estados, territórios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm).Sin embargo, para garantizar una mayor solidez, recomendamos el uso del formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
+Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
 {% endhint %}
-
-
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/analyze_validation" method="post" summary="Analizar la validación" %}
 {% swagger-description %}

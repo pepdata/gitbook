@@ -72,8 +72,12 @@ Id personalizável da validação
                 "id_country_nationality": "PT",
                 "id_country_address": null,
                 "decision": null,
-                "id_iperson": null,
-                "iperson_classifications": null,
+                "id_iperson": 9bbf3184-8ced-4095-9cad-7e4dc664c9ee,
+                "iperson_classifications": [
+                    "PEP",
+                    "Family Member",
+                    "Associate"
+                ],
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
                 "determined_at": null,
@@ -108,7 +112,17 @@ Id personalizável da validação
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
-                "alerts": [],
+                "alerts": [
+                    {
+                        "id": "1d71c856-8dde-4815-9dce-1683e176a6f1",
+                        "added_at": 1689244974065,
+                        "resolved_by": null,
+                        "resolved_at": null,
+                        "reasons": [
+                            "There is a new result that might match this validation: Maria Edite Nieto"
+                        ]
+                    }
+                ],
                 "country_nationality": "Portugal"
             },
         ]
@@ -129,7 +143,15 @@ Id personalizável da validação
 * **id\_country\_address**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
-* **iperson\_classifications:** lista de classificações da pessoa identificável.&#x20;
+* **iperson\_classifications:** lista de classificações da pessoa identificável, possíveis valores:
+  * &#x20;Associado
+  * Familiar
+  * Titular de Outros Cargos
+  * PEP
+  * Sancionado (EU)
+  * Sancionado (HM Treasury)
+  * Sancionado (OFAC)
+  * Sancionado (UN)
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.

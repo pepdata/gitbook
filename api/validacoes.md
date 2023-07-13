@@ -65,6 +65,11 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                 "id_country_address": null,
                 "decision": null,
                 "id_iperson": null,
+                "iperson_classifications": [
+                    "PRP",
+                    "Familiar",
+                    "Asociado
+                ],
                 "iperson_classifications": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
@@ -100,7 +105,17 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
-                "alerts": [],
+                "alerts": [
+                    {
+                        "id": "1d71c856-8dde-4815-9dce-1683e176a6f1",
+                        "added_at": 1689244974065,
+                        "resolved_by": null,
+                        "resolved_at": null,
+                        "reasons": [
+                            "Hay un nuevo resultado que podría coincidir con esta validación: María García"
+                        ]
+                    }
+                ],
                 "country_nationality": "Portugal"
             },
         ]
@@ -121,6 +136,15 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 * **id\_country\_address**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **decision**: booleano que describe si ha habido una coincidencia con una persona identificable.
 * **id\_iperson**: id de la persona identificable correspondiente. null si no se ha encontrado ninguna coincidencia.
+* **iperson\_classifications:** lista de classificações da pessoa identificável, possíveis valores:
+  * Asociado
+  * Familiar
+  * Titular de Otros Cargos
+  * PRP
+  * Sancionado (EU)
+  * Sancionado (HM Treasury)
+  * Sancionado (OFAC)
+  * Sancionado (UN)
 * **iperson\_classifications:** lista de clasificaciones de personas identificables.
 * **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.

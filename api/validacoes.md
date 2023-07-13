@@ -75,8 +75,8 @@ Id personalizável da validação
                 "id_iperson": 9bbf3184-8ced-4095-9cad-7e4dc664c9ee,
                 "iperson_classifications": [
                     "PEP",
-                    "Family Member",
-                    "Associate"
+                    "Familiar",
+                    "Associado
                 ],
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
@@ -119,7 +119,7 @@ Id personalizável da validação
                         "resolved_by": null,
                         "resolved_at": null,
                         "reasons": [
-                            "There is a new result that might match this validation: Maria Edite Nieto"
+                            "Há um novo resultado que pode corresponder a esta validação: Maria Edite Neto"
                         ]
                     }
                 ],

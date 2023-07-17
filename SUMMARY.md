@@ -42,6 +42,7 @@
   * [Modelação do Formulário de Registo de Cliente](a-aplicacao/configuracoes/modelacao-do-formulario-de-registo-de-cliente.md)
   * [Configurações de risco](a-aplicacao/configuracoes/configuracoes-de-risco.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
+* [Integração da lista PEPData](a-aplicacao/integracao-da-lista-pepdata.md)
 
 ## API
 

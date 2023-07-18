@@ -19,7 +19,8 @@ Neste momento para cada PEP a lista devolve a seguinte informação:
 * **Info -** Informação acerca das ocupações e relações da pessoa, no seguinte formato:
   * \[Ocupação\_1]; ...; \[Ocupação\_N]; \[Relação\_1]; ...; \[Relação\_N]
     * **Formato da Ocupação:** \[Posição] | \[Orgão] | \[Organização]
-    * **Formato da Relação:** \[Tipo da relação] of: \[Nome da pessoa] (\[Ocupação\_1]; ...; \[Ocupação\_N] | \[Notas da relação (Ex: Beneficial Owner of company with VAT number: PT123456789)])
+    * **Formato das Notas da relação:** Texto livre
+    * **Formato da Relação:** \[Tipo da relação] of: \[Nome da pessoa] (\[Ocupação\_1]; ...; \[Ocupação\_N] | \[Notas da relação])
 * **Designation -** Classificações da pessoa.&#x20;
   * **Legenda das classificações:**
     * PEP - Pessoa Politicamente Exposta

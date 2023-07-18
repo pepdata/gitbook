@@ -17,7 +17,7 @@ Neste momento para cada PEP a lista devolve a seguinte informação:
 * **Country -** Nome comum do país a que a pessoa está relacionada.
 * **BirthDate -**  Data de nascimento da pessoa no formato DD-MM-YYYY.
 * **Info -** Informação acerca das ocupações e relações da pessoa, no seguinte formato:
-  * \[Ocupação\_1]; \[Ocupação\_2]; \[Relação\_1]; \[Relação\_2]
+  * \[Ocupação\_1]; ...; \[Ocupação\_N]; \[Relação\_1]; ...; \[Relação\_N]
     * **Formato da Ocupação:** \[Posição] | \[Orgão] | \[Organização]
     * **Formato da Relação:** \[Tipo da relação] of: \[Nome da pessoa] (\[Posição] | \[Orgão] | \[Organização] | \[Notas da relação (Ex: Beneficial Owner of company with VAT number: PT123456789)])
 * **Designation -** Classificações da pessoa.&#x20;

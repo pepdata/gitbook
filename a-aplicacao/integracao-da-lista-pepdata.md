@@ -19,23 +19,23 @@ Neste momento para cada PEP a lista devolve a seguinte informação:
 * **Info -** Informação acerca das ocupações e relações da pessoa, no seguinte formato:
   * \[Ocupação\_1]; ...; \[Ocupação\_N]; \[Relação\_1]; ...; \[Relação\_N]
     * **Formato da Ocupação:** \[Posição] | \[Orgão] | \[Organização]
-    * **Formato do Tipo da relação:** \[Relação] of:&#x20;
-      * **Legenda das relações:**
-        * Associate - Associado
-        * Father - Pai
-        * Mother - Mãe
-        * Child - Filho(a)
-        * Spouse - Cônjuge
-        * Son-in-law/daughter-in-law - Genro/Nora
-        * Stepmother - Madrasta
-        * Stepfather - Padrasto
-        * Sibling - Irmão(ã)
-        * Sibling's Spouse - Cônjuge do(a) Irmão(ã)
-        * Father/mother-in-law - Sogro(a)
-        * Sibling-in-law - Cunhado(a)
-        * Stepchild - Enteado(a)
-    * **Formato das Notas da relação:** Texto livre
     * **Formato da Relação:** \[Tipo da relação] \[Nome da pessoa] (\[Ocupação\_1]; ...; \[Ocupação\_N] | \[Notas da relação])
+      * **Formato do Tipo da relação:** \[Relação] of:&#x20;
+        * **Legenda das relações:**
+          * Associate - Associado
+          * Father - Pai
+          * Mother - Mãe
+          * Child - Filho(a)
+          * Spouse - Cônjuge
+          * Son-in-law/daughter-in-law - Genro/Nora
+          * Stepmother - Madrasta
+          * Stepfather - Padrasto
+          * Sibling - Irmão(ã)
+          * Sibling's Spouse - Cônjuge do(a) Irmão(ã)
+          * Father/mother-in-law - Sogro(a)
+          * Sibling-in-law - Cunhado(a)
+          * Stepchild - Enteado(a)
+      * **Formato das Notas da relação:** Texto livre
 * **Designation -** Classificações da pessoa.&#x20;
   * **Legenda das classificações:**
     * PEP - Pessoa Politicamente Exposta

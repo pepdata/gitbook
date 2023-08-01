@@ -129,3 +129,9 @@ Neste momento para cada PEP a lista devolve a seguinte informação:
 	<HyperLink>https://www.pepdata.com/dashboard/iperson?id=c812b75a-d693-fc53-9159-ca59599ada85</HyperLink>
 </profile>
 ```
+
+
+
+### Exemplo do ficheiro exportado
+
+{% file src="../.gitbook/assets/Example of list export.xml" %}

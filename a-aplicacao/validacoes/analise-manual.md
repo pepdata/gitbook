@@ -15,9 +15,9 @@ Caso não exista uma correspondência, ou nenhuma das sugestões da aplicação 
 Uma [validação](../../glossario/glossario-aplicacao.md#validacao) está concluída após definir se existe correspondência entre esta e uma pessoa/organização identificável que conste na base de dados da PEPData.
 
 {% hint style="info" %}
-### Como são encontrados os resultados sugeridos?
+#### Como são encontrados os resultados sugeridos?
 
-#### Por nome
+**Por nome**
 
 Nas validações de pessoas, todos os nomes que formam o nome da validação têm que constar no nome da [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) que aparece como resultado, com exceção das [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) (como "de", "da", "e", etc.). Exemplificando:
 
@@ -31,28 +31,28 @@ Nas validações de pessoas, as abreviaturas, caso existam, são consideradas. E
 
 No caso das validações de organizações, a pesquisa vai tentar encontrar algum resultado em que o nome corresponda exatamente ao nome da validação.
 
-#### Por data de nascimento (válido apenas para validações de pessoas)
+**Por data de nascimento (válido apenas para validações de pessoas)**
 
 A data de nascimento da validação, caso exista, é utilizada para filtrar os resultados. Exemplificando:
 
 1. Caso tenha introduzido a data de nascimento "01/01/1990" na validação, só irão aparecer [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) com a mesma data de nascimento ou sem informação relativa à data de nascimento.
 
-#### Por limite de resultados
+**Por limite de resultados**
 
 No caso das validações de pessoas, no máximo, são-lhe mostrados os 20 resultados com maior grau de semelhança.
 
-No caso das validações de organizações, é-lhe apresentado, caso exista, um resultado cujo nome corresponda exatamente ao nome da validação.&#x20;
+No caso das validações de organizações, é-lhe apresentado, caso exista, um resultado cujo nome corresponda exatamente ao nome da validação.
 
-#### Por opções auxiliares (apenas válido para validações de pessoas)
+**Por opções auxiliares (apenas válido para validações de pessoas)**
 
-As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes/):&#x20;
+As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes/):
 
 * Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
 * Os nomes introduzidos contêm sempre o último apelido na última posição.
 
-Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.&#x20;
+Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.
 
-Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes. &#x20;
+Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.
 {% endhint %}
 
 ## Outras funcionalidades
@@ -64,5 +64,3 @@ Caso tenha a certeza que uma determinada [validação](../../glossario/glossario
 {% hint style="info" %}
 A pessoa adicionada por si apenas será visível para a sua organização. A PEPData, no futuro, irá rever o perfil da mesma. Caso esta pessoa seja [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel), segundo a lei em vigor, a PEPData irá levantar a restrição e passará a disponibilizá-la a todos os clientes.
 {% endhint %}
-
-&#x20;

@@ -59,38 +59,38 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 ### Regras a cumprir
 
 {% hint style="info" %}
-### Quais as especificações do ficheiro de upload?
+#### Quais as especificações do ficheiro de upload?
 
 * Uma [validação](../../glossario/glossario-aplicacao.md#validacao) por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir a ordem dos campos definidos no cabeçalho.&#x20;
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao) deve seguir a ordem dos campos definidos no cabeçalho.
 * A codificação do ficheiro deve ser utf-8 ou ANSI.
 {% endhint %}
 
 {% hint style="info" %}
-### O que devo saber antes de introduzir informação?
+#### O que devo saber antes de introduzir informação?
 
-#### **Nome** <a href="#regras-dos-nomes" id="regras-dos-nomes"></a>
+**Nome**
 
-* Em caso de validações respeitantes a pessoas, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes. \
-  Estes requisitos mínimos existem de forma a garantir que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).&#x20;
-* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente. \
-  Exemplificando:  "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
-* Para além dos acima mencionados,  apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").  &#x20;
-* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise. \
-  Exemplificando:  "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
+* Em caso de validações respeitantes a pessoas, apenas são permitidos, no mínimo, nomes próprios com 2 nomes e data de nascimento. Caso não tenha informação relativa à data de nascimento, terá de introduzir, no mínimo, 3 nomes.\
+  Estes requisitos mínimos existem de forma a garantir que o sistema tenha a capacidade de sugerir resultados relevantes quando pretenda analisar se a pessoa é [identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel).
+* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.\
+  Exemplificando: "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
+* Para além dos acima mencionados, apenas são aceites espaços (" "), hífenes ("-") ou apóstrofes (" ' ").
+* As [partículas](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/) existentes no nome de pessoas, (como "de", "da", "e", etc.) não alteram os resultados apresentados no processo de análise.\
+  Exemplificando: "Rui Miguel do Rio" será equivalente a introduzir "Rui Miguel Rio".
 * As validações de pessoas suportam abreviaturas no seu nome. No entanto, estas não poderão ser procedidas com um ponto.\
-  Exemplificando:  "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
+  Exemplificando: "Rui M Rio" poderá ter como resultado o nome "Rui Miguel Rio".
 * Todos os pontos anteriores foram implementados de forma a tornar o processo mais robusto possível. No entanto, recomendamos que tente introduzir nomes o mais próximo do original quanto possível.
 
-#### País
+**País**
 
 * Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido (país de nacionalidade, no caso de pessoas, ou país, no caso de organizações) se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante.
-* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país. \
-  Nota: caso o país associado a uma [validação](../../glossario/glossario-aplicacao.md#validacao) se encontre sancionado, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá herdar esta classificação, independentemente de corresponder a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Uma [validação](../../glossario/glossario-aplicacao.md#validacao) pode ter múltiplas [classificações](../../glossario/glossario-aplicacao.md#classificacao) distintas.&#x20;
+* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.\
+  Nota: caso o país associado a uma [validação](../../glossario/glossario-aplicacao.md#validacao) se encontre sancionado, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá herdar esta classificação, independentemente de corresponder a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Uma [validação](../../glossario/glossario-aplicacao.md#validacao) pode ter múltiplas [classificações](../../glossario/glossario-aplicacao.md#classificacao) distintas.
 {% endhint %}
 
 {% hint style="info" %}
-### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
+#### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
 
 * Verifique se o nome, data de nascimento e campos relativos a países não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
 * Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
@@ -98,12 +98,12 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
 {% endhint %}
 
-## Assistente de correção&#x20;
+## Assistente de correção
 
 Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente de correção que irá identificar os erros encontrados no ficheiro. O assistente de correção segue a seguinte lógica sequencial:
 
 1. Validação da linha de cabeçalho;
-2. Validação dos dados introduzidos:&#x20;
+2. Validação dos dados introduzidos:
    * name;
    * birth\_date (caso se trate de validações de pessoas);
    * country\_nationality (caso se trate de validações de pessoas);
@@ -116,7 +116,7 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
 Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros ou de duplicados, estes podem não ser todos mostrados no assistente de correção. Terá de efetuar a sua correção e refazer o upload para ver os erros restantes.
 {% endhint %}
 
-## Soluções para possíveis problemas&#x20;
+## Soluções para possíveis problemas
 
 ### Codificação incorreta do ficheiro
 
@@ -128,18 +128,17 @@ Embora o sistema da PEPData tente determinar a codificação do ficheiro carrega
 
 Neste caso, sugerimos as seguintes soluções:
 
-**Bloco de Notas/Notepad do Windows**&#x20;
+**Bloco de Notas/Notepad do Windows**
 
-1. Abrir o ficheiro em questão.&#x20;
-2. Clicar em Ficheiro/File -> Guardar Como... /Save As...&#x20;
+1. Abrir o ficheiro em questão.
+2. Clicar em Ficheiro/File -> Guardar Como... /Save As...
 3. Alterar Codificação/Encoding de UTF-8 para ANSI ou de ANSI para UTF-8. Esta opção encontra-se à esquerda do botão Guardar/Save.
 4. Guardar.
 5. Voltar a fazer upload do ficheiro na plataforma da PEPData.
 
 [**Notepad++**](https://notepad-plus-plus.org/)
 
-1. Abrir o ficheiro em questão.&#x20;
+1. Abrir o ficheiro em questão.
 2. Codificação/Encoding -> Converter para ANSI ou UTF-8, dependendo da codificação atual.
 3. Guardar.
 4. Voltar a fazer upload do ficheiro na plataforma da PEPData.
-

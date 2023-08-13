@@ -5,24 +5,22 @@
 Endpoint para pesquisar uma pessoa identificável.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="name" type="string" %}
+{% swagger-parameter in="body" name="name" type="string" required="false" %}
 Nome da pessoa a pesquisar
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="birth_date" type="string" %}
-Data de nascimento da validação. 
+{% swagger-parameter in="body" name="birth_date" type="string" required="false" %}
+Data de nascimento da validação.
 
-\
-
+\\
 
 Formato: yyyy-mm-dd
 
-\
-
+\\
 
 Default: null
 {% endswagger-parameter %}
@@ -68,7 +66,7 @@ Default: null
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}
-De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa.md).
+De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa/).
 {% endhint %}
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/search_organization" method="post" summary="Pesquisa de organizações sancionadas" %}
@@ -76,11 +74,11 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 Endpoint para pesquisar uma organização sancionada.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="name" type="string" %}
+{% swagger-parameter in="body" name="name" type="string" required="false" %}
 Nome da organização a pesquisar
 {% endswagger-parameter %}
 

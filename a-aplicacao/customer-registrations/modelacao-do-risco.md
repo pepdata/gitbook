@@ -6,4 +6,4 @@ Ao aceder ao menu "Configurações" > "Risco" poderá personalizar os seus fator
 
 Ao confirmar o seu novo nível de risco, toda a plataforma ficará enquadrada com as alterações efetuadas. E passará a incluir novos níveis, sendo eles: baixo, médio-baixo, médio, médio-alto e alto.
 
-Para saber como configurar o risco, consulte o nosso menu ["Configurações do Risco"](../configuracoes/configuracoes-de-risco.md).
+Para saber como configurar o risco, consulte o nosso menu ["Configurações do Risco"](../configuracoes/risco.md).

@@ -1,12 +1,12 @@
 # Visão geral
 
-A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa.md), realizar operações relativas às [validações](../a-aplicacao/validacoes/), a beneficiários efetivos e utilizadores da plataforma.&#x20;
+A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa/), realizar operações relativas às [validações](../a-aplicacao/validacoes/), a beneficiários efetivos e utilizadores da plataforma.
 
 A sua documentação é técnica e orientada para programadores. Caso apenas pretenda ler sobre a aplicação poderá fazê-lo na [secção correspondente](../a-aplicacao/validacoes/).
 
 ## Autenticação
 
-A autenticação através da PEPData API v0.1 apenas pode ser realizada via chave de autenticação.&#x20;
+A autenticação através da PEPData API v0.1 apenas pode ser realizada via chave de autenticação.
 
 Cada utilizador pode ver e alterar a sua chave na sua página de perfil. Uma chave pode ser alterada mas a nova irá invalidar a anterior. Só existe, por isso, uma chave ativa a cada momento, por utilizador.
 
@@ -44,7 +44,7 @@ No caso de sucesso, API irá seguir a seguinte estrutura de resposta:
 
 As datas que constam nas propriedades doravante mencionadas seguem os seguintes formatos:
 
-* Propriedades com o sufixo "\_at"  ou o nome _timestamp_ representam unix millisecond timestamps (milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC)
+* Propriedades com o sufixo "\_at" ou o nome _timestamp_ representam unix millisecond timestamps (milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC)
 * Propriedades com o sufixo "\_date" representam calendar dates no formato [ISO 8601](https://en.wikipedia.org/wiki/ISO\_8601) YYYY-MM-DD.
 
 ## Paginação

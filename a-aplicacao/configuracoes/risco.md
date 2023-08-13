@@ -1,29 +1,29 @@
-# Configurações de risco
+# Risco
 
 As configurações de risco são uma ferramenta poderosa que lhe permite personalizar o cálculo do risco dos seus [clientes ](../customer-registrations/)de acordo com as especificidades da sua organização e da área de negócio em que se insere.
 
-Estas configurações centram-se em três componentes essenciais:&#x20;
+Estas configurações centram-se em três componentes essenciais:
 
-* As [fórmulas de risco](configuracoes-de-risco.md#formulas-de-risco)
-* As [categorias de risco](configuracoes-de-risco.md#categorias-de-risco)
-* Os [níveis de risco](configuracoes-de-risco.md#categorias-de-risco-1)
+* As [fórmulas de risco](risco.md#formulas-de-risco)
+* As [categorias de risco](risco.md#categorias-de-risco)
+* Os [níveis de risco](risco.md#categorias-de-risco-1)
 
 Apenas após a configuração destes três componentes é possível ativar a personalização do cálculo de risco para a sua organização.
 
 ### Fórmulas de risco
 
-As fórmulas de risco são o centro da configuração de risco, permitindo-lhe especificar os ponderadores de risco a aplicar a cada um dos [fatores de risco](configuracoes-de-risco.md#fatores-de-risco) disponíveis e a aplicar um vasto conjunto de funções à computação do risco.
+As fórmulas de risco são o centro da configuração de risco, permitindo-lhe especificar os ponderadores de risco a aplicar a cada um dos [fatores de risco](risco.md#fatores-de-risco) disponíveis e a aplicar um vasto conjunto de funções à computação do risco.
 
 Existem dois tipos de fórmulas de risco:
 
 * Para pessoas singulares: incluindo beneficiários efetivos e representantes
-* Para pessoas coletivas&#x20;
+* Para pessoas coletivas
 
 #### Fatores de risco
 
 Para incorporar um fator de risco na sua fórmula basta arrastá-lo para a área de introdução da fórmula. Os fatores de risco encontram-se identificados em caixas a cinzento que se encontram sob área de introdução.
 
-Existem fatores de risco simples, cujo valor se apura tendo em conta apenas um valor e compostos, cujo valor se apura tendo em conta a aplicação de uma função a múltiplos valores.&#x20;
+Existem fatores de risco simples, cujo valor se apura tendo em conta apenas um valor e compostos, cujo valor se apura tendo em conta a aplicação de uma função a múltiplos valores.
 
 Estão disponíveis os seguintes fatores de risco na aplicação:
 
@@ -48,9 +48,9 @@ Estão disponíveis os seguintes fatores de risco na aplicação:
 
 * As fórmulas utilizadas têm a mesma base que as fórmulas de Excel. Como tal, devem começar com o símbolo "=".
 * Estão disponíveis todas as funções que existem no Excel, devendo estas ser escritas em maiúsculas. Ex: SUM(), MAX().
-* A separação de valores deve ser feita utilizando a vírgula. \
+* A separação de valores deve ser feita utilizando a vírgula.\
   Ex: MAX(1, 2).
-* As casas decimais devem ser especificadas com um ponto final. \
+* As casas decimais devem ser especificadas com um ponto final.\
   Ex: 1.2.
 
 ### Categorias de risco
@@ -65,9 +65,7 @@ Para além dos intervalos, é ainda possível definir um estado de aprovação a
 
 Os níveis de risco são os componentes mais elementares do cálculo do risco.
 
-Estes podem ser definidos para cada um dos [fatores de risco](configuracoes-de-risco.md#fatores-de-risco) nos respetivos separadores.
-
-
+Estes podem ser definidos para cada um dos [fatores de risco](risco.md#fatores-de-risco) nos respetivos separadores.
 
 {% hint style="success" %}
 A modelação do risco é uma área técnica e complexa, sendo importante o envolvimento de especialistas que o poderão ajudar em todas as etapas do processo. Caso tenha alguma questão, não hesite em [contactar-nos](../../outros/contactos.md).

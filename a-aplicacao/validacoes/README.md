@@ -8,34 +8,26 @@ Esta página ajuda-o a determinar se os seus clientes, potenciais clientes ou be
 
 As [validações](../../glossario/glossario-aplicacao.md#validacao) podem ser adicionadas [manualmente](adicao-manual.md), uma a uma, ou [automaticamente](importacao-de-validacoes.md), o que lhe possibilita adicionar centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez.
 
-Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.&#x20;
+Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.
 
-Uma validação _Completa_ poderá ser:&#x20;
+Uma validação _Completa_ poderá ser:
 
-* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData ou o seu país seja sancionado.&#x20;
+* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData ou o seu país seja sancionado.
 * Completa - Não Identificada: caso não tenha existido correspondência com uma pessoa identificável da base de dados da PEPData e o seu país não seja sancionado.
 
-## Validações que necessitam de atenção
+## Pesquisa de Adverse Media e Processos Judiciais
 
-A base de dados de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) da PEPData está constantemente a ser atualizada, fazendo com que existam diariamente novas pessoas a ser introduzidas. Estas podem também ser removidas da plataforma, caso deixe de existir motivo para continuarem a ser identificadas, ex: ter passado 12 meses desde a última vez que ocuparam um cargo relevante e não terem qualquer outra [classificação](../../glossario/glossario-aplicacao.md#classificacao).
-
-Neste sentido, cada vez que existam atualizações que requeiram a sua atenção, exemplo: uma validação que identificou como PEP ter deixado de o ser, as validações afetadas irão passar a ser sinalizadas como "Precisam de atenção".
-
-{% hint style="info" %}
-Esta sinalização não altera de qualquer modo a decisão tomada anteriormente em relação à validação. \
-Exemplo: caso uma validação esteja como _Completa – não identificada_ e tenha sido adicionada uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) com o mesmo nome, a validação irá ser sinalizada mas irá continuar como _Completa – não identificada_. \
-A aplicação, neste ponto, procura apenas auxiliar o utilizador, ficando a decisão de determinar a validação de maneira diferente do seu lado.
-{% endhint %}
+Caso pretenda realizar uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual, ao clicar no ícone ou no botão de atualizar, ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de Configurações.&#x20;
 
 ## Alteração e eliminação de validações
 
 Caso pretenda alterar uma [validação](../../glossario/glossario-aplicacao.md#validacao) que já se encontre completa, poderá carregar no botão “✗", voltando esta ao estado _Incompleto_.
 
-Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#validacao), poderá sempre carregar no botão “🗑️". Note que apenas poderá apagar validações com estado _Incompleto_. Caso pretenda apagar uma validação completa, terá de a cancelar primeiro (ver passo anterior).&#x20;
+Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#validacao), poderá sempre carregar no botão “🗑️". Note que apenas poderá apagar validações com estado _Incompleto_. Caso pretenda apagar uma validação completa, terá de a cancelar primeiro (ver passo anterior).
 
 ## Filtros
 
-Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado ou origem. Por pré-definição, quando abre a página são mostradas todas as validações _incompletas._&#x20;
+Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado ou origem. Por pré-definição, quando abre a página são mostradas todas as validações _incompletas._
 
 ![Filtros de validações](<../../.gitbook/assets/image (1).png>)
 
@@ -96,7 +88,7 @@ O botão "adicionar pessoa", serve para colocar uma pessoa sob vigilância caso 
 
 <summary>Porque é que uma pessoa ainda não consta na lista PEP?</summary>
 
-Quando o nome que procura ainda não se encontra disponível nas listas da PEPData é porque a fonte oficial ainda não se encontra disponível. Todas as fontes utilizadas pela PEPData são oficiais e verficadas com regularidades, atualizando permanentemente as nossas listas.
+Quando o nome que procura ainda não se encontra disponível nas listas da PEPData é porque a fonte oficial ainda não se encontra disponível. Todas as fontes utilizadas pela PEPData são oficiais e verficadas com regularidade, atualizando permanentemente as nossas listas.
 
 </details>
 
@@ -104,7 +96,7 @@ Quando o nome que procura ainda não se encontra disponível nas listas da PEPDa
 
 <summary>Apenas sei os apelidos abreviados (ex: P., T. M.), obtenho resultados?</summary>
 
-Sim, pode obter resultados com abreviaturas. No entanto, é também importante definir bem as regras de validação pra não obter resultados enganadores. Para que os resultados sejam mais fidedignos, o nome deverá estar completo ou ter, pelo menos, dois nomes completos e data de nascimento.&#x20;
+Sim, pode obter resultados com abreviaturas. No entanto, é também importante definir bem as regras de validação pra não obter resultados enganadores. Para que os resultados sejam mais fidedignos, o nome deverá estar completo ou ter, pelo menos, dois nomes completos e data de nascimento.
 
 Quanto mais completos forem os dados introduzidos, menos falsos positivos terá.
 

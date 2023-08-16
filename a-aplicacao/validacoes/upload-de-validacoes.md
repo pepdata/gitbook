@@ -56,6 +56,21 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 
 {% file src="../../.gitbook/assets/validación de la organización.txt" %}
 
+### Archivo de relación
+
+* Debe contener una organización por línea&#x20;
+* Propiedades aceptadas (obligatorio en negrita):
+
+| Campos                         | Notas                                                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **organization\_vat\_number**  | CIF de la organización para entrar en las relaciones. Esta organización ya debe existir en el sistema. |
+| **vat\_number**                | NIF de la relación a insertar. Este individuo ya debe existir en el sistema.                           |
+| **position\_in\_organization** | Puede ser: representative, manager, beneficiary o beneficial\_owner.                                   |
+
+#### Archivo de muestra
+
+{% file src="../../.gitbook/assets/relaciones de validationes.txt" %}
+
 ### Regras a cumplir
 
 {% hint style="info" %}

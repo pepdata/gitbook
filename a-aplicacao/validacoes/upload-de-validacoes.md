@@ -65,7 +65,7 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | **organization\_vat\_number**  | CIF de la organización para entrar en las relaciones. Esta organización ya debe existir en el sistema. |
 | **vat\_number**                | NIF de la relación a insertar. Este individuo ya debe existir en el sistema.                           |
-| **position\_in\_organization** | Puede ser: representative, manager, beneficiary o beneficial\_owner.                                   |
+| **position\_in\_organization** | Puede ser: representative, manager, owner o beneficial\_owner.                                         |
 
 #### Archivo de muestra
 

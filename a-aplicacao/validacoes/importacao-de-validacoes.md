@@ -65,7 +65,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 | ------------------------------ | --------------------------------------------------------------------------------------- |
 | **organization\_vat\_number**  | NIPC da organização a inserir as relações. Esta organização já deve existir no sistema. |
 | **vat\_number**                | NIF da relação a ser inserida. Este indivíduo já deve existir no sistema.               |
-| **position\_in\_organization** | Pode ser: representative, manager, beneficiary ou beneficial\_owner.                    |
+| **position\_in\_organization** | Pode ser: representative, manager, owner ou beneficial\_owner.                          |
 
 #### Ficheiro exemplo
 

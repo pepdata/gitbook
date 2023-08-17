@@ -4,7 +4,7 @@ En la [página de validaciones](../configuracoes/#validacoes), puede importar va
 
 Antes de elegir el archivo de importación, deverá elegir el tipo de validaciones a importar seleccionando el icono correspondiente:
 
-<figure><img src="../../.gitbook/assets/import validacoes ES.jpg" alt=""><figcaption><p>Selección del tipo de validaciones a importar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled-1.jpg" alt=""><figcaption><p>Selección del tipo de validaciones a importar</p></figcaption></figure>
 
 La aplicación selecciona automáticamente el tipo "Personas". Para importar validaciones de organizaciones, debe seleccionar el icono en forma de edificio.
 

@@ -4,7 +4,7 @@ Na [página de validações](./), pode fazer a importação automática de valid
 
 Antes de escolher o ficheiro de importação, terá de escolher o tipo de validações a importar, selecionando o ícone correspondente:
 
-<figure><img src="../../.gitbook/assets/import validacoes PT (1).jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled-1.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
 Por pré-definição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
 

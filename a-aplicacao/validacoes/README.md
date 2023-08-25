@@ -86,11 +86,9 @@ Neste separador pode encontrar uma listagem de todos os eventos levados a cabo c
 
 ### Relações
 
-As relações podem ser adicionadas manualmente, uma a uma, ou importadas de forma massiva.
+As relações podem ser adicionadas manualmente, uma a uma, ou[ importadas de forma massiva](importacao-de-validacoes.md).
 
 Para adicionar uma relação a uma validação, aceda ao [perfil da validação ](./#perfil-das-validacoes)clicando no botão do olho, e no separador das relações pode adicionar a relação clicando no botão "+".
-
-
 
 Ao adicionar uma relação, pode identificar o tipo de relação como sendo:
 
@@ -102,6 +100,14 @@ Ao adicionar uma relação, pode identificar o tipo de relação como sendo:
 {% hint style="info" %}
 **Nota:** uma validação coletiva pode ter relações com validações coletivas ou individuais. Contudo, uma validação individual só se pode relacionar com validações coletivas.
 {% endhint %}
+
+É possível consultar se uma validação tem uma relação sem abrir o [perfil de validações](./#perfil-das-validacoes), simplesmente passando o rato sobre o nome da validação.
+
+
+
+Se a relação existente for de uma validação identificável, é possível ver essa referência na coluna "resultados" com o ícone das relações que aparecerá a azul escuro.
+
+
 
 ### FAQs
 

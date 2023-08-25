@@ -19,8 +19,7 @@ Nesta janela terá à disposição um conjunto de campos onde poderá preencher 
 
 **Nome**
 
-* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.\
-  Exemplificando: "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
+* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.
 
 **País**
 

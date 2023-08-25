@@ -26,7 +26,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/validação individual (1).txt" %}
+{% file src="../../.gitbook/assets/importação pedidos.txt" %}
 
 ### Regras a cumprir
 
@@ -43,8 +43,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 **Nome**
 
-* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados, não alterando os resultados apresentados no processo de análise. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.\
-  Exemplificando: "Inês Marçal Romão" será equivalente a introduzir "ines marcal romao".
+* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.
 
 **País**
 

@@ -4,7 +4,7 @@ Esta página permite-lhe ter acesso à análise patrimonial dos seus clientes, p
 
 ## Adição
 
-Os pedidos de análise patrimonial podem ser adicionados manualmente, um a um, ou em massa através do botão de importação.
+Os pedidos de análise patrimonial podem ser [adicionados manualmente, um a um](adicao-manual.md), ou em [massa através do botão de importação](importacao-de-validacoes.md).
 
 Uma vez adicionado, o seu pedido apresentará automaticamente o estado “Por processar” e ficará registado para ser enviado para processamento.
 

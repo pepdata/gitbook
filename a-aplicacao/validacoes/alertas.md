@@ -18,3 +18,4 @@ Ao resolver todos os eventos que geraram o alerta, este passará automaticamente
 **Nota:** Se cancelar uma ação relacionada com a resolução de um alerta, este voltará automaticamente ao estado "Não resolvido".
 {% endhint %}
 
+Em cada alerta é possível inserir [comentários](comentarios.md).

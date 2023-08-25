@@ -20,10 +20,14 @@ Este processo de monitorização ocorre a cada 24h.
 
 A monitorização de Adverse Media permite que seja alertado sempre que existam potenciais novas notícias negativas relativamente às suas validações, utilizando um método de pesquisa avançado [aqui ](../adverse-media.md)descrito.
 
-Este processo de monitorização pode ser ativado ou desativado na página de configurações, podendo também ser definida a sua periodicidade.
+Este processo de monitorização pode ser ativado ou desativado na página de [configurações](../configuracoes/), podendo também ser definida a sua periodicidade.
+
+Ao aceder à janela com as notícias relativas à adverse media, é possível [comentar ](comentarios.md)cada uma delas. Poderá ainda marcar cada uma como sendo ou não relevante, clicando no visto ou na cruz consoante o caso.
 
 ## Processos Judiciais
 
 A monitorização de Adverse Media permite que seja alertado sempre que existam potenciais novos processos judiciais em Tribunais de Primeira Instância e Tribunais Administrativos e Fiscais relativamente às suas validações.
 
 Este processo de monitorização pode ser ativado ou desativado na página de configurações, podendo também ser definida a sua periodicidade.
+
+Ao aceder à janela com os processos judiciais, é possível [comentar ](comentarios.md)cada um deles. Poderá ainda marcar cada um como sendo ou não relevante, clicando no visto ou na cruz consoante o caso.

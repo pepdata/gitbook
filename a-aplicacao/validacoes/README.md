@@ -19,6 +19,8 @@ Uma validação _Completa_ poderá ser:
 
 Caso pretenda realizar uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual (ao clicar no ícone ou no botão de atualizar) ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de [Configurações](../configuracoes/).&#x20;
 
+Ao consultar a lista de adverse media ou processos judiciais encontrados, poderá ainda marcar a notícia ou o processo como sendo relevante ou não (clicando no visto ou na cruz, consoante o caso).
+
 ## Alteração e eliminação de validações
 
 Caso pretenda alterar uma [validação](../../glossario/glossario-aplicacao.md#validacao) que já se encontre completa, poderá carregar no botão da lupa e depois carregar no botão “✗" na lista de correspondências encontradas. A validação voltará a estar no estado _Incompleto_.

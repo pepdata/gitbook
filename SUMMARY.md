@@ -31,6 +31,7 @@
   * [Aplicação de regras](a-aplicacao/validacoes/aplicacao-de-regras.md)
   * [Monitorização](a-aplicacao/validacoes/monitorizacao.md)
   * [Alertas](a-aplicacao/validacoes/alertas.md)
+  * [Comentários](a-aplicacao/validacoes/comentarios.md)
   * [Relatórios individuais de validação](a-aplicacao/validacoes/relatorios-individuais-de-validacao.md)
   * [Exportação de validações](a-aplicacao/validacoes/download-de-validacoes.md)
 * [Análise Patrimonial](a-aplicacao/analise-patrimonial/README.md)

@@ -8,37 +8,100 @@ Esta página ajuda-o a determinar se os seus clientes, potenciais clientes ou be
 
 As [validações](../../glossario/glossario-aplicacao.md#validacao) podem ser adicionadas [manualmente](adicao-manual.md), uma a uma, ou [automaticamente](importacao-de-validacoes.md), o que lhe possibilita adicionar centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez.
 
-Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.
+Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) ou a uma [empresa sancionada](../../glossario/glossario-aplicacao.md#sancionado) (caso seja uma validação referente a uma organização). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.
 
 Uma validação _Completa_ poderá ser:
 
-* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData ou o seu país seja sancionado.
-* Completa - Não Identificada: caso não tenha existido correspondência com uma pessoa identificável da base de dados da PEPData e o seu país não seja sancionado.
+* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData, com uma empresa sancionada ou caso o seu país seja sancionado.
+* Completa - Não Identificada: caso não tenha existido correspondência nem com uma pessoa identificável da base de dados da PEPData nem com uma empresa sancionada, e o seu país não seja sancionado.
 
 ## Pesquisa de Adverse Media e Processos Judiciais
 
-Caso pretenda realizar uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual, ao clicar no ícone ou no botão de atualizar, ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de Configurações.&#x20;
+Caso pretenda realizar uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual (ao clicar no ícone ou no botão de atualizar) ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de [Configurações](../configuracoes/).&#x20;
 
 ## Alteração e eliminação de validações
 
-Caso pretenda alterar uma [validação](../../glossario/glossario-aplicacao.md#validacao) que já se encontre completa, poderá carregar no botão “✗", voltando esta ao estado _Incompleto_.
+Caso pretenda alterar uma [validação](../../glossario/glossario-aplicacao.md#validacao) que já se encontre completa, poderá carregar no botão da lupa e depois carregar no botão “✗" na lista de correspondências encontradas. A validação voltará a estar no estado _Incompleto_.
 
-Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#validacao), poderá sempre carregar no botão “🗑️". Note que apenas poderá apagar validações com estado _Incompleto_. Caso pretenda apagar uma validação completa, terá de a cancelar primeiro (ver passo anterior).
+Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#validacao), poderá sempre carregar no botão “🗑️".&#x20;
 
 ## Filtros
 
-Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado ou origem. Por pré-definição, quando abre a página são mostradas todas as validações _incompletas._
+Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado. Por predefinição, quando abre a página são mostradas todas as validações_._
 
 ![Filtros de validações](../../.gitbook/assets/2.png)
 
-Caso utilize os filtros para incluir as [validações](../../glossario/glossario-aplicacao.md#validacao) _Completas_, poderá ainda visualizar o seu resultado através de ícones:
+Os diverentes resultados, são visíveis através de ícones:
 
 * Avatar azul: significa que foi encontrada uma correspondência com uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) da base de dados da PEPData. Pode carregar neste ícone para abrir o perfil da mesma.
-* Avatar translúcido: significa que não foi encontrada correspondência.
-* Globo azul: significa que o país inserido na validação se encontra sancionado.
-* Globo translúcido: significa que o país inserido na validação não se encontra sancionado.
+* Avatar translúcido: significa que não foi encontrada correspondência com esta pessoa.
+* Edifícil azul: significa que foi encontrada uma correspondência com uma [empresa sancionada](../../glossario/glossario-aplicacao.md#sancionado). Pode carregar neste ícone para abrir o perfil da mesma.
+* Edifício translúcido: significa que não foi encontrada correspondência com esta empresa.
+* Globo azul: significa que o país inserido na validação é[ identificável](../../glossario/glossario-aplicacao.md#pais-identificavel).
+* Globo translúcido: significa que o país inserido na validação não é identificável.
 
 ![Exemplo de validações completas](../../.gitbook/assets/3.png)
+
+### Perfil das validações
+
+Ao clicar no botão do olho, disponível na tabela das validações, tem acesso ao perfil da validação. Este apresenta-se dividido em quatro separadores: Informações Básicas; Relações; Alertas; e Histórico.
+
+
+
+**Informações Básicas**
+
+Este separador apresenta todas as informações relativas a esta validação, tais como:
+
+* Nome
+* País (caso seja uma organização)
+* País de Nacionalidade (caso seja uma pessoal individual)
+* Data de Nascimento (caso seja uma pessoa individual)
+* NIF
+* Adição (data e hora)
+* Submissão (data e hora)
+
+
+
+**Relações**
+
+Este separador lista todas as relações existentes entre esta e outras validações.
+
+<figure><img src="../../.gitbook/assets/pdf.png" alt=""><figcaption><p>Separador Relações</p></figcaption></figure>
+
+
+
+**Alertas**
+
+As suas validações podem ter alertas relacionadas com os vários tipos de eventos, seja sobre a valiação em si, a consulta de adverse media ou os processos judiciais. Neste separador pode consultar todos os alertas existentes.
+
+Para saber mais, consulte a página referente aos [alertas](alertas.md).
+
+
+
+**Histórico**
+
+Neste separador pode encontrar uma listagem de todos os eventos levados a cabo com esta validação, sejam eles referentes á criação, definição, novos alertas, novas relações, etc.
+
+
+
+### Relações
+
+As relações podem ser adicionadas manualmente, uma a uma, ou importadas de forma massiva.
+
+Para adicionar uma relação a uma validação, aceda ao [perfil da validação ](./#perfil-das-validacoes)clicando no botão do olho, e no separador das relações pode adicionar a relação clicando no botão "+".
+
+
+
+Ao adicionar uma relação, pode identificar o tipo de relação como sendo:
+
+* Representante;
+* Gerente;
+* Titular; ou
+* Beneficiário Efetivo.
+
+{% hint style="info" %}
+**Nota:** uma validação coletiva pode ter relações com validações coletivas ou individuais. Contudo, uma validação individual só se pode relacionar com validações coletivas.
+{% endhint %}
 
 ### FAQs
 

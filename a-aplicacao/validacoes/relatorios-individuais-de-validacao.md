@@ -1,6 +1,6 @@
 # Relatórios individuais de validação
 
-Na [página de validações](./), pode fazer download das validações completas, de forma individual, em formato pdf, através do botão ![](../../.gitbook/assets/pdf.png), que se encontra na mesma linha da validação.
+Na [página de validações](./), pode fazer download das validações completas, de forma individual, em formato pdf, através do botão ![](<../../.gitbook/assets/pdf (1).png>), que se encontra na mesma linha da validação.
 
 O documento pdf resultante contém toda a informação associada à validação em questão, podendo ser utilizado para arquivo dentro da sua organização.
 

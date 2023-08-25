@@ -14,15 +14,16 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Extensão .txt ou .csv
 * Limitado a 500.000 linhas por cada importação
 * Deve conter uma entidade por linha
+* Cada propriedade deve ser separada por ponto e vírgula
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos          | Notas                                                                                                                                                       |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                |
-| **vat\_number** | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| birth\_date     | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                        |
-| country         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| notes           | Campo de texto livre onde pode inserir informações extra necessárias.                                                                                       |
+| Campos          | Notas                                                                                                                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                               |
+| **vat\_number** | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês.                                                |
+| birth\_date     | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                                                                       |
+| country         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                                              |
+| notes           | <p>Campo de texto livre onde pode inserir informações extra necessárias.<br><strong>Nota:</strong> não introduza ponto e vírgula nas suas notas de forma a não interferir com a importação do ficheiro</p> |
 
 #### Ficheiro exemplo
 

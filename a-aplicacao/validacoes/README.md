@@ -48,8 +48,6 @@ Os diverentes resultados, são visíveis através de ícones:
 
 Ao clicar no botão do olho, disponível na tabela das validações, tem acesso ao perfil da validação. Este apresenta-se dividido em quatro separadores: Informações Básicas; Relações; Alertas; e Histórico.
 
-
-
 **Informações Básicas**
 
 Este separador apresenta todas as informações relativas a esta validação, tais como:
@@ -62,15 +60,13 @@ Este separador apresenta todas as informações relativas a esta validação, ta
 * Adição (data e hora)
 * Submissão (data e hora)
 
-
-
 **Relações**
 
-Este separador lista todas as relações existentes entre esta e outras validações.
+Este separador lista todas as relações existentes entre esta e outras validações. Estas podem ser inseridas, editadas ou eliminadas.
 
-<figure><img src="../../.gitbook/assets/pdf.png" alt=""><figcaption><p>Separador Relações</p></figcaption></figure>
+Para mais informações sobre o funcionamento das relações, consulte a [secção relações](./#relacoes).
 
-
+<figure><img src="../../.gitbook/assets/pdf.png" alt="" width="375"><figcaption><p>Separador Relações</p></figcaption></figure>
 
 **Alertas**
 
@@ -78,13 +74,19 @@ As suas validações podem ter alertas relacionadas com os vários tipos de even
 
 Para saber mais, consulte a página referente aos [alertas](alertas.md).
 
-
-
 **Histórico**
 
 Neste separador pode encontrar uma listagem de todos os eventos levados a cabo com esta validação, sejam eles referentes á criação, definição, novos alertas, novas relações, etc.
 
+Pode filtrar o histórico por datas (desde e até) e por tipo, sendo eles:
 
+* Alertas
+* Determinação
+* Comentários
+* Relações
+* Não-correspondência
+
+<figure><img src="../../.gitbook/assets/histo.png" alt="" width="375"><figcaption><p>Separador Histórico</p></figcaption></figure>
 
 ### Relações
 
@@ -105,9 +107,11 @@ Ao adicionar uma relação, pode identificar o tipo de relação como sendo:
 
 É possível consultar se uma validação tem uma relação sem abrir o [perfil de validações](./#perfil-das-validacoes), simplesmente passando o rato sobre o nome da validação.
 
-
+<figure><img src="../../.gitbook/assets/relações 1.png" alt=""><figcaption></figcaption></figure>
 
 Se a relação existente for de uma validação identificável, é possível ver essa referência na coluna "resultados" com o ícone das relações que aparecerá a azul escuro.
+
+<figure><img src="../../.gitbook/assets/relações 2.png" alt=""><figcaption></figcaption></figure>
 
 
 

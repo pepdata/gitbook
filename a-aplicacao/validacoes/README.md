@@ -2,7 +2,7 @@
 
 Esta página ajuda-o a determinar se os seus clientes, potenciais clientes ou beneficiários são [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel), servindo também como repositório de toda a informação relacionada com os mesmos. A PEPData denomina cada nome adicionado por si como sendo uma [validação](../../glossario/glossario-aplicacao.md#validacao).
 
-![Tabela de validações](<../../.gitbook/assets/image (14).png>)
+![Tabela de validações](../../.gitbook/assets/1.png)
 
 ## Adição, determinação e estados de validações
 
@@ -29,7 +29,7 @@ Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#
 
 Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado ou origem. Por pré-definição, quando abre a página são mostradas todas as validações _incompletas._
 
-![Filtros de validações](<../../.gitbook/assets/image (1).png>)
+![Filtros de validações](../../.gitbook/assets/2.png)
 
 Caso utilize os filtros para incluir as [validações](../../glossario/glossario-aplicacao.md#validacao) _Completas_, poderá ainda visualizar o seu resultado através de ícones:
 
@@ -38,7 +38,7 @@ Caso utilize os filtros para incluir as [validações](../../glossario/glossario
 * Globo azul: significa que o país inserido na validação se encontra sancionado.
 * Globo translúcido: significa que o país inserido na validação não se encontra sancionado.
 
-![Exemplo de validações completas](<../../.gitbook/assets/image (4).png>)
+![Exemplo de validações completas](../../.gitbook/assets/3.png)
 
 ### FAQs
 

@@ -2,7 +2,9 @@
 
 Na [página de validações](./), pode adicionar manualmente uma validação através do botão “+ Adicionar validação”, que lhe dá acesso a uma janela para o fazer.
 
-Nesta janela, terá inicialmente de selecionar o tipo de validação a adicionar, escolhendo o ícone correspondente. Por pré-definição, aparece selecionado o tipo "Pessoa". Para adicionar uma validação de organização, terá de escolher o ícone em forma de edifício.
+Nesta janela, terá inicialmente de selecionar o tipo de validação a adicionar, escolhendo o ícone correspondente. Por predefinição, aparece selecionado o tipo "Pessoa". Para adicionar uma validação de organização, terá de escolher o ícone em forma de edifício.
+
+<figure><img src="../../.gitbook/assets/5.png" alt="" width="470"><figcaption><p>Janela de adição manual</p></figcaption></figure>
 
 Após a seleção do tipo de validação, terá à disposição um conjunto de campos onde poderá preencher informação relativa à validação e que dependerão do tipo selecionado:
 

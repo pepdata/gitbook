@@ -36,6 +36,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 * Um pedido por linha.
 * Um pedido deve seguir a ordem dos campos definidos no cabeçalho.
+* Os campos devem ser separados por ponto e vírgula.
 * A codificação do ficheiro deve ser utf-8 ou ANSI.
 {% endhint %}
 
@@ -54,7 +55,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 {% hint style="info" %}
 #### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
 
-* Verifique se o nome, data de nascimento e campos relativos ao país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
+* Verifique se o nome, data de nascimento e país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
 * Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
@@ -73,7 +74,7 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
    * notes.
 
 {% hint style="info" %}
-Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros ou de duplicados, estes podem não ser todos mostrados no assistente de correção. Terá de efetuar a sua correção e refazer o upload para ver os erros restantes.
+Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros, estes podem não ser todos mostrados no assistente de correção. Terá de efetuar a sua correção e refazer o upload para ver os erros restantes.
 {% endhint %}
 
 ## Soluções para possíveis problemas

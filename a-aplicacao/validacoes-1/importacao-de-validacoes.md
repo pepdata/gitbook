@@ -1,4 +1,4 @@
-# Importação de validações
+# Importação de pedidos
 
 Na página de [análise patrimonial](./), pode fazer a importação automática de pedidos através do botão “Importar pedidos de análise patrimonial”.
 
@@ -48,7 +48,6 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 **País**
 
-* Este campo é analisado de forma independente, sendo apenas verificado se o país introduzido se encontra [sancionado](../../glossario/glossario-aplicacao.md#pais-sancionado). Deste modo, este campo poderá ter significados distintos como: origem dos fundos do cliente, local de residência fiscal ou qualquer outro que considere relevante.
 * Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.
 {% endhint %}
 

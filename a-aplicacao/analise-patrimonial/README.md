@@ -1,6 +1,6 @@
 # Análise Patrimonial
 
-Esta página permite-lhe ter acesso à análise patrimonial dos seus clientes, potenciais clientes ou beneficiários efetivos.
+Esta página permite-lhe ter acesso à análise patrimonial de pessoas individuais ou coletivas.
 
 ## Adição
 
@@ -12,7 +12,7 @@ Uma vez adicionado, o seu pedido apresentará automaticamente o estado “Por pr
 
 O seu pedido poderá apresentar três diferentes estados:
 
-* “Por processar” é o estado padrão que aparece por defeito ao introduzir um novo pedido;
+* “Por processar” é o estado predefinido que aparece ao introduzir um novo pedido;
 * “Em processamento” significa que o seu pedido foi enviado com sucesso e que se encontra a ser processado;
 * “Concluído” é o estado que aparece quando o seu pedido for concluído e apresentar os resultados.
 
@@ -21,10 +21,6 @@ Quando o processamento for concluído, ser-lhe-á possível clicar no botão do 
 ## Eliminação de pedidos
 
 Caso pretenda eliminar um pedido, poderá sempre carregar no botão “🗑️". Note que apenas poderá apagar pedidos com estado "Por processar" ou "Concluído".&#x20;
-
-{% hint style="info" %}
-Quando os pedidos se encontram no estado "Em processamento" não é possível eliminar o pedido, tendo que aguardar que este passe para o estado "Completo".
-{% endhint %}
 
 ## Filtros
 

@@ -1,6 +1,6 @@
 # Importação de pedidos
 
-Na página de [análise patrimonial](./), pode fazer a importação automática de pedidos através do botão “Importar pedidos de análise patrimonial”.
+Na página de [análise patrimonial](./), pode fazer a importação automática de pedidos através do botão “Importar pedidos”.
 
 Após o upload do ficheiro ter sido concluído, todos os novos pedidos irão aparecer na [página](./).
 
@@ -20,9 +20,7 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 | Campos          | Notas                                                                                                                                                                                                      |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **name**        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                               |
-| **vat\_number** | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês.                                                |
-| birth\_date     | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                                                                       |
-| country         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                                              |
+| **vat\_number** | Apenas são aceites números de contribuinte portugueses.                                                                                                                                                    |
 | notes           | <p>Campo de texto livre onde pode inserir informações extra necessárias.<br><strong>Nota:</strong> não introduza ponto e vírgula nas suas notas de forma a não interferir com a importação do ficheiro</p> |
 
 #### Ficheiro exemplo
@@ -41,23 +39,11 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 {% endhint %}
 
 {% hint style="info" %}
-#### O que devo saber antes de introduzir informação?
-
-**Nome**
-
-* Todos os [caracteres latinos](https://en.wikipedia.org/wiki/ISO/IEC\_8859-1), sua acentuação e capitalização **são** suportados. Pode, por isso, introduzir o nome no formato que lhe seja mais conveniente.
-
-**País**
-
-* Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.
-{% endhint %}
-
-{% hint style="info" %}
 #### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
 
-* Verifique se o nome, data de nascimento e país não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
+* Verifique se os campos não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
 * Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
-* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
+* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o processo [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
 {% endhint %}
 
@@ -68,8 +54,6 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
 1. Validação da linha de cabeçalho;
 2. Validação dos dados introduzidos:
    * name;
-   * vat\_number;
-   * birth\_date;
    * country;
    * notes.
 

@@ -1,0 +1,3 @@
+name; vat_number; notes
+A Melhor Loja, Lda; 501266402;
+António Correia Martins; 249070200; Beneficiário efetivo da empresa Madeiras Portuguesas

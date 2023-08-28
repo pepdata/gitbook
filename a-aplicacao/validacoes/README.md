@@ -12,12 +12,12 @@ Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#vali
 
 Uma validação _Completa_ poderá ser:
 
-* Completa - Identificada: caso tenha existido correspondência com uma pessoa identificável da base de dados da PEPData, com uma empresa sancionada ou caso o seu país seja sancionado.
-* Completa - Não Identificada: caso não tenha existido correspondência nem com uma pessoa identificável da base de dados da PEPData nem com uma empresa sancionada, e o seu país não seja sancionado.
+* Completa - Identificada: caso tenha existido correspondência com uma entidade identificável da base de dados da PEPData, com uma entidade sancionada ou caso o seu país seja sancionado.
+* Completa - Não Identificada: caso não tenha existido correspondência nem com uma entidade identificável da base de dados da PEPData nem com uma entidade sancionada, e o seu país não seja sancionado.
 
 ## Pesquisa de Adverse Media e Processos Judiciais
 
-Caso pretenda realizar uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual (ao clicar no ícone ou no botão de atualizar) ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de [Configurações](../configuracoes/).&#x20;
+Caso pretenda fazer uma pesquisa relacionada com Adverse Media ou Processos Judiciais, pode clicar no respetivo ícone, sendo utilizados os dados da [validação](../../glossario/glossario-aplicacao.md#validacao) para realizar esta pesquisa. Esta pesquisa pode ser manual (ao clicar no ícone ou no botão de atualizar) ou automatizada, caso ative esta funcionalidade e defina a periodicidade de monitorização na página de [Configurações](../configuracoes/).&#x20;
 
 Ao consultar a lista de adverse media ou processos judiciais encontrados, poderá ainda marcar a notícia ou o processo como sendo relevante ou não (clicando no visto ou na cruz, consoante o caso).
 
@@ -70,13 +70,17 @@ Para mais informações sobre o funcionamento das relações, consulte a [secç�
 
 **Alertas**
 
-As suas validações podem ter alertas relacionadas com os vários tipos de eventos, seja sobre a valiação em si, a consulta de adverse media ou os processos judiciais. Neste separador pode consultar todos os alertas existentes.
+As suas validações podem ter alertas relacionadas com os vários tipos de eventos sobre:
 
-Para saber mais, consulte a página referente aos [alertas](alertas.md).
+* a validação em si;
+* a consulta de adverse media;
+* a consulta de processos judicias.
+
+Neste separador pode consultar todos os alertas existentes e os seus respetivos estados. Para saber mais, consulte a página referente aos [alertas](alertas.md).
 
 **Histórico**
 
-Neste separador pode encontrar uma listagem de todos os eventos levados a cabo com esta validação, sejam eles referentes á criação, definição, novos alertas, novas relações, etc.
+Neste separador pode encontrar uma listagem de todos os eventos levados a cabo com esta validação, sejam eles referentes à criação, à definição, aos novos alertas, às novas relações, etc.
 
 Pode filtrar o histórico por datas (desde e até) e por tipo, sendo eles:
 

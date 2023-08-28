@@ -46,8 +46,11 @@
   * [Processos Judiciais](a-aplicacao/pesquisa/consulta-de-processos-judiciais.md)
 * [Histórico](a-aplicacao/historico.md)
 * [Configurações](a-aplicacao/configuracoes/README.md)
-  * [Modelação do Formulário de Registo de Cliente](a-aplicacao/configuracoes/modelacao-do-formulario-de-registo-de-cliente.md)
+  * [Gerais](a-aplicacao/configuracoes/gerais.md)
+  * [Validações](a-aplicacao/configuracoes/validacoes.md)
+  * [Registos](a-aplicacao/configuracoes/registos.md)
   * [Risco](a-aplicacao/configuracoes/risco.md)
+  * [Canal de Denúncias](a-aplicacao/configuracoes/canal-de-denuncias.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
 * [Integração da lista PEPData](a-aplicacao/integracao-da-lista-pepdata.md)
 

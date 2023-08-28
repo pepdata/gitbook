@@ -10,6 +10,8 @@ Estas configurações centram-se em três componentes essenciais:
 
 Apenas após a configuração destes três componentes é possível ativar a personalização do cálculo de risco para a sua organização.
 
+<figure><img src="../../.gitbook/assets/risco.png" alt=""><figcaption></figcaption></figure>
+
 ### Fórmulas de risco
 
 As fórmulas de risco são o centro da configuração de risco, permitindo-lhe especificar os ponderadores de risco a aplicar a cada um dos [fatores de risco](risco.md#fatores-de-risco) disponíveis e a aplicar um vasto conjunto de funções à computação do risco.

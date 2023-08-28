@@ -44,7 +44,7 @@ Os diverentes resultados, são visíveis através de ícones:
 
 ![Exemplo de validações completas](../../.gitbook/assets/3.png)
 
-### Perfil das validações
+## Perfil das validações
 
 Ao clicar no botão do olho, disponível na tabela das validações, tem acesso ao perfil da validação. Este apresenta-se dividido em quatro separadores: Informações Básicas; Relações; Alertas; e Histórico.
 
@@ -92,7 +92,7 @@ Pode filtrar o histórico por datas (desde e até) e por tipo, sendo eles:
 
 <figure><img src="../../.gitbook/assets/histo.png" alt="" width="375"><figcaption><p>Separador Histórico</p></figcaption></figure>
 
-### Relações
+## Relações
 
 As relações podem ser adicionadas manualmente, uma a uma, ou[ importadas de forma massiva](importacao-de-validacoes.md).
 

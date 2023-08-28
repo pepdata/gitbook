@@ -48,7 +48,7 @@
 * [Configurações](a-aplicacao/configuracoes/README.md)
   * [Gerais](a-aplicacao/configuracoes/gerais.md)
   * [Validações](a-aplicacao/configuracoes/validacoes.md)
-  * [Registos](a-aplicacao/configuracoes/registos.md)
+  * [Registos](a-aplicacao/configuracoes/modelacao-do-formulario-de-registo-de-cliente.md)
   * [Risco](a-aplicacao/configuracoes/risco.md)
   * [Canal de Denúncias](a-aplicacao/configuracoes/canal-de-denuncias.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)

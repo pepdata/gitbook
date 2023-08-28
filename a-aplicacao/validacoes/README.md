@@ -8,12 +8,12 @@ Esta página ajuda-o a determinar se os seus clientes, potenciais clientes ou be
 
 As [validações](../../glossario/glossario-aplicacao.md#validacao) podem ser adicionadas [manualmente](adicao-manual.md), uma a uma, ou [automaticamente](importacao-de-validacoes.md), o que lhe possibilita adicionar centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez.
 
-Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) ou a uma [empresa sancionada](../../glossario/glossario-aplicacao.md#sancionado) (caso seja uma validação referente a uma organização). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.
+Um vez adicionada, uma [validação](../../glossario/glossario-aplicacao.md#validacao) irá ter o seu estado como _Incompleto_, o que significa que ainda não foi determinado se esta corresponde a uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) ou a uma organização[ sancionada](../../glossario/glossario-aplicacao.md#sancionado) (caso seja uma validação referente a uma organização). Esta determinação, à semelhança da adição, pode também ser feita [manualmente](analise-manual.md), uma a uma, ou [automaticamente](aplicacao-de-regras.md), o que lhe possibilita a determinação de centenas de milhares de [validações](../../glossario/glossario-aplicacao.md#validacao) de uma só vez. Após esta operação, o estado da [validação](../../glossario/glossario-aplicacao.md#validacao) irá passar a _Completo_.
 
 Uma validação _Completa_ poderá ser:
 
-* Completa - Identificada: caso tenha existido correspondência com uma entidade identificável da base de dados da PEPData, com uma entidade sancionada ou caso o seu país seja sancionado.
-* Completa - Não Identificada: caso não tenha existido correspondência nem com uma entidade identificável da base de dados da PEPData nem com uma entidade sancionada, e o seu país não seja sancionado.
+* Identificada: caso tenha existido correspondência com uma entidade identificável da base de dados da PEPData, com uma entidade sancionada ou caso o seu país seja sancionado.
+* Não Identificada: caso não tenha existido correspondência nem com uma entidade identificável da base de dados da PEPData nem com uma entidade sancionada, e o seu país não seja sancionado.
 
 ## Pesquisa de Adverse Media e Processos Judiciais
 
@@ -33,12 +33,12 @@ Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [
 
 ![Filtros de validações](../../.gitbook/assets/2.png)
 
-Os diverentes resultados, são visíveis através de ícones:
+Os diferentes resultados, são visíveis através de ícones:
 
 * Avatar azul: significa que foi encontrada uma correspondência com uma [pessoa identificável](../../glossario/glossario-aplicacao.md#pessoa-identificavel) da base de dados da PEPData. Pode carregar neste ícone para abrir o perfil da mesma.
 * Avatar translúcido: significa que não foi encontrada correspondência com esta pessoa.
-* Edifícil azul: significa que foi encontrada uma correspondência com uma [empresa sancionada](../../glossario/glossario-aplicacao.md#sancionado). Pode carregar neste ícone para abrir o perfil da mesma.
-* Edifício translúcido: significa que não foi encontrada correspondência com esta empresa.
+* Edifício azul: significa que foi encontrada uma correspondência com uma organização[ sancionada](../../glossario/glossario-aplicacao.md#sancionado). Pode carregar neste ícone para abrir o perfil da mesma.
+* Edifício translúcido: significa que não foi encontrada correspondência com esta organização.
 * Globo azul: significa que o país inserido na validação é[ identificável](../../glossario/glossario-aplicacao.md#pais-identificavel).
 * Globo translúcido: significa que o país inserido na validação não é identificável.
 
@@ -48,7 +48,7 @@ Os diverentes resultados, são visíveis através de ícones:
 
 Ao clicar no botão do olho, disponível na tabela das validações, tem acesso ao perfil da validação. Este apresenta-se dividido em quatro separadores: Informações Básicas; Relações; Alertas; e Histórico.
 
-**Informações Básicas**
+### **Informações Básicas**
 
 Este separador apresenta todas as informações relativas a esta validação, tais como:
 
@@ -60,25 +60,25 @@ Este separador apresenta todas as informações relativas a esta validação, ta
 * Adição (data e hora)
 * Submissão (data e hora)
 
-**Relações**
+### **Relações**
 
-Este separador lista todas as relações existentes entre esta e outras validações. Estas podem ser inseridas, editadas ou eliminadas.
+Este separador lista todas as relações existentes entre esta e outras validações. Estas podem ser adicionadas, editadas ou eliminadas.
 
 Para mais informações sobre o funcionamento das relações, consulte a [secção relações](./#relacoes).
 
 <figure><img src="../../.gitbook/assets/pdf.png" alt="" width="375"><figcaption><p>Separador Relações</p></figcaption></figure>
 
-**Alertas**
+### **Alertas**
 
-As suas validações podem ter alertas relacionadas com os vários tipos de eventos sobre:
+As suas validações podem ter alertas relacionados com:
 
-* a validação em si;
-* a consulta de adverse media;
-* a consulta de processos judicias.
+* a determinação da validação;
+* a existência de adverse media;
+* a existência de processos judicias.
 
 Neste separador pode consultar todos os alertas existentes e os seus respetivos estados. Para saber mais, consulte a página referente aos [alertas](alertas.md).
 
-**Histórico**
+### **Histórico**
 
 Neste separador pode encontrar uma listagem de todos os eventos levados a cabo com esta validação, sejam eles referentes à criação, à definição, aos novos alertas, às novas relações, etc.
 

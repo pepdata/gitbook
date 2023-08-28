@@ -6,7 +6,7 @@ Antes de escolher o ficheiro de importação, terá de escolher o tipo de valida
 
 <figure><img src="../../.gitbook/assets/Untitled-1.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
-Por pré-definição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
+Por predefinição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
 
 Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
 
@@ -123,7 +123,7 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
    * birth\_date (caso se trate de validações de pessoas);
    * country\_nationality (caso se trate de validações de pessoas);
    * country\_address (caso se trate de validações de pessoas);
-   * country (caso se trate de validações de organizações;
+   * country (caso se trate de validações de organizações);
    * vat\_number
 3. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
 

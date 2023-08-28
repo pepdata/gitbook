@@ -1,6 +1,6 @@
 # Análise manual
 
-Na [página de validações](./), pode completar uma validação através do respetivo botão em forma de lupa, que lhe dá acesso a uma janela de análise.
+Na [página de validações](./) pode completar uma validação através do botão em forma de lupa, que lhe dá acesso a uma janela de análise.
 
 Esta janela poderá sugerir nomes de [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) (no caso de se tratar de uma validação de pessoa) ou [organizações identificáveis](../../glossario/glossario-aplicacao.md#organizacao-identificavel) (no caso de se tratar de uma validação de organização) relevantes, com o respetivo [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) relativo ao nome da [validação](../../glossario/glossario-aplicacao.md#validacao).
 

@@ -8,7 +8,7 @@ Os alertas referentes às [validações ](./)são gerados com base num evento po
 
 Os alertas aparecem automaticamente no ícone do sino presente no cabeçalho de toda a aplicação e pode ainda ativar receber essas notificações por email no menu de [Configurações](../configuracoes/).
 
-Ao surgir um alerta, este aparece automaticamente na sua validação marcado com o estado "Não Resolvido".
+Ao surgir um alerta, este aparece automaticamente na sua validação, podendo consultá-lo no perfil da validação, dentro do separado "Alertas" marcado com o estado "Não Resolvido".
 
 Para mudar o estado do alerta, terá que tomar decisões sobre todos os eventos que geraram este alerta. Por exemplo: se o alerta se referir à identificação de uma validação, terá que voltar a proceder à validação para concluir o processo.
 

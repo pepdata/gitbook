@@ -270,17 +270,9 @@ Default: "individual"
 
 ### Leyenda
 
-* **id**: id de la alerta.
-* **id\_alidation:**  id de validación.
-* **name**: nombre de la persona idenficiable.
-* **birth\_date**: fecah de nacimiento de la persona identificable.
-* **id\_country\_nationality**: código del país de la nacionalidad, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **added\_at**: fecha en que se creó la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
-* **resolved\_at:** fecha en que se resolvió la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
-* **resolved\_by:** usuario que resolvió la alerta.
-* **status:** estado de la alerta.
-* **reasons**: lista de motivos responsables de la creación de la alerta.
-* **country\_nationality:** país de nacionalidad.
+* **id**: id de la validación creada.
+
+
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_alerts" summary="Obtener validaciones" %}
 {% swagger-description %}
@@ -313,6 +305,28 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
 
 {% swagger-response status="200: OK" description="Alertas de validación obtenidas con éxito" %}
 
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1693318084192,
+    "data": [
+        {
+            "id": "0dc26bde-4f67-c5c5-34dc-42f5453c2e70",
+            "id_validation": "af1aea96-4b13-8b22-eeef-bb6b41638a66",
+            "name": "José Manuel Paulo",
+            "birth_date": null,
+            "id_country_nationality": "PT",
+            "added_at": 1693318062379,
+            "resolved_at": null,
+            "resolved_by": null,
+            "status": "unresolved",
+            "reason": "Es posible que se hayan encontrado nuevos medios adversos con respecto a esta persona.",
+            "country_nationality": "Portugal"
+        }
+    ]
+}
+```
 {% endswagger-response %}
 
 {% swagger-response status="400: Bad Request" description="estado de alertas inválido" %}
@@ -322,7 +336,17 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
 
 ### Leyenda
 
-* **id**: id de la validación creada.
+* **id**: id de la alerta.
+* **id\_validation:**  id de validación.
+* **name**: nombre de la persona idenficiable.
+* **birth\_date**: fecah de nacimiento de la persona identificable.
+* **id\_country\_nationality**: código del país de la nacionalidad, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **added\_at**: fecha en que se creó la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
+* **resolved\_at:** fecha en que se resolvió la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
+* **resolved\_by:** usuario que resolvió la alerta.
+* **status:** estado de la alerta.
+* **reason**: motivo para crear la alerta.
+* **country\_nationality:** país de nacionalidad.
 
 {% hint style="info" %}
 **country\_nationality, country\_address e country**

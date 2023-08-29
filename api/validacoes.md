@@ -9,48 +9,43 @@ Endpoint para obter validações.
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="page" type="number" %}
+{% swagger-parameter in="body" name="page" type="number" required="false" %}
 Página das validações
 
-\
-
+\\
 
 Default: 1
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="source" type="string" %}
+{% swagger-parameter in="body" name="source" type="string" required="false" %}
 Origem das validações
 
-\
-
+\\
 
 Default: all
 
-\
-
+\\
 
 Valores possíveis: all, upload, manual
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="status" type="string" %}
-Estado das validações 
+{% swagger-parameter in="body" name="status" type="string" required="false" %}
+Estado das validações
 
-\
-
+\\
 
 Default: all
 
-\
+\\
 
-
-Valores possíveis: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete
+Valores possíveis: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
+{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
 Id personalizável da validação
 {% endswagger-parameter %}
 
@@ -136,7 +131,7 @@ Id personalizável da validação
 
 * **id**: id da validação.
 * **vatin**: NIF da validação.
-* **source**: origem da validação.&#x20;
+* **source**: origem da validação.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
 * **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
@@ -144,7 +139,7 @@ Id personalizável da validação
 * **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
 * **iperson\_classifications:** lista de classificações da pessoa identificável, possíveis valores:
-  * &#x20;Associado
+  * Associado
   * Familiar
   * Titular de Outros Cargos
   * PEP
@@ -170,7 +165,7 @@ Id personalizável da validação
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="id_validation" type="string" %}
+{% swagger-parameter in="body" name="id_validation" type="string" required="false" %}
 Id da validação
 {% endswagger-parameter %}
 
@@ -178,22 +173,22 @@ Id da validação
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="ids_validations" type="string array" %}
+{% swagger-parameter in="body" name="ids_validations" type="string array" required="false" %}
 Array de ids de validações
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="status" type="string" %}
+{% swagger-parameter in="body" name="status" type="string" required="false" %}
 Estado dos alertas
 
 Default: unresolved\
 Valores possíveis: all, resolved, unresolved
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="from" type="int" %}
+{% swagger-parameter in="body" name="from" type="int" required="false" %}
 Data de início do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="until" type="int" %}
+{% swagger-parameter in="body" name="until" type="int" required="false" %}
 Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
@@ -210,9 +205,7 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
             "resolved_at": null,
             "resolved_by": null,
             "status": "unresolved",
-            "reasons": [
-                "There is a new result that might match this validation: José Codinha Manso"
-            ],
+            "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
             "country_nationality": "Japan"
         }
     ],
@@ -238,7 +231,7 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
 ### Legenda
 
 * **id**: id do alerta.
-* **id\_validation:**  id da validação.
+* **id\_validation:** id da validação.
 * **name**: nome da pessoa identificável.
 * **birth\_date**: data de nascimento da pessoa identificável.
 * **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
@@ -246,7 +239,7 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
 * **resolved\_at:** data a que o alerta foi resolvido, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **resolved\_by:** utilizador que resolveu o alerta.
 * **status:** estado do alerta.
-* **reasons**: lista de razões que responsáveis pela criação do alerta.
+* **reason**: razão da criação do alerta.
 * **country\_nationality:** país de nacionalidade.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Adicionar validação" %}
@@ -254,7 +247,7 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
 Endpoint para adicionar uma validação.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
@@ -262,7 +255,7 @@ key [API_KEY]
 Nome da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="birth_date" type="string" %}
+{% swagger-parameter in="body" name="birth_date" type="string" required="false" %}
 Data de nascimento da validação.
 
 **Parâmetro usado apenas em validações de pessoas.**\
@@ -270,21 +263,19 @@ Formato: yyyy-mm-dd\
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
+{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" required="false" %}
 Instrução para ignorar a verificação de duplicados.
 
-\
-
+\\
 
 Formato: 0/1
 
-\
-
+\\
 
 Default: 0
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_nationality" type="string" %}
+{% swagger-parameter in="body" name="country_nationality" type="string" required="false" %}
 País de nacionalidade da validação.
 
 **Parâmetro usado apenas em validações de pessoas.**\
@@ -292,7 +283,7 @@ Formato: Nome do país (ver nota abaixo)\
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country_address" type="string" %}
+{% swagger-parameter in="body" name="country_address" type="string" required="false" %}
 País de residência da validação.
 
 **Parâmetro usado apenas em validações de pessoas.**
@@ -301,7 +292,7 @@ Formato: Nome do país (ver nota abaixo)\
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="country" %}
+{% swagger-parameter in="body" name="country" required="false" %}
 País da validação.
 
 **Parâmetro usado apenas em validações de organizações.**
@@ -311,29 +302,26 @@ Formato: Nome do país (ver nota abaixo)
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="vatin" type="string" %}
+{% swagger-parameter in="body" name="vatin" type="string" required="false" %}
 NIF da validação
 
-\
-
+\\
 
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
+{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
 Id personalizável da validação
 
-\
-
+\\
 
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="type" type="string" %}
+{% swagger-parameter in="body" name="type" type="string" required="false" %}
 Tipo de entidade, podendo ser: "individual" ou "organization"
 
-\
-
+\\
 
 Default: "individual"
 {% endswagger-parameter %}
@@ -377,15 +365,15 @@ Existem múltiplas formas distintas de se escrever o nome de cada país. A aplic
 Endpoint para consultar os resultados obtidos da análise de uma validação.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="include_iperson_details" type="boolean" %}
+{% swagger-parameter in="body" name="include_iperson_details" type="boolean" required="false" %}
 Incluir informação acerca das classificações, ocupações e relações das pessoas identificáveis.\
 Formato: true/false
 
@@ -491,16 +479,16 @@ Default: false
 Endpoint para submeter uma validação.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_entity" type="string" %}
-Id da pessoa ou organização identificável correspondente. 
+{% swagger-parameter in="body" name="id_entity" type="string" required="false" %}
+Id da pessoa ou organização identificável correspondente.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="A validação foi submetida com sucesso." %}
@@ -519,11 +507,11 @@ Id da pessoa ou organização identificável correspondente.
 Endpoint para apagar uma validação.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id da validação
 {% endswagger-parameter %}
 
@@ -543,7 +531,7 @@ Id da validação
 Endpoint para aplicação das regras de validação.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 key [API_KEY]
 {% endswagger-parameter %}
 

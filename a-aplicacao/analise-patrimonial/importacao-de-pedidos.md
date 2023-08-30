@@ -54,7 +54,7 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
 1. Validação da linha de cabeçalho;
 2. Validação dos dados introduzidos:
    * name;
-   * country;
+   * vat\_number;
    * notes.
 
 {% hint style="info" %}

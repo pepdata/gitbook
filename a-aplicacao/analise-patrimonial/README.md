@@ -4,7 +4,7 @@ Esta página permite-lhe ter acesso à análise patrimonial de pessoas individua
 
 ## Adição
 
-Os pedidos de análise patrimonial podem ser [adicionados manualmente, um a um](adicao-manual.md), ou em [massa através do botão de importação](importacao-de-validacoes.md).
+Os pedidos de análise patrimonial podem ser [adicionados manualmente, um a um](adicao-manual.md), ou em [massa através do botão de importação](importacao-de-pedidos.md).
 
 Uma vez adicionado, o seu pedido apresentará automaticamente o estado “Por processar” e ficará registado para ser enviado para processamento.
 

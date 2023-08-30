@@ -19,13 +19,13 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 | Campos          | Notas                                                                                                                                                                                                      |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                               |
+| **name**        | Poderá ver [aqui](importacao-de-pedidos.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                                  |
 | **vat\_number** | Apenas são aceites números de contribuinte portugueses.                                                                                                                                                    |
 | notes           | <p>Campo de texto livre onde pode inserir informações extra necessárias.<br><strong>Nota:</strong> não introduza ponto e vírgula nas suas notas de forma a não interferir com a importação do ficheiro</p> |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/importação pedidos.txt" %}
+{% file src="../../.gitbook/assets/importação pedidos (1).txt" %}
 
 ### Regras a cumprir
 
@@ -42,8 +42,8 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 #### Não estou a conseguir fazer o upload do ficheiro, o que posso fazer?
 
 * Verifique se os campos não estão delimitados por ' ou ". Estes valores não devem estar delimitados.
-* Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
-* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o processo [aqui ](importacao-de-validacoes.md#codificacao-incorreta-do-ficheiro)descrito.
+* Verifique se, abrindo o ficheiro, não vê nenhum caracter como "" em vez de caracteres com acentos ou "ç". Caso tal aconteça, existe um problema de codificação que pode tentar resolver seguindo o [aqui ](importacao-de-pedidos.md#codificacao-incorreta-do-ficheiro)descrito.
+* Caso os pontos anteriores não se verifiquem e continue a receber uma mensagem de erro cada vez que tenta realizar um upload, pode existir um problema de codificação que pode tentar resolver seguindo o processo [aqui ](importacao-de-pedidos.md#codificacao-incorreta-do-ficheiro)descrito.
 * Caso nenhum dos exemplos anteriores se verifique, por favor contacte a PEPData.
 {% endhint %}
 

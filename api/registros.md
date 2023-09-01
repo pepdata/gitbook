@@ -35,7 +35,53 @@ Default: 1
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registros obtenidos con éxito" %}
-
+```
+{
+    "data": {
+        "items": [
+            {
+                "id": "7dd49ce1-9385-0cd1-7835-828393771ea0",
+                "name": "individual",
+                "vatin": null,
+                "value": "{\"entity_proof\":{\"type\":\"\",\"identification_metadata\":{\"document_number\":\"\",\"document_validity\":\"\",\"is_document_perpetual\":\"\",\"document_issuing_entity\":\"\",\"document_issuing_date\":\"\",\"document_issuing_location\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"personal_data\":{\"name\":\"individual\",\"vatin\":null,\"email\":\"\",\"birth_date\":\"\",\"nationalities\":[],\"birth_place\":\"\",\"documentUpload\":{\"files\":[]}},\"address_data\":{\"type\":null,\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"occupation_data\":{\"type\":null,\"profession\":\"\",\"employer\":\"\",\"eni\":{\"commercial_name\":\"\",\"is_same_address\":null,\"address\":{\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\"},\"cae\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"data_verification\":{\"type\":null,\"client_email\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null},\"invite_sent\":false},\"adverse_media_data\":{\"adverse_media\":[]},\"suspicion_data\":{\"is_suspect\":null,\"reason\":\"\"},\"questionnaire_id\":\"7dd49ce1-9385-0cd1-7835-828393771ea0\",\"name\":\"individual\"}",
+                "version": "1",
+                "type": "individual",
+                "subtype": "regular",
+                "relations": null,
+                "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
+                "added_at": 1693489958769,
+                "submitted_at": null,
+                "submitted_by": null,
+                "approval_state": null,
+                "approval_change_reason": null,
+                "risk": 0,
+                "risk_change_reason": null,
+                "saved_at": 1693491414116,
+                "assigned_to": null,
+                "id_invited_user": null,
+                "locked_by": null,
+                "locked_at": null,
+                "accepted_by": null,
+                "accepted_at": null,
+                "data_treatment_accepted_at": null,
+                "needs_attention": null,
+                "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
+                "id_custom": null,
+                "invited_at": null,
+                "invited_by_organization_name": null,
+                "language": null,
+                "id_country": "PT",
+                "id_iperson": "ID1"
+            }
+        ],
+        "page": 1,
+        "max_results_per_page": 50,
+        "total": 1
+    },
+    "version": "0.1",
+    "timestamp": 1648132877766
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 
@@ -45,35 +91,31 @@ Default: 1
 * **name:** nombre del registro
 * **vatin**: NIF/CIF de registro
 * **value:** información de registro
-* **source\_name:** nombre del registro donde se originó este cliente
-* **source\_type:** tipo de registro donde se originó este cliente
-* **source\_subtype:** subtipo del registro donde se originó este cliente
 * **version:** versión del cuestionario
 * **type:** tipo de registro (individual, colectivo o transaccion)
 * **subtype:** subtipo de registro (representante, titular real, etc...)
+* **relations:** relaciones asociadas al registro.
 * **added\_by:** id del usuario que agregó el registro
 * **added\_at:** fecha en que se agregó el registro, en milisegundos desde el 1 de enero de 1970 00:00:00 UTC
-* **submit\_at:** fecha en que se envió el registro, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
+* **submitted\_at:** fecha en que se envió el registro, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
 * **submitted\_by:** id del usuario que envió el registro
-* **delete\_at:** fecha en que se eliminó el registro, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
-* **delete\_by:** id del usuario que eliminó el registro
 * **approval\_state:** estado de aprobación del registro (0 - en espera de decisión, 1 - aprobado, -1 - rechazado)
 * **approval\_change\_reason:** justificación para cambiar el estado de aprobación
-* **riesgo:** valor de riesgo del registro
+* **risk:** valor de riesgo del registro
 * **risk\_change\_reason:** justificación del cambio de categoría de riesgo
 * **saved\_at:** fecha en que se guardó el registro por última vez, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
 * **assigned\_to:** id del responsable del registro
 * **id\_invited\_user:** id del usuario invitado al completar el registro
 * **locked\_by:** id del usuario que tiene el registro abierto
 * **lock\_at:** fecha en que se abrió el registro por última vez, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
-* **accept\_by:** id del usuario invitado que aceptó la invitación a rellenar
-* **accept\_at:** fecha en la que se aceptó la invitación de finalización, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
+* **accepted\_by:** id del usuario invitado que aceptó la invitación a rellenar
+* **accepted\_at:** fecha en la que se aceptó la invitación de finalización, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **data\_treatment\_accepted\_at:** fecha en la que se aceptaron las condiciones de tratamiento de datos del usuario invitado, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **needs\_attention:** booleano que describe si el registro necesita atención
 * **id\_organization:** id de la organización que creó el registro
 * **id\_custom:** id personalizable ingresado por el usuario
-* **invite\_at:** fecha en que se envió la invitación a llenar, expresada en milisegundos desde el 1 de enero de 1970 00:00:00 UTC
-* **invite\_by\_organization\_name:** nombre de la organización que envió la invitación a rellenar
+* **invited\_at:** fecha en que se envió la invitación a llenar, expresada en milisegundos desde el 1 de enero de 1970 00:00:00 UTC
+* **invited\_by\_organization\_name:** nombre de la organización que envió la invitación a rellenar
 * **language:** idioma en el que se envió la invitación a completar
 * **id\_country:** país de la organización que creó el registro en formato ISO 3166-1 alpha-2
 * **id\_iperson:** id de la persona identificable correspondiente. nulo si no hubo ninguna coincidencia

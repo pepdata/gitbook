@@ -13,25 +13,24 @@ Endpoint para obter os registos de clientes e transações.
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id do registo ou transação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
+{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
 Id personalizável do registo ou transação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="search_term" type="string" %}
+{% swagger-parameter in="body" name="search_term" type="string" required="false" %}
 Termo de pesquisa:
 
 Pesquisa sobre as colunas name, vatin e id\_custom
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="page" type="integer" %}
+{% swagger-parameter in="body" name="page" type="integer" required="false" %}
 Página dos registos ou transações
 
-\
-
+\\
 
 Default: 1
 {% endswagger-parameter %}
@@ -42,25 +41,38 @@ Default: 1
     "data": {
         "items": [
             {
-                "id": "2a206d4a-0a5d-4a04-9a0c-cadae6e2cffa", 
-                "name": "Lisa Fidalgo Corte-Real",
-                "vatin": "255627777",
+                "id": "7dd49ce1-9385-0cd1-7835-828393771ea0",
+                "name": "individual",
+                "vatin": null,
+                "value": "{\"entity_proof\":{\"type\":\"\",\"identification_metadata\":{\"document_number\":\"\",\"document_validity\":\"\",\"is_document_perpetual\":\"\",\"document_issuing_entity\":\"\",\"document_issuing_date\":\"\",\"document_issuing_location\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"personal_data\":{\"name\":\"individual\",\"vatin\":null,\"email\":\"\",\"birth_date\":\"\",\"nationalities\":[],\"birth_place\":\"\",\"documentUpload\":{\"files\":[]}},\"address_data\":{\"type\":null,\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"occupation_data\":{\"type\":null,\"profession\":\"\",\"employer\":\"\",\"eni\":{\"commercial_name\":\"\",\"is_same_address\":null,\"address\":{\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\"},\"cae\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"data_verification\":{\"type\":null,\"client_email\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null},\"invite_sent\":false},\"adverse_media_data\":{\"adverse_media\":[]},\"suspicion_data\":{\"is_suspect\":null,\"reason\":\"\"},\"questionnaire_id\":\"7dd49ce1-9385-0cd1-7835-828393771ea0\",\"name\":\"individual\"}",
+                "version": "1",
                 "type": "individual",
-                "added_at": 1588003603593,
-                "added_by": "839a5871-fa0e-470a-af42-9110f8ef5b27",
+                "subtype": "regular",
+                "relations": null,
+                "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
+                "added_at": 1693489958769,
                 "submitted_at": null,
                 "submitted_by": null,
-                "accepted_at": null,
-                "accepted_by": null,
-                "data_treatment_accepted_at": null,
-                "saved_at": 1648132877766,
-                "assigned_to": null,
                 "approval_state": null,
                 "approval_change_reason": null,
-                "risk": 2.5,
+                "risk": 0,
                 "risk_change_reason": null,
-                "needs_attention": 0,
-                "id_custom": "ID1"
+                "saved_at": 1693491414116,
+                "assigned_to": null,
+                "id_invited_user": null,
+                "locked_by": null,
+                "locked_at": null,
+                "accepted_by": null,
+                "accepted_at": null,
+                "data_treatment_accepted_at": null,
+                "needs_attention": null,
+                "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
+                "id_custom": null,
+                "invited_at": null,
+                "invited_by_organization_name": null,
+                "language": null,
+                "id_country": "PT",
+                "id_iperson": "ID1"
             }
         ],
         "page": 1,
@@ -80,18 +92,14 @@ Default: 1
 * **name:** nome do registo.
 * **vatin:** NIF/NIPC do registo.
 * **value:** informação do registo.
-* **source\_name:** nome do registo onde teve origem este cliente.
-* **source\_type:** tipo do registo onde teve origem este cliente.
-* **source\_subtype:** subtipo do registo onde teve origem este cliente.
 * **version:** versão do questionário.
 * **type:** tipo de registo (individual, coletiva ou transação).
 * **subtype:** subtipo do registo (representante, beneficiário, etc..).
+* **relations**: relações associadas ao registo.
 * **added\_by:** id do utilizador que adicionou o registo.
 * **added\_at:** data a que o registo foi adicionado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **submitted\_at:** data a que o registo foi submetido, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **submitted\_by:** id do utilizador que submeteu o registo.
-* **deleted\_at:** data a que o registo foi apagado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **deleted\_by:** id do utilizador que apagou o registo.
 * **approval\_state:** estado de aprovação do registo (_**0 -**_ aguarda decisão, _**1 -**_ aprovado, _**-1**_ - rejeitado).
 * **approval\_change\_reason:** justificação para alteração do estado de aprovação.
 * **risk:** valor do risco do registo.
@@ -130,14 +138,12 @@ Nome do registo ou transação
 NIF/NIPC do registo
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
+{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
 Id personalizável do registo
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" required="true" %}
 Tipo do registo
-
-
 
 Valores aceites:
 
@@ -148,138 +154,124 @@ Valores aceites:
 **transaction** (Transação)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="questionnaire_data" type="json" %}
+{% swagger-parameter in="body" name="questionnaire_data" type="json" required="false" %}
 **Consoante cada tipo de registo**, são necessários objetos diferentes:
-
-
 
 _individual_
 
 `{`
 
-&#x20;  `"personal_data": {`
+`"personal_data": {`
 
-&#x20;    `"email": "test@test.pt",`
+`"email": "test@test.pt",`
 
-&#x20;    `"birth_date": "2010-10-10",`
+`"birth_date": "2010-10-10",`
 
-&#x20;    `"nationalities": ["Portugal"],`
+`"nationalities": ["Portugal"],`
 
-&#x20;    `"birth_place": "Portugal"` &#x20;
+`"birth_place": "Portugal"`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"entity_proof": {`
+`"entity_proof": {`
 
-&#x20;     `"identification_metadata": {`
+`"identification_metadata": {`
 
-&#x20;     `"document_number": 123456789,`
+`"document_number": 123456789,`
 
-&#x20;     `"is_document_perpetual": false,`
+`"is_document_perpetual": false,`
 
-&#x20;      `"document_validity": "2023-05-20",`
+`"document_validity": "2023-05-20",`
 
-&#x20;      `"document_issuing_entity": "Test",`
+`"document_issuing_entity": "Test",`
 
-&#x20;      `"document_issuing_date": "2013-05-20",`
+`"document_issuing_date": "2013-05-20",`
 
-&#x20;      `"document_issuing_location": "Test"`
+`"document_issuing_location": "Test"`
 
-&#x20;    `},`
+`},`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"suspicion_data": {`
+`"suspicion_data": {`
 
-&#x20;    `"is_suspect": false,`
+`"is_suspect": false,`
 
-&#x20;     `"reason": "Test"`
+`"reason": "Test"`
 
-&#x20;  `},` &#x20;
+`},`
 
 `}`
-
-
 
 _organization_
 
-
-
 `{`
 
-&#x20;  `"company_data": {`
+`"company_data": {`
 
-&#x20;    `"object": "test",`
+`"object": "test",`
 
-&#x20;    `"caes": ["01111"],`
+`"caes": ["01111"],`
 
-&#x20;    `"country": "Portugal",`
+`"country": "Portugal",`
 
-&#x20;    `"foundation_date": "2005-02-01",`
+`"foundation_date": "2005-02-01",`
 
-&#x20;    `"countries_operations": ["Portugal"]` &#x20;
+`"countries_operations": ["Portugal"]`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"entity_proof": {`
+`"entity_proof": {`
 
-&#x20;     `"national_headquarters": true`
+`"national_headquarters": true`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"beneficiary_data": {`
+`"beneficiary_data": {`
 
-&#x20;     `"codigo_rcbe": "123456"`
+`"codigo_rcbe": "123456"`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"suspicion_data": {`
+`"suspicion_data": {`
 
-&#x20;    `"is_suspect": false,`
+`"is_suspect": false,`
 
-&#x20;     `"reason": "Test"`
+`"reason": "Test"`
 
-&#x20;  `},`
+`},`
 
 `}`
-
-
 
 _transaction_
 
-
-
 `{`
 
-&#x20;  `"buyer": {`
+`"buyer": {`
 
-&#x20;    `"acquisition_purpose": "test purpose",`
+`"acquisition_purpose": "test purpose",`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"basic_information": {`
+`"basic_information": {`
 
-&#x20;     `"sell_type": "good",`
+`"sell_type": "good",`
 
-&#x20;     `"description": "test description",`
+`"description": "test description",`
 
-&#x20;     `"observations": "test observations"`
+`"observations": "test observations"`
 
-&#x20;  `},`
+`},`
 
-&#x20;  `"suspicion_data": {`
+`"suspicion_data": {`
 
-&#x20;    `"is_suspect": false,`
+`"is_suspect": false,`
 
-&#x20;     `"reason": "Test"`
+`"reason": "Test"`
 
-&#x20;  `},`
+`},`
 
 `}`
-
-
-
-
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registo ou transação criado/a." %}
@@ -320,10 +312,8 @@ Endpoint para editar um registo de clientes e transações.
 Id do registo ou transação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="questionnaire_data" type="json" %}
+{% swagger-parameter in="body" name="questionnaire_data" type="json" required="false" %}
 Poderá só editar o valor que necessita:
-
-
 
 Verifique [add\_questionnaire](registrations.md#adicao-de-um-registo) (`questionnaire_data`) para saber quais as propriedades que são aceites.
 {% endswagger-parameter %}
@@ -344,8 +334,6 @@ key [API_KEY]
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 {% swagger method="post" path="/delete_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Eliminação um registo" %}
 {% swagger-description %}
@@ -423,11 +411,7 @@ E-mail do cliente convidado
 {% swagger-parameter in="body" name="language" type="string" required="false" %}
 Língua em que deve ser enviado o convite
 
-
-
 Default: pt-PT
-
-
 
 Valores aceites:
 
@@ -446,8 +430,6 @@ Valores aceites:
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 {% swagger method="post" path="/cancel_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Cancelar um convite de preenchimento do registo" %}
 {% swagger-description %}
@@ -474,8 +456,6 @@ E-mail do cliente convidado
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 {% swagger method="post" path="/assign_user_to_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Atribuir um utilizador a um registo" %}
 {% swagger-description %}
@@ -519,8 +499,6 @@ Id do registo ou transação
 {% swagger-parameter in="body" name="departments" type="json" required="true" %}
 Array de departamentos
 
-
-
 Exemplo:
 
 \["Financeiro"]
@@ -534,8 +512,6 @@ Exemplo:
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 {% swagger method="post" path="/edit_questionnaire_approval_state" baseUrl="https://www.pepdata.com/api" summary="Editar o estado de aprovação de um registo" %}
 {% swagger-description %}
@@ -552,8 +528,6 @@ Id do registo ou transação
 
 {% swagger-parameter in="body" name="approval_state" type="string" required="true" %}
 Estado de aprovação
-
-
 
 Valores aceites:
 
@@ -576,8 +550,6 @@ Justificação para alteração do estado de aprovação
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-
 
 {% swagger method="post" path="/revert_questionnaire_risk" baseUrl="https://www.pepdata.com/api" summary="Reverter o risco de um registo" %}
 {% swagger-description %}
@@ -605,7 +577,7 @@ Id do registo ou transação
 
 * risk: risco recalculado do registo de clientes ou transações.
 
-{% swagger method="post" path="/reset_questionnaire_needs_attention" baseUrl="https://www.pepdata.com/api" summary="Redefinir o estado "Precisam de atenção" de um registo" %}
+{% swagger method="post" path="/reset_questionnaire_needs_attention" baseUrl="https://www.pepdata.com/api" summary="Redefinir o estado " %}
 {% swagger-description %}
 Endpoint para redefinir o estado "Precisam de atenção" de um registo de clientes ou transações.
 {% endswagger-description %}
@@ -618,7 +590,7 @@ key [API_KEY]
 Id do registo ou transação
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Estado "Precisam de atenção" do registo de clientes ou transações foi redefinido com sucesso. " %}
+{% swagger-response status="200: OK" description="Estado " %}
 ```javascript
 {
     // Response
@@ -626,4 +598,3 @@ Id do registo ou transação
 ```
 {% endswagger-response %}
 {% endswagger %}
-

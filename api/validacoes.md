@@ -136,7 +136,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 * **id\_country\_address**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **decision**: booleano que describe si ha habido una coincidencia con una persona identificable.
 * **id\_iperson**: id de la persona identificable correspondiente. null si no se ha encontrado ninguna coincidencia.
-* **iperson\_classifications:** lista de classificações da pessoa identificável, possíveis valores:
+* **iperson\_classifications:** lista de clasificaciones de la persona identificable, posibles valores:
   * Asociado
   * Familiar
   * Titular de Otros Cargos

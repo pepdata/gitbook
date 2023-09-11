@@ -5,11 +5,11 @@
 Endpoint para pesquisar uma pessoa identificável.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="name" type="string" required="false" %}
+{% swagger-parameter in="body" name="name" type="string" required="true" %}
 Nome da pessoa a pesquisar
 {% endswagger-parameter %}
 
@@ -74,11 +74,11 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 Endpoint para pesquisar uma organização sancionada.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 key [API_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="name" type="string" required="false" %}
+{% swagger-parameter in="body" name="name" type="string" required="true" %}
 Nome da organização a pesquisar
 {% endswagger-parameter %}
 

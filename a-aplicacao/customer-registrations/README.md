@@ -1,6 +1,6 @@
 # Registos de clientes
 
-Nesta página, devem ser registados todos os clientes da organização, bem como intervenientes nas transações que tenham ocorrido.&#x20;
+Nesta página, devem ser registados todos os clientes da organização, bem como intervenientes nas transações que tenham ocorrido.
 
 De momento, é possível fazer o registo das seguintes pessoas:
 
@@ -18,15 +18,28 @@ Após ter criado a pessoa, esta ficará disponível numa tabela, podendo o quest
 
 ![Tabela de clientes](<../../.gitbook/assets/image (16).png>)
 
-Nos casos de pessoas coletivas, após submissão do questionário irão ser criados automaticamente todos os "Registos rápidos" dos seus beneficiários efetivos e/ou representantes, caso tenham sido identificados.&#x20;
+Nos casos de pessoas coletivas, após submissão do questionário irão ser criados automaticamente todos os "Registos rápidos" dos seus beneficiários efetivos e/ou representantes, caso tenham sido identificados.
 
-Os questionários já submetidos poderão ser visualizados através do botão "👁".&#x20;
+Os questionários já submetidos poderão ser visualizados através do botão "👁".
 
 Note que o registo de uma pessoa coletiva só se encontra verdadeiramente concluído após submissão do respetivo questionário e de todos os questionários dos seus beneficiários efetivos.
 
+## Tipos de Registos Individuais
+
+Existem quatro tipo de registos de pessoas individuais:
+
+* Standard
+* Representante
+* Beneficiário Efetivo
+* Titular/Gerente
+
+Os diferentes tipos de registos funcionam da mesma forma, sendo os campos obrigatórios aqueles que são exigidos por lei. Contudo, visto que não há uma obrigatoriedade legal de preencher todos os dados de um titular/gerente, este tipo não inclui os mesmos campos, nem as mesmas obrigações que os restantes.
+
+Se pretender configurar os campos disponíveis ou a sua obrigatoriedade, consulte a [página de modelação do formulário](../registo-de-transacoes/modelacao-do-formulario.md).
+
 ## Apagar registos
 
-Pode utilizar o botão “🗑️" para apagar registos.&#x20;
+Pode utilizar o botão “🗑️" para apagar registos.
 
 No entanto, é importante referir que um registo apenas pode ser apagado caso não esteja referenciado por outros registos. Caso tente apagar um registo que está referenciado, a aplicação irá mostrar-lhe todos os registos que o referenciam e que necessitam de ser apagados/alterados previamente.
 
@@ -158,10 +171,18 @@ A aprovação é sempre definida por si.
 
 <summary>Infrinjo a lei se alterar os campos visíveis no formulário de registo de clientes?</summary>
 
-A PEPData permite que cada cliente customize os seus formulários de acordo com a informação que tem, evitando desta forma que os formulários na plataforma fiquem incompletos e sem risco atraibuído.&#x20;
+A PEPData permite que cada cliente customize os seus formulários de acordo com a informação que tem, evitando desta forma que os formulários na plataforma fiquem incompletos e sem risco atraibuído.
 
 Há medida que for angariando mais informações sobre os seus clientes, pode acrescentar os campos de novas informações como obrigatórios aos seus formulários.
 
 Para saber mais sobre esta customização veja "Modelação do Formulário de Registo de Cliente".
+
+</details>
+
+<details>
+
+<summary>Criei um titular/gerente no meu registo e agora queria adioná-lo como beneficiário efetivo, como posso fazer?</summary>
+
+O tipo de registo titular/gerente é um registo mais simplificado e com menos campos por não haver obrigação legal para o seu preenchimento detalhado. Contudo, no caso de um beneficiário efetivo, essa obrigação existe. Desta forma, deverá eliminar o seu registo criado como sendo titular/gerente, e criá-lo primeiramente como um registo standard, de representante ou de beneficiário efetivo. Depois, poderá adicionar novamente o seu registo como sendo titular/representante de uma entidade.
 
 </details>

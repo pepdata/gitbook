@@ -37,16 +37,16 @@ Si desea eliminar una [validación](../../glossario/glossario-aplicacao.md#valid
 
 En esta página, también hay filtros que permiten mostrar las [validaciones](../../glossario/glossario-aplicacao.md#validacion) en cuanto a su estado u origen. Por defecto, todas las validaciones incompletas se muestran al abrir la página.
 
-![Filtros de validaciones](../../.gitbook/assets/filtros-validações.jpg)
+![Filtros de validaciones](../../.gitbook/assets/h.jpg)
 
 Si usa los filtros para incluir [validaciones ](../../glossario/glossario-aplicacao.md#validacion)_Completas_, aún puede ver su resultado a través de íconos:
 
 * Persona azul: significa que se encontró una[ persona identificable](../../glossario/glossario-aplicacao.md#persona-identificable) de la base de datos da PEPData. Puede pulsar este icono para abrir su perfil.
 * Persona translúcido: significa que no se ha encontrado ninguna coincidencia.
+* Edificio azul: significa que se encontró una coincidencia con una organización sancionada. Puede hacer clic en este icono para abrir su perfil.&#x20;
+* Edificio translúcido: significa que no se encontró ninguna coincidencia con esta organización.
 * Globo azul: significa que el país introducido en la validación está sancionado.
-* Globo translúcido: significa que el país introducido en la validación no está sancionado
-
-![Ejemplo de validaciones completas](../../.gitbook/assets/validações-feitas.jpg)
+* Globo translúcido: significa que el país introducido en la validación no está sancionado.
 
 ### FAQs
 

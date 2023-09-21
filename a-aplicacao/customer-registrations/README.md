@@ -35,7 +35,7 @@ Existem quatro tipo de registos de pessoas individuais:
 
 Os diferentes tipos de registos funcionam da mesma forma, sendo os campos obrigatórios aqueles que são exigidos por lei. Contudo, visto que não há uma obrigatoriedade legal de preencher todos os dados de um titular/gerente, este tipo não inclui os mesmos campos, nem as mesmas obrigações que os restantes.
 
-Se pretender configurar os campos disponíveis ou a sua obrigatoriedade, consulte a [página de modelação do formulário](../registo-de-transacoes/modelacao-do-formulario.md).
+Se pretender configurar os campos disponíveis ou a sua obrigatoriedade, consulte a [página de modelação do formulário](../configuracoes/modelacao-do-formulario-de-registo-de-cliente.md#modelacao).
 
 ## Apagar registos
 

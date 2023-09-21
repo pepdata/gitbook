@@ -1,6 +1,6 @@
 # Visão geral
 
-A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisa/), realizar operações relativas às [validações](../a-aplicacao/validacoes/), a beneficiários efetivos e utilizadores da plataforma.
+A API da PEPData pode ser utilizada para fazer [pesquisas](../a-aplicacao/pesquisar/), realizar operações relativas às [validações](../a-aplicacao/validacoes/), a beneficiários efetivos e utilizadores da plataforma.
 
 A sua documentação é técnica e orientada para programadores. Caso apenas pretenda ler sobre a aplicação poderá fazê-lo na [secção correspondente](../a-aplicacao/validacoes/).
 

@@ -6,7 +6,7 @@ Existem várias maneiras distintas de utilizar a API da PEPData. Esta página ir
 
 Corresponde ao exemplo mais básico de utilização. Para seguir esta via, apenas necessita de utilizar o endpoint de [pesquisa de pessoa identificável](pesquisa.md#pesquisa-de-pessoa-identificavel).
 
-Este endpoint aceita um nome e uma data de nascimento como inputs e devolve os resultados de pesquisa que mais se assemelham aos termos pesquisados. De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa/).
+Este endpoint aceita um nome e uma data de nascimento como inputs e devolve os resultados de pesquisa que mais se assemelham aos termos pesquisados. De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisar/).
 
 Após receção dos resultados, poderá processá-los internamente de forma a decidir se a pessoa pesquisada corresponde a uma [pessoa identificável](../glossario/glossario-aplicacao.md#pessoa-identificavel) que conste na base de dados da PEPData.
 

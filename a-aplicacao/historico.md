@@ -4,7 +4,7 @@ Esta página permite-lhe visualizar todos os eventos relevantes que ocorreram de
 
 Na listagem de eventos irá aparecer a data e descrição de cada evento, podendo ver os detalhes de cada evento através do botão “👁”.
 
-![Página de histórico](<../.gitbook/assets/image (7) (1).png>)
+![Página de histórico](../.gitbook/assets/f.jpg)
 
 ## Tipo de eventos registados
 
@@ -26,10 +26,10 @@ Os detalhes de cada evento poderão fornecer informação bastante relevante par
 
 ## Outras funcionalidades
 
-### Exportação do Histórico&#x20;
+### Exportação do Histórico
 
 Através do botão “Exportar PDF”, pode exportar para um PDF todo o histórico visível que lhe é visível.
 
-### Pesquisa do Histórico&#x20;
+### Pesquisa do Histórico
 
 Através da barra de pesquisa, pode escrever qualquer expressão que pretenda utilizar para filtrar os eventos mostrados. Pode filtrar por descrição do evento ou por data.

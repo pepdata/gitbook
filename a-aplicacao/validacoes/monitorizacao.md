@@ -18,7 +18,7 @@ Este processo de monitorização ocorre a cada 24h.
 
 ## Adverse Media
 
-A monitorização de Adverse Media permite que seja alertado sempre que existam potenciais novas notícias negativas relativamente às suas validações, utilizando um método de pesquisa avançado [aqui ](../adverse-media.md)descrito.
+A monitorização de Adverse Media permite que seja alertado sempre que existam potenciais novas notícias negativas relativamente às suas validações, utilizando um método de pesquisa avançado [aqui ](../pesquisar/adverse-media.md)descrito.
 
 Este processo de monitorização pode ser ativado ou desativado na página de [configurações](../configuracoes/), podendo também ser definida a sua periodicidade.
 

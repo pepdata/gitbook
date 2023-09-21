@@ -24,6 +24,19 @@ Los cuestionarios ya presentados pueden verse a través del botón "👁".&#x20;
 
 Tenga en cuenta que el registro de una entidad jurídica sólo está realmente completo después de la presentación de su cuestionario y de los cuestionarios de todos sus beneficiarios efectivos.
 
+## Tipos de registros individuales
+
+Hay cuatro tipos de registros de personas individuales:&#x20;
+
+* Estándar&#x20;
+* Representante&#x20;
+* Titulares Reales
+* Titular/Gerente
+
+Los distintos tipos de registros funcionan de la misma manera, siendo los campos obligatorios los que exige la ley. Sin embargo, al no existir la obligación legal de cumplimentar todos los datos de un titular/gerente, este tipo no incluye los mismos campos, ni las mismas obligaciones que los demás.&#x20;
+
+Si desea configurar los campos disponibles o si son obligatorios, consulte la [página de configuración del formulario](../registo-de-transacoes/configuracion-del-formulario.md).
+
 ## Eliminar registros
 
 Puede utilizar el botón “🗑️" para eliminar registros.&#x20;
@@ -163,5 +176,13 @@ PEPData permite a cada cliente personalizar sus formularios en función de la in
 A medida que vaya recopilando más información sobre sus clientes, podrá añadir los nuevos campos de información como obligatorios a sus formularios.&#x20;
 
 Para saber más sobre esta personalización, consulte "Configuración de formularios de registro de clientes".&#x20;
+
+</details>
+
+<details>
+
+<summary>Creé un titular/gerente en mi registro y ahora quería agregarlo como beneficiario efectivo, ¿cómo puedo hacerlo?</summary>
+
+El tipo de registro titular/gerente es un registro más simplificado y con menos campos ya que no existe obligación legal de completarlos en detalle. Sin embargo, en el caso de un titular real, esta obligación existe. Por lo tanto, debe eliminar su registro creado como titular/gerente y primero crearlo como un registro estándar, de representante o de titular rela. Posteriormente podrás volver a añadir tu registro como titular/gerente de una entidad.
 
 </details>

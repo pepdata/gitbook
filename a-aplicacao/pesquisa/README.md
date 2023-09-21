@@ -1,4 +1,4 @@
-# Pesquisa
+# Pesquisar
 
 Esta página permite-lhe pesquisar por nome, listando todas as [pessoas identificáveis](../../glossario/glossario-aplicacao.md#pessoa-identificavel) com nomes semelhantes ao introduzido.
 

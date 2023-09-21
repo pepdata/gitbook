@@ -5,7 +5,7 @@ A Plataforma da PEPData pode apoiá-lo na preparação e geração do relatório
 De forma a reforçar o escrutínio e transparência, publicamos a metodologia utilizada na elaboração do relatório, em conjunto com as instruções que precisa de seguir para a sua correta geração.
 
 {% hint style="warning" %}
-O Relatório CMVM já se encontra disponível para aquisição. Consulte a página Relatório CMVM 2022.
+O Relatório CMVM já se encontra disponível para aquisição. Consulte a página Relatório CMVM 2023.
 {% endhint %}
 
 ## Glossário do relatório CMVM para auditores

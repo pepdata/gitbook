@@ -66,7 +66,7 @@ Default: null
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 
 {% hint style="info" %}
-De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisar/).
+De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa/).
 {% endhint %}
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/search_organization" method="post" summary="Pesquisa de organizações sancionadas" %}

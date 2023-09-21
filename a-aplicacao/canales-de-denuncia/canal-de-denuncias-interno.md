@@ -22,7 +22,7 @@ La plataforma enviará entonces, de forma anónima y segura, el mensaje de la de
 Los datos del remitente de la denuncia nunca se registran y nunca podrán estar disponibles.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/denuncia-2_es (1).jpg" alt=""><figcaption><p>Canal de Denuncias</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/i.jpg" alt=""><figcaption><p>Canal de Denuncias</p></figcaption></figure>
 
 ### ¿Qué ocurre después de enviar la denuncia?
 

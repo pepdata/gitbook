@@ -1,6 +1,6 @@
 # Canal de Denúncias Interno com Gestão Externa
 
-O **canal de denúncias interno com gestão externa** é o mesmo canal referido no menu [Canal de Denúncias Interno](canal-de-denuncias-interno-com-gestao-externa.md). Contudo, este canal procede ao envio automático das informações para uma equipa de advogados especializada.&#x20;
+O **canal de denúncias interno com gestão externa** é o mesmo canal referido no menu [Canal de Denúncias Interno](canal-de-denuncias-interno-com-gestao-externa.md). Contudo, este canal procede ao envio automático das informações para uma equipa de advogados especializada.
 
 ### Como configurar o seu canal
 
@@ -22,7 +22,7 @@ A plataforma enviará de seguida, de forma anónima e segura, a mensagem da den�
 As informações do remetente da denúncia nunca são gravadas e nunca poderão ser disponibilizadas.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/denuncia-2.jpg" alt=""><figcaption><p>Canal de Denúncias</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/e (1).jpg" alt=""><figcaption><p>Canal de Denúncias</p></figcaption></figure>
 
 **O que acontece após o envio da denúncia?**
 

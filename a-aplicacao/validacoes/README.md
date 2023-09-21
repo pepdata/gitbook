@@ -2,7 +2,7 @@
 
 Esta página le ayuda a determinar si sus clientes, clientes potenciales o beneficiarios son [personas indentificables](../../glossario/glossario-aplicacao.md#persona-identificable), también sirve como depósito de toda la información relacionada con ellos. PEPData denomina [validación ](../../glossario/glossario-aplicacao.md#validacion)a cada nombre agregado por usted.
 
-![Tabla de validaciones](../../.gitbook/assets/lista-validações.jpg)
+![Tabla de validaciones](../../.gitbook/assets/g.jpg)
 
 ## Estados de agregar, determinar y validaciones
 

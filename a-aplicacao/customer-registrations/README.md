@@ -16,7 +16,7 @@ O processo de registo inicia-se ao criar um "Registo rápido", que lhe permite c
 
 Após ter criado a pessoa, esta ficará disponível numa tabela, podendo o questionário que lhe respeita ser acedido através do botão "▶".
 
-![Tabela de clientes](<../../.gitbook/assets/image (16).png>)
+![Tabela de clientes](../../.gitbook/assets/b.jpg)
 
 Nos casos de pessoas coletivas, após submissão do questionário irão ser criados automaticamente todos os "Registos rápidos" dos seus beneficiários efetivos e/ou representantes, caso tenham sido identificados.
 

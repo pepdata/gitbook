@@ -1,20 +1,20 @@
 # Registo de transações
 
-Nesta página, devem ser registadas todos as transações que tenham sido efetuadas ou mediadas pela sua organização. &#x20;
+Nesta página, devem ser registadas todos as transações que tenham sido efetuadas ou mediadas pela sua organização.
 
 {% hint style="info" %}
 Embora existam transações de baixo valor que a lei não obriga a registar, a PEPData recomenda que registe tantas transações quanto consiga, uma vez que o sistema efetua o cálculo do valor acumulado por cada cliente, afetando este o seu risco.
 {% endhint %}
 
-O processo inicia-se ao criar um "Registo rápido", que lhe permite criar rapidamente uma transação no sistema. Para tal, apenas necessita de preencher o campo "Designação", que serve como identificador da transação a que se refere. Exemplo: "Venda de imóvel T2, Lisboa".&#x20;
+O processo inicia-se ao criar um "Registo rápido", que lhe permite criar rapidamente uma transação no sistema. Para tal, apenas necessita de preencher o campo "Designação", que serve como identificador da transação a que se refere. Exemplo: "Venda de imóvel T2, Lisboa".
 
 Após ter criado a transação, esta ficará disponível numa tabela, podendo o questionário que lhe respeita ser acedido através do botão "▶". Pode, ainda, utilizar o botão “🗑️" para apagar transações.
 
-![Tabela de transações](<../../.gitbook/assets/image (21).png>)
+![Tabela de transações](../../.gitbook/assets/d.jpg)
 
-Após submissão do questionário da transação, irão ser criados automaticamente todos os "Registos rápidos" dos intervenientes na transação, com exceção da sua própria empresa. Estes registos rápidos poderão ser acedidos na página de [Registo de Clientes](../customer-registrations/).&#x20;
+Após submissão do questionário da transação, irão ser criados automaticamente todos os "Registos rápidos" dos intervenientes na transação, com exceção da sua própria empresa. Estes registos rápidos poderão ser acedidos na página de [Registo de Clientes](../customer-registrations/).
 
-Os questionários já submetidos poderão ser visualizados através do botão "👁".&#x20;
+Os questionários já submetidos poderão ser visualizados através do botão "👁".
 
 Note que o registo de uma transação só se encontra verdadeiramente concluído após submissão do respetivo questionário e de todos os questionários dos seus intervenientes.
 
@@ -44,7 +44,7 @@ No menu lateral, há a indicação de quais os dados em falta ou incompletos. Es
 
 <summary>Até que data passada posso inserir a transação?</summary>
 
-Embora a lei indique que deve fazer esse registo antecipadamente, para obter a notação do risco e proceder aos deveres exigidos, é também importante que mantenha atualizado o histórico de transações.&#x20;
+Embora a lei indique que deve fazer esse registo antecipadamente, para obter a notação do risco e proceder aos deveres exigidos, é também importante que mantenha atualizado o histórico de transações.
 
 Se por algum motivo, aquando da transação, não for possível fazer o seu registo, poderá fazê-lo posteriormente e em qualquer altura.
 

@@ -35,7 +35,7 @@ Hay cuatro tipos de registros de personas individuales:&#x20;
 
 Los distintos tipos de registros funcionan de la misma manera, siendo los campos obligatorios los que exige la ley. Sin embargo, al no existir la obligación legal de cumplimentar todos los datos de un titular/gerente, este tipo no incluye los mismos campos, ni las mismas obligaciones que los demás.&#x20;
 
-Si desea configurar los campos disponibles o si son obligatorios, consulte la [página de configuración del formulario](../registo-de-transacoes/configuracion-del-formulario.md).
+Si desea configurar los campos disponibles o si son obligatorios, consulte la [página de configuración del formulario](../configuracoes/configuracion-del-formulario-de-registro-de-cliente.md).
 
 ## Eliminar registros
 

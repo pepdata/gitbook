@@ -50,8 +50,7 @@ Id personalizável da validação
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validações obtidas com sucesso." %}
-```
-{
+<pre><code>{
     "version": 0.1,
     "timestamp": 1688640113263,
     "data": {
@@ -73,6 +72,7 @@ Id personalizável da validação
                     "Familiar",
                     "Associado
                 ],
+                "relations": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
                 "determined_at": null,
@@ -83,9 +83,10 @@ Id personalizável da validação
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
+                "judicial_processes_searched_at": null,
                 "alerts": [],
-                "country_nationality": "Portugal"
-            },
+<strong>                "country_nationality": "Portugal"
+</strong>            },
             {
                 "id": "a58dd84e-7e89-9904-5acf-2b1fbfcc8a31",
                 "vatin": "595596160",
@@ -97,6 +98,7 @@ Id personalizável da validação
                 "decision": null,
                 "id_iperson": null,
                 "iperson_classifications": null,
+                "relations": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
                 "determined_at": null,
@@ -107,6 +109,7 @@ Id personalizável da validação
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
+                "judicial_processes_searched_at": null,
                 "alerts": [
                     {
                         "id": "1d71c856-8dde-4815-9dce-1683e176a6f1",
@@ -123,7 +126,7 @@ Id personalizável da validação
         ]
     }
 }
-```
+</code></pre>
 {% endswagger-response %}
 {% endswagger %}
 
@@ -147,6 +150,7 @@ Id personalizável da validação
   * Sancionado (HM Treasury)
   * Sancionado (OFAC)
   * Sancionado (UN)
+* **relations**: relações onde a validação se encontra associada.
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
@@ -157,6 +161,7 @@ Id personalizável da validação
 * **entity\_type:** tipo da validação, podendo ser: "individual" ou "organization".
 * **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
 * **adverse\_media\_searched\_at:** data da última procura de notícias adversas associadas ao nome da validação.
+* **judicial\_processes\_searched\_at:** data da última procura de processos judiciais associados ao nome da validação.
 * **alerts:** alertas relacionados com a validação e que ainda estejam por resolver.
 * **country\_nationality:** país de nacionalidade.
 

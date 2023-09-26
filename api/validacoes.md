@@ -466,6 +466,21 @@ Id de la validación
 * **name**: nombre de la persona identificable.
 * **birth\_date**: fecha de nacimiento de la persona identificable.
 * **score**: [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **classifications**: clasificaciones de la persona identificable.
+* **occupations**: lista de ocupaciones de la persona identificable:
+  * **organization**: organización de la ocupación.
+  * **organ**: organismo de la ocupación.
+  * **position**: posición de la ocupación.
+  * **source**: link de la fuente que relaciona a la persona identificable con lá ocupación.
+  * **start\_date:** fecha de inicio de la ocupación.
+  * **end\_date:** fecha de finalización de la ocupación.
+  * **comments:** notas relevantes sobre la ocupación.
+* **relationships**: lista de relaciones de la persona identificable:
+  * **relationship\_type**: tipo de relación.
+  * **relationship\_to:** nombre del familiar de la person identificable.
+  * **source:** link de la fuente con información sobre la relación.
+  * **end\_date:** fecha de finalización de la relación.
+  * **comments:** notas relevantes sobre la relación.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/determine_validation" method="post" summary="Determinación de la validación" %}
 {% swagger-description %}

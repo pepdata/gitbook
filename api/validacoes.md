@@ -327,21 +327,24 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
 {
     "version": 0.1,
     "timestamp": 1693318084192,
-    "data": [
-        {
-            "id": "0dc26bde-4f67-c5c5-34dc-42f5453c2e70",
-            "id_validation": "af1aea96-4b13-8b22-eeef-bb6b41638a66",
-            "name": "José Manuel Paulo",
-            "birth_date": null,
-            "id_country_nationality": "PT",
-            "added_at": 1693318062379,
-            "resolved_at": null,
-            "resolved_by": null,
-            "status": "unresolved",
-            "reason": "Es posible que se hayan encontrado nuevos medios adversos con respecto a esta persona.",
-            "country_nationality": "Portugal"
-        }
-    ]
+    "data": {
+        "items": [
+            {
+                "id": "53fef9d4-e3d4-ed03-5e79-38ba066050f7",
+                "id_validation": "3462600c-8b9a-6384-c321-4587104ce0f1",
+                "name": "José Codinha Manso",
+                "birth_date": null,
+                "id_country_nationality": "JP",
+                "added_at": 1687873995707,
+                "resolved_at": null,
+                "resolved_by": null,
+                "status": "unresolved",
+                "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
+                "country_nationality": "Japan"
+            }
+        ],
+        "count": 1
+    }
 }
 ```
 {% endswagger-response %}

@@ -74,7 +74,16 @@ Id personalizável da validação
                     "Familiar",
                     "Associado
                 ],
-                "relations": null,
+                "relations": [
+                    {
+                        "name": "António Silva",
+                        "vatin": null,
+                        "id_iperson": "5e809bc7-927e-3dc3-0ff8-ab9022843a5a",
+                        "id_iorganization": null,
+                        "relationship_type": "representative",
+                        "id_relationship_info": "d0a4effc-576e-a4a2-f32e-9e594d7144ba"
+                    }
+                ],
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
                 "determined_at": null,

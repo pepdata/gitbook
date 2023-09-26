@@ -210,21 +210,24 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
 
 {% swagger-response status="200: OK" description="Alertas das validações obtidos com sucesso" %}
 <pre><code><strong>{
-</strong>    "data": [
-        {
-            "id": "53fef9d4-e3d4-ed03-5e79-38ba066050f7",
-            "id_validation": "3462600c-8b9a-6384-c321-4587104ce0f1",
-            "name": "José Codinha Manso",
-            "birth_date": null,
-            "id_country_nationality": "JP",
-            "added_at": 1687873995707,
-            "resolved_at": null,
-            "resolved_by": null,
-            "status": "unresolved",
-            "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
-            "country_nationality": "Japan"
-        }
-    ],
+</strong>    "data": {
+        "items": [
+            {
+                "id": "53fef9d4-e3d4-ed03-5e79-38ba066050f7",
+                "id_validation": "3462600c-8b9a-6384-c321-4587104ce0f1",
+                "name": "José Codinha Manso",
+                "birth_date": null,
+                "id_country_nationality": "JP",
+                "added_at": 1687873995707,
+                "resolved_at": null,
+                "resolved_by": null,
+                "status": "unresolved",
+                "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
+                "country_nationality": "Japan"
+            }
+        ],
+        "count": 1
+    }
     "version": "0.1",
     "timestamp": 1588599744111
 }

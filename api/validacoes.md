@@ -397,14 +397,61 @@ Id de la validación
               "name": "João Pedro Silva",
               "birth_date": null,
               "score": 95
+              "classifications": [
+                    "PEP"
+                ],
+                "occupations": [
+                    {
+                        "organization": "Governo da República Portuguesa",
+                        "organ": "Ministério dos Negócios Estrangeiros",
+                        "position": "Ministro",
+                        "source": "https://test-link.com",
+                        "start_date": null,
+                        "end_date": null,
+                        "comments": null
+                    }
+                ],
+                "relationships": []
             },
             {
               "id": "BFFD688C-4618-048D-9C14-8887B1BDA173",
               "name": "João Pedro Pereira",
               "birth_date": "1933-05-25",
-              "score": 76
+              "score": 76,
+              "classifications": [
+                    "PEP",
+                    "Familiar"
+                ],
+                "occupations": [
+                    {
+                        "organization": "Governo da República Portuguesa",
+                        "organ": "Ministério dos Negócios Estrangeiros",
+                        "position": "Ministro",
+                        "source": "https://test-link.com",
+                        "start_date": "2005-01-01",
+                        "end_date": "2030-01-01",
+                        "comments": null
+                    }
+                ],
+                "relationships": [
+                    {
+                        "relationship_type": "son",
+                        "relationship_to": "Flávio Alberto Roldão",
+                        "source": "https://test-link.com",
+                        "end_date": null,
+                        "comments": null
+                    },
+                    {
+                        "relationship_type": "spouse",
+                        "relationship_to": "Albertina Hermínia da Corte",
+                        "source": "https://test-link.com",
+                        "end_date": null,
+                        "comments": null
+                    }
+                ]
             }
-        ]
+        ],
+        "count": 2
     },
     "version": "0.1",
     "timestamp": 1588599744111

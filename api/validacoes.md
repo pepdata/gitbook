@@ -462,7 +462,8 @@ Default: false
                     }
                 ]
             }
-        ]
+        ],
+        "count": 2
     },
     "version": "0.1",
     "timestamp": 1588599744111

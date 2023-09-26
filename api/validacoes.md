@@ -54,6 +54,8 @@ Id personalizável da validação
     "version": 0.1,
     "timestamp": 1688640113263,
     "data": {
+        "count": 2,
+        "total": 2,
         "page": 1,
         "max_results_per_page": 50,
         "items": [

@@ -52,6 +52,8 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
     "version": 0.1,
     "timestamp": 1688640113263,
     "data": {
+        "count": 2,
+        "total": 2,
         "page": 1,
         "max_results_per_page": 50,
         "items": [
@@ -70,6 +72,16 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                     "Familiar",
                     "Asociado
                 ],
+                "relations": [
+                    {
+                        "name": "António Silva",
+                        "vatin": null,
+                        "id_iperson": "5e809bc7-927e-3dc3-0ff8-ab9022843a5a",
+                        "id_iorganization": null,
+                        "relationship_type": "representative",
+                        "id_relationship_info": "d0a4effc-576e-a4a2-f32e-9e594d7144ba"
+                    }
+                ],
                 "iperson_classifications": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
@@ -81,6 +93,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
+                "judicial_processes_searched_at": null,
                 "alerts": [],
                 "country_nationality": "Portugal"
             },
@@ -95,6 +108,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                 "decision": null,
                 "id_iperson": null,
                 "iperson_classifications": null,
+                "relations": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1688639245750,
                 "determined_at": null,
@@ -105,6 +119,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
                 "entity_type": "individual",
                 "id_iorganization": null,
                 "adverse_media_searched_at": null,
+                "judicial_processes_searched_at": null,
                 "alerts": [
                     {
                         "id": "1d71c856-8dde-4815-9dce-1683e176a6f1",
@@ -145,6 +160,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
   * Sancionado (HM Treasury)
   * Sancionado (OFAC)
   * Sancionado (UN)
+* **relations:** relaciones donde se asocia la validación.
 * **iperson\_classifications:** lista de clasificaciones de personas identificables.
 * **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
@@ -156,6 +172,7 @@ Valores posibles: all, complete, complete_identified, complete_not_identified, c
 * **entity\_type:** tipo de validación, que puede ser: "individual" u "organization".
 * **id\_iorganization**: identificación de la organización identificable correspondiente. null si no hubo ninguna coincidencia.
 * **adverse\_media\_searched\_at:** fecha de la última búsqueda de noticias adversas asociadas al nombre de la validación.
+* **judicial\_processes\_searched\_at:** fecha de la última búsqueda de procesos judiciales asociados al nombre de la validación.
 * **alerts:** alertas relacionadas con la validación y que aún están sin resolver.
 * **country\_nationality:** país de nacionalidad.
 

@@ -603,5 +603,5 @@ A leitura da documentação relativa à [aplicação das regras de validação](
 {% endhint %}
 
 {% hint style="info" %}
-A [aplicação de regras](../a-aplicacao/validacoes/aplicacao-de-regras.md) pode demorar alguns minutos até se encontrar concluída, dependendo do número de validações incompletas existentes. O tempo de conclusão estimado é devolvido na resposta.
+A [aplicação de regras](../a-aplicacao/validacoes/aplicacao-de-regras.md) pode demorar alguns minutos até se encontrar concluída, dependendo do número de validações incompletas existentes.
 {% endhint %}

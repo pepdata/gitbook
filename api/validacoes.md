@@ -596,9 +596,7 @@ key [API_KEY]
 {% endswagger-response %}
 {% endswagger %}
 
-### Legenda
 
-* **time\_to\_conclusion**: tempo **previsto** para a conclusão da aplicação das regras, em segundos.
 
 {% hint style="warning" %}
 A leitura da documentação relativa à [aplicação das regras de validação](../a-aplicacao/validacoes/aplicacao-de-regras.md) é fortemente recomendada, uma vez que a aplicação sem a sua correta compreensão poderá provocar alterações indesejadas.

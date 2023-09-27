@@ -550,19 +550,17 @@ key [API_KEY]
 {% swagger-response status="200" description="Las reglas han empezado a aplicarse." %}
 ```
 {
+    "version": 0.1,
+    "timestamp": 1695827026005,
     "data": {
-        "time_to_conclusion": X
-    },
-    "version": "0.1",
-    "timestamp": 1588599744111
+        "message": "Las reglas han empezado a aplicarse."
+    }
 }
 ```
 {% endswagger-response %}
 {% endswagger %}
 
-### Leyenda
 
-* **time\_to\_conclusion**: tiempo **estimado** para completar la aplicación de las reglas, en segundos.
 
 {% hint style="warning" %}
 Se recomienda fuertemente leer la documentación sobre la [aplicación de    las reglas de validación](../a-aplicacao/validacoes/aplicacao-de-regras.md), ya que aplicarlas sin una comprensión adecuada puede conducir a cambios no deseados.

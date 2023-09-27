@@ -71,11 +71,13 @@ Default: 1
                 "invited_by_organization_name": null,
                 "language": null,
                 "id_country": "PT",
-                "id_iperson": "ID1"
+                "id_iperson": "ID1",
+                "risk_category: "low"
             }
         ],
         "page": 1,
-        "max_results_per_page": 50,
+        "max_results_per_page": 10,
+        "count": 1,
         "total": 1
     },
     "version": "0.1",
@@ -118,7 +120,8 @@ Default: 1
 * **invited\_by\_organization\_name:** nombre de la organización que envió la invitación a rellenar
 * **language:** idioma en el que se envió la invitación a completar
 * **id\_country:** país de la organización que creó el registro en formato ISO 3166-1 alpha-2
-* **id\_iperson:** id de la persona identificable correspondiente. nulo si no hubo ninguna coincidencia
+* **id\_iperson:** id de la persona identificable correspondiente. nulo si no hubo ninguna coincidencia.
+* **risk\_category:** categoría en la que caie el valor del riesgo.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/add_questionnaire" summary="Agregando un registro" %}
 {% swagger-description %}

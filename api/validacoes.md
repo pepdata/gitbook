@@ -484,7 +484,7 @@ Id de la validación
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/determine_validation" method="post" summary="Determinación de la validación" %}
 {% swagger-description %}
-Endpoint para enviar una validación.
+Endpoint para determinar una validación.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
@@ -499,12 +499,14 @@ Id de validación
 Id de la persona u organización identificable correspondiente. 
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description=" La validación ha sido enviada con éxito." %}
+{% swagger-response status="200" description=" La validación ha sido determinada con éxito." %}
 ```
 {
-    "data": {},
-    "version": "0.1",
-    "timestamp": 1588599744111
+    "version": 0.1,
+    "timestamp": 1695805850051,
+    "data": {
+        "message": "La validación ha sido determinada con éxito."
+    }
 }
 ```
 {% endswagger-response %}

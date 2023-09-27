@@ -72,11 +72,13 @@ Default: 1
                 "invited_by_organization_name": null,
                 "language": null,
                 "id_country": "PT",
-                "id_iperson": "ID1"
+                "id_iperson": "ID1",
+                "risk_category": "low"
             }
         ],
         "page": 1,
-        "max_results_per_page": 50,
+        "max_results_per_page": 10,
+        "count": 1,
         "total": 1
     },
     "version": "0.1",
@@ -120,6 +122,7 @@ Default: 1
 * **language:** língua em que foi enviado o convite ao preenchimento.
 * **id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **id\_iperson:** id da pessoa identificável correspondente. null caso não tenha existido correspondência.
+* **risk\_category:** categoria em que se insere o valor do risco.
 
 {% swagger method="post" path="/add_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Adição de um registo" %}
 {% swagger-description %}

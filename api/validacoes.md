@@ -562,11 +562,11 @@ key [API_KEY]
 {% swagger-response status="200" description="As regras começaram a ser aplicadas. " %}
 ```
 {
+    "version": 0.1,
+    "timestamp": 1695827026005,
     "data": {
-        "time_to_conclusion": X
-    },
-    "version": "0.1",
-    "timestamp": 1588599744111
+        "message": "As regras começaram a ser aplicadas."
+    }
 }
 ```
 {% endswagger-response %}

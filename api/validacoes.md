@@ -567,5 +567,5 @@ Se recomienda fuertemente leer la documentación sobre la [aplicación de    las
 {% endhint %}
 
 {% hint style="info" %}
-A [aplicación de la regla](../a-aplicacao/validacoes/aplicacao-de-regras.md) puede tardar varios minutos en completarse, dependiendo del número de validaciones incompletas existentes. El tiempo estimado de finalización se devuelve en la respuesta.
+A [aplicación de la regla](../a-aplicacao/validacoes/aplicacao-de-regras.md) puede tardar varios minutos en completarse, dependiendo del número de validaciones incompletas existentes.
 {% endhint %}

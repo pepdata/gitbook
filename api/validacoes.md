@@ -525,12 +525,14 @@ key [API_KEY]
 Id de validación
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="La validación ha sido eliminada con éxito" %}
+{% swagger-response status="200" description="La validación ha sido eliminada con éxito." %}
 ```
 {
-    "data": {},
-    "version": "0.1",
-    "timestamp": 1588599744111
+    "version": 0.1,
+    "timestamp": 1695806667520,
+    "data": {
+        "message": "La validación ha sido eliminada con éxito."
+    }
 }
 ```
 {% endswagger-response %}

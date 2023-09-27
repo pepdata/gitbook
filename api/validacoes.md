@@ -540,9 +540,11 @@ Id da validação
 {% swagger-response status="200" description="A validação foi apagada com sucesso." %}
 ```
 {
-    "data": {},
-    "version": "0.1",
-    "timestamp": 1588599744111
+    "version": 0.1,
+    "timestamp": 1695806667520,
+    "data": {
+        "message": "A validação foi apagada com sucesso."
+    }
 }
 ```
 {% endswagger-response %}

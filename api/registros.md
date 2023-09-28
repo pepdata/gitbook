@@ -372,6 +372,16 @@ id del registro o transacción
 
 {% swagger-response status="200: OK" description="El registro de clientes o transacciones fue eliminado con éxito" %}
 
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1695892485159,
+    "data": {
+        "message": "El registro fue eliminado con éxito."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

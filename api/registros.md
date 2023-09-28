@@ -287,17 +287,37 @@ _transaction_
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registro o transacción agregado con éxito" %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1660060397561,
+    "data": {
+        "id": "aa199264-c62e-3763-e3a5-68127b070720",
+        "risk": 0,
+        "risk_category": "low"
+    }
+}
+```
 {% endswagger-response %}
 
 {% swagger-response status="400: Bad Request" description="El registro no fue creado, ya existe en la lista" %}
-
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1660060761083,
+        "message": "El registro no se ha creado, ya existe en la lista."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 
 ### Leyenda
 
 * **id:** Id del registro o transacción creada.
+* **risk:** valor de riesgo del registro/transación creado/a.
+* **risk\_category:** categoria en la que se inserta el valor de riesgo del registro/transación creado/a.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire" summary="Edición de un registro" %}
 {% swagger-description %}

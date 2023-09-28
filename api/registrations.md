@@ -414,10 +414,6 @@ Id do registo ou transação
 Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.
 {% endhint %}
 
-### Legenda
-
-* **risk:** risco recalculado do registo de clientes ou transações.
-
 {% swagger method="post" path="/send_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Enviar um convite de preenchimento do registo" %}
 {% swagger-description %}
 Endpoint para enviar convite de preenchimento de um registo de clientes ou transações.

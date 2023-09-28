@@ -364,7 +364,11 @@ Id do registo ou transação
 {% swagger-response status="200: OK" description="O registo de clientes ou transações foi apagado com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1695892485159,
+    "data": {
+        "message": "O registo foi eliminado com sucesso."
+    }
 }
 ```
 {% endswagger-response %}

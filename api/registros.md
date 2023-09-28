@@ -420,16 +420,12 @@ id del registro o transacción
 
 ### Leyenda
 
-* **risk:** valor de riesgo del registro de clientes/transaciones.
-* **risk\_category:** categoria en la que se inserta el valor de riesgo del registro de clientes/transaciones.
+* **risk:** riesgo recalculado de alta de clientes u operaciones.
+* **risk\_category:** categoria en la que se inserta el valor de riesgo recalculado de alta de clientes u operaciones.
 
 {% hint style="warning" %}
 Cancelar el envío recalculará el riesgo de registro. Si tiene una categoría de riesgo configurada manualmente, se perderá.
 {% endhint %}
-
-### Leyenda
-
-* **risk:** riesgo recalculado de alta de clientes u operaciones.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/send_questionnaire_invite" summary="Enviar una invitación para completar el registro" %}
 {% swagger-description %}

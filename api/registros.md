@@ -339,9 +339,23 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registro de clientes o transacciones editado" %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1660061942863,
+    "data": {
+        "risk": 0,
+        "risk_category": "low"
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
+
+### Leyenda
+
+* **risk:** valor de riesgo del registro/transación editado/a.
+* **risk\_category:** categoria en la que se inserta el valor de riesgo del registro/transación editado/a.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/delete_questionnaire" summary="Eliminación de un registro" %}
 {% swagger-description %}

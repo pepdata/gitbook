@@ -283,7 +283,9 @@ _transaction_
     "version": 0.1,
     "timestamp": 1660060397561,
     "data": {
-        "id": "aa199264-c62e-3763-e3a5-68127b070720"
+        "id": "aa199264-c62e-3763-e3a5-68127b070720",
+        "risk": 0,
+        "risk_category": "low"
     }
 }
 ```
@@ -305,6 +307,8 @@ _transaction_
 ### Legenda
 
 * **id:** Id do registo ou transação criado/a.
+* **risk:** valor do risco do registo/transação criado/a.
+* **risk\_category:** categoria em que se insere o valor do risco do registo/transação criado/a.
 
 {% swagger method="post" path="/edit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Edição de um registo" %}
 {% swagger-description %}

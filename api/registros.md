@@ -404,8 +404,24 @@ id del registro o transacción
 
 {% swagger-response status="200: OK" description="El registro de cliente o de transacciones se ha cancelado con éxito" %}
 
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1695893220141,
+    "data": {
+        "risk": 0,
+        "risk_category": "low"
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
+
+### Leyenda
+
+* **risk:** valor de riesgo del registro de clientes/transaciones.
+* **risk\_category:** categoria en la que se inserta el valor de riesgo del registro de clientes/transaciones.
 
 {% hint style="warning" %}
 Cancelar el envío recalculará el riesgo de registro. Si tiene una categoría de riesgo configurada manualmente, se perderá.

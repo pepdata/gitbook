@@ -405,14 +405,14 @@ Id do registo ou transação
 {% endswagger-response %}
 {% endswagger %}
 
+{% hint style="warning" %}
+Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.
+{% endhint %}
+
 ### Legenda
 
 * **risk:** valor do risco do registo de clientes/transações.
 * **risk\_category:** categoria em que se insere o valor do risco do registo de clientes/transações.
-
-{% hint style="warning" %}
-Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.
-{% endhint %}
 
 {% swagger method="post" path="/send_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Enviar um convite de preenchimento do registo" %}
 {% swagger-description %}

@@ -335,12 +335,18 @@ key [API_KEY]
     "version": 0.1,
     "timestamp": 1660061942863,
     "data": {
-        "risk": 0
+        "risk": 0,
+        "risk_category": "low"
     }
 }
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+### Legenda
+
+* **risk:** valor do risco do registo/transação editado/a.
+* **risk\_category:** categoria em que se insere o valor do risco do registo/transação editado/a.
 
 {% swagger method="post" path="/delete_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Eliminação um registo" %}
 {% swagger-description %}

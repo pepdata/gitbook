@@ -394,11 +394,21 @@ Id do registo ou transação
 {% swagger-response status="200: OK" description="Submissão do registo de clientes ou transações cancelada foi cancelada com sucesso." %}
 ```javascript
 {
-    risk: 0
+    "version": 0.1,
+    "timestamp": 1695893220141,
+    "data": {
+        "risk": 0,
+        "risk_category": "low"
+    }
 }
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+### Legenda
+
+* **risk:** valor do risco do registo de clientes/transações.
+* **risk\_category:** categoria em que se insere o valor do risco do registo de clientes/transações.
 
 {% hint style="warning" %}
 Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.

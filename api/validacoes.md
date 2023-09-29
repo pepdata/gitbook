@@ -6,7 +6,7 @@ Endpoint para obter validações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="page" type="number" required="false" %}
@@ -186,7 +186,7 @@ Id da validação
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="ids_validations" type="string array" required="false" %}
@@ -267,7 +267,7 @@ Endpoint para adicionar uma validação.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}
@@ -385,7 +385,7 @@ Endpoint para consultar os resultados obtidos da análise de uma validação.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="false" %}
@@ -500,7 +500,7 @@ Endpoint para determinar uma validação.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="false" %}
@@ -530,7 +530,7 @@ Endpoint para apagar uma validação.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="false" %}
@@ -556,7 +556,7 @@ Endpoint para aplicação das regras de validação.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="As regras começaram a ser aplicadas. " %}
@@ -574,9 +574,9 @@ key [API_KEY]
 {% swagger-response status="200: OK" description="Não existem validações elegíveis para aplicar as regras." %}
 ```javascript
 {
-    "message": {
-        "version": 0.1,
-        "timestamp": 1654613096539,
+    "version": 0.1,
+    "timestamp": 1695983327878,
+    "data": {
         "message": "Não existem validações elegíveis para aplicar as regras."
     }
 }

@@ -517,7 +517,15 @@ Id de usuario
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="El usuario se ha asignado correctamente al registro de cliente o transacción." %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1695999232282,
+    "data": {
+        "message": "Responsable modificado a {{user_name}}."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

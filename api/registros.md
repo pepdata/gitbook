@@ -552,7 +552,15 @@ Ejemplo:\
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Se han asignado departamentos al registro de clientes o transacciones con éxito." %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1696001921643,
+    "data": {
+        "message": "Departamentos asignados con éxito."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

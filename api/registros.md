@@ -10,7 +10,7 @@ Endpoint para obtener registros de transacciones y clientes.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -22,15 +22,11 @@ Id personalizable de registro o transacción
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="search_term" type="string" %}
-Término de búsqueda: Buscar en las columnas name, vatin e id_custom
+Término de búsqueda: Buscar en las columnas name, vatin e id\_custom
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="page" type="integer" %}
-Página de registros o transacciones
-
-\
-
-
+Página de registros o transacciones\
 Default: 1
 {% endswagger-parameter %}
 
@@ -129,7 +125,7 @@ Endpoint para agregar un registro de clientes y transacciones.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}
@@ -325,7 +321,7 @@ Endpoint para editar un registro de clientes y transacciones.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -363,7 +359,7 @@ Endpoint para eliminar un registro de clientes o transacciones.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" required="true" type="string" %}
@@ -395,7 +391,7 @@ Endpoint para cancelar el envío de un registro de cliente o transacción.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -433,7 +429,7 @@ Endpoint para enviar una invitación para completar un registro de cliente o tra
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" required="true" name="id" type="string" %}
@@ -461,7 +457,15 @@ Valores aceptados:
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Invitación enviada con éxito" %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1695997097315,
+    "data": {
+        "message": "Invitación enviada a {{client_email}}."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 
@@ -471,7 +475,7 @@ Endpoint para cancelar la invitación para completar un registro de cliente o tr
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -493,7 +497,7 @@ Endpoint para asignar un usuario a un registro de cliente o transacción.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization " type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -515,7 +519,7 @@ Endpoint para asignar departamentos a un cliente o registro de transacciones.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -542,7 +546,7 @@ Endpoint para editar el estado de aprobación de un cliente o registro de transa
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -574,7 +578,7 @@ Endpoint para revertir el riesgo actual de un cliente o registro de transaccione
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -592,7 +596,7 @@ Endpoint para restablecer el estado "Necesita atención" de un registro de clien
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}

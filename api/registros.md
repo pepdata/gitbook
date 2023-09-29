@@ -592,7 +592,15 @@ Justificación para cambiar el estado de aprobación
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="El estado de aprobación del registro de clientes o de la transacción se ha cambiado correctamente." %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1696002523053,
+    "data": {
+        "message": "Estado de aprobación cambiado con éxito."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

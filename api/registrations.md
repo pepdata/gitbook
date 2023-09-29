@@ -542,7 +542,11 @@ Exemplo:
 {% swagger-response status="200: OK" description="Os departamentos foram atribuídos ao registo de clientes ou transações com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1696001921643,
+    "data": {
+        "message": "Departamentos atribuídos com sucesso."
+    }
 }
 ```
 {% endswagger-response %}

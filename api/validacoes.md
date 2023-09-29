@@ -563,9 +563,9 @@ key \[API\_KEY]
 ```
 {
     "version": 0.1,
-    "timestamp": 1695827026005,
+    "timestamp": 1695983552463,
     "data": {
-        "message": "As regras começaram a ser aplicadas."
+        "message": "Applying rules... Estimated time: ~1s"
     }
 }
 ```

@@ -478,7 +478,11 @@ E-mail do cliente convidado
 {% swagger-response status="200: OK" description="Convite cancelado com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1695997713238,
+    "data": {
+        "message": "Convite de {{client_email}} foi cancelado."
+    }
 }
 ```
 {% endswagger-response %}

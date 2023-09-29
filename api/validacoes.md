@@ -538,9 +538,9 @@ key \[API\_KEY]
 {% swagger-response status="400: Bad Request" description="Las reglas ya se están aplicando." %}
 ```
 {
-    "version": 0.1,
-    "timestamp": 1695827026005,
-    "data": {
+    "message": {
+        "version": 0.1,
+        "timestamp": 1695984451235,
         "message": "Esta operación ya está en marcha. Por favor, espere hasta que se complete."
     }
 }

@@ -584,7 +584,11 @@ Justificação para alteração do estado de aprovação
 {% swagger-response status="200: OK" description="Estado de aprovação do registo de clientes ou transações foi alterado com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1696002523053,
+    "data": {
+        "message": "Estado de aprovação editado com sucesso."
+    }
 }
 ```
 {% endswagger-response %}

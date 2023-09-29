@@ -508,7 +508,11 @@ Id do utilizador
 {% swagger-response status="200: OK" description="O utilizador foi atribuído ao registo de clientes ou transações com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1695999232282,
+    "data": {
+        "message": "Responsável modificado para {{user_name}}."
+    }
 }
 ```
 {% endswagger-response %}

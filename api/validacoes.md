@@ -6,44 +6,24 @@ Endpoint para obtener validaciones.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="page" type="number" %}
-Página de validaciones
-
-\
-
-
+Página de validaciones\
 Default: 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="source" type="string" %}
-Origen de las validaciones
-
-\
-
-
-Default: all
-
-\
-
-
+Origen de las validaciones\
+Default: all\
 Valores posibles: all, upload, manual
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="status" type="string" %}
-Estado de validación
-
-\
-
-
-Default: incomplete
-
-\
-
-
-Valores posibles: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete
+Estado de validación\
+Default: incomplete\
+Valores posibles: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Validaciones obtenidas con éxito." %}
@@ -186,7 +166,7 @@ Nombre de validación
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="birth_date" type="string" %}
@@ -198,16 +178,8 @@ Default: null
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
-Instrucción para omitir el control por duplicado.
-
-\
-
-
-Formato: 0/1
-
-\
-
-
+Instrucción para omitir el control por duplicado.\
+Formato: 0/1\
 Default: 0
 {% endswagger-parameter %}
 
@@ -238,20 +210,12 @@ Default: null
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="vatin" type="string" %}
-Nif de la validación
-
-\
-
-
+Nif de la validación\
 Default: null
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_custom" type="string" %}
-id personalizable de la validación
-
-\
-
-
+id personalizable de la validación\
 Default: null
 {% endswagger-parameter %}
 
@@ -297,7 +261,7 @@ Default: "individual"
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation" type="string" %}
@@ -380,7 +344,7 @@ Endpoint para consultar los resultados obtenidos del análisis de una validació
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -488,7 +452,7 @@ Endpoint para determinar una validación.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -496,7 +460,7 @@ Id de validación
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_entity" type="string" %}
-Id de la persona u organización identificable correspondiente. 
+Id de la persona u organización identificable correspondiente.&#x20;
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description=" La validación ha sido determinada con éxito." %}
@@ -518,7 +482,7 @@ Endpoint para eliminar una validación.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" %}
@@ -544,16 +508,40 @@ Endpoint para la aplicación de las reglas de validación.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Las reglas han empezado a aplicarse." %}
+{% swagger-response status="200: OK" description="Las reglas han empezado a aplicarse." %}
 ```
 {
     "version": 0.1,
     "timestamp": 1695827026005,
     "data": {
-        "message": "Las reglas han empezado a aplicarse."
+        "message": "Aplicando reglas... Tiempo estimado: ~1s"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="200: OK" description="No hay validaciones elegibles para aplicar las reglas." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1695827026005,
+    "data": {
+        "message": "No hay validaciones elegibles para aplicar las reglas."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Las reglas ya se están aplicando." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1695827026005,
+    "data": {
+        "message": "Esta operación ya está en marcha. Por favor, espere hasta que se complete."
     }
 }
 ```

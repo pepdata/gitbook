@@ -565,7 +565,7 @@ key \[API\_KEY]
     "version": 0.1,
     "timestamp": 1695983552463,
     "data": {
-        "message": "Applying rules... Estimated time: ~1s"
+        "message": "A aplicar regras... Tempo estimado: ~1s"
     }
 }
 ```
@@ -586,9 +586,9 @@ key \[API\_KEY]
 {% swagger-response status="400: Bad Request" description="As regras já se encontram a ser aplicadas." %}
 ```javascript
 {
-    "message": {
-        "version": 0.1,
-        "timestamp": 1588599744111,
+    "version": 0.1,
+    "timestamp": 1695983327878,
+    "data": {
         "message": "Esta operação já está em progresso. Por favor aguarde até estar completa."
     }
 }

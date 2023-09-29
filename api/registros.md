@@ -487,7 +487,15 @@ Correo del cliente invitado
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Invitación cancelada con éxito" %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1695997713238,
+    "data": {
+        "message": "La invitación de {{client_email}} fue cancelada."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

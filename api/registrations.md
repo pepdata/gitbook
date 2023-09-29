@@ -10,7 +10,7 @@ Endpoint para obter os registos de clientes e transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="false" %}
@@ -130,7 +130,7 @@ Endpoint para adicionar um registo de clientes e transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}
@@ -326,7 +326,7 @@ Verifique [add\_questionnaire](registrations.md#adicao-de-um-registo) (`question
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registo de clientes ou transações editado/a." %}
@@ -354,7 +354,7 @@ Endpoint para apagar um registo de clientes ou transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" type="string" required="true" name="id" %}
@@ -384,7 +384,7 @@ Endpoint para cancelar a submissão de um registo de clientes ou transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -420,7 +420,7 @@ Endpoint para enviar convite de preenchimento de um registo de clientes ou trans
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -448,7 +448,11 @@ Valores aceites:
 {% swagger-response status="200: OK" description="Convite enviado com sucesso." %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1695997097315,
+    "data": {
+        "message": "Convite enviado para {{client_email}}."
+    }
 }
 ```
 {% endswagger-response %}
@@ -460,7 +464,7 @@ Endpoint para cancelar o convite de preenchimento de um registo de clientes ou t
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -486,7 +490,7 @@ Endpoint para atribuir um utilizador a um registo de clientes ou transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -512,7 +516,7 @@ Endpoint para atribuir departamentos a um registo de clientes ou transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -542,7 +546,7 @@ Endpoint para editar o estado de aprovação de um registo de clientes ou transa
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}
@@ -580,7 +584,7 @@ Endpoint para reverter o risco atual de um registo de clientes ou transações.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" type="string" required="true" name="id" %}
@@ -606,7 +610,7 @@ Endpoint para redefinir o estado "Precisam de atenção" de um registo de client
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id" type="string" required="true" %}

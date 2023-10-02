@@ -642,7 +642,11 @@ Id do registo ou transação
 {% swagger-response status="200: OK" description="Estado " %}
 ```javascript
 {
-    // Response
+    "version": 0.1,
+    "timestamp": 1696239199674,
+    "data": {
+        "message": "Estado 'Needs attention' redefinido com sucesso."
+    }
 }
 ```
 {% endswagger-response %}

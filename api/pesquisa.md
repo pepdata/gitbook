@@ -91,6 +91,7 @@ Nome da organização a pesquisar
     "data": {
         "items": [
             {
+                "id": "894e61ca-0264-0ed2-542c-d5aa53ef407c",
                 "name": "Fekete Szeptember",
                 "score": 100
             }
@@ -105,6 +106,7 @@ Nome da organização a pesquisar
 
 ### Legenda
 
+* **id:** id da organização sancionada.
 * **name**: nome da organização sancionada.
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
 

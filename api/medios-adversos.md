@@ -6,7 +6,7 @@ Endpoint para la obtención de medios adversos.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="search_term" required="true" type="string" %}
@@ -14,7 +14,46 @@ Nombre de la entidad/persona a buscar
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Información de los medios adversos obtenida con éxito." %}
-
+```
+{
+    "version": 0.1,
+    "timestamp": 1683734308978,
+    "data": {
+        "icij_adverse_media": {
+            "items": [
+                {
+                    "entity": "Lisa Fidalgo Corte-Real",
+                    "source": "Panama Papers"
+                }
+            ],
+        },
+        "google_adverse_media": {
+            "items": [
+                {
+                    "title": "Lisa Fidalgo Corte-Real será juzgada por...",
+                    "description": "Lisa Fidalgo Corte-Real será juzgada por corrupción...",
+                    "source": "https://test-link.pt",
+                    "date": "2023-04-14"
+                }
+            ],
+        },
+        "judicial_processes": {
+            "items": [
+                {
+                    "entry_number": 12345678,
+                    "entry_date": "2022-04-13",
+                    "distribution_date": "2022-04-13",
+                    "end_date": "2023-04-13",
+                    "organ": "Juzgado de Ejecución de Madrid",
+                    "process_code": "000/00.0A0AGD",
+                    "process_value": "12460.27",
+                    "observations": "Ejecución Ordinaria (Ejecución Ag.) Entrega Electrónica - Ref 12345678"
+                }
+            ],
+        }
+    }
+}
+```
 {% endswagger-response %}
 
 {% swagger-response status="400: Bad Request" description="El campo 'search_term' es obligatorio" %}

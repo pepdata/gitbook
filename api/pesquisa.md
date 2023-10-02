@@ -6,7 +6,7 @@ Endpoint para buscar una persona identificable.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" %}
@@ -14,16 +14,8 @@ Nombre de la persona que se busca
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="birth_date" type="string" %}
-Fecha de nacimiento de la validación. 
-
-\
-
-
-Formato: yyyy-mm-dd
-
-\
-
-
+Fecha de nacimiento de la validación. \
+Formato: yyyy-mm-dd\
 Default: null
 {% endswagger-parameter %}
 
@@ -38,7 +30,8 @@ Default: null
               "birth_date": null,
               "death_date": null,
               "id_country": "PT",
-              "score": 95
+              "score": 95,
+              "country": "Portugal"
             },
             {
               "id": "d7c48e2d-8699-4064-b94c-d6e2106fdf85",
@@ -46,7 +39,8 @@ Default: null
               "birth_date": "1933-05-25",
               "death_date": null,
               "id_country": "PT",
-              "score": 76
+              "score": 76,
+              "country": "Portugal"
             }
         ]
     },
@@ -65,6 +59,7 @@ Default: null
 * **death\_date**: fecha de la muerte de la persona identificable.
 * **id\_country**: país principal de la persona identificable, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **score**: [grado de similitud](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **country:** país principal de la persona identificable.
 
 {% hint style="info" %}
 Para obtener los mejores resultados, se recomienda leer la documentación relativa a su área de [búsqueda](../a-aplicacao/pesquisa.md).
@@ -76,7 +71,7 @@ Endpoint para buscar una organización sancionada.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" %}

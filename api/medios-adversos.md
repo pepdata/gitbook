@@ -58,6 +58,16 @@ Nombre de la entidad/persona a buscar
 
 {% swagger-response status="400: Bad Request" description="El campo 'search_term' es obligatorio" %}
 
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1696241312398,
+        "message": "El campo 'search_term' es obligatorio."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

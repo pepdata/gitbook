@@ -610,7 +610,12 @@ Id do registo ou transação
 {% swagger-response status="200: OK" description="O risco do registo de clientes ou transações foi revertido com sucesso." %}
 ```javascript
 {
-    risk: 0
+    "version": 0.1,
+    "timestamp": 1696238603806,
+    "data": {
+        "risk": 0,
+        "risk_category": "low"
+    }
 }
 ```
 {% endswagger-response %}
@@ -618,7 +623,8 @@ Id do registo ou transação
 
 ### Legenda <a href="#legenda-2" id="legenda-2"></a>
 
-* risk: risco recalculado do registo de clientes ou transações.
+* **risk:** risco recalculado do registo de clientes ou transações.
+* **risk\_category:** categoria em que se insere o valor do risco do registo de clientes/transações.
 
 {% swagger method="post" path="/reset_questionnaire_needs_attention" baseUrl="https://www.pepdata.com/api" summary="Redefinir o estado " %}
 {% swagger-description %}

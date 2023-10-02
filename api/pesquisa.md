@@ -6,7 +6,7 @@ Endpoint para pesquisar uma pessoa identificável.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}
@@ -36,7 +36,8 @@ Default: null
               "birth_date": null,
               "death_date": null,
               "id_country": "PT",
-              "score": 95
+              "score": 95,
+              "country": "Portugal"
             },
             {
               "id": "d7c48e2d-8699-4064-b94c-d6e2106fdf85",
@@ -44,7 +45,8 @@ Default: null
               "birth_date": "1933-05-25",
               "death_date": null,
               "id_country": "PT",
-              "score": 76
+              "score": 76,
+              "country": "Portugal"
             }
         ]
     },
@@ -64,6 +66,7 @@ Default: null
 * **id\_country**: país primário da pessoa identificável, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **source**: fonte da lista de sanções, caso exista: EU, OFAC, HMTreasury ou UN.
 * **score**: [grau de semelhança](../glossario/glossario-aplicacao.md#grau-de-semelhanca).
+* **country:** país primário da pessoa identificável.
 
 {% hint style="info" %}
 De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa/).
@@ -75,7 +78,7 @@ Endpoint para pesquisar uma organização sancionada.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="name" type="string" required="true" %}

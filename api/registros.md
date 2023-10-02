@@ -619,8 +619,24 @@ id del registro o transacción
 
 {% swagger-response status="200: OK" description="Se revirtió con éxito el riesgo del registro de clientes o transacciones" %}
 
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1696238603806,
+    "data": {
+        "risk": 0,
+        "risk_category": "low"
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
+
+### Leyenda
+
+* **risk:** riesgo de alta de clientes u operaciones.
+* **risk\_category:** categoria en la que se inserta el valor de riesgo de alta de clientes u operaciones.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/reset_questionnaire_needs_attention" summary="Restablecer el estado "Necesita atención" de un registro" %}
 {% swagger-description %}

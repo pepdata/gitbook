@@ -653,5 +653,15 @@ Id del registro o transacción
 
 {% swagger-response status="200: OK" description="El estado "Necesita atención" del registro de clientes o de transacciones se ha restablecido correctamente." %}
 
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1696239199674,
+    "data": {
+        "message": "El estado 'Necesita atención' se ha restablecido correctamente."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}

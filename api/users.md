@@ -6,10 +6,10 @@
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id" type="string" %}
+{% swagger-parameter in="body" name="id" type="string" required="false" %}
 Id do utilizador
 {% endswagger-parameter %}
 
@@ -22,13 +22,11 @@ Id do utilizador
                 "id": "ab152600-4cf5-6b7e-813b-3a4f8bda8f66",
                 "name": "Amílcar da Silva",
                 "email": "amilcar.da.silva@test.pt",
-                "last_access": 1646390880644
             },
             {
                 "id": "f59c0220-7d33-d2a3-fc42-35030d14c794",
                 "name": "Alcídio da Fonseca",
                 "email": "alcidio.da.fonseca@test.pt",
-                "last_access": null
             },
         ]
     },
@@ -44,4 +42,3 @@ Id do utilizador
 * **id**: id do utilizador.
 * **name**: nome do utilizador.
 * **email**: email do utilizador.
-* **last\_access**: último acesso de utilizador à aplicação.

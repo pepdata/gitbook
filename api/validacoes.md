@@ -517,7 +517,7 @@ key \[API\_KEY]
     "version": 0.1,
     "timestamp": 1695827026005,
     "data": {
-        "message": "Aplicando reglas... Tiempo estimado: ~1s"
+        "time_to_conclusion": 1
     }
 }
 ```
@@ -548,7 +548,9 @@ key \[API\_KEY]
 {% endswagger-response %}
 {% endswagger %}
 
+### Leyenda
 
+* **time\_to\_conclusion**: tiempo estimado en segundos para que se complete la operación.
 
 {% hint style="warning" %}
 Se recomienda fuertemente leer la documentación sobre la [aplicación de    las reglas de validación](../a-aplicacao/validacoes/aplicacao-de-regras.md), ya que aplicarlas sin una comprensión adecuada puede conducir a cambios no deseados.

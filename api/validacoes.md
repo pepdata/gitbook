@@ -307,7 +307,10 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
                 "country_nationality": "Japan"
             }
         ],
-        "count": 1
+        "count": 1,
+        "total": 1,
+        "page": 1,
+        "max_results_per_page": 50
     }
 }
 ```

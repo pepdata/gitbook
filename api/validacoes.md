@@ -226,7 +226,10 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
                 "country_nationality": "Japan"
             }
         ],
-        "count": 1
+        "count": 1,
+<strong>        "total": 1,
+</strong>        "page": 1,
+        "max_results_per_page": 50
     }
     "version": "0.1",
     "timestamp": 1588599744111

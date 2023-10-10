@@ -238,12 +238,12 @@ Default: "individual"
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400" description="La validación a agregar ya está en la base de datos." %}
+{% swagger-response status="409: Conflict" description="La validación a agregar ya está en la base de datos." %}
 ```
 {
     "message": "Esta validação parece já existir na base de dados"
-    "version": "versão da API",
-    "timestamp": X 
+    "version": 0.1,
+    "timestamp": 1696943296957
 }
 ```
 {% endswagger-response %}

@@ -161,7 +161,17 @@ Id personalizável da validação
   * Sancionado (HM Treasury)
   * Sancionado (OFAC)
   * Sancionado (UN)
-* **relations**: relações onde a validação se encontra associada.
+* **relations**: lista de relações associadas à validação. Contém as seguintes propriedades:
+  * **name:** nome da relação.
+  * **vatin:** NIF da relação.
+  * **id\_iperson:** id da pessoa identificável associada à relação.
+  * **id\_iorganization:** id da organização identificável associada à relação.
+  * **relationship\_type:** tipo da relação. Valores possíveis:
+    * representative
+    * manager
+    * beneficiary
+    * beneficial\_owner
+  * **id\_relationship\_info:** id da relação.
 * **added\_by**: id do utilizador que [adicionou ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)a validação.
 * **added\_at**: data a que a validação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **determined\_at**: data a que a validação foi determinada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.

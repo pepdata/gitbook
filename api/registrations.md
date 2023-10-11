@@ -694,6 +694,18 @@ Justificação para alteração do estado de aprovação
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger method="post" path="/revert_questionnaire_risk" baseUrl="https://www.pepdata.com/api" summary="Reverter o risco de um registo" %}

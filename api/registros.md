@@ -361,7 +361,7 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Registro o transacción no encontrada" %}
+{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrada" %}
 
 
 ```json

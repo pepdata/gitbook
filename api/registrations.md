@@ -733,6 +733,18 @@ Id do registo ou transação
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Legenda <a href="#legenda-2" id="legenda-2"></a>
@@ -760,6 +772,18 @@ Id do registo ou transação
     "timestamp": 1696239199674,
     "data": {
         "message": "Estado 'Needs attention' redefinido com sucesso."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
     }
 }
 ```

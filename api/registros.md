@@ -361,7 +361,7 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrada" %}
+{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
 
 
 ```json
@@ -403,6 +403,18 @@ id del registro o transacción
     "timestamp": 1695892485159,
     "data": {
         "message": "El registro fue eliminado con éxito."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023313540,
+        "message": "No se ha podido encontrar el registro deseado"
     }
 }
 ```

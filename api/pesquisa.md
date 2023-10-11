@@ -99,7 +99,7 @@ key \[API\_KEY]
 Nome da organização a pesquisar
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Pesquisa realizada com sucesso." %}
+{% swagger-response status="200: OK" description="Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {

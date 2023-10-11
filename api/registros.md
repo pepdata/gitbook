@@ -360,6 +360,20 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registro o transacción no encontrada" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023313540,
+        "message": "No se ha podido encontrar el registro deseado"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Leyenda

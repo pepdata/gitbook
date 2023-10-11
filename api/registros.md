@@ -650,6 +650,20 @@ Ejemplo:\
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Departamentos inválidos" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697025478223,
+        "message": "Se ha producido un error al asociar los departamentos con el registro. Compruebe que los departamentos que va a asociar existen en la página \\'Configuraciones\\'."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire_approval_state" summary="Editar el estado de aprobación de un registro" %}

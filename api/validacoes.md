@@ -601,6 +601,20 @@ Id da validação
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validação não encontrada" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697017451164,
+        "message": "A validação não foi encontrada"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/apply_rules" method="post" summary="Aplicação das regras" %}

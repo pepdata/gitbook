@@ -253,7 +253,7 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
     "message": {
         "version": 0.1,
         "timestamp": 1588599744111,
-        "message": "O campo 'status' não é válido."
+        "message": "O campo 'estado' não é válido."
     }
 }
 ```

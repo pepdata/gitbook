@@ -745,6 +745,18 @@ id del registro o transacción
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023313540,
+        "message": "No se ha podido encontrar el registro deseado"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Leyenda
@@ -774,6 +786,18 @@ Id del registro o transacción
     "timestamp": 1696239199674,
     "data": {
         "message": "El estado 'Necesita atención' se ha restablecido correctamente."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023313540,
+        "message": "No se ha podido encontrar el registro deseado"
     }
 }
 ```

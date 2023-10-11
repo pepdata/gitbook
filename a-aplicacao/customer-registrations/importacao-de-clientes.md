@@ -31,16 +31,16 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                                                                            |
 | **name**              |                                                                                                                                                                                                                                       |
-| **vat\_number**       |                                                                                                                                                                                                                                       |
+| **vat\_number**       | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês.                                                                           |
 | responsible\_email    | Email do utilizador que irá ficar responsável pelo questionário do cliente. Tem de ser um utilizador inserido na sua organização.                                                                                                     |
 | invited\_email        | Email da pessoa a convidar para preenchimento do questionário. Nota: o convite terá de ser enviado manualmente, após a inserção.                                                                                                      |
 | corporate\_object     |                                                                                                                                                                                                                                       |
 | foundation\_date      |                                                                                                                                                                                                                                       |
 | nace\_codes           | Códigos CAE. Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                    |
-| constitution\_country | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
+| country               | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
 | operations\_countries | Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                                 |
 | is\_identified        | 0, no caso de não existir identificação.                                                                                                                                                                                              |
-| address\_country      | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
+| country\_address      | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
 | address\_postal\_code |                                                                                                                                                                                                                                       |
 | address               |                                                                                                                                                                                                                                       |
 | address\_door         |                                                                                                                                                                                                                                       |
@@ -55,7 +55,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/organizations.csv" %}
+{% file src="../../.gitbook/assets/organizations (1).csv" %}
 
 ### Ficheiro das pessoas singulares
 
@@ -65,17 +65,17 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | Campos                | Notas                                                                                                                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id\_custom            | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                                                                            |
-| **name**              |                                                                                                                                                                                                                                       |
+| **name**              | Poderá ver [aqui](importacao-de-clientes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                                                            |
 | **vat\_number**       | Caso não possua o número de contribuinte da pessoa singular poderá gerar um identificador único, que deverá possuir uma letra como primeiro caracter. Ex: ID659                                                                       |
 | responsible\_email    | Email do utilizador que irá ficar responsável pelo questionário do cliente. Tem de ser um utilizador inserido na sua organização.                                                                                                     |
 | invited\_email        | Email do utilizador a convidar. O convite terá que ser enviado manualmente, depois da inserção.                                                                                                                                       |
 | email                 | Email da pessoa singular.                                                                                                                                                                                                             |
-| birth\_date           |                                                                                                                                                                                                                                       |
+| birth\_date           | A data de nascimento deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                                                                                                                                          |
 | nationalities         | Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                                 |
-| place\_of\_birth      |                                                                                                                                                                                                                                       |
+| country               | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
 | is\_identified        | 0, no caso de não existir identificação.                                                                                                                                                                                              |
 | address\_type         | Valores aceites: residence, fiscal\_residence e headquarters.                                                                                                                                                                         |
-| address\_country      | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
+| country\_address      | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
 | address\_postal\_code |                                                                                                                                                                                                                                       |
 | address               |                                                                                                                                                                                                                                       |
 | address\_door         |                                                                                                                                                                                                                                       |
@@ -85,7 +85,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/individuals.csv" %}
+{% file src="../../.gitbook/assets/individuals (2).csv" %}
 
 ### Ficheiro das relações entre pessoas singulares e organizações
 

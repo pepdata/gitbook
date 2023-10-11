@@ -257,6 +257,20 @@ Default: "individual"
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Nombre inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697017001540,
+        "message": "El nombre no es válido. Solo se permiten nombres:  • Solo con caracteres latinos, apóstrofes, espacios, puntos o guiones;"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Leyenda

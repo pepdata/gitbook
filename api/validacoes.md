@@ -327,7 +327,15 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
 {% endswagger-response %}
 
 {% swagger-response status="400: Bad Request" description="estado de alertas inválido" %}
-
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1588599744111,
+        "message": "El campo 'estado' no es válido."
+    }
+}
+```
 {% endswagger-response %}
 {% endswagger %}
 

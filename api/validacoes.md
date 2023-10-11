@@ -457,6 +457,20 @@ Id de la validación
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validación no encontrada" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697017565826,
+        "message": "No se encontró la validación"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Leyenda

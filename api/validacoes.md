@@ -140,7 +140,17 @@ Valores posibles: all, complete, complete\_identified, complete\_not\_identified
   * Sancionado (HM Treasury)
   * Sancionado (OFAC)
   * Sancionado (UN)
-* **relations:** relaciones donde se asocia la validación.
+* **relations:** lista de relaciones asociadas con la validación. Contiene las siguientes propriedades:
+  * **name:** nombre de la relación.
+  * **vatin:** nif de la relación.
+  * **id\_iperson:** id de la persona identificable asociada con la relación.
+  * **id\_iorganization:** id de la organización identificable asociada con la relación.
+  * **relationship\_type:** tipo de relación. Valores posibles:
+    * representative
+    * manager
+    * beneficary
+    * beneficial\_owner
+  * **id\_relationship\_info:** id de la relación.
 * **iperson\_classifications:** lista de clasificaciones de personas identificables.
 * **added\_by**: id del usuario que ha [agregado ](../a-aplicacao/validacoes/#adicao-determinacao-e-estados-de-validacoes)la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.
 * **added\_at**: la fecha a la que se agregó la validación, como el número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC.

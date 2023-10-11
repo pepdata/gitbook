@@ -92,7 +92,7 @@ key \[API\_KEY]
 Nombre de la organización a buscar
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Búsqueda completada con éxito." %}
+{% swagger-response status="200: OK" description="Búsqueda completada con éxito." %}
 ```
 {
     "data": {
@@ -106,6 +106,20 @@ Nombre de la organización a buscar
     },
     "version": "0.1",
     "timestamp": 1588599744111
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Nombre no ingresado." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030416698,
+        "message": "Por favor, introduzca el nombre a buscar."
+    }
 }
 ```
 {% endswagger-response %}

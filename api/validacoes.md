@@ -49,7 +49,7 @@ Id da validação
 Id personalizável da validação
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Validações obtidas com sucesso." %}
+{% swagger-response status="200: OK" description="Validações obtidas com sucesso." %}
 <pre><code>{
     "version": 0.1,
     "timestamp": 1688640113263,
@@ -358,7 +358,7 @@ Tipo de entidade, podendo ser: "individual" ou "organization"
 Default: "individual"
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Validação adicionada com sucesso." %}
+{% swagger-response status="200: OK" description="Validação adicionada com sucesso." %}
 ```
 
 {
@@ -426,7 +426,7 @@ Formato: true/false
 Default: false
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Resultados da análise de validação obtidos com sucesso." %}
+{% swagger-response status="200: OK" description="Resultados da análise de validação obtidos com sucesso." %}
 ```
 {
     "data": {
@@ -552,7 +552,7 @@ Id da validação
 Id da pessoa ou organização identificável correspondente.
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="A validação foi determinada com sucesso." %}
+{% swagger-response status="200: OK" description="A validação foi determinada com sucesso." %}
 ```
 {
     "version": 0.1,
@@ -590,7 +590,7 @@ key \[API\_KEY]
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="A validação foi apagada com sucesso." %}
+{% swagger-response status="200: OK" description="A validação foi apagada com sucesso." %}
 ```
 {
     "version": 0.1,

@@ -380,6 +380,20 @@ Default: "individual"
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Nome inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697017001540,
+        "message": "O nome é inválido. Só são permitidos nomes:  • Com apenas caracteres latinos, apóstrofes, espaços, pontos ou hífenes;"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Legenda

@@ -1,6 +1,6 @@
 # Importação de validações
 
-Na [página de validações](./), pode fazer a importação automática de validações através do botão “Importar validações”, que lhe dá acesso a um explorador que permite escolher o ficheiro que contém as [validações](../../glossario/glossario-aplicacao.md#validacao) a adicionar.
+a [página de validações](./), pode fazer a importação automática de validações através do botão “Importar validações”, que lhe dá acesso a um explorador que permite escolher o ficheiro que contém as [validações](../../glossario/glossario-aplicacao.md#validacao) a adicionar.
 
 Antes de escolher o ficheiro de importação, terá de escolher o tipo de validações a importar, selecionando o ícone correspondente:
 
@@ -25,19 +25,19 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Deve conter uma pessoa por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos               | Notas                                                                                                                                                       |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number          | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| **name**             | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                |
-| birth\_date          | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                        |
-| country\_nationality | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| country\_address     | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| id\_custom           | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
-| unidentifiable       | 1 ou 0, caso seja não identificável.                                                                                                                        |
+| Campos           | Notas                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number      | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
+| **name**         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                |
+| birth\_date      | A data de nascimento deve seguir o formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                        |
+| country          | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
+| country\_address | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
+| id\_custom       | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
+| unidentifiable   | 1 ou 0, caso seja não identificável.                                                                                                                        |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/validação individual (1).txt" %}
+{% file src="../../.gitbook/assets/validação individual (2).txt" %}
 
 ### Ficheiro das organizações
 

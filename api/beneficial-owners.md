@@ -10,23 +10,21 @@ Esta secção ainda se encontra na versão **beta**.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="vatin" required="true" type="string" %}
 NIPC da organização a comparar
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="include_rcbe_response" type="boolean" %}
+{% swagger-parameter in="body" name="include_rcbe_response" type="boolean" required="false" %}
 Instrução para incorporar a resposta do RCBE.
 
-\
-
+\\
 
 Formato: false/true
 
-\
-
+\\
 
 Default: false
 {% endswagger-parameter %}
@@ -106,12 +104,26 @@ Default: false
 // }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="NIPC não encontrado" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "Não foi fornecido nenhum NIPC."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Legenda
 
 * **id\_iberinform**: id do sistema da Iberinform. Pode ser vazio de forma a agregar todas as pessoas do RCBE sem match no sistema da Iberinform.
-* **status**:&#x20;
+* **status**:
   * found: encontrada uma correspondência unívoca no RCBE
   * ambiguous: encontradas correspondências ambíguas no RCBE
   * not\_found: não foram encontradas correspondências no RCBE
@@ -119,15 +131,13 @@ Default: false
 * **rcbe\_person**: pessoa presente no RCBE. Ver Relevant Objects na response.
 * **divergences**: objeto de divergências. Ver Relevant Objects na response.
 
-
-
 {% swagger baseUrl="https://www.pepdata.com/api" path="/get_beneficial_owners" method="post" summary="Obtenção dos beneficiários efetivos a partir do RCBE" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="vatin" type="string" required="true" %}
@@ -173,8 +183,6 @@ NIPC da organização a tratar
 **Atenção:** Infelizmente, o RCBE não apresenta informação estruturada em todas as propriedades. Deste modo, as propriedades acima descritas sem valor devem ser interpretadas como texto livre.
 {% endhint %}
 
-
-
 {% swagger method="post" path="/get_beneficial_owners_divergences" baseUrl="https://www.pepdata.com/api" summary="Comparação de beneficiários efetivos com o RCBE" %}
 {% swagger-description %}
 Endpoint para comparação entre os beneficiários efetivos do seu sistema e o portal do RCBE.
@@ -185,17 +193,17 @@ NIPC da organização a comparar
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" required="true" name="beneficial_owners" type="array" %}
-Cada elemento deve conter o seguinte formato: \
-{ \
-&#x20;    "id": "Identificador da pessoa",
+Cada elemento deve conter o seguinte formato:\
+{\
+"id": "Identificador da pessoa",
 
-&#x20;    "name": "Nome completo da pessoa", \
-&#x20;    "birth\_date": "DD/MM/YYYY",\
-&#x20;    "capital\_percentage": (Opcional) valor do capital, em %. Exemplo: 91.725\
+"name": "Nome completo da pessoa",\
+"birth\_date": "DD/MM/YYYY",\
+"capital\_percentage": (Opcional) valor do capital, em %. Exemplo: 91.725\
 }
 {% endswagger-parameter %}
 
@@ -257,7 +265,7 @@ Cada elemento deve conter o seguinte formato: \
 ### Legenda
 
 * **id**: identificador da pessoa a analisar. Este pode ter qualquer valor à escolha do utilizador, existindo apenas a obrigatoriedade de ser único entre os beneficial\_owners a comparar. Pode ser vazio de forma a agregar todas as pessoas do RCBE sem correspondência com os beneficial\_owners a comparar.
-* **status**:&#x20;
+* **status**:
   * found: encontrada uma correspondência unívoca no RCBE
   * ambiguous: encontradas correspondências ambíguas no RCBE
   * not\_found: não foram encontradas correspondências no RCBE

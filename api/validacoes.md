@@ -626,7 +626,7 @@ Endpoint para aplicação das regras de validação.
 key \[API\_KEY]
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="As regras começaram a ser aplicadas. " %}
+{% swagger-response status="200: OK" description="As regras começaram a ser aplicadas." %}
 ```
 {
     "version": 0.1,

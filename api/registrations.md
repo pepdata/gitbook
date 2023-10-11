@@ -550,6 +550,18 @@ E-mail do cliente convidado
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger method="post" path="/assign_user_to_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Atribuir um utilizador a um registo" %}

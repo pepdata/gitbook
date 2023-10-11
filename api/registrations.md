@@ -291,13 +291,27 @@ _transaction_
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="O registo não foi criado, já existe na lista." %}
+{% swagger-response status="409: Conflict" description="O registo não foi criado, já existe na lista." %}
 ```javascript
 {
     "message": {
         "version": 0.1,
         "timestamp": 1660060761083,
         "message": "O registo não foi criado, já existe na lista."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="NIF/NIPC inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697022273147,
+        "message": "NIF/NIPC: O NIF/NIPC é inválido. Caso seja internacional, coloque o código do país no início. Ex.: FR12345678901 para um NIF francês."
     }
 }
 ```

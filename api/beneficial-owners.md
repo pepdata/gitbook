@@ -29,7 +29,7 @@ Formato: false/true
 Default: false
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="" %}
+{% swagger-response status="200: OK" description="Informação recolhida com sucesso." %}
 ```javascript
 {
     "data": {
@@ -144,7 +144,7 @@ key \[API\_KEY]
 NIPC da organização a tratar
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="" %}
+{% swagger-response status="200: OK" description="Informação recolhida com sucesso" %}
 ```
 {
     "data": {
@@ -174,6 +174,20 @@ NIPC da organização a tratar
     },
     "version": "0.1",
     "timestamp": 1646390980644
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="NIPC inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "O NIF/NIPC é inválido. Caso seja internacional, coloque o código do país no início. Ex.: FR12345678901 para um NIF francês."
+    }
 }
 ```
 {% endswagger-response %}

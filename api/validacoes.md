@@ -563,6 +563,18 @@ Id da pessoa ou organização identificável correspondente.
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validação não encontrada" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697017451164,
+        "message": "A validação não foi encontrada"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/delete_validation" method="post" summary="Apagar validação" %}

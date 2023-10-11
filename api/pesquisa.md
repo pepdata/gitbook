@@ -25,7 +25,7 @@ Formato: yyyy-mm-dd
 Default: null
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Pesquisa realizada com sucesso." %}
+{% swagger-response status="200: OK" description="Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {
@@ -52,6 +52,20 @@ Default: null
     },
     "version": "0.1",
     "timestamp": 1588599744111
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Nome inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697029877505,
+        "message": "O nome é inválido. Só são permitidos nomes:  • Com apenas caracteres latinos, apóstrofes, espaços, pontos ou hífenes;"
+    }
 }
 ```
 {% endswagger-response %}

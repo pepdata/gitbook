@@ -116,6 +116,20 @@ Nome da organização a pesquisar
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Nome não introduzido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030330542,
+        "message": "Por favor introduza o nome a pesquisar."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Legenda

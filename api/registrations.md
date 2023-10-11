@@ -356,7 +356,7 @@ key \[API\_KEY]
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Registo não encontrado" %}
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado" %}
 
 
 ```json

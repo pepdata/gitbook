@@ -400,6 +400,18 @@ Id do registo ou transação
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% hint style="warning" %}

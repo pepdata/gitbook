@@ -75,6 +75,10 @@ Norma, definida por el usuario de la aplicación, que define cómo se aplicará 
 
 
 
+## Relación
+
+Relacíon entre dos entidades.
+
 ### Sancionado
 
 Persona cuyo nombre aparece en una de las siguientes listas:

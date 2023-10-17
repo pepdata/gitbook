@@ -1,14 +1,14 @@
 # Importação de validações
 
-a [página de validações](./), pode fazer a importação automática de validações através do botão “Importar validações”, que lhe dá acesso a um explorador que permite escolher o ficheiro que contém as [validações](../../glossario/glossario-aplicacao.md#validacao) a adicionar.
+Na [página de validações](./), pode fazer a importação automática de validações através do botão “Importar validações”, que lhe dá acesso a um explorador que permite escolher o ficheiro que contém as [validações](../../glossario/glossario-aplicacao.md#validacao) a adicionar.
 
 Antes de escolher o ficheiro de importação, terá de escolher o tipo de validações a importar, selecionando o ícone correspondente:
 
 <figure><img src="../../.gitbook/assets/Untitled-1.jpg" alt=""><figcaption><p>Seleção do tipo de validações a importar</p></figcaption></figure>
 
-Por predefinição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício.
+Por predefinição, aparece selecionado o tipo 'Pessoas'. Para importar validações de organizações, deverá selecionar o ícone em forma de edifício e para importar relações, deverá selecionar o ícone em forma de diagrama.
 
-Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./).
+Após o upload do ficheiro ter sido concluído, todas as novas [validações](../../glossario/glossario-aplicacao.md#validacao) irão aparecer na [página de validações](./). Se tiver importado relações, todas elas serão automaticamente associadas às [validações](./) correspondentes.
 
 De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, este deverá seguir um conjunto de especificações, descritas abaixo.
 
@@ -58,14 +58,16 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 ### Ficheiro das relações
 
-* Deve conter uma organização por linha
+* Deve conter uma relação por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                         | Notas                                                                                   |
-| ------------------------------ | --------------------------------------------------------------------------------------- |
-| **organization\_vat\_number**  | NIPC da organização a inserir as relações. Esta organização já deve existir no sistema. |
-| **vat\_number**                | NIF da relação a ser inserida. Este indivíduo já deve existir no sistema.               |
-| **position\_in\_organization** | Pode ser: representative, manager, owner ou beneficial\_owner.                          |
+
+
+| Campos                         | Notas                                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **organization\_vat\_number**  | NIPC da validação de organização onde se vai inserir a relação. Esta validação de organização já deve existir no sistema. |
+| **vat\_number**                | NIF da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                     |
+| **position\_in\_organization** | Tipo da relação a inserir. Pode ser: representative, manager, owner ou beneficial\_owner.                                 |
 
 #### Ficheiro exemplo
 
@@ -125,7 +127,7 @@ Caso ocorra um problema com os dados a introduzir, irá aparecer um assistente d
    * country\_address (caso se trate de validações de pessoas);
    * country (caso se trate de validações de organizações);
    * vat\_number
-3. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
+3. Verificação da existência de duplicados: caso já tenha adicionado uma determinada validação ou relação no passado, os dados a introduzir serão considerados como duplicados. O utilizador poderá depois optar por ignorar este tipo de erro.
 
 {% hint style="info" %}
 Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros ou de duplicados, estes podem não ser todos mostrados no assistente de correção. Terá de efetuar a sua correção e refazer o upload para ver os erros restantes.

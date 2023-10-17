@@ -78,8 +78,8 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 {% hint style="info" %}
 #### Quais as especificações do ficheiro de upload?
 
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao)/relação por cada linha.
-* Uma [validação](../../glossario/glossario-aplicacao.md#validacao)/relação deve seguir a ordem dos campos definidos no cabeçalho.
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao)/[relação](../../glossario/glossario-aplicacao.md#relacao) por cada linha.
+* Uma [validação](../../glossario/glossario-aplicacao.md#validacao)/[relação](../../glossario/glossario-aplicacao.md#relacao) deve seguir a ordem dos campos definidos no cabeçalho.
 * A codificação do ficheiro deve ser utf-8 ou ANSI.
 {% endhint %}
 

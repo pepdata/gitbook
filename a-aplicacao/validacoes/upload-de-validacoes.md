@@ -76,8 +76,8 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 {% hint style="info" %}
 ### ¿Cuáles son las especificaciones del archivo de carga?
 
-* Una [validación](../../glossario/glossario-aplicacao.md#validacion)/relación por línea.
-* Una validación/relación debe seguir el orden de los campos definidos en el encabezado.
+* Una [validación](../../glossario/glossario-aplicacao.md#validacion)/[relación](../../glossario/glossario-aplicacao.md#relacion) por línea.
+* Una [validación](../../glossario/glossario-aplicacao.md#validacion)/[relación ](../../glossario/glossario-aplicacao.md#relacion)debe seguir el orden de los campos definidos en el encabezado.
 * La codificación del archivo debe ser utf-8 o ANSI.
 {% endhint %}
 
@@ -122,7 +122,7 @@ Si se produce un problema con los datos a introducir, aparecerá un asistente de
    * country\_address (en el caso de validaciones de personas);
    * country (en el caso de validaciones de organizaciones);
    * vat\_number
-3. Comprobación de duplicados: si ya ha agregado una validación en el pasado, los datos que se introduzcan se considerarán duplicados. El usuario puede entonces elegir ignorar este tipo de error.
+3. Comprobación de duplicados: si ya ha agregado una validación/relación en el pasado, los datos que se introduzcan se considerarán duplicados. El usuario puede entonces elegir ignorar este tipo de error.
 
 {% hint style="info" %}
 Nota: Debido a las limitaciones de espacio, si hay un gran número de errores o duplicados, es posible que no se muestren todos en el asistente de corrección. Tendrá que corregirlos y volver a cargarlos para ver los errores restantes.

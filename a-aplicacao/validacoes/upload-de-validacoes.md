@@ -6,9 +6,9 @@ Antes de elegir el archivo de importación, deverá elegir el tipo de validacion
 
 <figure><img src="../../.gitbook/assets/Untitled-1.jpg" alt=""><figcaption><p>Selección del tipo de validaciones a importar</p></figcaption></figure>
 
-La aplicación selecciona automáticamente el tipo "Personas". Para importar validaciones de organizaciones, debe seleccionar el icono en forma de edificio.
+La aplicación selecciona automáticamente el tipo "Personas". Para importar validaciones de organizaciones, debe seleccionar el icono con forma de edificio y para importar relaciones debe seleccionar el icono con form de diagrama.
 
-Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./).
+Una vez finalizada la carga de archivos, todos las nuevas[ validaciones](../../glossario/glossario-aplicacao.md#validacion) aparecerán  en la [página de validaciones](./). Se tienes relaciones importadas, todas ellas se asociarán automáticamente con las [validaciones](./) correspondientes.
 
 Para que el archivo sea interpretado correctamente por la aplicación, debe seguir una serie de especificaciones, descritas a continuación.
 
@@ -20,7 +20,7 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 * Extensión .txt o .csv&#x20;
 * Limitado a 500 000 filas por importación
 
-### Fichero de personas
+### Archivo de personas
 
 * Debe contener una persona por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
@@ -39,7 +39,7 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 
 {% file src="../../.gitbook/assets/validación individual.txt" %}
 
-### Archivo de organización
+### Archivo de organizaciones
 
 * Debe contener una organización por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
@@ -56,16 +56,16 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 
 {% file src="../../.gitbook/assets/validación de la organización.txt" %}
 
-### Archivo de relación
+### Archivo de relaciones
 
-* Debe contener una organización por línea&#x20;
+* Debe contener una relación por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos                         | Notas                                                                                                  |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| **organization\_vat\_number**  | CIF de la organización para entrar en las relaciones. Esta organización ya debe existir en el sistema. |
-| **vat\_number**                | NIF de la relación a insertar. Este individuo ya debe existir en el sistema.                           |
-| **position\_in\_organization** | Puede ser: representative, manager, owner o beneficial\_owner.                                         |
+| Campos                         | Notas                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| **organization\_vat\_number**  | CIF de la organización donde se insertará la relación. Esta organización ya debe existir en el sistema. |
+| **vat\_number**                | NIF de la relación a insertar. Este individuo/organización ya debe existir en el sistema.               |
+| **position\_in\_organization** | Tipo de relación a insertar. Puede ser: representative, manager, owner o beneficial\_owner.             |
 
 #### Archivo de muestra
 
@@ -76,8 +76,8 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 {% hint style="info" %}
 ### ¿Cuáles son las especificaciones del archivo de carga?
 
-* Una [validación](../../glossario/glossario-aplicacao.md#validacion) por línea.
-* Una validación debe seguir el orden de los campos definidos en el encabezado.
+* Una [validación](../../glossario/glossario-aplicacao.md#validacion)/relación por línea.
+* Una validación/relación debe seguir el orden de los campos definidos en el encabezado.
 * La codificación del archivo debe ser utf-8 o ANSI.
 {% endhint %}
 

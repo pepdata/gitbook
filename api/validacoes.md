@@ -218,6 +218,14 @@ Data de início do filtro, sob a forma de número de milissegundos desde 1 de Ja
 Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="include_comments" type="boolean" %}
+Parâmetro para solicitar informação sobre os comentários associados aos alertas.
+
+Valores possíveis: true, false
+
+Default: false
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Alertas das validações obtidos com sucesso" %}
 <pre><code><strong>{
 </strong>    "data": {
@@ -233,7 +241,17 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
                 "resolved_by": null,
                 "status": "unresolved",
                 "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
-                "country_nationality": "Japan"
+                "country_nationality": "Japan",
+                "comments": [
+                    {
+                        "id": "ff959c5f-8dbb-130c-f904-b0b02359d113",
+                        "comment": "Comentário 1"
+                    },
+                    {
+                        "id": "2b0c4c70-6730-9056-b3c2-bb8dc21125d3",
+                        "comment": "Comentário 2"
+                    }
+                ]
             }
         ],
         "count": 1,
@@ -273,6 +291,9 @@ Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeir
 * **status:** estado do alerta.
 * **reason**: razão da criação do alerta.
 * **country\_nationality:** país de nacionalidade.
+* **comments:** comentários associados ao alerta.
+  * **id:** id do comentário.
+  * **comment:** comentário.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Adicionar validação" %}
 {% swagger-description %}

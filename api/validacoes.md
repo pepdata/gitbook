@@ -766,3 +766,67 @@ Tipo de alertas. Valores possíveis: determination, alert, judicial\_process, ad
 * **id\_validation\_judicial\_process:** id do processo judicial associado correspondente, caso o tipo de comentário seja "judicial\_process".
 * **id\_validation\_adverse\_media:** id da notícia adversa associada correspondente, caso o tipo de comentário seja "adverse\_media".
 * **id\_added\_by:** id do utilizador que adicionou o comentário.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="add_comment" method="post" summary="Adicionar um comentário" %}
+{% swagger-description %}
+Endpoint para adicionar um comentário.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" required="true" %}
+Id da validação
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="comment" required="true" %}
+Comentário
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_iperson" type="string" required="false" %}
+Id da pessoa identificável correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente à identificação de uma validação.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_alert" %}
+Id do alerta de validação correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a um alerta de validação.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_judicial_process" %}
+Id do processo judicial associado correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a um processo judicial.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_adverse_media" %}
+Id da notícia adversa associada correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a uma notícia adversa.**
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentário adicionado com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730099564,
+    "data": {
+        "id": "ac33a772-a869-1c36-8569-5cba9cd0542d"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validação não encontrada" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730211531,
+        "message": "A validação não foi encontrada"
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id do comentário adicionado.

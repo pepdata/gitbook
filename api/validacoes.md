@@ -308,6 +308,12 @@ Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1
 Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="include_comments" type="boolean" %}
+Parámetro para solicitar información sobre comentarios asociados a los alertas. Valores posibles: true, false
+
+Predeterminado: false
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Alertas de validación obtenidas con éxito" %}
 
 
@@ -328,7 +334,17 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
                 "resolved_by": null,
                 "status": "unresolved",
                 "reason": "Podem ter sido encontradas novas adverse media relativas a esta pessoa.",
-                "country_nationality": "Japan"
+                "country_nationality": "Japan",
+                "comments": [
+                    {
+                        "id": "ff959c5f-8dbb-130c-f904-b0b02359d113",
+                        "comment": "Comentario 1"
+                    },
+                    {
+                        "id": "2b0c4c70-6730-9056-b3c2-bb8dc21125d3",
+                        "comment": "Comentario 2"
+                    }
+                ]
             }
         ],
         "count": 1,
@@ -366,6 +382,9 @@ Fecha de finalización del filtro, com número de milisegundos desde el 1 de ene
 * **status:** estado de la alerta.
 * **reason**: motivo para crear la alerta.
 * **country\_nationality:** país de nacionalidad.
+* **comments:** comentarios asociados con la alerta.
+  * **id:** id de lo comentario.
+  * **comment:** comentario.
 
 {% hint style="info" %}
 **country\_nationality, country\_address e country**

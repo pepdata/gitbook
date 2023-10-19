@@ -874,3 +874,43 @@ Comentário
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="delete_comment" method="post" summary="Apagar um comentário" %}
+{% swagger-description %}
+Endpoint para apagar um comentário.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id do comentário a apagar
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentário apagado com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730574961,
+    "data": {
+        "message": "Comentário apagado com sucesso."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Id de comentário inválido." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730622187,
+        "message": "O comentário não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}

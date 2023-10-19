@@ -674,3 +674,95 @@ A leitura da documentação relativa à [aplicação das regras de validação](
 {% hint style="info" %}
 A [aplicação de regras](../a-aplicacao/validacoes/aplicacao-de-regras.md) pode demorar alguns minutos até se encontrar concluída, dependendo do número de validações incompletas existentes.
 {% endhint %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="/get_comments" method="post" summary="Obter comentários" %}
+{% swagger-description %}
+Endpoint para obter comentários.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="page" type="number" required="false" %}
+Página dos comentários.
+
+Default: 1
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" %}
+Id da validação associada aos comentários.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" type="string" required="false" %}
+Tipo de alertas. Valores possíveis: determination, alert, judicial\_process, adverse\_media
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentários obtidos com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697728294225,
+    "data": {
+        "count": 2,
+        "total": 2,
+        "items": [
+            {
+                "id": "ff959c5f-8dbb-130c-f904-b0b02359d113",
+                "comment": "Comentário 1",
+                "added_at": 1697704218743,
+                "added_by": "António Jesus",
+                "id_validation": "a086cf5f-99ad-12d6-7a80-3d9a47a638d0",
+                "id_iperson": null,
+                "id_validation_alert": "e9b629b3-0566-c119-1de3-a86d8436205d",
+                "id_validation_judicial_process": null,
+                "id_validation_adverse_media": null,
+                "id_added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095"
+            },
+            {
+                "id": "12cdbdba-685d-73d5-fc35-017ecb17c166",
+                "comment": "Comentário 2",
+                "added_at": 1697704304926,
+                "added_by": "António Jesus",
+                "id_validation": "6f95d22f-9751-3d02-0784-0c6288c79c66",
+                "id_iperson": "91a1d1c0-bfd0-6e4b-3574-08c40bc9e577",
+                "id_validation_alert": null,
+                "id_validation_judicial_process": null,
+                "id_validation_adverse_media": null,
+                "id_added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095"
+            }
+        ],
+        "page": 1,
+        "max_results_per_page": 50
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Tipo de alerta inválido" %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697728633346,
+        "message": "O tipo de comentário não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id do comentário.
+* **comment**: comentário.
+* **added\_at**: data em que o comentário foi adicionado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **added\_by**: utilizador que adicionou o comentário.
+* **id\_validation**: id da validação associada ao comentário.
+* **id\_iperson**: id da pessoa identificável correspondente, caso o tipo do comentário seja "determination".
+* **id\_validation\_alert**: id do alerta de validação correspondente, caso o tipo do comentário seja "alert".
+* **id\_validation\_judicial\_process:** id do processo judicial associado correspondente, caso o tipo de comentário seja "judicial\_process".
+* **id\_validation\_adverse\_media:** id da notícia adversa associada correspondente, caso o tipo de comentário seja "adverse\_media".
+* **id\_added\_by:** id do utilizador que adicionou o comentário.

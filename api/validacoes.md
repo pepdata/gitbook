@@ -690,7 +690,7 @@ Página dos comentários.
 Default: 1
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_validation" %}
+{% swagger-parameter in="body" name="id_validation" type="string" %}
 Id da validação associada aos comentários.
 {% endswagger-parameter %}
 
@@ -780,7 +780,7 @@ key \[API\_KEY]
 Id da validação
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="comment" required="true" %}
+{% swagger-parameter in="body" name="comment" required="true" type="string" %}
 Comentário
 {% endswagger-parameter %}
 
@@ -788,15 +788,15 @@ Comentário
 Id da pessoa identificável correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente à identificação de uma validação.**
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_validation_alert" %}
+{% swagger-parameter in="body" name="id_validation_alert" type="string" %}
 Id do alerta de validação correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a um alerta de validação.**
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_validation_judicial_process" %}
+{% swagger-parameter in="body" name="id_validation_judicial_process" type="string" %}
 Id do processo judicial associado correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a um processo judicial.**
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="id_validation_adverse_media" %}
+{% swagger-parameter in="body" name="id_validation_adverse_media" type="string" %}
 Id da notícia adversa associada correspondente. **Este parâmetro é obrigatório caso o comentário a adicionar seja referente a uma notícia adversa.**
 {% endswagger-parameter %}
 
@@ -830,3 +830,47 @@ Id da notícia adversa associada correspondente. **Este parâmetro é obrigatór
 ### Legenda
 
 * **id**: id do comentário adicionado.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="edit_comment" method="post" summary="Editar um comentário" %}
+{% swagger-description %}
+Endpoint para editar um comentário.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id do comentário a editar
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="comment" required="true" type="string" %}
+Comentário
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentário editado com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730574961,
+    "data": {
+        "message": "Comentário editado com sucesso."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Id de comentário inválido." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730622187,
+        "message": "O comentário não foi encontrado."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}

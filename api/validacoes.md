@@ -218,6 +218,12 @@ Data de início do filtro, sob a forma de número de milissegundos desde 1 de Ja
 Data de fim do filtro, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="page" type="number" %}
+Página dos alertas.
+
+Default: 1
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="include_comments" type="boolean" %}
 Parâmetro para solicitar informação sobre os comentários associados aos alertas.
 

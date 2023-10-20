@@ -941,3 +941,219 @@ Id do comentário a apagar
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="get_validation_relationships" method="post" summary="Obter relações de uma validação" %}
+{% swagger-description %}
+Endpoint para obter relações de uma validação.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" required="true" %}
+Id da validação
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="page" type="number" %}
+Página das relações.
+
+Default: 1
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Relações obtidas com sucesso" %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697795044035,
+    "data": {
+        "items": [
+            {
+                "id": "7f0c97de-6c71-1461-4d9b-da65b4670824",
+                "id_relationship": "a86a80bf-0d90-cdfe-1869-726b898cc426",
+                "relationship_type": "representative",
+                "relationship_to": "António João Soares",
+                "id_relationship_to": "df3250ff-382f-c9aa-346e-ef76dd3d333f",
+                "id_relationship_from": "6474d5fc-205a-f750-2dd6-24c5d87a5ee5",
+                "added_by": "Carlos Araujo",
+                "added_at": 1697795029624
+            },
+            {
+                "id": "3b402dbb-ccef-c773-7fac-3225ce7f0e25",
+                "id_relationship": "7c5d3c73-b61c-44ae-6d0a-234e1ea2145b",
+                "relationship_type": "manager",
+                "relationship_to": "José Manuel Silva",
+                "id_relationship_to": "3b981423-e1eb-f30f-b4ff-d72b8f34c43a",
+                "id_relationship_from": "6474d5fc-205a-f750-2dd6-24c5d87a5ee5",
+                "added_by": "Carlos Araujo",
+                "added_at": 1697795038487
+            }
+        ],
+        "count": 2,
+        "total": 2,
+        "page": 1,
+        "max_results_per_page": 50
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validação não encontrada." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697795069776,
+        "message": "A validação não foi encontrada"
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: identificador da tabela de informações de relações.
+* **id\_relationship:** id da relação.
+* **relationship\_type:** tipo da relação
+* **relationship\_to:** nome da validação para a qual se criou a relação.
+* **id\_relationship\_to:** id da validação para a qual se criou a relação.
+* **id\_relationship\_from:** id da validação a partir da qual se criou a relação.
+* **added\_by:** utilizador responsável pela criação da relação.
+* **added\_at:** data em que a relação foi adicionada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="add_validation_relationship" method="post" summary="Adicionar uma relação a uma validação." %}
+{% swagger-description %}
+Endpoint para adicionar uma relação a uma validação.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="organization_vat_number" type="string" required="true" %}
+NIF da validação a partir da qual se vai criar a relação. **Tem de ser obrigatoriamente uma validação de organização.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="vat_number" type="string" required="true" %}
+NIF da validação para a qual se vai criar a relação. **Tem de ser obrigatoriamente uma validação de pessoa caso o tipo de relação seja representative, manager ou beneficial\_owner.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="position_in_organization" type="string" required="true" %}
+Tipo de relação.
+
+Valores possíveis: representative, manager, owner, beneficial\_owner
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Relação adicionada com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697798272664,
+    "data": {
+        "id": "8e6c7899-7c13-33d1-0538-50faf20f123e"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Tipo de relação inválido." %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697798319930,
+        "message": "O tipo de relação não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda
+
+* **id**: id da nova relação.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="edit_validation_relationship" method="post" summary="Editar uma relação de validação" %}
+{% swagger-description %}
+Endpoint para editar uma relação de validação
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_relationship_info" type="string" required="true" %}
+identificador da tabela de informações das relações associado à relação a editar.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="position_in_organization" type="string" required="true" %}
+Tipo de relação.
+
+Valores possíveis: representative, manager, owner, beneficial\_owner
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Relação editada com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697798682365,
+    "data": {
+        "message": "Relação editada com sucesso."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Tipo de relação inválido." %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697798319930,
+        "message": "O tipo de relação não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="delete_validation_relationship" method="post" summary="Apagar uma relação de validação" %}
+{% swagger-description %}
+Endpoint para apagar uma relação de validação
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_relationship_info" type="string" required="true" %}
+identificador da tabela de informações das relações associado à relação a editar.
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Relação editada com sucesso." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697798682365,
+    "data": {
+        "message": "Relação editada com sucesso."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Identificador da tabela de informações das relações inválido." %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697798319930,
+        "message": "O identificador da tabela de informações das relações não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}

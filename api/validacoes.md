@@ -279,7 +279,7 @@ Default: "individual"
 
 
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_alerts" summary="Obtener validaciones" %}
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_alerts" summary="Obtener alertas" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -651,3 +651,242 @@ Se recomienda fuertemente leer la documentación sobre la [aplicación de    las
 {% hint style="info" %}
 A [aplicación de la regla](../a-aplicacao/validacoes/aplicacao-de-regras.md) puede tardar varios minutos en completarse, dependiendo del número de validaciones incompletas existentes.
 {% endhint %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="/get_comments" method="post" summary="Obtener comentários" %}
+{% swagger-description %}
+Endpoint para obtener comentarios.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="page" type="number" required="false" %}
+Página de validaciones\
+Default: 1
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" %}
+Id de la validación asociada a los comentarios.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" type="string" required="false" %}
+Tipo de alertas. Valores posibles: determination, alert, judicial\_process, adverse\_media
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentarios obtenidos con éxito." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697728294225,
+    "data": {
+        "count": 2,
+        "total": 2,
+        "items": [
+            {
+                "id": "ff959c5f-8dbb-130c-f904-b0b02359d113",
+                "comment": "Comentario 1",
+                "added_at": 1697704218743,
+                "added_by": "António Jesus",
+                "id_validation": "a086cf5f-99ad-12d6-7a80-3d9a47a638d0",
+                "id_iperson": null,
+                "id_validation_alert": "e9b629b3-0566-c119-1de3-a86d8436205d",
+                "id_validation_judicial_process": null,
+                "id_validation_adverse_media": null,
+                "id_added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095"
+            },
+            {
+                "id": "12cdbdba-685d-73d5-fc35-017ecb17c166",
+                "comment": "Comentario 2",
+                "added_at": 1697704304926,
+                "added_by": "António Jesus",
+                "id_validation": "6f95d22f-9751-3d02-0784-0c6288c79c66",
+                "id_iperson": "91a1d1c0-bfd0-6e4b-3574-08c40bc9e577",
+                "id_validation_alert": null,
+                "id_validation_judicial_process": null,
+                "id_validation_adverse_media": null,
+                "id_added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095"
+            }
+        ],
+        "page": 1,
+        "max_results_per_page": 50
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Tipo de alerta no válido." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697728633346,
+        "message": "El tipo de comentario no es valido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Leyenda
+
+* **id**: id de lo comentario.
+* **comment**: comentario.
+* **added\_at**: fecha en que se añadió el comentario, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
+* **added\_by**: usuario que agregó el comentario.
+* **id\_validation**: id de la validación asociado con el comentario.
+* **id\_iperson**: id de la persona identificable correspondiente, si el tipo de comentario es "determination".
+* **id\_validation\_alert**: id del alerta de validación correspondiente, si el tipo de comentario es "alert".
+* **id\_validation\_judicial\_process:** id del proceso judicial asociado correspondiente, si el tipo de comentario es "judicial\_process".
+* **id\_validation\_adverse\_media:** id de la noticia adversa asociada correspondiente, si el tipo de comentario es "adverse\_media".
+* **id\_added\_by:** id del usuario que agregó el comentario.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="add_comment" method="post" summary="Añadir un comentario" %}
+{% swagger-description %}
+Endpoint para anãdir un comentario.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation" type="string" required="true" %}
+Id de la validación
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="comment" required="true" type="string" %}
+Comentario
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_iperson" type="string" required="false" %}
+Id de la persona identificable correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a la identificación de una validación.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_alert" type="string" %}
+Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un alerta de validación.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_judicial_process" type="string" %}
+Id de lo proceso judiciale asociado correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un proceso judicial.**
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id_validation_adverse_media" type="string" %}
+Id de la noticia adversa asociada correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una noticia adversa.**
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentario agregado con éxito." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730099564,
+    "data": {
+        "id": "ac33a772-a869-1c36-8569-5cba9cd0542d"
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Validación no encontrada." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730211531,
+        "message": "No se encontró la validación."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Leyenda
+
+* **id**: id de lo comentario agregado.
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="edit_comment" method="post" summary="Editar un comentario" %}
+{% swagger-description %}
+Endpoint para editar un comentario.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id de lo comentario a editar
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="comment" required="true" type="string" %}
+Comentario
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentario editado con éxito." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730574961,
+    "data": {
+        "message": "Comentário editado correctamente."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Id de comentario no valido." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730622187,
+        "message": "No se encontró lo comentario."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger baseUrl="https://www.pepdata.com/api" path="delete_comment" method="post" summary="Eliminar un comentário" %}
+{% swagger-description %}
+Endpoint para eliminar un comentario.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="id" type="string" required="true" %}
+Id de lo comentario a eliminar
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Comentario eliminado con éxito." %}
+```
+{
+    "version": 0.1,
+    "timestamp": 1697730574961,
+    "data": {
+        "message": "Comentario eliminado con éxito."
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Id de comentario no valido." %}
+
+
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697730622187,
+        "message": "No se encontró lo comentario."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}

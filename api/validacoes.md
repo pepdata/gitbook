@@ -722,7 +722,7 @@ Id da validação associada aos comentários.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" type="string" required="false" %}
-Tipo de alertas. Valores possíveis: determination, alert, judicial\_process, adverse\_media
+Tipo de comentários. Valores possíveis: determination, alert, judicial\_process, adverse\_media
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Comentários obtidos com sucesso." %}
@@ -766,7 +766,7 @@ Tipo de alertas. Valores possíveis: determination, alert, judicial\_process, ad
 ```
 {% endswagger-response %}
 
-{% swagger-response status="400: Bad Request" description="Tipo de alerta inválido" %}
+{% swagger-response status="400: Bad Request" description="Tipo de comentários inválido" %}
 
 
 ```json

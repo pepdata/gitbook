@@ -743,7 +743,7 @@ Tipo de alertas. Valores posibles: determination, alert, judicial\_process, adve
 * **added\_by**: usuario que agregó el comentario.
 * **id\_validation**: id de la validación asociado con el comentario.
 * **id\_iperson**: id de la persona identificable correspondiente, si el tipo de comentario es "determination".
-* **id\_validation\_alert**: id del alerta de validación correspondiente, si el tipo de comentario es "alert".
+* **id\_validation\_alert**: id de la alerta de validación correspondiente, si el tipo de comentario es "alert".
 * **id\_validation\_judicial\_process:** id del proceso judicial asociado correspondiente, si el tipo de comentario es "judicial\_process".
 * **id\_validation\_adverse\_media:** id de la noticia adversa asociada correspondiente, si el tipo de comentario es "adverse\_media".
 * **id\_added\_by:** id del usuario que agregó el comentario.
@@ -770,7 +770,7 @@ Id de la persona identificable correspondiente. **Este parámetro es obligatorio
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation_alert" type="string" %}
-Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un alerta de validación.**
+Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una alerta de validación.**
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation_judicial_process" type="string" %}

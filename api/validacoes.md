@@ -744,8 +744,8 @@ Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, 
 * **id\_validation**: id de la validación asociado con el comentario.
 * **id\_iperson**: id de la persona identificable correspondiente, si el tipo de comentario es "determination".
 * **id\_validation\_alert**: id de la alerta de validación correspondiente, si el tipo de comentario es "alert".
-* **id\_validation\_judicial\_process:** id del proceso judicial asociado correspondiente, si el tipo de comentario es "judicial\_process".
-* **id\_validation\_adverse\_media:** id de la noticia adversa asociada correspondiente, si el tipo de comentario es "adverse\_media".
+* **id\_validation\_judicial\_process:** id del proceso judicial correspondiente, si el tipo de comentario es "judicial\_process".
+* **id\_validation\_adverse\_media:** id de la noticia adversa correspondiente, si el tipo de comentario es "adverse\_media".
 * **id\_added\_by:** id del usuario que agregó el comentario.
 
 {% swagger baseUrl="https://www.pepdata.com/api" path="add_comment" method="post" summary="Añadir un comentario" %}
@@ -774,11 +774,11 @@ Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation_judicial_process" type="string" %}
-Id de lo proceso judiciale asociado correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un proceso judicial.**
+Id de lo proceso judiciale correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un proceso judicial.**
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation_adverse_media" type="string" %}
-Id de la noticia adversa asociada correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una noticia adversa.**
+Id de la noticia adversa  correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una noticia adversa.**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Comentario agregado con éxito." %}

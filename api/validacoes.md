@@ -308,6 +308,11 @@ Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1
 Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="page" type="number" %}
+Pagina de los alertas.\
+Predeterminado: 1
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="include_comments" type="boolean" %}
 Parámetro para solicitar información sobre comentarios asociados a los alertas. Valores posibles: true, false
 
@@ -662,8 +667,8 @@ key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="page" type="number" required="false" %}
-Página de validaciones\
-Default: 1
+Pagina de los comentarios.\
+Predeterminado: 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="id_validation" type="string" %}

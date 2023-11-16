@@ -10,7 +10,7 @@ Endpoint para comparar los beneficiarios reales con el portal RCBE.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
-key [API_KEY]
+key \[API\_KEY]
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="vatin" type="string" %}
@@ -18,31 +18,11 @@ CIF de la organización a comparar
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="beneficiary_onwers" type="array" %}
-Cada elemento debe contener el siguiente formato:
-
-\
-
-
-{ 
-
-\
-
-
-     "name": "Nombre completo de la persona", 
-
-\
-
-
-     "birth_date": "DD/MM/YYYY",
-
-\
-
-
-     "capital_percentage": (Opcional) valor del capital, en %. Ejemplo: 91.725
-
-\
-
-
+Cada elemento debe contener el siguiente formato:\
+{ \
+&#x20;    "name": "Nombre completo de la persona", \
+&#x20;    "birth\_date": "DD/MM/YYYY",\
+&#x20;    "capital\_percentage": (Opcional) valor del capital, en %. Ejemplo: 91.725\
 }
 {% endswagger-parameter %}
 

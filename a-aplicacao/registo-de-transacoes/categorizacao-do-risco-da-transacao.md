@@ -4,8 +4,8 @@
 
 O modelo de risco criado pela PEPData foi desenvolvido de forma a ser flexível, mantendo um grau de simplicidade que o permite ser facilmente compreendido.\
 Este é composto por 3 categorias distintas de risco com os seguintes thresholds (em pontos): \
-&#x20;\- Baixo: \[0, 1\[\
-&#x20;\- Médio: \[1, 2\[\
+&#x20;\- Baixo: \[0 - 1\[\
+&#x20;\- Médio: \[1 - 2\[\
 &#x20;\- Alto: 2+
 
 Cada transação é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:

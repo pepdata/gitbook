@@ -17,8 +17,13 @@ Cada transação é enquadrada nas várias categorias de risco tendo em consider
 * Montante:
   * Caso o montante seja superior a 15.000€
     * Aumenta o risco em 1 ponto.
-* Combinação entre Método de pagamento e Montante
+* Combinação entre Método de pagamento e Montante:
   * Caso o método de pagamento seja numerário e o montante seja superior a 3000€
     * Aumenta o risco em 1 ponto.
+* Intervenientes da transação:
+  * Caso existam intervenientes com risco medio
+    * Aumenta o risco em 1 ponto.
+  * Caso existam intervenientes com risco alto
+    * Aumenta o risco em 2 pontos.
 
 Nota: o nosso algoritmo de cálculo de risco está em constante desenvolvimento. Caso tenha alguma proposta de melhoria ou especificidade da sua área profissional não hesite em [contactar-nos](../../outros/contactos.md).

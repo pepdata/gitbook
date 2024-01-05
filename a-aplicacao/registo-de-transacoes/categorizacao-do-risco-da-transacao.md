@@ -15,9 +15,6 @@ Cada operación se clasifica en las distintas categorías de riesgo teniendo en 
   * Si sospecha de la documentación presentada o de la propia transacción.
     * Aumenta el riesgo en 2 puntos.
 * Método de pago:&#x20;
-  * Transferencia bancaria:
-    * Si el pago se realizó a través de un banco no residente en Portugal
-      * Aumenta el riesgo en 2 puntos.
   * Activo virtual:
     * Si el pago se realizó en un activo virtual no regulado
       * Aumenta el riesgo en 1 punto.
@@ -36,7 +33,7 @@ Cada operación se clasifica en las distintas categorías de riesgo teniendo en 
 * Activos virtuales regulados:
   * Bitcoin (BTH);
   * Ethereum (ETH)
-* Puede consultar [aquí](https://www.bportugal.pt/sites/default/files/lista\_entidades\_ativos\_virtuais\_pt.pdf) la lista de entidades portuguesas registradas para realizar actividades con activos virtuales.
+* Puede consultar [aquí](https://www.bportugal.pt/sites/default/files/lista\_entidades\_ativos\_virtuais\_pt.pdf) la lista de entidades registradas para realizar actividades con activos virtuales.
 {% endhint %}
 
 Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica en su área profesional, no dude en [contactarnos](../../outros/contactos.md).

@@ -22,13 +22,19 @@ Se compone de 3 categorías de riesgo distintas: bajo, medio y alto. Cada person
 * Existencia de sospecha
   * Si sospecha de la documentación presentada o de la propia persona jurídica
 * Países sancionados&#x20;
-  * Si el país de constitución o en el que realiza la mayor parte de sus operaciones está sancionado
+  * Si el país de constitución, el país de dirección del sede central o el(los) país(es) de origen del negocio es(son) sancionado(s)
 * Paraísos fiscales
-  * Si el país de constitución o el país donde se realizan la mayoría de las operaciones se considera que tiene un "régimen fiscal privilegiado" por la legislación&#x20;
+  * Si el país de constitución, el país de dirección del sede central o el(los) país(es) de origen del negocio se considera(n) que tiene un "régimen fiscal privilegiado" por la legislación&#x20;
 * Otros criterios geográficos
   * Si no tiene domicilio social en territorio nacional
 * Clasificación de la actividad económica
   * Si alguno de los CNAE's de la persona jurídica se considere de alto riesgo
 * Clasificación como [persona sancionada](../../glossario/glossario-aplicacao.md#sancionado)
+* Representación del cliente
+  * Si alguno de los representantes está clasificado como de nível de riesgo medio o alto
+* Titulares de órganos de Gobierno/Gestión o equivalente
+  * Si alguno de los titulares está clasificado como de nível de riesgo medio o alto
+* Titulares reales
+  * Si alguno de los titulares reales está clasificado como de nível de riesgo medio o alto
 
 Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica para su área profesional, no dude en ponerse en contacto con [nosotros](../../outros/contactos.md).

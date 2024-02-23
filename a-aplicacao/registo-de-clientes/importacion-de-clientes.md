@@ -76,7 +76,6 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 | nationalities         | Separadas por punto y coma su hay varias.                                                                                                                                                                                  |
 | nationalities         | Separadas por punto y coma su hay varias.                                                                                                                                                                                  |
 | place\_of\_birth      |                                                                                                                                                                                                                            |
-| is\_identified        | 0, en el caso de que no haya identificación.                                                                                                                                                                               |
 | address\_type         | Valores aceptados: residencia, residencia\_fiscal y sede.                                                                                                                                                                  |
 | address\_country      |                                                                                                                                                                                                                            |
 | address\_postal\_code |                                                                                                                                                                                                                            |
@@ -105,4 +104,4 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/relationships.csv" %}
+{% file src="../../.gitbook/assets/relationships (1).csv" %}

@@ -194,6 +194,12 @@ _individual_
 
 `},`
 
+`"address_data": {`
+
+`"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
+
+`},`
+
 `},`
 
 `"suspicion_data": {`
@@ -236,6 +242,12 @@ _organization_
 
 `},`
 
+`"address_data": {`
+
+`"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
+
+`},`
+
 `"suspicion_data": {`
 
 `"is_suspect": false,`
@@ -275,6 +287,16 @@ _transaction_
 `},`
 
 `}`
+
+
+
+\*\*Valores aceites:
+
+**residence**
+
+**fiscal\_residence**
+
+**headquarters**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registo ou transação criado/a." %}

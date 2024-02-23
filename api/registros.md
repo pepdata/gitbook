@@ -850,3 +850,7 @@ Valores aceptados:&#x20;
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+### Leyenda
+
+* **time\_to\_conclusion:** tiempo estimado en segundos para que se complete la operación.

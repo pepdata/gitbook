@@ -803,3 +803,50 @@ Id del registro o transacción
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/submit_questionnaires" summary="Entregar los registros" %}
+{% swagger-description %}
+Endpoint que entrega automáticamente todos los registros no enviados.\*
+
+**\*Esta operación está limitada a 8000 registros a la vez.**
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
+Tipo de los registros a entregar
+
+Valores aceptados:&#x20;
+
+**customers**\
+**transactions**
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Los registros se enviaron exitosamente." %}
+
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1695983552463,
+    "data": {
+        "time_to_conclusion": 1
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="El tipo de registros no es válido." %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1708706955487,
+        "message": "El tipo no es válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}

@@ -789,3 +789,52 @@ Id do registo ou transação
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger method="post" path="/submit_questionnaires" baseUrl="https://www.pepdata.com/api" summary="Submeter os registos " %}
+{% swagger-description %}
+Endpoint que submete automaticamente todos os registos não submetidos.\*
+
+**\*Esta operação está limitada a 8000 registos de cada vez.**
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
+key \[API\_KEY]
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="type" type="string" required="true" %}
+Tipo dos registos a submeter
+
+Valores aceites:
+
+**customers**\
+**transactions**
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Os registos foram submetidos com sucesso. " %}
+```javascript
+{
+    "version": 0.1,
+    "timestamp": 1695983552463,
+    "data": {
+        "time_to_conclusion": 1
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="O tipo de registos não é válido." %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1708706955487,
+        "message": "O tipo não é válido."
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **time\_to\_conclusion:** tempo estimado em segundos para a conclusão da operação.

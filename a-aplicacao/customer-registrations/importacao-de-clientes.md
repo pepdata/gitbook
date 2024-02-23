@@ -73,7 +73,6 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 | birth\_date           | A data de nascimento deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                                                                                                                                          |
 | nationalities         | Separados por ponto e vírgula caso existam múltiplos.                                                                                                                                                                                 |
 | country               | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
-| is\_identified        | 0, no caso de não existir identificação.                                                                                                                                                                                              |
 | address\_type         | Valores aceites: residence, fiscal\_residence e headquarters.                                                                                                                                                                         |
 | country\_address      | A aplicação da PEPData suporta qualquer valor [ISO 3166](https://en.wikipedia.org/wiki/ISO\_3166), nome comum ou nome oficial de cada país.                                                                                           |
 | address\_postal\_code |                                                                                                                                                                                                                                       |
@@ -102,4 +101,4 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, n
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/relationships.csv" %}
+{% file src="../../.gitbook/assets/relationships (1).csv" %}

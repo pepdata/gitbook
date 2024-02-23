@@ -195,6 +195,12 @@ _indivudal_
 
 &#x20;  `},`
 
+`"address_data": {`
+
+`"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
+
+`},`
+
 &#x20;  `"suspicion_data": {`
 
 &#x20;    `"is_suspect": false,`
@@ -236,6 +242,12 @@ _organization_
 &#x20;     `"codigo_rcbe": "123456"`
 
 &#x20;  `},`
+
+`"address_data": {`
+
+`"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
+
+`},`
 
 &#x20;  `"suspicion_data": {`
 
@@ -280,6 +292,14 @@ _transaction_
 `}`
 
 
+
+\*\*Valores aceptados:
+
+**residence**
+
+**fiscal\_residence**
+
+**headquarters**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registro o transacción agregado con éxito" %}

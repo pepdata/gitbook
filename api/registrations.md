@@ -206,7 +206,9 @@ _individual_
 
 `"address_line_2":"nº123",`
 
-`"city":"Lisboa", "district":"Lisboa"`
+`"city":"Lisboa",`
+
+`"district":"Lisboa"`
 
 `},`
 

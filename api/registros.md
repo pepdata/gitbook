@@ -197,7 +197,9 @@ _indivudal_
 
 `"address_data": {`
 
-`"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567",`
+`"type": "residence",` \*\* `"country":"Portugal",`
+
+`"cep":"1234-567",`
 
 `"address_line_1":"Rua X",`
 

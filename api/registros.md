@@ -213,6 +213,16 @@ _indivudal_
 
 
 
+\*\*Valores aceptados:
+
+**residence**
+
+**fiscal\_residence**
+
+**headquarters**
+
+
+
 _organization_
 
 `{`
@@ -290,16 +300,6 @@ _transaction_
 &#x20;  `},`
 
 `}`
-
-
-
-\*\*Valores aceptados:
-
-**residence**
-
-**fiscal\_residence**
-
-**headquarters**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registro o transacción agregado con éxito" %}

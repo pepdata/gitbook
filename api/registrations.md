@@ -192,13 +192,13 @@ _individual_
 
 `"document_issuing_location": "Test"`
 
+`}`
+
 `},`
 
 `"address_data": {`
 
 `"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
-
-`},`
 
 `},`
 
@@ -211,6 +211,16 @@ _individual_
 `},`
 
 `}`
+
+\*\*Valores aceites:
+
+**residence**
+
+**fiscal\_residence**
+
+**headquarters**
+
+
 
 _organization_
 
@@ -287,16 +297,6 @@ _transaction_
 `},`
 
 `}`
-
-
-
-\*\*Valores aceites:
-
-**residence**
-
-**fiscal\_residence**
-
-**headquarters**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registo ou transação criado/a." %}

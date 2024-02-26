@@ -198,7 +198,13 @@ _individual_
 
 `"address_data": {`
 
-`"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
+`"type": "residence",` \*\* `"country":"Portugal", "cep":"1234-567",`
+
+`"address_line_1":"Rua X",`
+
+`"address_line_2":"nº123",`
+
+`"city":"Lisboa", "district":"Lisboa"`
 
 `},`
 

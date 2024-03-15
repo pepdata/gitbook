@@ -1,13 +1,13 @@
 # Importação de fornecedores
 
-A importação de fornecedores permite-lhe, com facilidade e rapidez, fazer o upload dos seus clientes para a plataforma da PEPData, criando automaticamente um registo para cada um.
+A importação de fornecedores permite-lhe, com facilidade e rapidez, fazer o upload dos seus fornecedores para a plataforma da PEPData, criando automaticamente um registo para cada um.
 
 Para tal, por favor divida a informação a importar em 2 ficheiros distintos:
 
 * Organizações
-  * Ficheiro que inclui os seus clientes empresa
+  * Ficheiro que inclui os seus fornecedores do tipo organização
 * Pessoas
-  * Ficheiro com os membros da administração ou beneficiários efetivos
+  * Ficheiro que inclui os seus fornecedores do tipo pessoa
 
 Após a criação destes ficheiros, poderá proceder à sua importação através do botão "Importar fornecedores", presente na página "Fornecedores".
 

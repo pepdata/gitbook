@@ -70,7 +70,7 @@ Relação entre duas entidades.
 
 ### Sancionado
 
-Pessoa cujo nome conste numa das seguintes listas:
+Pessoa/Organização cujo nome conste numa das seguintes listas:
 
 * [Nações Unidas (ONU)](https://www.un.org/securitycouncil/)
 * [União Europeia (UE)](https://www.sanctionsmap.eu/#/main)

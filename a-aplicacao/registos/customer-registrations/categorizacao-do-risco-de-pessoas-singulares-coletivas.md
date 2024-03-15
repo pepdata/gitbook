@@ -28,8 +28,8 @@ Este é composto por 3 categorias distintas de risco: baixo, médio e alto. Cada
   * Caso não tenha sede em território nacional
 * Classificação da atividade económica
   * Caso algum dos CAEs da organização seja considerado como risco elevado
-* Classificação enquanto [pessoa sancionada](../../../glossario/glossario-aplicacao.md#sancionado)
-* Representação do cliente
+* Classificação enquanto [organização sancionada](../../../glossario/glossario-aplicacao.md#sancionado)
+* Representação da organização
   * Caso algum dos representantes esteja classificado com nível de risco médio ou alto
 * Titulares de órgãos de Administração/Gestão ou equivalente
   * Caso algum dos titulares esteja classificado com nível de risco médio ou alto

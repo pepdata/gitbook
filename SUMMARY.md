@@ -53,6 +53,22 @@
   * [Canal de Denúncias](a-aplicacao/configuracoes/canal-de-denuncias.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
 * [Integração da lista PEPData](a-aplicacao/integracao-da-lista-pepdata.md)
+* [Registos](a-aplicacao/registos/README.md)
+  * [Clientes](a-aplicacao/registos/customer-registrations/README.md)
+    * [Importação de clientes](a-aplicacao/registos/customer-registrations/importacao-de-clientes.md)
+    * [Categorização do risco de pessoas/organizações](a-aplicacao/registos/customer-registrations/categorizacao-do-risco-de-pessoas-singulares-coletivas.md)
+    * [Convite de Preenchimento de Registo](a-aplicacao/registos/customer-registrations/convite-de-preenchimento-de-registo.md)
+    * [Autopreenchimento](a-aplicacao/registos/customer-registrations/autopreenchimento.md)
+    * [Modelação do Formulário](a-aplicacao/registos/customer-registrations/modelacao-do-formulario.md)
+    * [Modelação do Risco](a-aplicacao/registos/customer-registrations/modelacao-do-risco.md)
+    * [Relatórios de Risco](a-aplicacao/registos/customer-registrations/relatorios-de-risco.md)
+    * [Tags](a-aplicacao/registos/customer-registrations/tags.md)
+  * [Fornecedores](a-aplicacao/registos/fornecedores.md)
+  * [Transações](a-aplicacao/registos/registo-de-transacoes/README.md)
+    * [Importação de transações](a-aplicacao/registos/registo-de-transacoes/importacao-de-transacoes.md)
+    * [Categorização do risco da transação](a-aplicacao/registos/registo-de-transacoes/categorizacao-do-risco-da-transacao.md)
+    * [Modelação do Formulário](a-aplicacao/registos/registo-de-transacoes/modelacao-do-formulario.md)
+  * [Relações](a-aplicacao/registos/relacoes.md)
 
 ## API
 

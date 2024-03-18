@@ -35,6 +35,22 @@ Página dos registos ou transações
 Default: 1
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="type" %}
+Tipo de questionários
+
+Default: **customer**
+
+Valores aceites:
+
+**customer**
+
+**transaction**
+
+**relationship**
+
+**cmvm**
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Registos obtidos com sucesso." %}
 ```javascript
 {
@@ -45,9 +61,8 @@ Default: 1
                 "name": "individual",
                 "vatin": null,
                 "value": "{\"entity_proof\":{\"type\":\"\",\"identification_metadata\":{\"document_number\":\"\",\"document_validity\":\"\",\"is_document_perpetual\":\"\",\"document_issuing_entity\":\"\",\"document_issuing_date\":\"\",\"document_issuing_location\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"personal_data\":{\"name\":\"individual\",\"vatin\":null,\"email\":\"\",\"birth_date\":\"\",\"nationalities\":[],\"birth_place\":\"\",\"documentUpload\":{\"files\":[]}},\"address_data\":{\"type\":null,\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"occupation_data\":{\"type\":null,\"profession\":\"\",\"employer\":\"\",\"eni\":{\"commercial_name\":\"\",\"is_same_address\":null,\"address\":{\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\"},\"cae\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"data_verification\":{\"type\":null,\"client_email\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null},\"invite_sent\":false},\"adverse_media_data\":{\"adverse_media\":[]},\"suspicion_data\":{\"is_suspect\":null,\"reason\":\"\"},\"questionnaire_id\":\"7dd49ce1-9385-0cd1-7835-828393771ea0\",\"name\":\"individual\"}",
-                "version": "1",
-                "type": "individual",
-                "subtype": "regular",
+                "entity_type": "individual",
+                "main_entity_subtype": "regular",
                 "relations": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1693489958769,
@@ -62,8 +77,8 @@ Default: 1
                 "id_invited_user": null,
                 "locked_by": null,
                 "locked_at": null,
-                "accepted_by": null,
-                "accepted_at": null,
+                "invited_submission_by": null,
+                "invited_submission_at": null,
                 "data_treatment_accepted_at": null,
                 "needs_attention": null,
                 "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
@@ -71,8 +86,10 @@ Default: 1
                 "invited_at": null,
                 "invited_by_organization_name": null,
                 "language": null,
-                "id_country": "PT",
+                "organization_id_country": "PT",
                 "id_iperson": "ID1",
+                "type": "customer",
+                "id_questionnaire_data": "4ba763f9-6675-949b-482c-35c689991d65",
                 "risk_category": "low"
             }
         ],
@@ -94,9 +111,8 @@ Default: 1
 * **name:** nome do registo.
 * **vatin:** NIF/NIPC do registo.
 * **value:** informação do registo.
-* **version:** versão do questionário.
-* **type:** tipo de registo (individual, coletiva ou transação).
-* **subtype:** subtipo do registo (representante, beneficiário, etc..).
+* **entity\_type:** tipo de entidade (individual, coletiva ou transação).
+* **main\_entity\_subtype:** subtipo da entidade (representante, beneficiário, etc..).
 * **relations**: relações associadas ao registo.
 * **added\_by:** id do utilizador que adicionou o registo.
 * **added\_at:** data a que o registo foi adicionado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
@@ -111,8 +127,8 @@ Default: 1
 * **id\_invited\_user:** id do utilizador convidado ao preenchimento do registo.
 * **locked\_by:** id do utilizador que tem o registo aberto.
 * **locked\_at:** data a que o registo foi aberto pela última vez, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **accepted\_by:** id do utilizador convidado que aceitou o convite ao preenchimento.
-* **accepted\_at:** data a que o convite ao preenchimento foi aceite, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **invited\_submission\_by:** id do utilizador convidado que aceitou o convite ao preenchimento.
+* **invited\_submission\_at:** data a que o convite ao preenchimento foi aceite, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **data\_treatment\_accepted\_at:** data a que o foram aceites as codições de tratamento dos dados do utilizador convidado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **needs\_attention:** booleano que descreve se o registo precisa de atenção.
 * **id\_organization:** id da organização que criou o registo.
@@ -120,8 +136,10 @@ Default: 1
 * **invited\_at:** data a que o convite ao preenchimento foi enviado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **invited\_by\_organization\_name:** nome da organização que enviou o convite ao preenchimento.
 * **language:** língua em que foi enviado o convite ao preenchimento.
-* **id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **organization\_id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **id\_iperson:** id da pessoa identificável correspondente. null caso não tenha existido correspondência.
+* **type:** tipo de registo,
+* **id\_questionnaire\_data:** id do registo onde está guardada a informação do questionário.
 * **risk\_category:** categoria em que se insere o valor do risco.
 
 {% swagger method="post" path="/add_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Adição de um registo" %}

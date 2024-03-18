@@ -47,8 +47,6 @@ Valores aceites:
 **transaction**
 
 **relationship**
-
-**cmvm**
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Registos obtidos com sucesso." %}

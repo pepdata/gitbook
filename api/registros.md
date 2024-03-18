@@ -30,6 +30,22 @@ Página de registros o transacciones\
 Default: 1
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="type" %}
+Tipo de registros
+
+Default: **customer**
+
+Valores aceptados:
+
+**customer**
+
+**transaction**
+
+**relationship**
+
+**cmvm**
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Registros obtenidos con éxito" %}
 ```
 {
@@ -40,9 +56,8 @@ Default: 1
                 "name": "individual",
                 "vatin": null,
                 "value": "{\"entity_proof\":{\"type\":\"\",\"identification_metadata\":{\"document_number\":\"\",\"document_validity\":\"\",\"is_document_perpetual\":\"\",\"document_issuing_entity\":\"\",\"document_issuing_date\":\"\",\"document_issuing_location\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"personal_data\":{\"name\":\"individual\",\"vatin\":null,\"email\":\"\",\"birth_date\":\"\",\"nationalities\":[],\"birth_place\":\"\",\"documentUpload\":{\"files\":[]}},\"address_data\":{\"type\":null,\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"occupation_data\":{\"type\":null,\"profession\":\"\",\"employer\":\"\",\"eni\":{\"commercial_name\":\"\",\"is_same_address\":null,\"address\":{\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\"},\"cae\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"data_verification\":{\"type\":null,\"client_email\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null},\"invite_sent\":false},\"adverse_media_data\":{\"adverse_media\":[]},\"suspicion_data\":{\"is_suspect\":null,\"reason\":\"\"},\"questionnaire_id\":\"7dd49ce1-9385-0cd1-7835-828393771ea0\",\"name\":\"individual\"}",
-                "version": "1",
                 "type": "individual",
-                "subtype": "regular",
+                "main_entity_subtype": "regular",
                 "relations": null,
                 "added_by": "cd9f4a64-ab25-4efb-bf31-323ee2280095",
                 "added_at": 1693489958769,
@@ -57,8 +72,8 @@ Default: 1
                 "id_invited_user": null,
                 "locked_by": null,
                 "locked_at": null,
-                "accepted_by": null,
-                "accepted_at": null,
+                "invited_submission_by": null,
+                "invited_submission_at": null,
                 "data_treatment_accepted_at": null,
                 "needs_attention": null,
                 "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
@@ -66,8 +81,10 @@ Default: 1
                 "invited_at": null,
                 "invited_by_organization_name": null,
                 "language": null,
-                "id_country": "PT",
+                "organization_id_country": "PT",
                 "id_iperson": "ID1",
+                "type": "customer",
+                "id_questionnaire_data": "4ba763f9-6675-949b-482c-35c689991d65"
                 "risk_category: "low"
             }
         ],
@@ -89,9 +106,8 @@ Default: 1
 * **name:** nombre del registro
 * **vatin**: NIF/CIF de registro
 * **value:** información de registro
-* **version:** versión del cuestionario
-* **type:** tipo de registro (individual, colectivo o transaccion)
-* **subtype:** subtipo de registro (representante, titular real, etc...)
+* **entity\_type:** tipo de entidad (individual, colectivo o transaccion)
+* **main\_entity\_subtype:** subtipo de entidad (representante, titular real, etc...)
 * **relations:** relaciones asociadas al registro.
 * **added\_by:** id del usuario que agregó el registro
 * **added\_at:** fecha en que se agregó el registro, en milisegundos desde el 1 de enero de 1970 00:00:00 UTC
@@ -106,8 +122,8 @@ Default: 1
 * **id\_invited\_user:** id del usuario invitado al completar el registro
 * **locked\_by:** id del usuario que tiene el registro abierto
 * **lock\_at:** fecha en que se abrió el registro por última vez, en milisegundos desde el 1 de enero de 1970 a las 00:00:00 UTC
-* **accepted\_by:** id del usuario invitado que aceptó la invitación a rellenar
-* **accepted\_at:** fecha en la que se aceptó la invitación de finalización, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
+* **invited\_submission\_by:** id del usuario invitado que aceptó la invitación a rellenar
+* **invited\_submission\_at:** fecha en la que se aceptó la invitación de finalización, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **data\_treatment\_accepted\_at:** fecha en la que se aceptaron las condiciones de tratamiento de datos del usuario invitado, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **needs\_attention:** booleano que describe si el registro necesita atención
 * **id\_organization:** id de la organización que creó el registro
@@ -115,8 +131,10 @@ Default: 1
 * **invited\_at:** fecha en que se envió la invitación a llenar, expresada en milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **invited\_by\_organization\_name:** nombre de la organización que envió la invitación a rellenar
 * **language:** idioma en el que se envió la invitación a completar
-* **id\_country:** país de la organización que creó el registro en formato ISO 3166-1 alpha-2
+* **organization\_id\_country:** país de la organización que creó el registro en formato ISO 3166-1 alpha-2
 * **id\_iperson:** id de la persona identificable correspondiente. nulo si no hubo ninguna coincidencia.
+* **type:** tipo de registro.
+* **id\_questionnaire\_data:** id del registro donde se almacena la información del cuestionario.
 * **risk\_category:** categoría en la que caie el valor del riesgo.
 
 {% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/add_questionnaire" summary="Agregando un registro" %}

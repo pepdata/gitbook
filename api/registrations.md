@@ -36,7 +36,7 @@ Default: 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="type" %}
-Tipo de questionários
+Tipo de registos
 
 Default: **customer**
 

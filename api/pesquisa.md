@@ -1,31 +1,26 @@
 # Pesquisa
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/search_iperson" method="post" summary="Pesquisa de pessoa identificável" %}
-{% swagger-description %}
+## Pesquisa de pessoa identificável
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/search_iperson`
+
 Endpoint para pesquisar uma pessoa identificável.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" required="true" %}
-Nome da pessoa a pesquisar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="birth_date" type="string" required="false" %}
-Data de nascimento da validação.
+#### Request Body
 
-\\
+| Name                                   | Type   | Description                                                                                           |
+| -------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------- |
+| name<mark style="color:red;">\*</mark> | string | Nome da pessoa a pesquisar                                                                            |
+| birth\_date                            | string | <p>Data de nascimento da validação.</p><p>\</p><p>Formato: yyyy-mm-dd</p><p>\</p><p>Default: null</p> |
 
-Formato: yyyy-mm-dd
-
-\\
-
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Pesquisa realizada com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {
@@ -54,9 +49,9 @@ Default: null
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Nome inválido" %}
+{% tab title="400: Bad Request Nome inválido" %}
 
 
 ```json
@@ -68,8 +63,8 @@ Default: null
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
@@ -86,20 +81,26 @@ Default: null
 De forma a obter melhores resultados, recomenda-se que leia a documentação referente à área de [pesquisa](../a-aplicacao/pesquisa/).
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/search_organization" method="post" summary="Pesquisa de organizações sancionadas" %}
-{% swagger-description %}
+## Pesquisa de organizações sancionadas
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/search_organization`
+
 Endpoint para pesquisar uma organização sancionada.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" required="true" %}
-Nome da organização a pesquisar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Pesquisa realizada com sucesso." %}
+#### Request Body
+
+| Name                                   | Type   | Description                     |
+| -------------------------------------- | ------ | ------------------------------- |
+| name<mark style="color:red;">\*</mark> | string | Nome da organização a pesquisar |
+
+{% tabs %}
+{% tab title="200: OK Pesquisa realizada com sucesso." %}
 ```
 {
     "data": {
@@ -115,9 +116,9 @@ Nome da organização a pesquisar
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Nome não introduzido" %}
+{% tab title="400: Bad Request Nome não introduzido" %}
 
 
 ```json
@@ -129,8 +130,8 @@ Nome da organização a pesquisar
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 

@@ -4,52 +4,30 @@
 Esta secção da API ainda está em desenvolvimento, pelo que poderá sofrer alterações consideráveis. Esta página encontra-se em desenvolvimento.
 {% endhint %}
 
-{% swagger method="post" path="/get_questionnaires" baseUrl="https://www.pepdata.com/api" summary="Obter registos" %}
-{% swagger-description %}
+## Obter registos
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_questionnaires`
+
 Endpoint para obter os registos de clientes e transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="false" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
-Id personalizável do registo ou transação
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="search_term" type="string" required="false" %}
-Termo de pesquisa:
+| Name         | Type    | Description                                                                                                                                                                                    |
+| ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id           | string  | Id do registo ou transação                                                                                                                                                                     |
+| id\_custom   | string  | Id personalizável do registo ou transação                                                                                                                                                      |
+| search\_term | string  | <p>Termo de pesquisa:</p><p>Pesquisa sobre as colunas name, vatin e id_custom</p>                                                                                                              |
+| page         | integer | <p>Página dos registos ou transações</p><p>\</p><p>Default: 1</p>                                                                                                                              |
+| type         | String  | <p>Tipo de registos</p><p>Default: <strong>customer</strong></p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
 
-Pesquisa sobre as colunas name, vatin e id\_custom
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="page" type="integer" required="false" %}
-Página dos registos ou transações
-
-\\
-
-Default: 1
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" %}
-Tipo de registos
-
-Default: **customer**
-
-Valores aceites:
-
-**customer**
-
-**transaction**
-
-**relationship**
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Registos obtidos com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Registos obtidos com sucesso." %}
 ```javascript
 {
     "data": {
@@ -100,8 +78,8 @@ Valores aceites:
     "timestamp": 1648132877766
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
@@ -140,192 +118,30 @@ Valores aceites:
 * **id\_questionnaire\_data:** id do registo onde está guardada a informação do questionário.
 * **risk\_category:** categoria em que se insere o valor do risco.
 
-{% swagger method="post" path="/add_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Adição de um registo" %}
-{% swagger-description %}
+## Adição de um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_questionnaire`
+
 Endpoint para adicionar um registo de clientes e transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" required="true" %}
-Nome do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="vatin" type="string" required="false" %}
-NIF/NIPC do registo
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="id_custom" type="string" required="false" %}
-Id personalizável do registo
-{% endswagger-parameter %}
+| Name                                   | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name<mark style="color:red;">\*</mark> | string | Nome do registo ou transação                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| vatin                                  | string | NIF/NIPC do registo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| id\_custom                             | string | Id personalizável do registo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| type<mark style="color:red;">\*</mark> | string | <p>Tipo do registo</p><p>Valores aceites:</p><p><strong>individual</strong> (Registo de pessoa individual)</p><p><strong>organization</strong> ( Registo de pessoa coletiva)</p><p><strong>transaction</strong> (Transação)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| questionnaire\_data                    | json   | <p><strong>Consoante cada tipo de registo</strong>, são necessários objetos diferentes:</p><p><em>individual</em></p><p><code>{</code></p><p><code>"personal_data": {</code></p><p><code>"email": "test@test.pt",</code></p><p><code>"birth_date": "2010-10-10",</code></p><p><code>"nationalities": ["Portugal"],</code></p><p><code>"birth_place": "Portugal"</code></p><p><code>},</code></p><p><code>"entity_proof": {</code></p><p><code>"identification_metadata": {</code></p><p><code>"document_number": 123456789,</code></p><p><code>"is_document_perpetual": false,</code></p><p><code>"document_validity": "2023-05-20",</code></p><p><code>"document_issuing_entity": "Test",</code></p><p><code>"document_issuing_date": "2013-05-20",</code></p><p><code>"document_issuing_location": "Test"</code></p><p><code>}</code></p><p><code>},</code></p><p><code>"address_data": {</code></p><p><code>"type": "residence",</code> ** <code>"country":"Portugal",</code></p><p><code>"cep":"1234-567",</code></p><p><code>"address_line_1":"Rua X",</code></p><p><code>"address_line_2":"nº123",</code></p><p><code>"city":"Lisboa",</code></p><p><code>"district":"Lisboa"</code></p><p><code>},</code></p><p><code>"suspicion_data": {</code></p><p><code>"is_suspect": false,</code></p><p><code>"reason": "Test"</code></p><p><code>},</code></p><p><code>}</code></p><p>**Valores aceites:</p><p><strong>residence</strong></p><p><strong>fiscal_residence</strong></p><p><strong>headquarters</strong></p><p></p><p><em>organization</em></p><p><code>{</code></p><p><code>"company_data": {</code></p><p><code>"object": "test",</code></p><p><code>"caes": ["01111"],</code></p><p><code>"country": "Portugal",</code></p><p><code>"foundation_date": "2005-02-01",</code></p><p><code>"countries_operations": ["Portugal"]</code></p><p><code>},</code></p><p><code>"entity_proof": {</code></p><p><code>"national_headquarters": true</code></p><p><code>},</code></p><p><code>"beneficiary_data": {</code></p><p><code>"codigo_rcbe": "123456"</code></p><p><code>},</code></p><p><code>"address_data": {</code></p><p><code>"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"</code></p><p><code>},</code></p><p><code>"suspicion_data": {</code></p><p><code>"is_suspect": false,</code></p><p><code>"reason": "Test"</code></p><p><code>},</code></p><p><code>}</code></p><p><em>transaction</em></p><p><code>{</code></p><p><code>"buyer": {</code></p><p><code>"acquisition_purpose": "test purpose",</code></p><p><code>},</code></p><p><code>"basic_information": {</code></p><p><code>"sell_type": "good",</code></p><p><code>"description": "test description",</code></p><p><code>"observations": "test observations"</code></p><p><code>},</code></p><p><code>"suspicion_data": {</code></p><p><code>"is_suspect": false,</code></p><p><code>"reason": "Test"</code></p><p><code>},</code></p><p><code>}</code></p> |
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-Tipo do registo
-
-Valores aceites:
-
-**individual** (Registo de pessoa individual)
-
-**organization** ( Registo de pessoa coletiva)
-
-**transaction** (Transação)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="questionnaire_data" type="json" required="false" %}
-**Consoante cada tipo de registo**, são necessários objetos diferentes:
-
-_individual_
-
-`{`
-
-`"personal_data": {`
-
-`"email": "test@test.pt",`
-
-`"birth_date": "2010-10-10",`
-
-`"nationalities": ["Portugal"],`
-
-`"birth_place": "Portugal"`
-
-`},`
-
-`"entity_proof": {`
-
-`"identification_metadata": {`
-
-`"document_number": 123456789,`
-
-`"is_document_perpetual": false,`
-
-`"document_validity": "2023-05-20",`
-
-`"document_issuing_entity": "Test",`
-
-`"document_issuing_date": "2013-05-20",`
-
-`"document_issuing_location": "Test"`
-
-`}`
-
-`},`
-
-`"address_data": {`
-
-`"type": "residence",` \*\* `"country":"Portugal",`
-
-`"cep":"1234-567",`
-
-`"address_line_1":"Rua X",`
-
-`"address_line_2":"nº123",`
-
-`"city":"Lisboa",`
-
-`"district":"Lisboa"`
-
-`},`
-
-`"suspicion_data": {`
-
-`"is_suspect": false,`
-
-`"reason": "Test"`
-
-`},`
-
-`}`
-
-\*\*Valores aceites:
-
-**residence**
-
-**fiscal\_residence**
-
-**headquarters**
-
-
-
-_organization_
-
-`{`
-
-`"company_data": {`
-
-`"object": "test",`
-
-`"caes": ["01111"],`
-
-`"country": "Portugal",`
-
-`"foundation_date": "2005-02-01",`
-
-`"countries_operations": ["Portugal"]`
-
-`},`
-
-`"entity_proof": {`
-
-`"national_headquarters": true`
-
-`},`
-
-`"beneficiary_data": {`
-
-`"codigo_rcbe": "123456"`
-
-`},`
-
-`"address_data": {`
-
-`"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
-
-`},`
-
-`"suspicion_data": {`
-
-`"is_suspect": false,`
-
-`"reason": "Test"`
-
-`},`
-
-`}`
-
-_transaction_
-
-`{`
-
-`"buyer": {`
-
-`"acquisition_purpose": "test purpose",`
-
-`},`
-
-`"basic_information": {`
-
-`"sell_type": "good",`
-
-`"description": "test description",`
-
-`"observations": "test observations"`
-
-`},`
-
-`"suspicion_data": {`
-
-`"is_suspect": false,`
-
-`"reason": "Test"`
-
-`},`
-
-`}`
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Registo ou transação criado/a." %}
+{% tabs %}
+{% tab title="200: OK Registo ou transação criado/a." %}
 ```javascript
 {
     "version": 0.1,
@@ -337,9 +153,9 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="409: Conflict" description="O registo não foi criado, já existe na lista." %}
+{% tab title="409: Conflict O registo não foi criado, já existe na lista." %}
 ```javascript
 {
     "message": {
@@ -349,9 +165,9 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="NIF/NIPC inválido" %}
+{% tab title="400: Bad Request NIF/NIPC inválido" %}
 
 
 ```json
@@ -363,8 +179,8 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
@@ -372,26 +188,27 @@ _transaction_
 * **risk:** valor do risco do registo/transação criado/a.
 * **risk\_category:** categoria em que se insere o valor do risco do registo/transação criado/a.
 
-{% swagger method="post" path="/edit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Edição de um registo" %}
-{% swagger-description %}
+## Edição de um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_questionnaire`
+
 Endpoint para editar um registo de clientes e transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" type="string" required="true" name="id" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="questionnaire_data" type="json" required="false" %}
-Poderá só editar o valor que necessita:
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-Verifique [add\_questionnaire](registrations.md#adicao-de-um-registo) (`questionnaire_data`) para saber quais as propriedades que são aceites.
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+| Name                                 | Type   | Description                                                                                                                                                                                                              |
+| ------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação                                                                                                                                                                                               |
+| questionnaire\_data                  | json   | <p>Poderá só editar o valor que necessita:</p><p>Verifique <a href="registrations.md#adicao-de-um-registo">add_questionnaire</a> (<code>questionnaire_data</code>) para saber quais as propriedades que são aceites.</p> |
 
-{% swagger-response status="200: OK" description="Registo de clientes ou transações editado/a." %}
+{% tabs %}
+{% tab title="200: OK Registo de clientes ou transações editado/a." %}
 ```javascript
 {
     "version": 0.1,
@@ -402,9 +219,9 @@ key \[API\_KEY]
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado" %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado" %}
 
 
 ```json
@@ -416,28 +233,34 @@ key \[API\_KEY]
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
 * **risk:** valor do risco do registo/transação editado/a.
 * **risk\_category:** categoria em que se insere o valor do risco do registo/transação editado/a.
 
-{% swagger method="post" path="/delete_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Eliminação um registo" %}
-{% swagger-description %}
+## Eliminação um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_questionnaire`
+
 Endpoint para apagar um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" type="string" required="true" name="id" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="O registo de clientes ou transações foi apagado com sucesso." %}
+#### Request Body
+
+| Name                                 | Type   | Description                |
+| ------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+
+{% tabs %}
+{% tab title="200: OK O registo de clientes ou transações foi apagado com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -447,9 +270,9 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -459,27 +282,33 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 **Importante:** Poderá obter um erro ao eliminar um registo caso este tenha dependências com outros registos.
 {% endhint %}
 
-{% swagger method="post" path="/unsubmit_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Cancelar a submissão de um registo" %}
-{% swagger-description %}
+## Cancelar a submissão de um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/unsubmit_questionnaire`
+
 Endpoint para cancelar a submissão de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Submissão do registo de clientes ou transações cancelada foi cancelada com sucesso." %}
+#### Request Body
+
+| Name                                 | Type   | Description                |
+| ------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+
+{% tabs %}
+{% tab title="200: OK Submissão do registo de clientes ou transações cancelada foi cancelada com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -490,9 +319,9 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -502,8 +331,8 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria de risco configurada manualmente, a mesma será perdida.
@@ -514,38 +343,28 @@ Cancelar a submissão irá recalcular o risco do registo. Se tiver uma categoria
 * **risk:** valor do risco do registo de clientes/transações.
 * **risk\_category:** categoria em que se insere o valor do risco do registo de clientes/transações.
 
-{% swagger method="post" path="/send_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Enviar um convite de preenchimento do registo" %}
-{% swagger-description %}
+## Enviar um convite de preenchimento do registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/send_questionnaire_invite`
+
 Endpoint para enviar convite de preenchimento de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="client_email" type="string" required="true" %}
-E-mail do cliente convidado
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="language" type="string" required="false" %}
-Língua em que deve ser enviado o convite
+| Name                                            | Type   | Description                                                                                                                                                                                                  |
+| ----------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id<mark style="color:red;">\*</mark>            | string | Id do registo ou transação                                                                                                                                                                                   |
+| client\_email<mark style="color:red;">\*</mark> | string | E-mail do cliente convidado                                                                                                                                                                                  |
+| language                                        | string | <p>Língua em que deve ser enviado o convite</p><p>Default: pt-PT</p><p>Valores aceites:</p><p><strong>pt-PT</strong> (Português)</p><p><strong>en</strong> (Inglês)</p><p><strong>es</strong> (Espanhol)</p> |
 
-Default: pt-PT
-
-Valores aceites:
-
-**pt-PT** (Português)
-
-**en** (Inglês)
-
-**es** (Espanhol)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Convite enviado com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Convite enviado com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -555,9 +374,9 @@ Valores aceites:
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -567,27 +386,30 @@ Valores aceites:
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/cancel_questionnaire_invite" baseUrl="https://www.pepdata.com/api" summary="Cancelar um convite de preenchimento do registo" %}
-{% swagger-description %}
+## Cancelar um convite de preenchimento do registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/cancel_questionnaire_invite`
+
 Endpoint para cancelar o convite de preenchimento de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="client_email" type="string" required="true" %}
-E-mail do cliente convidado
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Convite cancelado com sucesso." %}
+| Name                                            | Type   | Description                 |
+| ----------------------------------------------- | ------ | --------------------------- |
+| id<mark style="color:red;">\*</mark>            | string | Id do registo ou transação  |
+| client\_email<mark style="color:red;">\*</mark> | string | E-mail do cliente convidado |
+
+{% tabs %}
+{% tab title="200: OK Convite cancelado com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -597,9 +419,9 @@ E-mail do cliente convidado
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -609,27 +431,30 @@ E-mail do cliente convidado
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/assign_user_to_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Atribuir um utilizador a um registo" %}
-{% swagger-description %}
+## Atribuir um utilizador a um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/assign_user_to_questionnaire`
+
 Endpoint para atribuir um utilizador a um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_user" type="string" required="true" %}
-Id do utilizador
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="O utilizador foi atribuído ao registo de clientes ou transações com sucesso." %}
+| Name                                       | Type   | Description                |
+| ------------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark>       | string | Id do registo ou transação |
+| id\_user<mark style="color:red;">\*</mark> | string | Id do utilizador           |
+
+{% tabs %}
+{% tab title="200: OK O utilizador foi atribuído ao registo de clientes ou transações com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -639,9 +464,9 @@ Id do utilizador
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -651,31 +476,30 @@ Id do utilizador
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/assign_departments_to_questionnaire" baseUrl="https://www.pepdata.com/api" summary="Atribuir departamentos a um registo" %}
-{% swagger-description %}
+## Atribuir departamentos a um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/assign_departments_to_questionnaire`
+
 Endpoint para atribuir departamentos a um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="departments" type="json" required="true" %}
-Array de departamentos
+#### Request Body
 
-Exemplo:
+| Name                                          | Type   | Description                                                       |
+| --------------------------------------------- | ------ | ----------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark>          | string | Id do registo ou transação                                        |
+| departments<mark style="color:red;">\*</mark> | json   | <p>Array de departamentos</p><p>Exemplo:</p><p>["Financeiro"]</p> |
 
-\["Financeiro"]
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Os departamentos foram atribuídos ao registo de clientes ou transações com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Os departamentos foram atribuídos ao registo de clientes ou transações com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -685,9 +509,9 @@ Exemplo:
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Departamentos inválidos" %}
+{% tab title="400: Bad Request Departamentos inválidos" %}
 
 
 ```json
@@ -699,39 +523,31 @@ Exemplo:
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/edit_questionnaire_approval_state" baseUrl="https://www.pepdata.com/api" summary="Editar o estado de aprovação de um registo" %}
-{% swagger-description %}
+## Editar o estado de aprovação de um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_questionnaire_approval_state`
+
 Endpoint para editar o estado de aprovação de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="approval_state" type="string" required="true" %}
-Estado de aprovação
+#### Request Body
 
-Valores aceites:
+| Name                                                       | Type   | Description                                                                                                                                                        |
+| ---------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id<mark style="color:red;">\*</mark>                       | string | Id do registo ou transação                                                                                                                                         |
+| approval\_state<mark style="color:red;">\*</mark>          | string | <p>Estado de aprovação</p><p>Valores aceites:</p><p><strong>-1</strong> (Rejeitado)</p><p><strong>0</strong> (Por decidir)</p><p><strong>1</strong> (Aprovado)</p> |
+| approval\_change\_reason<mark style="color:red;">\*</mark> | string | Justificação para alteração do estado de aprovação                                                                                                                 |
 
-**-1** (Rejeitado)
-
-**0** (Por decidir)
-
-**1** (Aprovado)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="approval_change_reason" type="string" required="true" %}
-Justificação para alteração do estado de aprovação
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Estado de aprovação do registo de clientes ou transações foi alterado com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Estado de aprovação do registo de clientes ou transações foi alterado com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -741,9 +557,9 @@ Justificação para alteração do estado de aprovação
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -753,23 +569,29 @@ Justificação para alteração do estado de aprovação
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/revert_questionnaire_risk" baseUrl="https://www.pepdata.com/api" summary="Reverter o risco de um registo" %}
-{% swagger-description %}
+## Reverter o risco de um registo
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/revert_questionnaire_risk`
+
 Endpoint para reverter o risco atual de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" type="string" required="true" name="id" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="O risco do registo de clientes ou transações foi revertido com sucesso." %}
+#### Request Body
+
+| Name                                 | Type   | Description                |
+| ------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+
+{% tabs %}
+{% tab title="200: OK O risco do registo de clientes ou transações foi revertido com sucesso." %}
 ```javascript
 {
     "version": 0.1,
@@ -780,9 +602,9 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -792,28 +614,34 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda <a href="#legenda-2" id="legenda-2"></a>
 
 * **risk:** risco calculado do registo de clientes ou transações.
 * **risk\_category:** categoria em que se insere o valor do risco do registo de clientes/transações.
 
-{% swagger method="post" path="/reset_questionnaire_needs_attention" baseUrl="https://www.pepdata.com/api" summary="Redefinir o estado " %}
-{% swagger-description %}
+## Redefinir o estado&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/reset_questionnaire_needs_attention`
+
 Endpoint para redefinir o estado "Precisam de atenção" de um registo de clientes ou transações.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id do registo ou transação
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Estado " %}
+#### Request Body
+
+| Name                                 | Type   | Description                |
+| ------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+
+{% tabs %}
+{% tab title="200: OK Estado " %}
 ```javascript
 {
     "version": 0.1,
@@ -823,9 +651,9 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registo de cliente ou transação não encontrado. " %}
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
 ```
 {
     "message": {
@@ -835,30 +663,31 @@ Id do registo ou transação
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="/submit_questionnaires" baseUrl="https://www.pepdata.com/api" summary="Submeter os registos " %}
-{% swagger-description %}
+## Submeter os registos&#x20;
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/submit_questionnaires`
+
 Endpoint que submete automaticamente todos os registos não submetidos.\*
 
 **\*Esta operação está limitada a 8000 registos de cada vez.**
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-Tipo dos registos a submeter
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-Valores aceites:
+#### Request Body
 
-**customers**\
-**transactions**
-{% endswagger-parameter %}
+| Name                                   | Type   | Description                                                                                                                  |
+| -------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| type<mark style="color:red;">\*</mark> | string | <p>Tipo dos registos a submeter</p><p>Valores aceites:</p><p><strong>customers</strong><br><strong>transactions</strong></p> |
 
-{% swagger-response status="200: OK" description="Os registos foram submetidos com sucesso. " %}
+{% tabs %}
+{% tab title="200: OK Os registos foram submetidos com sucesso. " %}
 ```javascript
 {
     "version": 0.1,
@@ -868,9 +697,9 @@ Valores aceites:
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="O tipo de registos não é válido." %}
+{% tab title="400: Bad Request O tipo de registos não é válido." %}
 ```
 {
     "message": {
@@ -880,8 +709,8 @@ Valores aceites:
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda <a href="#legenda-2" id="legenda-2"></a>
 

@@ -4,32 +4,25 @@
 Esta secção ainda se encontra na versão **beta**.
 {% endhint %}
 
-{% swagger method="post" path="/get_iberinform_rcbe_divergences" baseUrl="https://www.pepdata.com/api" summary="Comparação dos dados da plataforma da Iberinform com o portal RCBE" %}
-{% swagger-description %}
+## Comparação dos dados da plataforma da Iberinform com o portal RCBE
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_iberinform_rcbe_divergences`
 
-{% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="vatin" required="true" type="string" %}
-NIPC da organização a comparar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="include_rcbe_response" type="boolean" required="false" %}
-Instrução para incorporar a resposta do RCBE.
+#### Request Body
 
-\\
+| Name                                    | Type    | Description                                                                                                         |
+| --------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
+| vatin<mark style="color:red;">\*</mark> | string  | NIPC da organização a comparar                                                                                      |
+| include\_rcbe\_response                 | boolean | <p>Instrução para incorporar a resposta do RCBE.</p><p>\</p><p>Formato: false/true</p><p>\</p><p>Default: false</p> |
 
-Formato: false/true
-
-\\
-
-Default: false
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Informação recolhida com sucesso." %}
+{% tabs %}
+{% tab title="200: OK Informação recolhida com sucesso." %}
 ```javascript
 {
     "data": {
@@ -103,9 +96,9 @@ Default: false
 //    shares_percentage: boolean,
 // }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="NIPC não encontrado" %}
+{% tab title="400: Bad Request NIPC não encontrado" %}
 
 
 ```json
@@ -117,8 +110,8 @@ Default: false
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
@@ -131,20 +124,24 @@ Default: false
 * **rcbe\_person**: pessoa presente no RCBE. Ver Relevant Objects na response.
 * **divergences**: objeto de divergências. Ver Relevant Objects na response.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/get_beneficial_owners" method="post" summary="Obtenção dos beneficiários efetivos a partir do RCBE" %}
-{% swagger-description %}
+## Obtenção dos beneficiários efetivos a partir do RCBE
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_beneficial_owners`
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="vatin" type="string" required="true" %}
-NIPC da organização a tratar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Informação recolhida com sucesso" %}
+#### Request Body
+
+| Name                                    | Type   | Description                  |
+| --------------------------------------- | ------ | ---------------------------- |
+| vatin<mark style="color:red;">\*</mark> | string | NIPC da organização a tratar |
+
+{% tabs %}
+{% tab title="200: OK Informação recolhida com sucesso" %}
 ```
 {
     "data": {
@@ -176,9 +173,9 @@ NIPC da organização a tratar
     "timestamp": 1646390980644
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="NIPC inválido" %}
+{% tab title="400: Bad Request NIPC inválido" %}
 
 
 ```json
@@ -190,8 +187,8 @@ NIPC da organização a tratar
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="danger" %}
 **Atenção:** Infelizmente, o RCBE não apresenta informação estruturada em todas as propriedades. Deste modo, as propriedades acima descritas sem valor devem ser interpretadas como texto livre.

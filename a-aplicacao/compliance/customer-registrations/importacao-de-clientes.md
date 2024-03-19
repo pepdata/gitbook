@@ -1,15 +1,10 @@
-# Importação de fornecedores
+# Importação
 
-A importação de fornecedores permite-lhe, com facilidade e rapidez, fazer o upload dos seus fornecedores para a plataforma da PEPData, criando automaticamente um registo para cada um.
+A importação permite-lhe, com facilidade e rapidez, fazer o upload dos seus clientes/fornecedores para a plataforma da PEPData, criando automaticamente um registo para cada um.
 
-Para tal, por favor divida a informação a importar em 2 ficheiros distintos:
+Para tal, por favor divida a informação a importar em 2 ficheiros distintos: um de Organizações e outro de Pessoas.
 
-* Organizações
-  * Ficheiro que inclui os seus fornecedores do tipo organização
-* Pessoas
-  * Ficheiro que inclui os seus fornecedores do tipo pessoa
-
-Após a criação destes ficheiros, poderá proceder à sua importação através do botão "Importar fornecedores", presente na página "Fornecedores".
+Após a criação destes ficheiros, poderá proceder à sua importação através do botão de importação.
 
 ## Detalhes dos ficheiros a importar
 
@@ -47,7 +42,7 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious\_\__allegations; new\_light_\_\_convictions |
 
 {% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, possui vírgulas, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
 #### Ficheiro exemplo

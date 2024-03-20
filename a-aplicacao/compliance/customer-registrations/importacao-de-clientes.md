@@ -78,3 +78,19 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, p
 
 {% file src="../../../.gitbook/assets/individuals (2).csv" %}
 
+### Ficheiro das relações entre pessoas singulares e organizações
+
+* Deve conter uma relação por linha
+* Propriedades aceites (obrigatórias a negrito):
+
+| Campos                         | Notas                                                                                                                                                                                                                                                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **organization\_vat\_number**  | NIPC da organização a inserir as relações. Esta organização já deve existir no sistema.                                                                                                                                                                                                                |
+| **vat\_number**                | NIF/NIPC da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                                                                                                                                                                                             |
+| **position\_in\_organization** | Pode ter texto livre (ex: "Presidente", "Gerente", etc.), "owner", no caso da relação ser enquanto acionista ou detentor de direitos de voto, ou "beneficial\_owner" caso seja beneficiário efetivo. Caso o vat\_number seja de uma organização, este campo deve ter obrigatoriamente o valor "owner". |
+| capital\_percentage            | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Nota: a separação das casas decimais deve ser feita com ".", ex: 19.96<br>Não inclua o símbolo de percentagem.</p>                                                                    |
+| voting\_rights\_percentage     | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Nota: a separação das casas decimais deve ser feita com ".", ex: 19.96<br>Não inclua o símbolo de percentagem.</p>                                                                    |
+
+#### Ficheiro exemplo
+
+{% file src="../../../.gitbook/assets/relationships (1).csv" %}

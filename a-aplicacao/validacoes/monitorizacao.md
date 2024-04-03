@@ -26,7 +26,7 @@ Ao aceder à janela com as notícias relativas à adverse media, é possível [c
 
 ## Processos Judiciais
 
-A monitorização de Adverse Media permite que seja alertado sempre que existam potenciais novos processos judiciais em Tribunais de Primeira Instância e Tribunais Administrativos e Fiscais relativamente às suas validações.
+A monitorização de Processos Judiciais permite que seja alertado sempre que existam potenciais novos processos judiciais em Tribunais de Primeira Instância e Tribunais Administrativos e Fiscais relativamente às suas validações.
 
 Este processo de monitorização pode ser ativado ou desativado na página de configurações, podendo também ser definida a sua periodicidade.
 

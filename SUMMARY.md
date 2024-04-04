@@ -74,7 +74,7 @@
 * [Validações](api/validacoes.md)
 * [Registos](api/registrations.md)
 * [Pesquisa](api/pesquisa.md)
-* [Adverse Media](api/adverse-media.md)
+* [Adverse Info](api/adverse-info.md)
 * [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)
 * [Integração da lista PEPData](api/list-download.md)

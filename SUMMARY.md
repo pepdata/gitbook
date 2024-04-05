@@ -77,6 +77,7 @@
 * [Adverse Info](api/adverse-info.md)
 * [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)
+* [Compliance](api/compliance.md)
 * [Integração da lista PEPData](api/list-download.md)
 * [Exemplos de utilização](api/exemplos-de-utilizacao.md)
 

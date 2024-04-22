@@ -22,9 +22,10 @@ Endpoint para obter adverse media.
 
 #### Request Body
 
-| Name                                           | Type   | Description                      |
-| ---------------------------------------------- | ------ | -------------------------------- |
-| search\_term<mark style="color:red;">\*</mark> | string | Nome entidade/pessoa a pesquisar |
+| Name                                           | Type   | Description                                                                                    |
+| ---------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------- |
+| search\_term<mark style="color:red;">\*</mark> | string | Nome entidade/pessoa a pesquisar                                                               |
+| id\_custom                                     | string | Id personalizável de um registo/validação para que os resultados possam ser agregados ao mesmo |
 
 {% tabs %}
 {% tab title="200: OK Informações sobre adverse media obtidas com sucesso." %}

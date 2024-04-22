@@ -56,8 +56,10 @@ Alguns endpoints devolvem múltiplos resultados, podendo fazê-lo de forma pagin
     "items": [
         ...
     ],
-    "page": X,
-    "max_results_per_page": Y
+    "page": W,
+    "max_results_per_page": X,
+    "count": Y,
+    "total": Z
 }
 ```
 
@@ -66,7 +68,8 @@ Alguns endpoints devolvem múltiplos resultados, podendo fazê-lo de forma pagin
 * items: os items correspondentes à informação solicitada.
 * page: número da página à qual os items pertencem.
 * max\_results\_per\_page: número máximo de resultados por página.
-* total: o número de resultados existentes.
+* count: o número de resultados existentes, considerando filtros.
+* total: o número de resultados existentes, sem considerar filtros.
 
 ## Erros
 

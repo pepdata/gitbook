@@ -701,7 +701,7 @@ Endpoint para obter comentários.
 
 ## Adicionar um comentário
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_comment`
 
 Endpoint para adicionar um comentário.
 
@@ -756,7 +756,7 @@ Endpoint para adicionar um comentário.
 
 ## Editar um comentário
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_comment`
 
 Endpoint para editar um comentário.
 
@@ -803,7 +803,7 @@ Endpoint para editar um comentário.
 
 ## Apagar um comentário
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_comment`
 
 Endpoint para apagar um comentário.
 
@@ -849,7 +849,7 @@ Endpoint para apagar um comentário.
 
 ## Obter relações de uma validação
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiget_validation_relationships`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_validation_relationships`
 
 Endpoint para obter relações de uma validação.
 
@@ -932,7 +932,7 @@ Endpoint para obter relações de uma validação.
 
 ## Adicionar uma relação a uma validação.
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_validation_relationship`
 
 Endpoint para adicionar uma relação a uma validação.
 
@@ -982,7 +982,7 @@ Endpoint para adicionar uma relação a uma validação.
 
 ## Editar uma relação de validação
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_validation_relationship`
 
 Endpoint para editar uma relação de validação
 
@@ -1027,7 +1027,7 @@ Endpoint para editar uma relação de validação
 
 ## Apagar uma relação de validação
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_validation_relationship`
 
 Endpoint para apagar uma relação de validação
 

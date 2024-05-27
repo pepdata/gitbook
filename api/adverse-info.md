@@ -120,6 +120,8 @@ Endpoint para obter informação adversa.
 
 {% hint style="warning" %}
 A utilização deste endpoint requer a configuração prévia de um webhook na página de configurações, uma vez que a resposta poderá demorar vários minutos a ser obtida, por ser realizada em tempo real.
+
+Para garantir a segurança e integridade das chamadas ao webhook, usamos o método de autenticação Bearer. Isso significa que todas as chamadas ao webhook incluem um header "Authorization" contendo um token que precisa de ser validado. Esse token pode ser encontrado na página de configurações.
 {% endhint %}
 
 #### Headers

@@ -1,9 +1,5 @@
 # Compliance
 
-{% hint style="danger" %}
-Os endpoints que constam nesta página ainda não se encontram disponíveis, podendo a sua versão final vir a sofrer alterações.
-{% endhint %}
-
 ## Adição de um individuo
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/compliance/add_individual`

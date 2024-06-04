@@ -4,47 +4,30 @@
 Esta sección de la API aún está en desarrollo, por lo que puede sufrir cambios considerables. Esta página está en desarrollo.
 {% endhint %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_questionnaires" summary="Obtener registros" %}
-{% swagger-description %}
+## Obtener registros
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_questionnaires`
+
 Endpoint para obtener registros de transacciones y clientes.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
-Id personalizable de registro o transacción
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="search_term" type="string" %}
-Término de búsqueda: Buscar en las columnas name, vatin e id\_custom
-{% endswagger-parameter %}
+| Name         | Type    | Description                                                                                                                                                                                       |
+| ------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id           | string  | Id de registro o transacción                                                                                                                                                                      |
+| id\_custom   | string  | Id personalizable de registro o transacción                                                                                                                                                       |
+| search\_term | string  | Término de búsqueda: Buscar en las columnas name, vatin e id\_custom                                                                                                                              |
+| page         | integer | <p>Página de registros o transacciones<br>Default: 1</p>                                                                                                                                          |
+| type         | String  | <p>Tipo de registros</p><p>Default: <strong>customer</strong></p><p>Valores aceptados:</p><p><strong>customer</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
 
-{% swagger-parameter in="body" name="page" type="integer" %}
-Página de registros o transacciones\
-Default: 1
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" %}
-Tipo de registros
-
-Default: **customer**
-
-Valores aceptados:
-
-**customer**
-
-**transaction**
-
-**relationship**
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Registros obtenidos con éxito" %}
+{% tabs %}
+{% tab title="200: OK Registros obtenidos con éxito" %}
 ```
 {
     "data": {
@@ -95,8 +78,8 @@ Valores aceptados:
     "timestamp": 1648132877766
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -135,198 +118,30 @@ Valores aceptados:
 * **id\_questionnaire\_data:** id del registro donde se almacena la información del cuestionario.
 * **risk\_category:** categoría en la que caie el valor del riesgo.
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/add_questionnaire" summary="Agregando un registro" %}
-{% swagger-description %}
+## Agregando un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_questionnaire`
+
 Endpoint para agregar un registro de clientes y transacciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" required="true" %}
-Nombre del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="vatin" type="string" %}
-NIF/CIF de registro
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="id_custom" type="string" %}
-id personalizable de registro
-{% endswagger-parameter %}
+| Name                                   | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| name<mark style="color:red;">\*</mark> | string | Nombre del registro o transacción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| vatin                                  | string | NIF/CIF de registro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| id\_custom                             | string | id personalizable de registro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| type<mark style="color:red;">\*</mark> | string | <p>Tipo de registro</p><p></p><p>Valores aceptados: </p><p><strong>individual</strong> (registro de persona física)</p><p><strong>organization</strong> (registro de persona jurídica)</p><p><strong>transaction</strong> (Transacción)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| questionnaire\_data                    |        | <p><strong>Dependiendo de cada tipo de registro</strong>, se necesitan diferentes objetos:</p><p></p><p><em>indivudal</em></p><p><code>{</code></p><p>   <code>"personal_data": {</code></p><p>     <code>"email": "test@test.pt",</code></p><p>     <code>"birth_date": "2010-10-10",</code></p><p>     <code>"nationalities": ["Portugal"],</code></p><p>     <code>"birth_place": "Portugal"</code>  </p><p>   <code>},</code></p><p>   <code>"entity_proof": {</code></p><p>      <code>"identification_metadata": {</code></p><p>      <code>"document_number": 123456789,</code></p><p>      <code>"is_document_perpetual": false,</code></p><p>       <code>"document_validity": "2023-05-20",</code></p><p>       <code>"document_issuing_entity": "Test",</code></p><p>       <code>"document_issuing_date": "2013-05-20",</code></p><p>       <code>"document_issuing_location": "Test"</code></p><p>     <code>},</code></p><p>   <code>},</code></p><p><code>"address_data": {</code></p><p><code>"type": "residence",</code> ** <code>"country":"Portugal",</code></p><p><code>"cep":"1234-567",</code></p><p><code>"address_line_1":"Rua X",</code></p><p><code>"address_line_2":"nº123", "city":"Lisboa",</code></p><p><code>"district":"Lisboa"</code></p><p><code>},</code></p><p>   <code>"suspicion_data": {</code></p><p>     <code>"is_suspect": false,</code></p><p>      <code>"reason": "Test"</code></p><p>   <code>},</code>  </p><p><code>}</code></p><p></p><p>**Valores aceptados:</p><p><strong>residence</strong></p><p><strong>fiscal_residence</strong></p><p><strong>headquarters</strong></p><p></p><p><em>organization</em></p><p><code>{</code></p><p>   <code>"company_data": {</code></p><p>     <code>"object": "test",</code></p><p>     <code>"caes": ["01111"],</code></p><p>     <code>"country": "Portugal",</code></p><p>     <code>"foundation_date": "2005-02-01",</code></p><p>     <code>"countries_operations": ["Portugal"]</code>  </p><p>   <code>},</code></p><p>   <code>"entity_proof": {</code></p><p>      <code>"national_headquarters": true</code></p><p>   <code>},</code></p><p>   <code>"beneficiary_data": {</code></p><p>      <code>"codigo_rcbe": "123456"</code></p><p>   <code>},</code></p><p><code>"address_data": {</code></p><p><code>"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"</code></p><p><code>},</code></p><p>   <code>"suspicion_data": {</code></p><p>     <code>"is_suspect": false,</code></p><p>      <code>"reason": "Test"</code></p><p>   <code>},</code></p><p><code>}</code></p><p></p><p><em>transaction</em></p><p><code>{</code></p><p>   <code>"buyer": {</code></p><p>     <code>"acquisition_purpose": "test purpose",</code></p><p>   <code>},</code></p><p>   <code>"basic_information": {</code></p><p>      <code>"sell_type": "good",</code></p><p>      <code>"description": "test description",</code></p><p>      <code>"observations": "test observations"</code></p><p>   <code>},</code></p><p>   <code>"suspicion_data": {</code></p><p>     <code>"is_suspect": false,</code></p><p>      <code>"reason": "Test"</code></p><p>   <code>},</code></p><p><code>}</code></p> |
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-Tipo de registro
-
-
-
-Valores aceptados:&#x20;
-
-**individual** (registro de persona física)
-
-**organization** (registro de persona jurídica)
-
-**transaction** (Transacción)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="questionnaire_data" type="" %}
-**Dependiendo de cada tipo de registro**, se necesitan diferentes objetos:
-
-
-
-_indivudal_
-
-`{`
-
-&#x20;  `"personal_data": {`
-
-&#x20;    `"email": "test@test.pt",`
-
-&#x20;    `"birth_date": "2010-10-10",`
-
-&#x20;    `"nationalities": ["Portugal"],`
-
-&#x20;    `"birth_place": "Portugal"` &#x20;
-
-&#x20;  `},`
-
-&#x20;  `"entity_proof": {`
-
-&#x20;     `"identification_metadata": {`
-
-&#x20;     `"document_number": 123456789,`
-
-&#x20;     `"is_document_perpetual": false,`
-
-&#x20;      `"document_validity": "2023-05-20",`
-
-&#x20;      `"document_issuing_entity": "Test",`
-
-&#x20;      `"document_issuing_date": "2013-05-20",`
-
-&#x20;      `"document_issuing_location": "Test"`
-
-&#x20;    `},`
-
-&#x20;  `},`
-
-`"address_data": {`
-
-`"type": "residence",` \*\* `"country":"Portugal",`
-
-`"cep":"1234-567",`
-
-`"address_line_1":"Rua X",`
-
-`"address_line_2":"nº123", "city":"Lisboa",`
-
-`"district":"Lisboa"`
-
-`},`
-
-&#x20;  `"suspicion_data": {`
-
-&#x20;    `"is_suspect": false,`
-
-&#x20;     `"reason": "Test"`
-
-&#x20;  `},` &#x20;
-
-`}`
-
-
-
-\*\*Valores aceptados:
-
-**residence**
-
-**fiscal\_residence**
-
-**headquarters**
-
-
-
-_organization_
-
-`{`
-
-&#x20;  `"company_data": {`
-
-&#x20;    `"object": "test",`
-
-&#x20;    `"caes": ["01111"],`
-
-&#x20;    `"country": "Portugal",`
-
-&#x20;    `"foundation_date": "2005-02-01",`
-
-&#x20;    `"countries_operations": ["Portugal"]` &#x20;
-
-&#x20;  `},`
-
-&#x20;  `"entity_proof": {`
-
-&#x20;     `"national_headquarters": true`
-
-&#x20;  `},`
-
-&#x20;  `"beneficiary_data": {`
-
-&#x20;     `"codigo_rcbe": "123456"`
-
-&#x20;  `},`
-
-`"address_data": {`
-
-`"country":"Portugal", "cep":"1234-567", "address_line_1":"Rua X", "address_line_2":"nº 123", "city":"Lisboa", "district":"Lisboa"`
-
-`},`
-
-&#x20;  `"suspicion_data": {`
-
-&#x20;    `"is_suspect": false,`
-
-&#x20;     `"reason": "Test"`
-
-&#x20;  `},`
-
-`}`
-
-
-
-_transaction_
-
-`{`
-
-&#x20;  `"buyer": {`
-
-&#x20;    `"acquisition_purpose": "test purpose",`
-
-&#x20;  `},`
-
-&#x20;  `"basic_information": {`
-
-&#x20;     `"sell_type": "good",`
-
-&#x20;     `"description": "test description",`
-
-&#x20;     `"observations": "test observations"`
-
-&#x20;  `},`
-
-&#x20;  `"suspicion_data": {`
-
-&#x20;    `"is_suspect": false,`
-
-&#x20;     `"reason": "Test"`
-
-&#x20;  `},`
-
-`}`
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Registro o transacción agregado con éxito" %}
+{% tabs %}
+{% tab title="200: OK Registro o transacción agregado con éxito" %}
 ```
 {
     "version": 0.1,
@@ -338,9 +153,9 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="409: Conflict" description="El registro no fue creado, ya existe en la lista" %}
+{% tab title="409: Conflict El registro no fue creado, ya existe en la lista" %}
 ```
 {
     "message": {
@@ -350,9 +165,9 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="NIF/CIF inválido" %}
+{% tab title="400: Bad Request NIF/CIF inválido" %}
 
 
 ```json
@@ -364,8 +179,8 @@ _transaction_
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -373,26 +188,27 @@ _transaction_
 * **risk:** valor de riesgo del registro/transación creado/a.
 * **risk\_category:** categoria en la que se inserta el valor de riesgo del registro/transación creado/a.
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire" summary="Edición de un registro" %}
-{% swagger-description %}
+## Edición de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_questionnaire`
+
 Endpoint para editar un registro de clientes y transacciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="questionnaire_data" type="json" %}
-Solo puede editar el valor que necesita:
+#### Request Body
 
-Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnaire\_data) para ver qué propiedades se aceptan.
-{% endswagger-parameter %}
+| Name                                 | Type   | Description                                                                                                                                                                                  |
+| ------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark> | string | id del registro o transacción                                                                                                                                                                |
+| questionnaire\_data                  | json   | <p>Solo puede editar el valor que necesita:</p><p>Compruebe <a href="registros.md#agregando-un-registro">add_questionnaire</a> (questionnaire_data) para ver qué propiedades se aceptan.</p> |
 
-{% swagger-response status="200: OK" description="Registro de clientes o transacciones editado" %}
+{% tabs %}
+{% tab title="200: OK Registro de clientes o transacciones editado" %}
 ```
 {
     "version": 0.1,
@@ -403,9 +219,9 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 
 
 ```json
@@ -417,28 +233,34 @@ Compruebe [add\_questionnaire](registros.md#agregando-un-registro) (questionnair
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
 * **risk:** valor de riesgo del registro/transación editado/a.
 * **risk\_category:** categoria en la que se inserta el valor de riesgo del registro/transación editado/a.
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/delete_questionnaire" summary="Eliminación de un registro" %}
-{% swagger-description %}
+## Eliminación de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_questionnaire`
+
 Endpoint para eliminar un registro de clientes o transacciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" required="true" type="string" %}
-id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="El registro de clientes o transacciones fue eliminado con éxito" %}
+#### Request Body
+
+| Name                                 | Type   | Description                   |
+| ------------------------------------ | ------ | ----------------------------- |
+| id<mark style="color:red;">\*</mark> | string | id del registro o transacción |
+
+{% tabs %}
+{% tab title="200: OK El registro de clientes o transacciones fue eliminado con éxito" %}
 
 
 ```json
@@ -450,9 +272,9 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -462,27 +284,33 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 **Importante**: Puede obtener un error al eliminar un registro si tiene dependencias con otros registros.
 {% endhint %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/unsubmit_questionnaire" summary="Anular el envío de un registro" %}
-{% swagger-description %}
+## Anular el envío de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/unsubmit_questionnaire`
+
 Endpoint para cancelar el envío de un registro de cliente o transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="El registro de cliente o de transacciones se ha cancelado con éxito" %}
+#### Request Body
+
+| Name | Type   | Description                   |
+| ---- | ------ | ----------------------------- |
+| id   | string | id del registro o transacción |
+
+{% tabs %}
+{% tab title="200: OK El registro de cliente o de transacciones se ha cancelado con éxito" %}
 
 
 ```json
@@ -495,9 +323,9 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -507,8 +335,8 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Cancelar el envío recalculará el riesgo de registro. Si tiene una categoría de riesgo configurada manualmente, se perderá.
@@ -519,40 +347,28 @@ Cancelar el envío recalculará el riesgo de registro. Si tiene una categoría d
 * **risk:** riesgo recalculado de alta de clientes u operaciones.
 * **risk\_category:** categoria en la que se inserta el valor de riesgo recalculado de alta de clientes u operaciones.
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/send_questionnaire_invite" summary="Enviar una invitación para completar el registro" %}
-{% swagger-description %}
+## Enviar una invitación para completar el registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/send_questionnaire_invite`
+
 Endpoint para enviar una invitación para completar un registro de cliente o transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" required="true" name="id" type="string" %}
-Id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="client_email" required="true" type="string" %}
-Correo del cliente invitado
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="language" type="string" required="false" %}
-Idioma en el que debe enviarse la invitación\
+| Name                                            | Type   | Description                                                                                                                                                                                                                        |
+| ----------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark>            | string | Id del registro o transacción                                                                                                                                                                                                      |
+| client\_email<mark style="color:red;">\*</mark> | string | Correo del cliente invitado                                                                                                                                                                                                        |
+| language                                        | string | <p>Idioma en el que debe enviarse la invitación<br></p><p>Predeterminado: pt-PT<br></p><p>Valores aceptados:</p><p><strong>pt-PT</strong> (portugués) </p><p><strong>en</strong> (inglés) </p><p><strong>es</strong> (español)</p> |
 
-
-Predeterminado: pt-PT\
-
-
-Valores aceptados:
-
-**pt-PT** (portugués)&#x20;
-
-**en** (inglés)&#x20;
-
-**es** (español)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Invitación enviada con éxito" %}
+{% tabs %}
+{% tab title="200: OK Invitación enviada con éxito" %}
 ```
 {
     "version": 0.1,
@@ -562,9 +378,9 @@ Valores aceptados:
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -574,27 +390,30 @@ Valores aceptados:
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/cancel_questionnaire_invite" summary="Cancelar una invitación para completar el registro" %}
-{% swagger-description %}
+## Cancelar una invitación para completar el registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/cancel_questionnaire_invite`
+
 Endpoint para cancelar la invitación para completar un registro de cliente o transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="client_email" required="true" type="string" %}
-Correo del cliente invitado
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Invitación cancelada con éxito" %}
+| Name                                            | Type   | Description                   |
+| ----------------------------------------------- | ------ | ----------------------------- |
+| id<mark style="color:red;">\*</mark>            | string | Id del registro o transacción |
+| client\_email<mark style="color:red;">\*</mark> | string | Correo del cliente invitado   |
+
+{% tabs %}
+{% tab title="200: OK Invitación cancelada con éxito" %}
 ```
 {
     "version": 0.1,
@@ -604,9 +423,9 @@ Correo del cliente invitado
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -616,27 +435,30 @@ Correo del cliente invitado
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/assign_user_to_questionnaire" summary="Asignar un usuario a un registro" %}
-{% swagger-description %}
+## Asignar un usuario a un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/assign_user_to_questionnaire`
+
 Endpoint para asignar un usuario a un registro de cliente o transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization " type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id del registro o transacción
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authorization <mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_user" type="string" required="true" %}
-Id de usuario
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="El usuario se ha asignado correctamente al registro de cliente o transacción." %}
+| Name                                       | Type   | Description                   |
+| ------------------------------------------ | ------ | ----------------------------- |
+| id<mark style="color:red;">\*</mark>       | string | Id del registro o transacción |
+| id\_user<mark style="color:red;">\*</mark> | string | Id de usuario                 |
+
+{% tabs %}
+{% tab title="200: OK El usuario se ha asignado correctamente al registro de cliente o transacción." %}
 ```
 {
     "version": 0.1,
@@ -646,9 +468,9 @@ Id de usuario
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -658,32 +480,30 @@ Id de usuario
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/assign_departments_to_questionnaire" summary="Asignar departamentos a un registro" %}
-{% swagger-description %}
+## Asignar departamentos a un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/assign_departments_to_questionnaire`
+
 Endpoint para asignar departamentos a un cliente o registro de transacciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="departments" type="json" required="true" %}
-Array de departamentos\
-\
-Ejemplo:\
-\["Financiero"]
+#### Request Body
 
+| Name                                          | Type   | Description                                                            |
+| --------------------------------------------- | ------ | ---------------------------------------------------------------------- |
+| id                                            | string | Id del registro o transacción                                          |
+| departments<mark style="color:red;">\*</mark> | json   | <p>Array de departamentos<br><br>Ejemplo:<br>["Financiero"]</p><p></p> |
 
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Se han asignado departamentos al registro de clientes o transacciones con éxito." %}
+{% tabs %}
+{% tab title="200: OK Se han asignado departamentos al registro de clientes o transacciones con éxito." %}
 ```
 {
     "version": 0.1,
@@ -693,9 +513,9 @@ Ejemplo:\
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Departamentos inválidos" %}
+{% tab title="400: Bad Request Departamentos inválidos" %}
 
 
 ```json
@@ -707,37 +527,31 @@ Ejemplo:\
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/edit_questionnaire_approval_state" summary="Editar el estado de aprobación de un registro" %}
-{% swagger-description %}
+## Editar el estado de aprobación de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_questionnaire_approval_state`
+
 Endpoint para editar el estado de aprobación de un cliente o registro de transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-id del regristro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="approval_state" type="string" required="true" %}
-Estado de aprobación\
+#### Request Body
 
+| Name                                                       | Type   | Description                                                                                                |
+| ---------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark>                       | string | id del regristro o transacción                                                                             |
+| approval\_state<mark style="color:red;">\*</mark>          | string | <p>Estado de aprobación<br></p><p>Valores aceptados:<br>-1 (Rechazado)<br>0 (Indeciso)<br>1 (aprobado)</p> |
+| approval\_change\_reason<mark style="color:red;">\*</mark> | string | Justificación para cambiar el estado de aprobación                                                         |
 
-Valores aceptados:\
-\-1 (Rechazado)\
-0 (Indeciso)\
-1 (aprobado)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="approval_change_reason" type="string" required="true" %}
-Justificación para cambiar el estado de aprobación
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="El estado de aprobación del registro de clientes o de la transacción se ha cambiado correctamente." %}
+{% tabs %}
+{% tab title="200: OK El estado de aprobación del registro de clientes o de la transacción se ha cambiado correctamente." %}
 ```
 {
     "version": 0.1,
@@ -747,9 +561,9 @@ Justificación para cambiar el estado de aprobación
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -759,23 +573,29 @@ Justificación para cambiar el estado de aprobación
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/revert_questionnaire_risk" summary="Revertir el riesgo de un registro" %}
-{% swagger-description %}
+## Revertir el riesgo de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/revert_questionnaire_risk`
+
 Endpoint para revertir el riesgo actual de un cliente o registro de transacciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Se revirtió con éxito el riesgo del registro de clientes o transacciones" %}
+#### Request Body
+
+| Name                                 | Type   | Description                   |
+| ------------------------------------ | ------ | ----------------------------- |
+| id<mark style="color:red;">\*</mark> | string | id del registro o transacción |
+
+{% tabs %}
+{% tab title="200: OK Se revirtió con éxito el riesgo del registro de clientes o transacciones" %}
 
 
 ```json
@@ -788,9 +608,9 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -800,28 +620,34 @@ id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
 * **risk:** riesgo de alta de clientes u operaciones.
 * **risk\_category:** categoria en la que se inserta el valor de riesgo de alta de clientes u operaciones.
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/reset_questionnaire_needs_attention" summary="Restablecer el estado "Necesita atención" de un registro" %}
-{% swagger-description %}
+## Restablecer el estado "Necesita atención" de un registro
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/reset_questionnaire_needs_attention`
+
 Endpoint para restablecer el estado "Necesita atención" de un registro de cliente o transacción.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id del registro o transacción
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="El estado "Necesita atención" del registro de clientes o de transacciones se ha restablecido correctamente." %}
+#### Request Body
+
+| Name | Type   | Description                   |
+| ---- | ------ | ----------------------------- |
+| id   | string | Id del registro o transacción |
+
+{% tabs %}
+{% tab title="200: OK El estado "Necesita atención" del registro de clientes o de transacciones se ha restablecido correctamente." %}
 
 
 ```json
@@ -833,9 +659,9 @@ Id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Registro de cliente o transación no encontrado" %}
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
 ```
 {
     "message": {
@@ -845,30 +671,31 @@ Id del registro o transacción
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/submit_questionnaires" summary="Entregar los registros" %}
-{% swagger-description %}
+## Entregar los registros
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/submit_questionnaires`
+
 Endpoint que entrega automáticamente todos los registros no enviados.\*
 
 **\*Esta operación está limitada a 8000 registros a la vez.**
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="type" type="string" required="true" %}
-Tipo de los registros a entregar
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-Valores aceptados:&#x20;
+#### Request Body
 
-**customers**\
-**transactions**
-{% endswagger-parameter %}
+| Name                                   | Type   | Description                                                                                                                         |
+| -------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| type<mark style="color:red;">\*</mark> | string | <p>Tipo de los registros a entregar</p><p>Valores aceptados: </p><p><strong>customers</strong><br><strong>transactions</strong></p> |
 
-{% swagger-response status="200: OK" description="Los registros se enviaron exitosamente." %}
+{% tabs %}
+{% tab title="200: OK Los registros se enviaron exitosamente." %}
 
 
 ```json
@@ -880,9 +707,9 @@ Valores aceptados:&#x20;
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="El tipo de registros no es válido." %}
+{% tab title="400: Bad Request El tipo de registros no es válido." %}
 ```
 {
     "message": {
@@ -892,8 +719,8 @@ Valores aceptados:&#x20;
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 

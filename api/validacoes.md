@@ -1,32 +1,27 @@
 # Validaciones
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/get_validations" method="post" summary="Obtener validaciones" %}
-{% swagger-description %}
+## Obtener validaciones
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_validations`
+
 Endpoint para obtener validaciones.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="page" type="number" %}
-Página de validaciones\
-Default: 1
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="source" type="string" %}
-Origen de las validaciones\
-Default: all\
-Valores posibles: all, upload, manual
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="status" type="string" %}
-Estado de validación\
-Default: incomplete\
-Valores posibles: all, complete, complete\_identified, complete\_not\_identified, complete\_needs\_attention, incomplete
-{% endswagger-parameter %}
+| Name   | Type   | Description                                                                                                                                                               |
+| ------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| page   | number | <p>Página de validaciones<br>Default: 1</p>                                                                                                                               |
+| source | string | <p>Origen de las validaciones<br>Default: all<br>Valores posibles: all, upload, manual</p>                                                                                |
+| status | string | <p>Estado de validación<br>Default: incomplete<br>Valores posibles: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete</p> |
 
-{% swagger-response status="200" description="Validaciones obtenidas con éxito." %}
+{% tabs %}
+{% tab title="200 Validaciones obtenidas con éxito." %}
 ```
 {
     "version": 0.1,
@@ -117,8 +112,8 @@ Valores posibles: all, complete, complete\_identified, complete\_not\_identified
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -166,76 +161,34 @@ Valores posibles: all, complete, complete\_identified, complete\_not\_identified
 * **alerts:** alertas relacionadas con la validación y que aún están sin resolver.
 * **country\_nationality:** país de nacionalidad.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/add_validation" method="post" summary="Agregar validación" %}
-{% swagger-description %}
+## Agregar validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_validation`
+
 Endpoint para agregar una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="body" name="name" type="string" required="true" %}
-Nombre de validación
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="birth_date" type="string" %}
-Fecha  de nacimiento de la validación.
+#### Request Body
 
-**Parámetro solo utilizado en validaciones de personas.**\
-Formato: yyyy-mm-dd\
-Default: null
-{% endswagger-parameter %}
+| Name                                   | Type    | Description                                                                                                                                                                                       |
+| -------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ignore\_duplicates                     | boolean | <p>Instrucción para omitir el control por duplicado.<br>Formato: 0/1<br>Default: 0</p>                                                                                                            |
+| name<mark style="color:red;">\*</mark> | string  | Nombre de validación                                                                                                                                                                              |
+| birth\_date                            | string  | <p>Fecha  de nacimiento de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: yyyy-mm-dd<br>Default: null</p>                                |
+| country\_nationality                   | string  | <p>País de nacionalidad de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: Nombre del país (véase la nota más abajo)<br>Default: null</p> |
+| vatin                                  | string  | <p>Nif de la validación<br>Default: null</p>                                                                                                                                                      |
+| id\_custom                             | string  | <p>id personalizable de la validación<br>Default: null</p>                                                                                                                                        |
+| country\_address                       | string  | <p>País de residencia de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: Nombre del país (véase la nota más abajo)<br>Default: null</p>   |
+| type                                   | string  | <p>Tipo de entidad, que puede ser: "individual" u "organization".</p><p>Default: "individual"</p>                                                                                                 |
+| country                                | String  | <p>País de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de organizaciones.</strong></p><p>Formato: Nombre del país (véase la nota más abajo)</p><p>Default: null</p>     |
 
-{% swagger-parameter in="body" name="ignore_duplicates" type="boolean" %}
-Instrucción para omitir el control por duplicado.\
-Formato: 0/1\
-Default: 0
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="country_nationality" type="string" %}
-País de nacionalidad de la validación.
-
-**Parámetro solo utilizado en validaciones de personas.**\
-Formato: Nombre del país (véase la nota más abajo)\
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="country_address" type="string" %}
-País de residencia de la validación.
-
-**Parámetro solo utilizado en validaciones de personas.**\
-Formato: Nombre del país (véase la nota más abajo)\
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="country" %}
-País de la validación.
-
-**Parámetro solo utilizado en validaciones de organizaciones.**
-
-Formato: Nombre del país (véase la nota más abajo)
-
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="vatin" type="string" %}
-Nif de la validación\
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="id_custom" type="string" %}
-id personalizable de la validación\
-Default: null
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="type" type="string" %}
-Tipo de entidad, que puede ser: "individual" u "organization".
-
-Default: "individual"
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Validación añadida con éxito." %}
+{% tabs %}
+{% tab title="200 Validación añadida con éxito." %}
 ```
 
 {
@@ -246,9 +199,9 @@ Default: "individual"
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="409: Conflict" description="La validación a agregar ya está en la base de datos." %}
+{% tab title="409: Conflict La validación a agregar ya está en la base de datos." %}
 ```
 {
     "message": "Esta validação parece já existir na base de dados"
@@ -256,9 +209,9 @@ Default: "individual"
     "timestamp": 1696943296957
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Nombre inválido" %}
+{% tab title="400: Bad Request Nombre inválido" %}
 
 
 ```json
@@ -270,8 +223,8 @@ Default: "individual"
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -279,47 +232,30 @@ Default: "individual"
 
 
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_alerts" summary="Obtener alertas" %}
-{% swagger-description %}
+## Obtener alertas
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_alerts`
 
-{% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id_validation" type="string" %}
-Id de la validación
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="ids_validations" type="string array" %}
-Array de ids de validaciónes
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="status" type="string" %}
-Estado de alertas Predeterminado: sin resolver Valores posibles: todos, resueltos, no resueltos
-{% endswagger-parameter %}
+| Name              | Type         | Description                                                                                                                                      |
+| ----------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id\_validation    | string       | Id de la validación                                                                                                                              |
+| ids\_validations  | string array | Array de ids de validaciónes                                                                                                                     |
+| status            | string       | Estado de alertas Predeterminado: sin resolver Valores posibles: todos, resueltos, no resueltos                                                  |
+| from              | int          | Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                  |
+| until             | int          | Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                            |
+| include\_comments | boolean      | <p>Parámetro para solicitar información sobre comentarios asociados a los alertas. Valores posibles: true, false</p><p>Predeterminado: false</p> |
+| page              | number       | <p>Pagina de los alertas.<br>Predeterminado: 1</p>                                                                                               |
 
-{% swagger-parameter in="body" name="from" type="int" %}
-Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="until" type="int" %}
-Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="page" type="number" %}
-Pagina de los alertas.\
-Predeterminado: 1
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="include_comments" type="boolean" %}
-Parámetro para solicitar información sobre comentarios asociados a los alertas. Valores posibles: true, false
-
-Predeterminado: false
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Alertas de validación obtenidas con éxito" %}
+{% tabs %}
+{% tab title="200: OK Alertas de validación obtenidas con éxito" %}
 
 
 ```json
@@ -359,9 +295,9 @@ Predeterminado: false
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="estado de alertas inválido" %}
+{% tab title="400: Bad Request estado de alertas inválido" %}
 ```
 {
     "message": {
@@ -371,8 +307,8 @@ Predeterminado: false
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -397,20 +333,26 @@ Predeterminado: false
 Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/analyze_validation" method="post" summary="Analizar la validación" %}
-{% swagger-description %}
+## Analizar la validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/analyze_validation`
+
 Endpoint para consultar los resultados obtenidos del análisis de una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de la validación
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-response status="200" description="Resultados del análisis de validación obtenidos con éxito." %}
+#### Request Body
+
+| Name | Type   | Description         |
+| ---- | ------ | ------------------- |
+| id   | string | Id de la validación |
+
+{% tabs %}
+{% tab title="200 Resultados del análisis de validación obtenidos con éxito." %}
 ```
 {
     "data": {
@@ -480,9 +422,9 @@ Id de la validación
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Validación no encontrada" %}
+{% tab title="400: Bad Request Validación no encontrada" %}
 
 
 ```json
@@ -494,8 +436,8 @@ Id de la validación
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -519,24 +461,27 @@ Id de la validación
   * **end\_date:** fecha de finalización de la relación.
   * **comments:** notas relevantes sobre la relación.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/determine_validation" method="post" summary="Determinación de la validación" %}
-{% swagger-description %}
+## Determinación de la validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/determine_validation`
+
 Endpoint para determinar una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de validación
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_entity" type="string" %}
-Id de la persona u organización identificable correspondiente.&#x20;
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200" description=" La validación ha sido determinada con éxito." %}
+| Name       | Type   | Description                                                     |
+| ---------- | ------ | --------------------------------------------------------------- |
+| id         | string | Id de validación                                                |
+| id\_entity | string | Id de la persona u organización identificable correspondiente.  |
+
+{% tabs %}
+{% tab title="200  La validación ha sido determinada con éxito." %}
 ```
 {
     "version": 0.1,
@@ -546,9 +491,9 @@ Id de la persona u organización identificable correspondiente.&#x20;
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Validación no encontrada" %}
+{% tab title="400: Bad Request Validación no encontrada" %}
 ```
 {
     "message": {
@@ -558,23 +503,29 @@ Id de la persona u organización identificable correspondiente.&#x20;
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/delete_validation" method="post" summary="Eliminar la validación" %}
-{% swagger-description %}
+## Eliminar la validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_validation`
+
 Endpoint para eliminar una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de validación
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-response status="200" description="La validación ha sido eliminada con éxito." %}
+#### Request Body
+
+| Name | Type   | Description      |
+| ---- | ------ | ---------------- |
+| id   | string | Id de validación |
+
+{% tabs %}
+{% tab title="200 La validación ha sido eliminada con éxito." %}
 ```
 {
     "version": 0.1,
@@ -584,9 +535,9 @@ Id de validación
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Validación no encontrada" %}
+{% tab title="400: Bad Request Validación no encontrada" %}
 ```
 {
     "message": {
@@ -596,19 +547,23 @@ Id de validación
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/apply_rules" method="post" summary="Aplicación de las reglas" %}
-{% swagger-description %}
+## Aplicación de las reglas
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/apply_rules`
+
 Endpoint para la aplicación de las reglas de validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="Las reglas han empezado a aplicarse." %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
+
+{% tabs %}
+{% tab title="200: OK Las reglas han empezado a aplicarse." %}
 ```
 {
     "version": 0.1,
@@ -618,9 +573,9 @@ key \[API\_KEY]
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="200: OK" description="No hay validaciones elegibles para aplicar las reglas." %}
+{% tab title="200: OK No hay validaciones elegibles para aplicar las reglas." %}
 ```
 {
     "version": 0.1,
@@ -630,9 +585,9 @@ key \[API\_KEY]
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Las reglas ya se están aplicando." %}
+{% tab title="400: Bad Request Las reglas ya se están aplicando." %}
 ```
 {
     "message": {
@@ -642,8 +597,8 @@ key \[API\_KEY]
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -657,29 +612,28 @@ Se recomienda fuertemente leer la documentación sobre la [aplicación de    las
 A [aplicación de la regla](../a-aplicacao/validacoes/aplicacao-de-regras.md) puede tardar varios minutos en completarse, dependiendo del número de validaciones incompletas existentes.
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/get_comments" method="post" summary="Obtener comentários" %}
-{% swagger-description %}
+## Obtener comentários
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_comments`
+
 Endpoint para obtener comentarios.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="page" type="number" required="false" %}
-Pagina de los comentarios.\
-Predeterminado: 1
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id_validation" type="string" %}
-Id de la validación asociada a los comentarios.
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="type" type="string" required="false" %}
-Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, adverse\_media
-{% endswagger-parameter %}
+| Name           | Type   | Description                                                                                    |
+| -------------- | ------ | ---------------------------------------------------------------------------------------------- |
+| page           | number | <p>Pagina de los comentarios.<br>Predeterminado: 1</p>                                         |
+| type           | string | Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, adverse\_media |
+| id\_validation | string | Id de la validación asociada a los comentarios.                                                |
 
-{% swagger-response status="200: OK" description="Comentarios obtenidos con éxito." %}
+{% tabs %}
+{% tab title="200: OK Comentarios obtenidos con éxito." %}
 ```
 {
     "version": 0.1,
@@ -718,9 +672,9 @@ Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, 
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Tipo de comentarios no válido." %}
+{% tab title="400: Bad Request Tipo de comentarios no válido." %}
 
 
 ```json
@@ -732,8 +686,8 @@ Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, 
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -748,40 +702,31 @@ Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, 
 * **id\_validation\_adverse\_media:** id de la noticia adversa correspondiente, si el tipo de comentario es "adverse\_media".
 * **id\_added\_by:** id del usuario que agregó el comentario.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="add_comment" method="post" summary="Añadir un comentario" %}
-{% swagger-description %}
+## Añadir un comentario
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_comment`
+
 Endpoint para anãdir un comentario.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id_validation" type="string" required="true" %}
-Id de la validación
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="comment" required="true" type="string" %}
-Comentario
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="id_iperson" type="string" required="false" %}
-Id de la persona identificable correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a la identificación de una validación.**
-{% endswagger-parameter %}
+| Name                                             | Type   | Description                                                                                                                                                    |
+| ------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_validation<mark style="color:red;">\*</mark> | string | Id de la validación                                                                                                                                            |
+| id\_iperson                                      | string | Id de la persona identificable correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a la identificación de una validación.** |
+| comment<mark style="color:red;">\*</mark>        | string | Comentario                                                                                                                                                     |
+| id\_validation\_alert                            | string | Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una alerta de validación.**             |
+| id\_validation\_judicial\_process                | string | Id de lo proceso judiciale correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un proceso judicial.**                     |
+| id\_validation\_adverse\_media                   | string | Id de la noticia adversa  correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una noticia adversa.**                      |
 
-{% swagger-parameter in="body" name="id_validation_alert" type="string" %}
-Id de lo alerta de validación correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una alerta de validación.**
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="id_validation_judicial_process" type="string" %}
-Id de lo proceso judiciale correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a un proceso judicial.**
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="id_validation_adverse_media" type="string" %}
-Id de la noticia adversa  correspondiente. **Este parámetro es obligatorio si el comentario a agregar se refiere a una noticia adversa.**
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Comentario agregado con éxito." %}
+{% tabs %}
+{% tab title="200: OK Comentario agregado con éxito." %}
 ```
 {
     "version": 0.1,
@@ -791,9 +736,9 @@ Id de la noticia adversa  correspondiente. **Este parámetro es obligatorio si e
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Validación no encontrada." %}
+{% tab title="400: Bad Request Validación no encontrada." %}
 
 
 ```json
@@ -805,31 +750,34 @@ Id de la noticia adversa  correspondiente. **Este parámetro es obligatorio si e
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
 * **id**: id de lo comentario agregado.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="edit_comment" method="post" summary="Editar un comentario" %}
-{% swagger-description %}
+## Editar un comentario
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_comment`
+
 Endpoint para editar un comentario.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id de lo comentario a editar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="comment" required="true" type="string" %}
-Comentario
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Comentario editado con éxito." %}
+| Name                                      | Type   | Description                  |
+| ----------------------------------------- | ------ | ---------------------------- |
+| id<mark style="color:red;">\*</mark>      | string | Id de lo comentario a editar |
+| comment<mark style="color:red;">\*</mark> | string | Comentario                   |
+
+{% tabs %}
+{% tab title="200: OK Comentario editado con éxito." %}
 ```
 {
     "version": 0.1,
@@ -839,9 +787,9 @@ Comentario
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Id de comentario no valido." %}
+{% tab title="400: Bad Request Id de comentario no valido." %}
 
 
 ```json
@@ -853,23 +801,29 @@ Comentario
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="delete_comment" method="post" summary="Eliminar un comentário" %}
-{% swagger-description %}
+## Eliminar un comentário
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_comment`
+
 Endpoint para eliminar un comentario.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id" type="string" required="true" %}
-Id de lo comentario a eliminar
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Comentario eliminado con éxito." %}
+#### Request Body
+
+| Name                                 | Type   | Description                    |
+| ------------------------------------ | ------ | ------------------------------ |
+| id<mark style="color:red;">\*</mark> | string | Id de lo comentario a eliminar |
+
+{% tabs %}
+{% tab title="200: OK Comentario eliminado con éxito." %}
 ```
 {
     "version": 0.1,
@@ -879,9 +833,9 @@ Id de lo comentario a eliminar
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Id de comentario no valido." %}
+{% tab title="400: Bad Request Id de comentario no valido." %}
 
 
 ```json
@@ -893,29 +847,30 @@ Id de lo comentario a eliminar
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="get_validation_relationships" method="post" summary="Obtener relaciones de una validación" %}
-{% swagger-description %}
+## Obtener relaciones de una validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiget_validation_relationships`
+
 Endpoint para obtener relaciones de una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id_validation" type="string" required="true" %}
-Id de la validación
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="page" type="number" %}
-Pagina de las relaciones.
+#### Request Body
 
-Predeterminado: 1
-{% endswagger-parameter %}
+| Name                                             | Type   | Description                                              |
+| ------------------------------------------------ | ------ | -------------------------------------------------------- |
+| id\_validation<mark style="color:red;">\*</mark> | string | Id de la validación                                      |
+| page                                             | number | <p>Pagina de las relaciones.</p><p>Predeterminado: 1</p> |
 
-{% swagger-response status="200: OK" description="Relaciones obtenidas con éxito" %}
+{% tabs %}
+{% tab title="200: OK Relaciones obtenidas con éxito" %}
 ```
 {
     "version": 0.1,
@@ -950,9 +905,9 @@ Predeterminado: 1
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Validación no encontrada." %}
+{% tab title="400: Bad Request Validación no encontrada." %}
 
 
 ```json
@@ -964,8 +919,8 @@ Predeterminado: 1
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 
@@ -978,30 +933,28 @@ Predeterminado: 1
 * **added\_by:** usuario responsable de crear la relación.
 * **added\_at:** fecha en que se añadió la relación, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="add_validation_relationship" method="post" summary="Agregar una relación a una validación" %}
-{% swagger-description %}
+## Agregar una relación a una validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_validation_relationship`
+
 Endpoint para agregar una relación a una validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="organization_vat_number" type="string" required="true" %}
-NIF de la validación a partir de la cual se creará la relación. **Es necesariamente una validación de organización.**
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="vat_number" type="string" required="true" %}
-NIF de la validación para la cual se creará la relación. **Es necesariamente una validación de persona  si el tipo de relación es representative, manager o beneficial\_owner.**
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="position_in_organization" type="string" required="true" %}
-Tipo de la relación.
+| Name                                                         | Type   | Description                                                                                                                                                                      |
+| ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| organization\_vat\_number<mark style="color:red;">\*</mark>  | string | NIF de la validación a partir de la cual se creará la relación. **Es necesariamente una validación de organización.**                                                            |
+| vat\_number<mark style="color:red;">\*</mark>                | string | NIF de la validación para la cual se creará la relación. **Es necesariamente una validación de persona  si el tipo de relación es representative, manager o beneficial\_owner.** |
+| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p>Valores posibles: representative, manager, owner, beneficial_owner</p>                                                                             |
 
-Valores posibles: representative, manager, owner, beneficial\_owner
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Relación agregada con éxito." %}
+{% tabs %}
+{% tab title="200: OK Relación agregada con éxito." %}
 ```
 {
     "version": 0.1,
@@ -1011,9 +964,9 @@ Valores posibles: representative, manager, owner, beneficial\_owner
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Tipo de relación no válido." %}
+{% tab title="400: Bad Request Tipo de relación no válido." %}
 ```json
 {
     "message": {
@@ -1023,33 +976,34 @@ Valores posibles: representative, manager, owner, beneficial\_owner
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
 * **id**: id de la nueva relación.
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="edit_validation_relationship" method="post" summary="Editar una relación de validación" %}
-{% swagger-description %}
+## Editar una relación de validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_validation_relationship`
+
 Endpoint para editar una relación de validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id_relationship_info" type="string" required="true" %}
-identificador de la tabla de información de relaciones asociado con la relación a editar.
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="position_in_organization" type="string" required="true" %}
-Tipo de la relación.
+#### Request Body
 
-Valores posibles: representative, manager, owner, beneficial\_owner
-{% endswagger-parameter %}
+| Name                                                         | Type   | Description                                                                                          |
+| ------------------------------------------------------------ | ------ | ---------------------------------------------------------------------------------------------------- |
+| id\_relationship\_info<mark style="color:red;">\*</mark>     | string | identificador de la tabla de información de relaciones asociado con la relación a editar.            |
+| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p>Valores posibles: representative, manager, owner, beneficial_owner</p> |
 
-{% swagger-response status="200: OK" description="Relación editada con éxito." %}
+{% tabs %}
+{% tab title="200: OK Relación editada con éxito." %}
 ```
 {
     "version": 0.1,
@@ -1059,9 +1013,9 @@ Valores posibles: representative, manager, owner, beneficial\_owner
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Tipo de relación no válido." %}
+{% tab title="400: Bad Request Tipo de relación no válido." %}
 ```json
 {
     "message": {
@@ -1071,23 +1025,29 @@ Valores posibles: representative, manager, owner, beneficial\_owner
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="delete_validation_relationship" method="post" summary="Eliminar una relación de validación" %}
-{% swagger-description %}
+## Eliminar una relación de validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_validation_relationship`
+
 Endpoint para eliminar una relación de validación.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="id_relationship_info" type="string" required="true" %}
-identificador de la tabla de información de relaciones asociado con la relación a eliminar.
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Relación eliminada con éxito." %}
+#### Request Body
+
+| Name                                                     | Type   | Description                                                                                 |
+| -------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------- |
+| id\_relationship\_info<mark style="color:red;">\*</mark> | string | identificador de la tabla de información de relaciones asociado con la relación a eliminar. |
+
+{% tabs %}
+{% tab title="200: OK Relación eliminada con éxito." %}
 ```
 {
     "version": 0.1,
@@ -1097,9 +1057,9 @@ identificador de la tabla de información de relaciones asociado con la relació
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Identificador de la tabla de información de relaciones no válido." %}
+{% tab title="400: Bad Request Identificador de la tabla de información de relaciones no válido." %}
 ```json
 {
     "message": {
@@ -1109,5 +1069,5 @@ identificador de la tabla de información de relaciones asociado con la relació
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}

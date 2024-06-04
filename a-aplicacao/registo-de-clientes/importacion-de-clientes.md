@@ -39,10 +39,10 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 | corporate\_object     |                                                                                                                                                                                                                            |
 | foundation\_date      |                                                                                                                                                                                                                            |
 | nace\_codes           | Códigos CNAE. Separados por punto y coma si hay varios.                                                                                                                                                                    |
-| constitution\_country |                                                                                                                                                                                                                            |
+| country\_constitution |                                                                                                                                                                                                                            |
 | operations\_countries | Separados por punto y coma si hay varios.                                                                                                                                                                                  |
-| is\_identified        |                                                                                                                                                                                                                            |
-| address\_country      |                                                                                                                                                                                                                            |
+| is\_identified        | 0, si no hay identificación.                                                                                                                                                                                               |
+| country\_address      |                                                                                                                                                                                                                            |
 | address\_postal\_code |                                                                                                                                                                                                                            |
 | address               |                                                                                                                                                                                                                            |
 | address\_door         |                                                                                                                                                                                                                            |
@@ -57,7 +57,7 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/organizations.csv" %}
+{% file src="../../.gitbook/assets/organizations (2).csv" %}
 
 ### Archivo **de personas físicas**
 
@@ -74,10 +74,10 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 | email                 | Correo electrónico de la persona.                                                                                                                                                                                          |
 | birth\_date           |                                                                                                                                                                                                                            |
 | nationalities         | Separadas por punto y coma su hay varias.                                                                                                                                                                                  |
-| nationalities         | Separadas por punto y coma su hay varias.                                                                                                                                                                                  |
-| place\_of\_birth      |                                                                                                                                                                                                                            |
+| country\_birth        |                                                                                                                                                                                                                            |
 | address\_type         | Valores aceptados: residencia, residencia\_fiscal y sede.                                                                                                                                                                  |
-| address\_country      |                                                                                                                                                                                                                            |
+| country\_address      |                                                                                                                                                                                                                            |
+| is\_identified        | 0, si no hay identificación.                                                                                                                                                                                               |
 | address\_postal\_code |                                                                                                                                                                                                                            |
 | address               |                                                                                                                                                                                                                            |
 | address\_door         |                                                                                                                                                                                                                            |
@@ -87,7 +87,7 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/individuals.csv" %}
+{% file src="../../.gitbook/assets/individuals (1).csv" %}
 
 ### **Archivo de relaciones entre personas físicas y jurídicas.**
 

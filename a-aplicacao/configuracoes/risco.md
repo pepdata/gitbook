@@ -1,6 +1,6 @@
 # Risco
 
-As configurações de risco são uma ferramenta poderosa que lhe permite personalizar o cálculo do risco dos seus [clientes ](../customer-registrations/)de acordo com as especificidades da sua organização e da área de negócio em que se insere.
+As configurações de risco são uma ferramenta poderosa que lhe permite personalizar o cálculo do risco dos seus [clientes ](broken-reference)de acordo com as especificidades da sua organização e da área de negócio em que se insere.
 
 Estas configurações centram-se em três componentes essenciais:
 

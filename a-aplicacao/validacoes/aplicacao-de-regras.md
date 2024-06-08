@@ -18,14 +18,13 @@ No máximo, as regras serão aplicadas a 80.000 [validações](../../glossario/g
 {% hint style="info" %}
 #### Como funciona a aplicação de regras?
 
-Neste exemplo, considere que ambas as regras de validação se encontram ativas. Assim sendo, ao carregar em "Aplicar regras", o sistema irá proceder do seguinte modo, para cada [validação](../../glossario/glossario-aplicacao.md#validacao) incompleta:
+Ao carregar em "Aplicar regras", o sistema irá proceder do seguinte modo, para cada [validação](../../glossario/glossario-aplicacao.md#validacao) incompleta ou que precise de atenção:
 
-1. Procura na base de dados da PEPData todas as pessoas identificáveis com um nome similar ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de pessoa e todas as organizações identificadas com um nome exatamente igual ao da [validação](../../glossario/glossario-aplicacao.md#validacao) de organização.
-2. Através do passo anterior, e obtida uma lista de resultados sugeridos, como descrito na nota seguinte:
-   1. Caso não existam resultados sugeridos, uma vez que a regra 1 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como não sendo identificável.
-   2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes/#threshold-de-validacao) (no caso de validações de pessoas) ou corresponda exatamente ao nome da validação (no caso de validações de organizações), uma vez que a regra 2 se encontra ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
-   3. No caso de validações de pessoass, caso exista apenas um resultado e o [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja inferior ou igual ao [threshold de validação](../configuracoes/#threshold-de-validacao), esta irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
-   4. Caso existam múltiplos resultados a [validação](../../glossario/glossario-aplicacao.md#validacao) irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
+1. Procura na base de dados da PEPData todas as entidades identificáveis com um nome similar ao da [validação](../../glossario/glossario-aplicacao.md#validacao).
+2. Tendo-se obtido uma lista de resultados:
+   1. Caso não existam resultados, se a regra 1 se encontrar ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como não sendo identificável.
+   2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes/#threshold-de-validacao), se a regra 2 se encontrar ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
+   3. Caso existam múltiplos resultados a [validação](../../glossario/glossario-aplicacao.md#validacao) irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -68,5 +67,3 @@ Ao estarem ativas, estas opções permitem que o sistema considere que o primeir
 
 Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.
 {% endhint %}
-
-##

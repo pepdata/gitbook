@@ -18,6 +18,7 @@
     * [Autopreenchimento](a-aplicacao/compliance/customer-registrations/autopreenchimento.md)
     * [Modelação do Formulário](a-aplicacao/compliance/customer-registrations/modelacao-do-formulario.md)
     * [Modelação do Risco](a-aplicacao/compliance/customer-registrations/modelacao-do-risco.md)
+    * [Propagação do Risco](a-aplicacao/compliance/customer-registrations/propagacao-do-risco.md)
     * [Relatórios de Risco](a-aplicacao/compliance/customer-registrations/relatorios-de-risco.md)
     * [Tags](a-aplicacao/compliance/customer-registrations/tags.md)
   * [Transações](a-aplicacao/compliance/registo-de-transacoes/README.md)

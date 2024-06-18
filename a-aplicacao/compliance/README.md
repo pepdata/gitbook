@@ -14,7 +14,7 @@ Nesta secção, poderá efetuar toda a gestão do compliance da sua organizaçã
 
 ## Partilha de informação
 
-Na secção de Compliance, todos os registos partilham a mesma informação. Tal significa que, caso preencha o formulário de um registo e, posteriormente, o adicione noutra página, não terá de preencher novamente toda a informação.
+Na secção de Compliance, a informação que adiciona nos questionários é partilhada entre diferentes páginas. Exemplificando, caso adicione a mesma pessoa como cliente e fornecedor, a ação de alterar a sua informação enquanto cliente irá atualizar também a sua informação enquanto fornecedor.
 
 ## Relações
 

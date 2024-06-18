@@ -1,6 +1,6 @@
 # Propagação do Risco
 
-A informação que adiciona nos questionários é partilhada entre diferentes páginas. Exemplificando, caso adicione a mesma pessoa como cliente e fornecedor, ao alterar a sua informação enquanto cliente poderá alterar também o seu risco enquanto fornecedor.&#x20;
+A informação que adiciona nos questionários é partilhada entre diferentes páginas. Exemplificando, caso adicione a mesma pessoa como cliente e fornecedor, a ação de alterar a sua informação enquanto cliente poderá alterar também o seu risco enquanto fornecedor.&#x20;
 
 #### Submissão de questionário e recalculo do risco
 

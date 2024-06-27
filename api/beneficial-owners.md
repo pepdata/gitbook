@@ -19,6 +19,7 @@ Esta secção ainda se encontra na versão **beta**.
 | Name                                    | Type    | Description                                                                                                         |
 | --------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | vatin<mark style="color:red;">\*</mark> | string  | NIPC da organização a comparar                                                                                      |
+| rcbe\_code                              | string  | Código RCBE                                                                                                         |
 | include\_rcbe\_response                 | boolean | <p>Instrução para incorporar a resposta do RCBE.</p><p>\</p><p>Formato: false/true</p><p>\</p><p>Default: false</p> |
 
 {% tabs %}
@@ -136,9 +137,10 @@ Esta secção ainda se encontra na versão **beta**.
 
 #### Request Body
 
-| Name                                    | Type   | Description                  |
-| --------------------------------------- | ------ | ---------------------------- |
-| vatin<mark style="color:red;">\*</mark> | string | NIPC da organização a tratar |
+| Name       | Type   | Description                  |
+| ---------- | ------ | ---------------------------- |
+| vatin      | string | NIPC da organização a tratar |
+| rcbe\_code | string | Código RCBE                  |
 
 {% tabs %}
 {% tab title="200: OK Informação recolhida com sucesso" %}

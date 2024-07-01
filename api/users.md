@@ -10,10 +10,10 @@
 
 #### Request Body
 
-| Name | Type   | Description                                             |
-| ---- | ------ | ------------------------------------------------------- |
-| id   | string | Id do utilizador                                        |
-| page | number | <p>Página dos utilizadores</p><p>\</p><p>Default: 1</p> |
+| Name | Type   | Description                                     |
+| ---- | ------ | ----------------------------------------------- |
+| id   | string | Id do utilizador                                |
+| page | number | <p>Página dos utilizadores</p><p>Default: 1</p> |
 
 {% tabs %}
 {% tab title="200: OK " %}

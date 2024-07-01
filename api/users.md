@@ -1,19 +1,21 @@
 # Utilizadores
 
-{% swagger method="post" path="/get_users" baseUrl="https://www.pepdata.com/api" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_users`
 
-{% endswagger-description %}
+#### Headers
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id" type="string" required="false" %}
-Id do utilizador
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="" %}
+| Name | Type   | Description      |
+| ---- | ------ | ---------------- |
+| id   | string | Id do utilizador |
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     "data": {
@@ -28,14 +30,18 @@ Id do utilizador
                 "name": "Alcídio da Fonseca",
                 "email": "alcidio.da.fonseca@test.pt",
             },
-        ]
+        ],
+        "count": 2,
+        "total": 2,
+        "page": 1,
+        "max_results_per_page": 50,
     },
     "version": "0.1",
     "timestamp": 1646390980644
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Legenda
 

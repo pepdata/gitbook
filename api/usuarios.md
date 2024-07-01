@@ -1,19 +1,21 @@
 # Usuarios
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_users" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_users`
 
-{% endswagger-description %}
+#### Headers
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="id" type="string" %}
-Id de usario
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="" %}
+| Name | Type   | Description  |
+| ---- | ------ | ------------ |
+| id   | string | Id de usario |
+
+{% tabs %}
+{% tab title="200: OK " %}
 ```
 {
     "data": {
@@ -28,14 +30,18 @@ Id de usario
                 "name": "Daniela Lopez",
                 "email": "daniela.lopez@test.pt",
             },
-        ]
+        ],
+        "count": 2,
+        "total": 2,
+        "page": 1,
+        "max_results_per_page": 50
     },
     "version": "0.1",
     "timestamp": 1646390980644
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 

@@ -19,7 +19,6 @@ Esta secção ainda se encontra na versão **beta**.
 | Name                                    | Type    | Description                                                                                                         |
 | --------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | vatin<mark style="color:red;">\*</mark> | string  | NIPC da organização a comparar                                                                                      |
-| rcbe\_code                              | string  | Código RCBE                                                                                                         |
 | include\_rcbe\_response                 | boolean | <p>Instrução para incorporar a resposta do RCBE.</p><p>\</p><p>Formato: false/true</p><p>\</p><p>Default: false</p> |
 
 {% tabs %}

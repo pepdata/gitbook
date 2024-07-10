@@ -190,6 +190,30 @@ Esta secção ainda se encontra na versão **beta**.
 }
 ```
 {% endtab %}
+
+{% tab title="400: Bad Request Código RCBE inválido" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "Declaração não encontrada para o código RCBE inserido."
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Código RCBE expirado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "O código introduzido já não é válido. Existe um código RCBE mais recente para esta entidade, ou foi criado um rascunho que invalidou o código anterior."
+    }
+}
+```
+{% endtab %}
 {% endtabs %}
 
 {% hint style="danger" %}

@@ -1,15 +1,41 @@
 # Integração da lista PEPData
 
-{% swagger method="get" path="/get_list_xml_export" baseUrl="https://www.pepdata.com/api" summary="Efetua o download da lista PEPData em formato XML" %}
-{% swagger-description %}
+## Efetua o download da lista PEPData em formato XML
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `https://www.pepdata.com/api/get_list_xml_export`
 
-{% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
-key [API_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200: OK" description="" %}
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% endswagger-response %}
-{% endswagger %}
+{% tabs %}
+{% tab title="200: OK " %}
+
+{% endtab %}
+{% endtabs %}
+
+## Efetua o download da lista PEPData em formato ZIP
+
+<mark style="color:blue;">`GET`</mark> `https://www.pepdata.com/api/get_list_xml_export_zip/{token}`
+
+{% hint style="info" %}
+A informação "token" deve ser substituida pelo token de autorização especifico da organização.&#x20;
+{% endhint %}
+
+#### Headers
+
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}

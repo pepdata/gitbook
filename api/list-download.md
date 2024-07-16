@@ -34,8 +34,4 @@ A informação "token" deve ser substituida pelo token de autorização especifi
 {% tab title="200: OK" %}
 
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}

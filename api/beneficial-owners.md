@@ -218,3 +218,68 @@ Esta secção ainda se encontra na versão **beta**.
 {% hint style="danger" %}
 **Atenção:** Infelizmente, o RCBE não apresenta informação estruturada em todas as propriedades. Deste modo, as propriedades acima descritas sem valor devem ser interpretadas como texto livre.
 {% endhint %}
+
+
+
+## Obtenção de relatório dos beneficiários efetivos a partir do RCBE
+
+<mark style="color:green;">`GET`</mark> `https://www.pepdata.com/api/get_beneficial_owners_report`
+
+**Headers**
+
+| Name           | Type   | Value           |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
+
+**Body**
+
+| Name       | Type   | Description                  |
+| ---------- | ------ | ---------------------------- |
+| vatin      | string | NIPC da organização a tratar |
+| rcbe\_code | string | Código RCBE                  |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Report gerado com sucesso" %}
+{% file src="../.gitbook/assets/123456789 - test org lda (1).pdf" %}
+Exemplo de relatório RCBE
+{% endfile %}
+{% endtab %}
+
+{% tab title="400: Bad Request NIPC inválido" %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "O NIF/NIPC é inválido. Caso seja internacional, coloque o código do país no início. Ex.: FR12345678901 para um NIF francês."
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Código RCBE inválido" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "Declaração não encontrada para o código RCBE inserido."
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Código RCBE expirado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "O código introduzido já não é válido. Existe um código RCBE mais recente para esta entidade, ou foi criado um rascunho que invalidou o código anterior."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}

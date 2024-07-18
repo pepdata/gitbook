@@ -223,7 +223,7 @@ Esta secção ainda se encontra na versão **beta**.
 
 ## Obtenção de relatório dos beneficiários efetivos a partir do RCBE
 
-<mark style="color:green;">`GET`</mark> `https://www.pepdata.com/api/get_beneficial_owners_report`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_beneficial_owners_report`
 
 **Headers**
 

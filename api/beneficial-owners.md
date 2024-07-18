@@ -283,3 +283,7 @@ Exemplo de relatório RCBE
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="danger" %}
+**Atenção:** Infelizmente, o RCBE não apresenta informação estruturada em todas as propriedades. Deste modo, as propriedades acima descritas sem valor devem ser interpretadas como texto livre.
+{% endhint %}

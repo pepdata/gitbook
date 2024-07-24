@@ -1,4 +1,4 @@
-# Importação de transações
+# Importação
 
 A importação de tansações permite-lhe, com facilidade e rapidez, fazer o upload das suas transações para a plataforma da PEPData, criando automaticamente um registo para cada uma.
 
@@ -28,8 +28,8 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | **name**                       |                                                                                   |
 | id\_custom                     | Identificador da transação utilizado pela sua organização. Tem de ser único.      |
 | description                    |                                                                                   |
-| value\_in\_\_\_euros           |                                                                                   |
-| payment\_method                | Tipos de pagamento no formato: cash/installments                                  |
+| value\_in\_euros               |                                                                                   |
+| payment\_method                | Tipos de pagamento no formato: prompt/installments                                |
 | installment\_in\_euros         |                                                                                   |
 | installments\_frequency        | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other |
 | installments\_frequency\_other |                                                                                   |
@@ -44,7 +44,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/transactions goods.txt" %}
+{% file src="../../../.gitbook/assets/transactions goods (2).txt" %}
 
 ### Ficheiro das transações de serviços
 
@@ -62,7 +62,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | provision\_start\_date         |                                                                                                  |
 | provision\_end\_date           |                                                                                                  |
 | provision\_date                |                                                                                                  |
-| payment\_method                | Tipos de pagamento no formato: cash/installments                                                 |
+| payment\_method                | Tipos de pagamento no formato: prompt/installments                                               |
 | installment\_in\_euros         |                                                                                                  |
 | installments\_frequency        | Frequência de pagamento das prestações: monthly, yearly, quarterly, semester, fortnightly, other |
 | installments\_frequency\_other |                                                                                                  |

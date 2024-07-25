@@ -1,3 +1,3 @@
-name, vat_number, corporate_object, nace_codes, constitution_country, address_country, address_postal_code, address, address_door, address_district, address_city
-Casa de Sonho, 531910180, Venda e Compra de Imóveis, 68100, Portugal, Portugal, 1234-123, Rua da Alegria, 12, Albufeira, Faro
-O Nosso Banco, 502215119, Banco Central, 64110, Portugal, Portugal, 7894-123, Avenida da Simplicidade, 45, Amadora, Lisboa
+name; vat_number; corporate_object; nace_codes; country_constitution; country_address; address_postal_code; address; address_door; address_district; address_city
+Casa de Sonho; 531910180; Venda e Compra de Imóveis; 68100; Portugal; Portugal; 1234-123; Rua da Alegria; 12; Albufeira; Faro
+O Nosso Banco; 502215119; Banco Central; 64110; Portugal; Portugal; 7894-123; Avenida da Simplicidade; 45; Amadora; Lisboa

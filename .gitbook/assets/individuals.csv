@@ -1,3 +1,3 @@
-name, vat_number, email, birth_date, nationalities, place_of_birth, address_type, address_country, address_postal_code, address, address_door, address_district, address_city
-André Pinheiro, 248754009, andre@email.pt, 10/10/1980, Portugal, Rússia, residence, Portugal, 1234-123, Rua das Flores, 200, Cascais, Lisboa
-Susana Soares, 248244124, susana@email.pt, 09/09/1990, Portugal; Espanha, Espanha, headquarters, Portugal, 4567-789, Avenida da Felicidade, 123, Arouca, Aveiro
+name; vat_number; email; birth_date; nationalities; country_birth; address_type; country_address; address_postal_code; address; address_door; address_district; address_city; adverse_media
+André Pinheiro; 248754009; andre@email.pt; 10/10/1980; Portugal; Rússia; residence; Portugal; 1234-123; Rua das Flores; 200; Cascais; Lisboa;
+Susana Soares; 248244124; susana@email.pt; 09/09/1990; Portugal, Espanha; Espanha; headquarters; Portugal; 4567-789; Avenida da Felicidade; 123; Arouca; Aveiro; old_light_accusations

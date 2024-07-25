@@ -21,6 +21,7 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 ### Datos generales
 
 * La primera línea debe contener el nombre de las columnas que representan la información a importar
+* La separación de columnas debe realizarse mediante ;
 * Extensión .txt o .csv
 * Limitado a 700.000 líneas por cada importación
 
@@ -51,13 +52,9 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 | has\_branch\_offices  | 1 ó 0, si hay o no sucursales, respectivamente.                                                                                                                                                                            |
 | adverse\_media        | Tipos de medios adversos, en el formato \[antiguo/nuevo] _\[grave/ligero]_\[alegaciones/acusaciones/convicciones]. Separados por punto y coma si hay varios. Ejemplo: antiguas\_denuncias\_graves; nuevas\_condenas\_leves |
 
-{% hint style="warning" %}
-! Asegúrese de que ninguno de los valores introducidos, incluido el nombre de la sociedad, tenga comas, ya que de lo contrario la importación no se ejecutará correctamente!
-{% endhint %}
-
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/organizations (2).csv" %}
+{% file src="../../.gitbook/assets/organizations.csv" %}
 
 ### Archivo **de personas físicas**
 
@@ -87,7 +84,7 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/individuals (1).csv" %}
+{% file src="../../.gitbook/assets/individuals.csv" %}
 
 ### **Archivo de relaciones entre personas físicas y jurídicas.**
 
@@ -104,4 +101,4 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 
 #### Ejemplo de archivo
 
-{% file src="../../.gitbook/assets/relationships (1).csv" %}
+{% file src="../../.gitbook/assets/relationships (2).csv" %}

@@ -1,2 +1,2 @@
-name, id_custom, description, value_in_euros, payment_method, installment_in_euros, installments_frequency, installments_frequency_other, seller_entity, responsible_email, acquisition_purpose, observations
-Purchase, 01, teste, 100, cash, 100, monthly, , self, test@email.com, own purpose, observations text
+name; id_custom; description; value_in_euros; payment_method; installment_in_euros; installments_frequency; installments_frequency_other; seller_entity; responsible_email; acquisition_purpose; observations
+Purchase; 01; teste; 100; prompt; 100; monthly; ; self; test@email.com; own purpose; observations text

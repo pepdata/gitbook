@@ -42,12 +42,12 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious\_\__allegations; new\_light_\_\_convictions |
 
 {% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/organizations (3).csv" %}
+{% file src="../../../.gitbook/assets/organizations (4).csv" %}
 
 ### Ficheiro das pessoas
 
@@ -77,7 +77,7 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, p
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/individuals (4).csv" %}
+{% file src="../../../.gitbook/assets/individuals (5).csv" %}
 
 ### Ficheiro das relações entre pessoas singulares e organizações
 
@@ -94,4 +94,4 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, p
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/relationships (1).csv" %}
+{% file src="../../../.gitbook/assets/relationships (2).csv" %}

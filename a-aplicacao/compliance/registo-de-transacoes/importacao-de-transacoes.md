@@ -28,9 +28,9 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | **name**                       |                                                                                   |
 | id\_custom                     | Identificador da transação utilizado pela sua organização. Tem de ser único.      |
 | description                    |                                                                                   |
-| value\_in\_euros               |                                                                                   |
+| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                       |
 | payment\_method                | Tipos de pagamento no formato: prompt/installments                                |
-| installment\_in\_euros         |                                                                                   |
+| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                       |
 | installments\_frequency        | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other |
 | installments\_frequency\_other |                                                                                   |
 | seller\_entity                 | Entidade de pagamento: self/external                                              |
@@ -39,12 +39,12 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | observations                   |                                                                                   |
 
 {% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/transactions goods (2).txt" %}
+{% file src="../../../.gitbook/assets/transactions goods (3).txt" %}
 
 ### Ficheiro das transações de serviços
 
@@ -58,12 +58,12 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | description                    |                                                                                                  |
 | occurrence                     | Tipos de ocorrência: punctual/regular                                                            |
 | frequency                      | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other                |
-| value\_in\_euros               |                                                                                                  |
-| provision\_start\_date         |                                                                                                  |
-| provision\_end\_date           |                                                                                                  |
-| provision\_date                |                                                                                                  |
+| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                                      |
+| provision\_start\_date         | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
+| provision\_end\_date           | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
+| provision\_date                | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
 | payment\_method                | Tipos de pagamento no formato: prompt/installments                                               |
-| installment\_in\_euros         |                                                                                                  |
+| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                                      |
 | installments\_frequency        | Frequência de pagamento das prestações: monthly, yearly, quarterly, semester, fortnightly, other |
 | installments\_frequency\_other |                                                                                                  |
 | seller\_entity                 | Entidade vendedora: self/external                                                                |
@@ -72,12 +72,12 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | observations                   |                                                                                                  |
 
 {% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/transactions services (1).txt" %}
+{% file src="../../../.gitbook/assets/transactions services (2).txt" %}
 
 ### Ficheiro das transações de subscrição de fundos/oportunidades
 
@@ -89,16 +89,16 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | **transaction\_name**                        |                                                                              |
 | id\_custom                                   | Identificador da transação utilizado pela sua organização. Tem de ser único. |
 | **fund\_name**                               |                                                                              |
-| value\_in\_euros                             |                                                                              |
+| value\_in\_euros                             | Cêntimos separados por '.', exemplo: 100.50                                  |
 | iban                                         |                                                                              |
 | swift                                        |                                                                              |
 | number\_of\_subscribed\_participation\_units |                                                                              |
 | contact\_email                               |                                                                              |
 
 {% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui vírgulas, caso contrário a importação não irá ser bem sucedida.
+Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
 {% endhint %}
 
 #### Ficheiro exemplo
 
-{% file src="../../../.gitbook/assets/transactions funds.txt" %}
+{% file src="../../../.gitbook/assets/transactions funds (1).txt" %}

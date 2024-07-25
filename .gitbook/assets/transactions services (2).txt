@@ -1,0 +1,2 @@
+name; id_custom; description; occurrence; frequency; value_in_euros; provision_start_date; provision_end_date; provision_date;payment_method; installment_in_euros; installments_frequency; installments_frequency_other; seller_entity; acquisition_purpose; observations
+service; 002; description of the service; regular; monthly; 100.50; 11/10/2020; 10/11/2021; 12/11/2021; installments; 50; monthly; ; self; own use; description observations

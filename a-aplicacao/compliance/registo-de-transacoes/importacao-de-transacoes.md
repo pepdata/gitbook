@@ -15,6 +15,7 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
+* A separação de colunas deve ser feita por ;
 * Extensão .txt ou .csv
 * Limitado a 700.000 linhas por cada importação
 
@@ -37,10 +38,6 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | responsible\_email             |                                                                                   |
 | acquisition\_purpose           |                                                                                   |
 | observations                   |                                                                                   |
-
-{% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
-{% endhint %}
 
 #### Ficheiro exemplo
 
@@ -71,10 +68,6 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | acquisition\_purpose           |                                                                                                  |
 | observations                   |                                                                                                  |
 
-{% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
-{% endhint %}
-
 #### Ficheiro exemplo
 
 {% file src="../../../.gitbook/assets/transactions services (2).txt" %}
@@ -94,10 +87,6 @@ Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, nã
 | swift                                        |                                                                              |
 | number\_of\_subscribed\_participation\_units |                                                                              |
 | contact\_email                               |                                                                              |
-
-{% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da transação, não possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
-{% endhint %}
 
 #### Ficheiro exemplo
 

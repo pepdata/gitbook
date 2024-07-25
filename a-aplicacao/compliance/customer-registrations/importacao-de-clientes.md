@@ -11,6 +11,7 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
+* A separação de colunas deve ser feita por ;
 * Extensão .txt ou .csv
 * Limitado a 700.000 linhas por cada importação
 
@@ -40,10 +41,6 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | address\_city         |                                                                                                                                                                                                                                       |
 | has\_branch\_offices  | 1 ou 0, caso existam sucursais ou não, respetivamente.                                                                                                                                                                                |
 | adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por ponto e vírgula caso existam múltiplos. Exemplo: old\_serious\_\__allegations; new\_light_\_\_convictions |
-
-{% hint style="warning" %}
-Assegure-se que nenhum dos valores inseridos, incluindo nome da organização, possui ponto e vírgula, caso contrário a importação não irá ser bem sucedida.
-{% endhint %}
 
 #### Ficheiro exemplo
 

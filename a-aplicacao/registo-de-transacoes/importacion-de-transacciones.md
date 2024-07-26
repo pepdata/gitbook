@@ -15,7 +15,7 @@ Después de crear uno o varios de estos archivos, podrá proceder a la importaci
 #### Detalles generales
 
 * La primera línea debe contener el nombre de las columnas que representan la información a importar
-* La separación de columnas debe realizarse mediante ;
+* La separación de columnas debe realizarse mediante punto y coma (;)
 * Extensión .txt o .csv
 * Limitado a 700.000 líneas por importación
 
@@ -48,25 +48,25 @@ Después de crear uno o varios de estos archivos, podrá proceder a la importaci
 * Debe contener una organización por línea
 * Propiedades aceptadas (obligatorias en negrita):
 
-| Campos                         | Notas                                                                                         |
-| ------------------------------ | --------------------------------------------------------------------------------------------- |
-| **name**                       |                                                                                               |
-| id\_custom                     | id\_custom Identificador de la transacción utilizada por su organización. Debe de ser única.  |
-| description                    |                                                                                               |
-| occurrence                     | Tipos de servicio: puntual/recurrente                                                         |
-| frequency                      | Frecuencia de pago: mensual, anual, trimestral, semestral, quincenal, otro                    |
-| value\_in\_euros               | Centavos separados por '.', ejemplo: 100.50                                                   |
-| provision\_start\_date         | Debe seguir el formato dd-mm-aaaa, dd/mm/aaaa, aaaa-mm-dd o aaaa/mm/dd.                       |
-| provision\_end\_date           | Debe seguir el formato dd-mm-aaaa, dd/mm/aaaa, aaaa-mm-dd o aaaa/mm/dd.                       |
-| provision\_date                | Debe seguir el formato dd-mm-aaaa, dd/mm/aaaa, aaaa-mm-dd o aaaa/mm/dd.                       |
-| payment\_method                | Formato del tipo de pago: al contado/cuotas                                                   |
-| installment\_in\_euros         | Centavos separados por '.', ejemplo: 100.50                                                   |
-| installments\_frequency        | Frecuencia de los pagos de las cuotas: mensual, anual, trimestral, semestral, quincenal, otro |
-| installments\_frequency\_other |                                                                                               |
-| seller\_entity                 | Entidad vendedora: propia/externa                                                             |
-| responsible\_email             |                                                                                               |
-| acquisition\_purpose           |                                                                                               |
-| observations                   |                                                                                               |
+| Campos                         | Notas                                                                                                                                   |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                       |                                                                                                                                         |
+| id\_custom                     | id\_custom Identificador de la transacción utilizada por su organización. Debe de ser única.                                            |
+| description                    |                                                                                                                                         |
+| occurrence                     | Tipos de servicio: puntual/recurrente                                                                                                   |
+| frequency                      | Frecuencia de pago: mensual, anual, trimestral, semestral, quincenal, otro                                                              |
+| value\_in\_euros               | Centavos separados por '.', ejemplo: 100.50                                                                                             |
+| provision\_start\_date         | <p>Debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| provision\_end\_date           | <p>Debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| provision\_date                | <p>Debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| payment\_method                | Formato del tipo de pago: al contado/cuotas                                                                                             |
+| installment\_in\_euros         | Centavos separados por '.', ejemplo: 100.50                                                                                             |
+| installments\_frequency        | Frecuencia de los pagos de las cuotas: mensual, anual, trimestral, semestral, quincenal, otro                                           |
+| installments\_frequency\_other |                                                                                                                                         |
+| seller\_entity                 | Entidad vendedora: propia/externa                                                                                                       |
+| responsible\_email             |                                                                                                                                         |
+| acquisition\_purpose           |                                                                                                                                         |
+| observations                   |                                                                                                                                         |
 
 #### Archivo ejemplo
 

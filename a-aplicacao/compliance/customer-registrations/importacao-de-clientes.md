@@ -70,7 +70,7 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | address\_door         |                                                                                                                                                                                                                           |
 | address\_district     |                                                                                                                                                                                                                           |
 | address\_city         |                                                                                                                                                                                                                           |
-| adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por vírgula caso existam múltiplos. Exemplo: old\_serious\__allegations; new\_light_\_convictions |
+| adverse\_media        | Tipos de adverse media, no formato \[old/new]﻿\_\[serious/light]_\__\[allegations/﻿accusations/﻿convictions]. Separados por vírgula caso existam múltiplos. Exemplo: old\_serious\__allegations, new\_light_\_convictions |
 
 #### Ficheiro exemplo
 

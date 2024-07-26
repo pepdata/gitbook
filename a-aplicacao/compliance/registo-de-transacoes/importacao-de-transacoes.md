@@ -15,7 +15,7 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
-* A separação de colunas deve ser feita por ;
+* A separação de colunas deve ser feita por ponto e vírgula (;)
 * Extensão .txt ou .csv
 * Limitado a 700.000 linhas por cada importação
 

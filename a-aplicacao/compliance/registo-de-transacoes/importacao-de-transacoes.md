@@ -48,25 +48,25 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 * Deve conter uma organização por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos                         | Notas                                                                                            |
-| ------------------------------ | ------------------------------------------------------------------------------------------------ |
-| **name**                       |                                                                                                  |
-| id\_custom                     | Identificador da transação utilizado pela sua organização. Tem de ser único.                     |
-| description                    |                                                                                                  |
-| occurrence                     | Tipos de ocorrência: punctual/regular                                                            |
-| frequency                      | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other                |
-| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                                      |
-| provision\_start\_date         | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
-| provision\_end\_date           | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
-| provision\_date                | Deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                          |
-| payment\_method                | Tipos de pagamento no formato: prompt/installments                                               |
-| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                                      |
-| installments\_frequency        | Frequência de pagamento das prestações: monthly, yearly, quarterly, semester, fortnightly, other |
-| installments\_frequency\_other |                                                                                                  |
-| seller\_entity                 | Entidade vendedora: self/external                                                                |
-| responsible\_email             |                                                                                                  |
-| acquisition\_purpose           |                                                                                                  |
-| observations                   |                                                                                                  |
+| Campos                         | Notas                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                       |                                                                                                                                    |
+| id\_custom                     | Identificador da transação utilizado pela sua organização. Tem de ser único.                                                       |
+| description                    |                                                                                                                                    |
+| occurrence                     | Tipos de ocorrência: punctual/regular                                                                                              |
+| frequency                      | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other                                                  |
+| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                                                                        |
+| provision\_start\_date         | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| provision\_end\_date           | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| provision\_date                | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
+| payment\_method                | Tipos de pagamento no formato: prompt/installments                                                                                 |
+| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                                                                        |
+| installments\_frequency        | Frequência de pagamento das prestações: monthly, yearly, quarterly, semester, fortnightly, other                                   |
+| installments\_frequency\_other |                                                                                                                                    |
+| seller\_entity                 | Entidade vendedora: self/external                                                                                                  |
+| responsible\_email             |                                                                                                                                    |
+| acquisition\_purpose           |                                                                                                                                    |
+| observations                   |                                                                                                                                    |
 
 #### Ficheiro exemplo
 

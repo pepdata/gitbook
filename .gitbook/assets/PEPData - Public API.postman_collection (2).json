@@ -1,0 +1,1123 @@
+{
+	"info": {
+		"_postman_id": "ee6b6b94-fdd4-4a47-87d1-7591e3ef2956",
+		"name": "PEPData - Public API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Validations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1,\r\n    \"status\": \"all\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_validations",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_validations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"country_nationality\": \"Portugal\",\r\n    \"type\": \"individual\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/add_validation",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"add_validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apply Rules",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/apply_rules",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"apply_rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search IPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"birth_date\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/search_iperson",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"search_iperson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"page\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_users",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"f38d92ee-1cd7-7f64-7a03-467f777ced9d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/delete_validation",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"delete_validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Determine Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"f38d92ee-1cd7-7f64-7a03-467f777ced9d\",\r\n    \"id_entity\": \"aeee7186-c603-4f6d-aef3-06986a229bac\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/determine_validation",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"determine_validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Beneficial Owners",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vatin\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_beneficial_owners",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_beneficial_owners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get List XML Export",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_list_xml_export",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_list_xml_export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alerts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"all\",\r\n    \"page\": 1,\r\n    \"include_comments\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_alerts",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_alerts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Adverse Media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search_term\": \"John Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_adverse_media",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_adverse_media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test name\",\r\n    \"type\": \"individual\",\r\n    \"questionnaireData\":{\r\n      \"personalData\":{\r\n         \"email\":\"\",\r\n         \"birthDate\":\"1996-05-23\",\r\n         \"nationalities\":[\r\n            \"BR\"\r\n         ],\r\n         \"birthPlace\":\"BR\"\r\n      },\r\n      \"entityProof\":{\r\n         \"identificationMetadata\":{\r\n            \"documentNumber\":299241386,\r\n            \"isDocumentPerpetual\":false,\r\n            \"documentValidity\":\"2001-01-01\",\r\n            \"documentIssuingEntity\":\"\",\r\n            \"documentIssuingData\":\"2001-01-01\",\r\n            \"documentIssuingLocation\":\"Brazil\"\r\n         }\r\n      },\r\n      \"suspicionData\":{\r\n         \"isSuspect\":false,\r\n         \"reason\":\"N/A\"\r\n      }\r\n   }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/add_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"add_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Questionnaires",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"customer\",\r\n    \"search_term\": \"john doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_questionnaires",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_questionnaires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analyze Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a10fcffe-6889-607b-1c64-69826e7d5a9a\",\r\n    \"include_iperson_details\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/analyze_validation",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"analyze_validation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": \"c7e2be16-757c-448d-2533-99d437820383\", \r\n\"questionnaire_data\": {\r\n        \"personal_data\": {\r\n        \"email\": \"test@test.pt\",\r\n        \"birth_date\": \"2010-10-10\",\r\n        \"nationalities\": [\"Portugal\", \"Spain\"],\r\n        \"birth_place\": \"Portugal\"\r\n    },\r\n    \"entity_proof\": {\r\n        \"identification_metadata\": {\r\n            \"document_number\": 123456789,\r\n            \"is_document_perpetual\": false,\r\n            \"document_validity\": \"2023-05-20\",\r\n            \"document_issuing_entity\": \"Test\",\r\n            \"document_issuing_date\": \"2013-05-20\",\r\n            \"document_issuing_location\": \"Test\"\r\n        }\r\n    },\r\n    \"address_data\": {\r\n        \"type\": \"residence\",\r\n        \"country\":\"Portugal\",\r\n        \"cep\":\"1234-567\",\r\n        \"address_line_1\":\"Rua X\",\r\n        \"address_line_2\":\"nº123\",\r\n        \"city\":\"Lisboa\",\r\n        \"district\":\"Lisboa\"\r\n    },\r\n    \"suspicion_data\": {\r\n        \"is_suspect\": false,\r\n        \"reason\": \"Test\"\r\n    }\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/edit_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"edit_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c7e2be16-757c-448d-2533-99d437820383\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/delete_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"delete_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unsubmit Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"d3a28252-b2be-b0ad-eb14-8a527fab047f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/unsubmit_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"unsubmit_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Questionnaire Invite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"d3a28252-b2be-b0ad-eb14-8a527fab047f\",\r\n    \"client_email\": \"test@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/send_questionnaire_invite",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"send_questionnaire_invite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Questionnaire Invite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"d3a28252-b2be-b0ad-eb14-8a527fab047f\",\r\n    \"client_email\": \"test@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/cancel_questionnaire_invite",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"cancel_questionnaire_invite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign User To Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c4c5766a-f1b2-e609-01fc-80f6fc1789e0\",\r\n    \"id_user\": \"ae69190b-e51d-e424-2428-1136cbf17f2f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/assign_user_to_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"assign_user_to_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Departments To Questionnaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"07d01c06-f9ca-ebfd-0ad1-26c94f7060b8\",\r\n    \"departments\": [\"Department X\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/assign_departments_to_questionnaire",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"assign_departments_to_questionnaire"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Questionnaire Approval State",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c4c5766a-f1b2-e609-01fc-80f6fc1789e0\",\r\n    \"approval_state\": \"-1\",\r\n    \"approval_change_reason\": \"Test reason\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/edit_questionnaire_approval_state",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"edit_questionnaire_approval_state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Revert Questionnaire Risk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c4c5766a-f1b2-e609-01fc-80f6fc1789e0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/revert_questionnaire_risk",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"revert_questionnaire_risk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Questionnaire Needs Attention",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c4c5766a-f1b2-e609-01fc-80f6fc1789e0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/reset_questionnaire_needs_attention",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"reset_questionnaire_needs_attention"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Organization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"organization X\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/search_organization",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"search_organization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"determination\",\r\n    \"page\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_comments",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\": \"Comment X\",\r\n    \"id_validation\": \"a086cf5f-99ad-12d6-7a80-3d9a47a638d0\",\r\n    \"id_validation_alert\": \"e9b629b3-0566-c119-1de3-a86d8436205d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/add_comment",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"add_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"3d782971-41d2-8cbe-fa53-a65693a349a6\",\r\n    \"comment\": \"Edited comment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/edit_comment",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"edit_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"3d782971-41d2-8cbe-fa53-a65693a349a6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/delete_comment",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"delete_comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Validation Relationships",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_validation\": \"6474d5fc-205a-f750-2dd6-24c5d87a5ee5\",\r\n    \"page\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_validation_relationships",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_validation_relationships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Validation Relationship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"position_in_organization\": \"representative\",\r\n    \"organization_vat_number\": 114673659,\r\n    \"vat_number\": 170277815\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/add_validation_relationship",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"add_validation_relationship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Validation Relationship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_relationship_info\": \"6c837552-b6e0-d3f9-8fce-c00b71b8debd\",\r\n    \"position_in_organization\": \"manager\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/edit_validation_relationship",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"edit_validation_relationship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Validation Relationship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_relationship_info\": \"8fc6e2b3-9b93-7788-7f59-d3a1cb9cd0c3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/delete_validation_relationship",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"delete_validation_relationship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Questionnaires",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"customers\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/submit_questionnaires",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"submit_questionnaires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Adverse Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"search_term\": \"John Doe\",\r\n    \"data_sources\": [\"forensic\", \"adverse_media\", \"judicial_processes\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_adverse_info",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_adverse_info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Individual",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"vatin\": \"123456789\",\r\n    \"id_custom\": \"12345\",\r\n    \"adverse_info_data_sources\": [\"forensic\", \"adverse_media\"],\r\n    \"data\": {\r\n        \"personal_data\": {\r\n                \"name\": \"John Doe\",\r\n                \"email\": \"test@test.pt\",\r\n                \"nationalities\": [\"Portugal\", \"Afeganistão\"],\r\n                \"birth_place\": \"Afeganistão\"\r\n            },\r\n            \"entity_proof\": {    \r\n                \"identification_metadata\": {\r\n                    \"document_number\": 123456789,\r\n                    \"is_document_perpetual\": false,\r\n                    \"document_validity\": \"2023-05-20\",\r\n                    \"document_issuing_entity\": \"Test\",\r\n                    \"document_issuing_date\": \"2013-05-20\",\r\n                    \"document_issuing_location\": \"Test\"\r\n                }\r\n            },\r\n            \"address_data\": {\r\n                \"type\": \"residence\",\r\n                \"country\":\"Portugal\",\r\n                \"cep\":\"1234-567\",\r\n                \"address_line_1\":\"Street X\",\r\n                \"address_line_2\":\"nº123\",\r\n                \"city\":\"Lisboa\",\r\n                \"district\":\"Lisboa\"\r\n            },\r\n            \"suspicion_data\": {\r\n                \"is_suspect\": false,\r\n                \"reason\": \"Test\"\r\n            }\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/compliance/add_individual",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"compliance",
+						"add_individual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Organization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test Organization\",\r\n    \"vatin\": \"123456789\",\r\n    \"id_custom\": \"12345\",\r\n    \"adverse_info_data_sources\": [\"forensic\", \"adverse_media\"],\r\n    \"data\": {\r\n        \"company_data\": {\r\n            \"object\": \"test\",\r\n            \"caes\": [\"01111\"],\r\n            \"country\": \"Portugal\",\r\n            \"foundation_date\": \"2005-02-01\", \r\n            \"countries_operations\": [\"Portugal\"]\r\n        },\r\n        \"entity_proof\": {\r\n            \"national_headquarters\": true\r\n        },\r\n        \"beneficiary_data\": {\r\n            \"codigo_rcbe\": \"123456\"\r\n        },\r\n        \"address_data\": {\r\n            \"country\":\"Portugal\",\r\n            \"cep\":\"1234-567\",\r\n            \"address_line_1\":\"Address line 1\",\r\n            \"address_line_2\":\"Address line 2\",\r\n            \"city\":\"Lisboa\",\r\n            \"district\":\"Lisboa\"\r\n        },\r\n        \"suspicion_data\": {\r\n            \"is_suspect\": false,\r\n            \"reason\": \"Test\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.pepdata.com/api/compliance/add_organization",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"compliance",
+						"add_organization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get List XML Export Zip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.pepdata.com/api/get_list_xml_export_zip",
+					"protocol": "https",
+					"host": [
+						"www.pepdata.com"
+					],
+					"path": [
+						"api",
+						"get_list_xml_export_zip"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "key {{API_KEY}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cc793513-e6c3-42c3-b3c8-26420f4a0381",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b2171f88-fd06-40eb-a496-334146526d29",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "3345edb5-96b8-4715-a270-1c927e472848",
+			"key": "API_KEY",
+			"value": "API_KEY"
+		},
+		{
+			"id": "79f40f54-9307-491a-915c-48ab8eb6d8ee",
+			"key": "BASE_URL",
+			"value": "https://www.pepdata.com"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

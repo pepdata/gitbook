@@ -21,8 +21,8 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 ### Datos generales
 
 * La primera línea debe contener el nombre de las columnas que representan la información a importar
-* La separación de columnas debe realizarse mediante punto y coma (;)
-* Extensión .txt o .csv
+* La separación de columnas debe realizarse mediante punto y coma (;) para archivos .txt y .csv
+* Extensión: .txt, .csv o xlsx
 * Limitado a 700.000 líneas por cada importación
 
 ### Archivo de personas jurídicas
@@ -96,8 +96,8 @@ Una vez creados estos 3 archivos, puede importarlos mediante el botón "Importar
 | **organization\_vat\_number**  | CIF de la sociedad para insertar las relaciones. La sociedad debe existir ya en el sistema.                                                                                                                                                                                                                      |
 | **vat\_number**                | NIF/CIF de la relación a insertar. Esta persona/empresa debe existir ya en el sistema.                                                                                                                                                                                                                           |
 | **position\_in\_organization** | Puede tener texto libre (por ejemplo: "Presidente", "Administrador", etc.), "", en el caso de que la relación sea como accionista o titular de derechos de voto, o " titular real " si es beneficiario. Si el vat\_number es de una organización, este campo debe tener obligatoriamente el valor "propietario". |
-| capital\_percentage            | Sólo puede rellenarse si el valor del campo position\_in\_organization es "propietario" o "titular real". Nota: las separaciones decimales deben hacerse con ".", ej: 19.96                                                                                                                                      |
-| voting\_rights\_percentage     | Sólo puede rellenarse si el valor del campo position\_in\_organization es "propietario" o "titular real". Nota: las separaciones decimales deben hacerse con ".", ej: 19.96                                                                                                                                      |
+| capital\_percentage            | Sólo puede rellenarse si el valor del campo position\_in\_organization es "propietario" o "titular real". Ej: 19,96                                                                                                                                                                                              |
+| voting\_rights\_percentage     | Sólo puede rellenarse si el valor del campo position\_in\_organization es "propietario" o "titular real". Ej: 19,96                                                                                                                                                                                              |
 
 #### Ejemplo de archivo
 

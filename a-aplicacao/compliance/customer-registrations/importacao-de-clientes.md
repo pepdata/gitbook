@@ -12,7 +12,7 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
 * A separação de colunas deve ser feita por ponto e vírgula (;), para ficheiros .txt e .csv
-* Extensão: .txt, .csv ou xls
+* Extensão: .txt, .csv ou xlsx
 * Limitado a 700.000 linhas por cada importação
 
 ### Ficheiro das organizações
@@ -86,8 +86,8 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 | **organization\_vat\_number**  | NIPC da organização a inserir as relações. Esta organização já deve existir no sistema.                                                                                                                                                                                                                |
 | **vat\_number**                | NIF/NIPC da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                                                                                                                                                                                             |
 | **position\_in\_organization** | Pode ter texto livre (ex: "Presidente", "Gerente", etc.), "owner", no caso da relação ser enquanto acionista ou detentor de direitos de voto, ou "beneficial\_owner" caso seja beneficiário efetivo. Caso o vat\_number seja de uma organização, este campo deve ter obrigatoriamente o valor "owner". |
-| capital\_percentage            | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Nota: a separação das casas decimais deve ser feita com ".", ex: 19.96<br>Não inclua o símbolo de percentagem.</p>                                                                    |
-| voting\_rights\_percentage     | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Nota: a separação das casas decimais deve ser feita com ".", ex: 19.96<br>Não inclua o símbolo de percentagem.</p>                                                                    |
+| capital\_percentage            | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Ex: 19,96<br>Não inclua o símbolo de percentagem.</p>                                                                                                                                 |
+| voting\_rights\_percentage     | <p>Apenas pode ser preenchido caso o valor do campo position_in_organization seja "owner" ou "beneficial_owner". Ex: 19,96<br>Não inclua o símbolo de percentagem.</p>                                                                                                                                 |
 
 #### Ficheiro exemplo
 

@@ -15,8 +15,8 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
-* A separação de colunas deve ser feita por ponto e vírgula (;)
-* Extensão .txt ou .csv
+* A separação de colunas deve ser feita por ponto e vírgula (;), para ficheiros .txt e .csv
+* Extensão: .txt, .csv ou xls
 * Limitado a 700.000 linhas por cada importação
 
 ### Ficheiro das transações de bens
@@ -29,9 +29,9 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | **name**                       |                                                                                   |
 | id\_custom                     | Identificador da transação utilizado pela sua organização. Tem de ser único.      |
 | description                    |                                                                                   |
-| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                       |
+| value\_in\_euros               | Exemplo: 100,45                                                                   |
 | payment\_method                | Tipos de pagamento no formato: prompt/installments                                |
-| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                       |
+| installment\_in\_euros         | Exemplo: 100,45                                                                   |
 | installments\_frequency        | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other |
 | installments\_frequency\_other |                                                                                   |
 | seller\_entity                 | Entidade de pagamento: self/external                                              |
@@ -55,12 +55,12 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | description                    |                                                                                                                                    |
 | occurrence                     | Tipos de ocorrência: punctual/regular                                                                                              |
 | frequency                      | Frequência de pagamento: monthly, yearly, quarterly, semester, fortnightly, other                                                  |
-| value\_in\_euros               | Cêntimos separados por '.', exemplo: 100.50                                                                                        |
+| value\_in\_euros               | Exemplo: 100,45                                                                                                                    |
 | provision\_start\_date         | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
 | provision\_end\_date           | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
 | provision\_date                | <p>Deve seguir um dos seguintes formatos:</p><ul><li>dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
 | payment\_method                | Tipos de pagamento no formato: prompt/installments                                                                                 |
-| installment\_in\_euros         | Cêntimos separados por '.', exemplo: 100.50                                                                                        |
+| installment\_in\_euros         | Exemplo: 100,45                                                                                                                    |
 | installments\_frequency        | Frequência de pagamento das prestações: monthly, yearly, quarterly, semester, fortnightly, other                                   |
 | installments\_frequency\_other |                                                                                                                                    |
 | seller\_entity                 | Entidade vendedora: self/external                                                                                                  |
@@ -82,7 +82,7 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | **transaction\_name**                        |                                                                              |
 | id\_custom                                   | Identificador da transação utilizado pela sua organização. Tem de ser único. |
 | **fund\_name**                               |                                                                              |
-| value\_in\_euros                             | Cêntimos separados por '.', exemplo: 100.50                                  |
+| value\_in\_euros                             | Exemplo: 100,45                                                              |
 | iban                                         |                                                                              |
 | swift                                        |                                                                              |
 | number\_of\_subscribed\_participation\_units |                                                                              |

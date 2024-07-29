@@ -11,8 +11,8 @@ Após a criação destes ficheiros, poderá proceder à sua importação atravé
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
-* A separação de colunas deve ser feita por ponto e vírgula (;)
-* Extensão .txt ou .csv
+* A separação de colunas deve ser feita por ponto e vírgula (;), para ficheiros .txt e .csv
+* Extensão: .txt, .csv ou xls
 * Limitado a 700.000 linhas por cada importação
 
 ### Ficheiro das organizações

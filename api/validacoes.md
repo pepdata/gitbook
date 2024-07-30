@@ -14,11 +14,13 @@ Endpoint para obtener validaciones.
 
 #### Request Body
 
-| Name   | Type   | Description                                                                                                                                                               |
-| ------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| page   | number | <p>Página de validaciones<br>Default: 1</p>                                                                                                                               |
-| source | string | <p>Origen de las validaciones<br>Default: all<br>Valores posibles: all, upload, manual</p>                                                                                |
-| status | string | <p>Estado de validación<br>Default: incomplete<br>Valores posibles: all, complete, complete_identified, complete_not_identified, complete_needs_attention, incomplete</p> |
+| Name   | Type   | Description                                                                                                                                                                                                                                         |
+| ------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| page   | number | <p>Página de validaciones<br>Default: 1</p>                                                                                                                                                                                                         |
+| source | string | <p>Origen de las validaciones<br>Default: all<br>Valores posibles: </p><ul><li>all</li><li>upload</li><li>manual</li></ul>                                                                                                                          |
+| status | string | <p>Estado de validación</p><p><br>Predeterminado: incomplete<br></p><p>Valores posibles: </p><ul><li>all</li><li>complete</li><li>complete_identified</li><li>complete_not_identified</li><li>complete_needs_attention</li><li>incomplete</li></ul> |
+
+
 
 {% tabs %}
 {% tab title="200 Validaciones obtenidas con éxito." %}
@@ -161,6 +163,60 @@ Endpoint para obtener validaciones.
 * **alerts:** alertas relacionadas con la validación y que aún están sin resolver.
 * **country\_nationality:** país de nacionalidad.
 
+## Exportar Validaciones
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/export_validations`
+
+**Headers**
+
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+**Body**
+
+| Name                                    | Type   | Description                                                                                                                                                                                                                                               |
+| --------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| from<mark style="color:red;">\*</mark>  | int    | Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                                                                                                                           |
+| until<mark style="color:red;">\*</mark> | int    | Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                                                                                                                     |
+| status                                  | string | <p>Estado de las validaciones</p><p></p><p>Predeterminado: all</p><p></p><p>Valores posibles: </p><ul><li>all</li><li>complete</li><li>complete_identified,</li><li>complete_not_identified</li><li>complete_needs_attention</li><li>incomplete</li></ul> |
+| format                                  | string | <p>Formato del archivo exportado<br><br>Predeterminado: xlsx<br><br>Valores posibles: </p><ul><li>xlsx</li><li>csv</li></ul>                                                                                                                              |
+| export\_by                              | string | <p>Exportar validaciones por fecha de adición o fecha de determinación.<br><br>Predeterminado: added_at<br><br>Valores posibles:</p><ul><li>added_at</li><li>determined_at</li></ul>                                                                      |
+| timezone                                | string | <p>Zona horaria de fechas utilizadas en los filtros<br><br>Predeterminado: Europe/Lisbon<br></p>                                                                                                                                                          |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Archivo exportado con éxito" %}
+{% file src="../.gitbook/assets/validaciones de 01-07-2024 a 29-07-2024.xlsx" %}
+Ejemplo de archivo de exportación de validaciones
+{% endfile %}
+{% endtab %}
+
+{% tab title="400: Bad Request Campos obligatorios vacíos" %}
+```json
+{
+   "message": {
+        "version": 0.1,
+        "timestamp": 1722266342583,
+        "message": "El campo 'from' no puede estar vacío."
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Opciones inválidas" %}
+<pre class="language-json"><code class="lang-json">{
+<strong>   "message": {
+</strong>        "version": 0.1,
+        "timestamp": 1722266342583,
+        "message": "La opción del campo 'status' no es válida."
+    }
+}
+</code></pre>
+{% endtab %}
+{% endtabs %}
+
 ## Agregar validación
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_validation`
@@ -244,15 +300,15 @@ Endpoint para agregar una validación.
 
 #### Request Body
 
-| Name              | Type         | Description                                                                                                                                      |
-| ----------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id\_validation    | string       | Id de la validación                                                                                                                              |
-| ids\_validations  | string array | Array de ids de validaciónes                                                                                                                     |
-| status            | string       | Estado de alertas Predeterminado: sin resolver Valores posibles: todos, resueltos, no resueltos                                                  |
-| from              | int          | Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                  |
-| until             | int          | Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                            |
-| include\_comments | boolean      | <p>Parámetro para solicitar información sobre comentarios asociados a los alertas. Valores posibles: true, false</p><p>Predeterminado: false</p> |
-| page              | number       | <p>Pagina de los alertas.<br>Predeterminado: 1</p>                                                                                               |
+| Name              | Type         | Description                                                                                                                                                                                           |
+| ----------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_validation    | string       | Id de la validación                                                                                                                                                                                   |
+| ids\_validations  | string array | Array de ids de validaciónes                                                                                                                                                                          |
+| status            | string       | <p>Estado de alertas </p><p></p><p>Predeterminado: unresolved </p><p></p><p>Valores posibles: </p><ul><li>all</li><li>resolved</li><li>unresolved</li></ul>                                           |
+| from              | int          | Fecha de inicio del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                                                                       |
+| until             | int          | Fecha de finalización del filtro, com número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC                                                                                                 |
+| include\_comments | boolean      | <p>Parámetro para solicitar información sobre comentarios asociados a los alertas. </p><p></p><p>Predeterminado: false</p><p></p><p>Valores posibles: </p><ul><li>true</li><li>false</li></ul><p></p> |
+| page              | number       | <p>Pagina de los alertas.<br>Predeterminado: 1</p>                                                                                                                                                    |
 
 {% tabs %}
 {% tab title="200: OK Alertas de validación obtenidas con éxito" %}
@@ -626,11 +682,11 @@ Endpoint para obtener comentarios.
 
 #### Request Body
 
-| Name           | Type   | Description                                                                                    |
-| -------------- | ------ | ---------------------------------------------------------------------------------------------- |
-| page           | number | <p>Pagina de los comentarios.<br>Predeterminado: 1</p>                                         |
-| type           | string | Tipo de comentarios. Valores posibles: determination, alert, judicial\_process, adverse\_media |
-| id\_validation | string | Id de la validación asociada a los comentarios.                                                |
+| Name           | Type   | Description                                                                                                                                             |
+| -------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| page           | number | <p>Pagina de los comentarios.<br>Predeterminado: 1</p>                                                                                                  |
+| type           | string | <p>Tipo de comentarios. </p><p></p><p>Valores posibles:</p><ul><li>determination</li><li>alert</li><li>judicial_process</li><li>adverse_media</li></ul> |
+| id\_validation | string | Id de la validación asociada a los comentarios.                                                                                                         |
 
 {% tabs %}
 {% tab title="200: OK Comentarios obtenidos con éxito." %}
@@ -951,7 +1007,7 @@ Endpoint para agregar una relación a una validación.
 | ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | organization\_vat\_number<mark style="color:red;">\*</mark>  | string | NIF de la validación a partir de la cual se creará la relación. **Es necesariamente una validación de organización.**                                                            |
 | vat\_number<mark style="color:red;">\*</mark>                | string | NIF de la validación para la cual se creará la relación. **Es necesariamente una validación de persona  si el tipo de relación es representative, manager o beneficial\_owner.** |
-| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p>Valores posibles: representative, manager, owner, beneficial_owner</p>                                                                             |
+| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p></p><p>Valores posibles:</p><ul><li>representative</li><li>manager</li><li>owner</li><li>beneficial_owner</li></ul>                                |
 
 {% tabs %}
 {% tab title="200: OK Relación agregada con éxito." %}
@@ -997,10 +1053,10 @@ Endpoint para editar una relación de validación.
 
 #### Request Body
 
-| Name                                                         | Type   | Description                                                                                          |
-| ------------------------------------------------------------ | ------ | ---------------------------------------------------------------------------------------------------- |
-| id\_relationship\_info<mark style="color:red;">\*</mark>     | string | identificador de la tabla de información de relaciones asociado con la relación a editar.            |
-| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p>Valores posibles: representative, manager, owner, beneficial_owner</p> |
+| Name                                                         | Type   | Description                                                                                                                                       |
+| ------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id\_relationship\_info<mark style="color:red;">\*</mark>     | string | identificador de la tabla de información de relaciones asociado con la relación a editar.                                                         |
+| position\_in\_organization<mark style="color:red;">\*</mark> | string | <p>Tipo de la relación.</p><p></p><p>Valores posibles:</p><ul><li>representative</li><li>manager</li><li>owner</li><li>beneficial_owner</li></ul> |
 
 {% tabs %}
 {% tab title="200: OK Relación editada con éxito." %}

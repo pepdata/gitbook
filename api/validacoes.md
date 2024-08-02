@@ -14,11 +14,15 @@ Endpoint para obtener validaciones.
 
 #### Request Body
 
-| Name   | Type   | Description                                                                                                                                                                                                                                         |
-| ------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| page   | number | <p>Página de validaciones<br>Default: 1</p>                                                                                                                                                                                                         |
-| source | string | <p>Origen de las validaciones<br>Default: all<br>Valores posibles: </p><ul><li>all</li><li>upload</li><li>manual</li></ul>                                                                                                                          |
-| status | string | <p>Estado de validación</p><p><br>Predeterminado: incomplete<br></p><p>Valores posibles: </p><ul><li>all</li><li>complete</li><li>complete_identified</li><li>complete_not_identified</li><li>complete_needs_attention</li><li>incomplete</li></ul> |
+| Name       | Type   | Description                                                                                                                                                                                                                                         |
+| ---------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| page       | number | <p>Página de validaciones<br>Default: 1</p>                                                                                                                                                                                                         |
+| source     | string | <p>Origen de las validaciones<br>Default: all<br>Valores posibles: </p><ul><li>all</li><li>upload</li><li>manual</li></ul>                                                                                                                          |
+| status     | string | <p>Estado de validación</p><p><br>Predeterminado: incomplete<br></p><p>Valores posibles: </p><ul><li>all</li><li>complete</li><li>complete_identified</li><li>complete_not_identified</li><li>complete_needs_attention</li><li>incomplete</li></ul> |
+| id         | string | Id de la validación                                                                                                                                                                                                                                 |
+| id\_custom | string | Id personalizable de la validación                                                                                                                                                                                                                  |
+| sort\_by   | string | <p>Propiedad utilizada para la ordenación de las validaciones<br><br>Valores posibles:  </p><ul><li>added_at</li><li>determined_at</li><li>name</li></ul>                                                                                           |
+| sort\_dir  | string | <p>Ordenación descendente o ascendente de las validaciones<br><br>Valores posibles: </p><ul><li>desc</li><li>asc</li></ul>                                                                                                                          |
 
 
 

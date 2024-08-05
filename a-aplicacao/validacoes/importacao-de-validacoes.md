@@ -17,7 +17,8 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 ### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
-* Extensão .txt ou .csv
+* A separação de colunas deve ser feita por ponto e vírgula (;), para ficheiros .txt e .csv
+* Extensão: .txt, .csv ou .xlsx
 * Limitado a 500.000 linhas por cada importação
 
 ### Ficheiro das pessoas
@@ -25,36 +26,36 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Deve conter uma pessoa por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos           | Notas                                                                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number      | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| **name**         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                |
-| birth\_date      | A data de nascimento deve seguir o formato dd-mm-yyyy, dd/mm/yyyy, yyyy-mm-dd ou yyyy/mm/dd.                                                                |
-| country          | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| country\_address | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| id\_custom       | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
-| unidentifiable   | 1 ou 0, caso seja não identificável.                                                                                                                        |
+| Campos           | Notas                                                                                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number      | <p>Os números de contribuinte internacionais devem conter o código do país correspondente no início. </p><p></p><p>Ex: FR12345678901 para um número de contribuinte francês.</p> |
+| **name**         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                     |
+| birth\_date      | <p>A data de nascimento deve seguir um dos seguintes formatos:</p><ul><li> dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                         |
+| country          | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
+| country\_address | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
+| id\_custom       | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                       |
+| unidentifiable   | 1 ou 0, caso seja não identificável.                                                                                                                                             |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/validação individual (2).txt" %}
+{% file src="../../.gitbook/assets/validação individual (4).txt" %}
 
 ### Ficheiro das organizações
 
 * Deve conter uma organização por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos         | Notas                                                                                                                                                       |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number    | Os números de contribuinte internacionais devem conter o código do país correspondente no início. Ex: FR12345678901 para um número de contribuinte francês. |
-| **name**       | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) a regras a cumprir relativamente aos nomes.                                                 |
-| country        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                               |
-| id\_custom     | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                  |
-| unidentifiable | 1 ou 0, caso seja não identificável.                                                                                                                        |
+| Campos         | Notas                                                                                                                                                                            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number    | <p>Os números de contribuinte internacionais devem conter o código do país correspondente no início. </p><p></p><p>Ex: FR12345678901 para um número de contribuinte francês.</p> |
+| **name**       | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) a regras a cumprir relativamente aos nomes.                                                                      |
+| country        | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
+| id\_custom     | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                       |
+| unidentifiable | 1 ou 0, caso seja não identificável.                                                                                                                                             |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/validação organização.txt" %}
+{% file src="../../.gitbook/assets/validação organização (2).txt" %}
 
 ### Ficheiro das relações
 
@@ -63,15 +64,15 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 
 
 
-| Campos                         | Notas                                                                                                                     |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **organization\_vat\_number**  | NIPC da validação de organização onde se vai inserir a relação. Esta validação de organização já deve existir no sistema. |
-| **vat\_number**                | NIF da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                     |
-| **position\_in\_organization** | Tipo da relação a inserir. Pode ser: representative, manager, owner ou beneficial\_owner.                                 |
+| Campos                         | Notas                                                                                                                                                                      |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **organization\_vat\_number**  | NIPC da validação de organização onde se vai inserir a relação. Esta validação de organização já deve existir no sistema.                                                  |
+| **vat\_number**                | NIF da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                                                                      |
+| **position\_in\_organization** | <p>Tipo da relação a inserir. </p><p></p><p>Pode ser uma das seguintes opções: </p><ul><li>representative</li><li>manager</li><li>owner</li><li>beneficial_owner</li></ul> |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/relação validações.txt" %}
+{% file src="../../.gitbook/assets/relação validações (1).txt" %}
 
 ### Regras a cumprir
 

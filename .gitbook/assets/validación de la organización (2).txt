@@ -1,0 +1,2 @@
+vat_number; name; country; id_custom; unidentifiable
+145095487; Casa de Libros; Spain; 02; 0

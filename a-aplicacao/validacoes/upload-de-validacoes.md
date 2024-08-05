@@ -17,7 +17,8 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 ### Detalhes Gerais
 
 * La primera línea debe contener el nombre de las columnas que representan la información a importar&#x20;
-* Extensión .txt o .csv&#x20;
+* La separación de columnas debe realizarse mediante punto y coma (;) para archivos .txt y .csv
+* Extensión: .txt, .csv o .xlsx&#x20;
 * Limitado a 500 000 filas por importación
 
 ### Archivo de personas
@@ -25,51 +26,51 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 * Debe contener una persona por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos               | Notas                                                                                                                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number          | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
-| **name**             | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                           |
-| birth\_date          | La fecha de nacimiento debe seguir el formato dd-mm-yyyy ou dd/mm/yyyy.                                                                                                             |
-| country\_nationality | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
-| country\_address     | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
-| id\_custom           | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
-| unidentifiable       | 1 o 0, si no es identificable.                                                                                                                                                      |
+| Campos               | Notas                                                                                                                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number          | <p>Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: </p><p></p><p>Ej: FR12345678901 para un número de identificación fiscal francés.</p> |
+| **name**             | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                                |
+| birth\_date          | <p>La fecha de nacimiento debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy </li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                                          |
+| country\_nationality | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
+| country\_address     | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
+| id\_custom           | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                                             |
+| unidentifiable       | 1 o 0, si no es identificable.                                                                                                                                                                           |
 
 #### Archivo de muestra
 
-{% file src="../../.gitbook/assets/validación individual.txt" %}
+{% file src="../../.gitbook/assets/validación individual (2).txt" %}
 
 ### Archivo de organizaciones
 
 * Debe contener una organización por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos         | Notas                                                                                                                                                                               |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number    | Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: Ej: FR12345678901 para un número de identificación fiscal francés. |
-| **name**       | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                           |
-| country        | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                            |
-| id\_custom     | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                        |
-| unidentifiable | 1 o 0, si no es identificable.                                                                                                                                                      |
+| Campos         | Notas                                                                                                                                                                                                    |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number    | <p>Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: </p><p></p><p>Ej: FR12345678901 para un número de identificación fiscal francés.</p> |
+| **name**       | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                                |
+| country        | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
+| id\_custom     | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                                             |
+| unidentifiable | 1 o 0, si no es identificable.                                                                                                                                                                           |
 
 #### Archivo de muestra
 
-{% file src="../../.gitbook/assets/validación de la organización.txt" %}
+{% file src="../../.gitbook/assets/validación de la organización (2).txt" %}
 
 ### Archivo de relaciones
 
 * Debe contener una relación por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos                         | Notas                                                                                                   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| **organization\_vat\_number**  | CIF de la organización donde se insertará la relación. Esta organización ya debe existir en el sistema. |
-| **vat\_number**                | NIF de la relación a insertar. Este individuo/organización ya debe existir en el sistema.               |
-| **position\_in\_organization** | Tipo de relación a insertar. Puede ser: representative, manager, owner o beneficial\_owner.             |
+| Campos                         | Notas                                                                                                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **organization\_vat\_number**  | CIF de la organización donde se insertará la relación. Esta organización ya debe existir en el sistema.                                                                            |
+| **vat\_number**                | NIF de la relación a insertar. Este individuo/organización ya debe existir en el sistema.                                                                                          |
+| **position\_in\_organization** | <p>Tipo de relación a insertar. </p><p></p><p>Puede ser una de las siguientes opciones:</p><ul><li>representative</li><li>manager</li><li>owner</li><li>beneficial_owner</li></ul> |
 
 #### Archivo de muestra
 
-{% file src="../../.gitbook/assets/relaciones de validationes.txt" %}
+{% file src="../../.gitbook/assets/relaciones de validationes (1).txt" %}
 
 ### Regras a cumplir
 

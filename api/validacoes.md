@@ -290,6 +290,12 @@ Endpoint para agregar una validación.
 
 * **id**: id de la validación creada.
 
+**country\_nationality, country\_residence e country**
+
+{% hint style="info" %}
+Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
+{% endhint %}
+
 
 
 ## Obtener alertas
@@ -386,12 +392,6 @@ Endpoint para agregar una validación.
 * **comments:** comentarios asociados con la alerta.
   * **id:** id de lo comentario.
   * **comment:** comentario.
-
-{% hint style="info" %}
-**country\_nationality, country\_address e country**
-
-Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
-{% endhint %}
 
 ## Analizar la validación
 

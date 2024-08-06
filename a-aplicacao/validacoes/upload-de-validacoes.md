@@ -26,19 +26,19 @@ Para que el archivo sea interpretado correctamente por la aplicación, debe segu
 * Debe contener una persona por línea&#x20;
 * Propiedades aceptadas (obligatorio en negrita):
 
-| Campos               | Notas                                                                                                                                                                                                    |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number          | <p>Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: </p><p></p><p>Ej: FR12345678901 para un número de identificación fiscal francés.</p> |
-| **name**             | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                                |
-| birth\_date          | <p>La fecha de nacimiento debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy </li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                                          |
-| country\_nationality | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
-| country\_address     | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
-| id\_custom           | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                                             |
-| unidentifiable       | 1 o 0, si no es identificable.                                                                                                                                                                           |
+| Campos             | Notas                                                                                                                                                                                                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number        | <p>Los números de identificación fiscal internacionales deben tener el código de país correspondiente al principio: </p><p></p><p>Ej: FR12345678901 para un número de identificación fiscal francés.</p> |
+| **name**           | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los nombres.                                                                                                |
+| birth\_date        | <p>La fecha de nacimiento debe seguir uno de los siguientes formatos:</p><ul><li>dd-mm-yyyy </li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                                          |
+| country            | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
+| country\_residence | [Aquí](upload-de-validacoes.md#regras-a-cumplir), puedes ver las reglas a seguir en cuanto a los países.                                                                                                 |
+| id\_custom         | Identificador de cliente utilizado por su organización. Tiene que ser único.                                                                                                                             |
+| unidentifiable     | 1 o 0, si no es identificable.                                                                                                                                                                           |
 
 #### Archivo de muestra
 
-{% file src="../../.gitbook/assets/validación individual (2).txt" %}
+{% file src="../../.gitbook/assets/validación individual (3).txt" %}
 
 ### Archivo de organizaciones
 

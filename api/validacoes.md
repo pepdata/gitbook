@@ -243,7 +243,7 @@ Endpoint para agregar una validación.
 | country\_nationality                   | string  | <p>País de nacionalidad de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: Nombre del país (véase la nota más abajo)<br>Default: null</p> |
 | vatin                                  | string  | <p>Nif de la validación<br>Default: null</p>                                                                                                                                                      |
 | id\_custom                             | string  | <p>id personalizable de la validación<br>Default: null</p>                                                                                                                                        |
-| country\_residence                     | string  | <p>País de residencia de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: Nombre del país (véase la nota más abajo)<br>Default: null</p>   |
+| country\_address                       | string  | <p>País de residencia de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de personas.</strong><br>Formato: Nombre del país (véase la nota más abajo)<br>Default: null</p>   |
 | type                                   | string  | <p>Tipo de entidad, que puede ser: "individual" u "organization".</p><p>Default: "individual"</p>                                                                                                 |
 | country                                | String  | <p>País de la validación.</p><p><strong>Parámetro solo utilizado en validaciones de organizaciones.</strong></p><p>Formato: Nombre del país (véase la nota más abajo)</p><p>Default: null</p>     |
 
@@ -290,7 +290,7 @@ Endpoint para agregar una validación.
 
 * **id**: id de la validación creada.
 
-**country\_nationality, country\_residence e country**
+**country\_nationality, country\_address e country**
 
 {% hint style="info" %}
 Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.

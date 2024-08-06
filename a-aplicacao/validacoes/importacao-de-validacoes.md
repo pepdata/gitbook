@@ -26,15 +26,15 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 * Deve conter uma pessoa por linha
 * Propriedades aceites (obrigatórias a negrito):
 
-| Campos           | Notas                                                                                                                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| vat\_number      | <p>Os números de contribuinte internacionais devem conter o código do país correspondente no início. </p><p></p><p>Ex: FR12345678901 para um número de contribuinte francês.</p> |
-| **name**         | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                     |
-| birth\_date      | <p>A data de nascimento deve seguir um dos seguintes formatos:</p><ul><li> dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                         |
-| country          | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
-| country\_address | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
-| id\_custom       | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                       |
-| unidentifiable   | 1 ou 0, caso seja não identificável.                                                                                                                                             |
+| Campos             | Notas                                                                                                                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vat\_number        | <p>Os números de contribuinte internacionais devem conter o código do país correspondente no início. </p><p></p><p>Ex: FR12345678901 para um número de contribuinte francês.</p> |
+| **name**           | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                     |
+| birth\_date        | <p>A data de nascimento deve seguir um dos seguintes formatos:</p><ul><li> dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul>                         |
+| country            | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
+| country\_residence | Poderá ver [aqui](importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                                    |
+| id\_custom         | Identificador do cliente utilizado pela sua organização. Tem de ser único.                                                                                                       |
+| unidentifiable     | 1 ou 0, caso seja não identificável.                                                                                                                                             |
 
 #### Ficheiro exemplo
 

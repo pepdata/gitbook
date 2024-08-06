@@ -42,7 +42,7 @@ Endpoint para obter validações.
                 "name": "António Jorge Melo Lourenço Neco Rodrigues Fernandes",
                 "birth_date": "1931-07-19",
                 "id_country_nationality": "PT",
-                "id_country_address": null,
+                "id_country_residence": null,
                 "decision": null,
                 "id_iperson": 9bbf3184-8ced-4095-9cad-7e4dc664c9ee,
                 "iperson_classifications": [
@@ -81,7 +81,7 @@ Endpoint para obter validações.
                 "name": "Maria Edite Nieto",
                 "birth_date": null,
                 "id_country_nationality": "PT",
-                "id_country_address": null,
+                "id_country_residence": null,
                 "decision": null,
                 "id_iperson": null,
                 "iperson_classifications": null,
@@ -125,7 +125,7 @@ Endpoint para obter validações.
 * **name**: nome da validação.
 * **birth\_date**: data de nascimento da validação.
 * **id\_country\_nationality**: código do país da nacionalidade, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **id\_country\_address**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **id\_country\_residence**: código do país de residência, no formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
 * **decision**: booleano que descreve se existiu correspondência com uma pessoa identificável.
 * **id\_iperson**: id da pessoa identificável correspondente. null caso não tenha existido correspondência.
 * **iperson\_classifications:** lista de classificações da pessoa identificável, possíveis valores:
@@ -327,7 +327,7 @@ Endpoint para adicionar uma validação.
 | birth\_date                            | string  | <p>Data de nascimento da validação.</p><p><strong>Parâmetro usado apenas em validações de pessoas.</strong><br>Formato: yyyy-mm-dd<br>Default: null</p>                        |
 | ignore\_duplicates                     | boolean | <p>Instrução para ignorar a verificação de duplicados.</p><p></p><p>Formato: 0/1</p><p></p><p>Default: 0</p>                                                                   |
 | country\_nationality                   | string  | <p>País de nacionalidade da validação.</p><p><strong>Parâmetro usado apenas em validações de pessoas.</strong><br>Formato: Nome do país (ver nota abaixo)<br>Default: null</p> |
-| country\_address                       | string  | <p>País de residência da validação.</p><p><strong>Parâmetro usado apenas em validações de pessoas.</strong></p><p>Formato: Nome do país (ver nota abaixo)<br>Default: null</p> |
+| country\_residence                     | string  | <p>País de residência da validação.</p><p><strong>Parâmetro usado apenas em validações de pessoas.</strong></p><p>Formato: Nome do país (ver nota abaixo)<br>Default: null</p> |
 | country                                | String  | <p>País da validação.</p><p><strong>Parâmetro usado apenas em validações de organizações.</strong></p><p>Formato: Nome do país (ver nota abaixo)</p><p>Default: null</p>       |
 | vatin                                  | string  | <p>NIF da validação</p><p></p><p>Default: null</p>                                                                                                                             |
 | id\_custom                             | string  | <p>Id personalizável da validação</p><p></p><p>Default: null</p>                                                                                                               |
@@ -377,7 +377,7 @@ Endpoint para adicionar uma validação.
 * **id**: id da validação criada.
 
 {% hint style="info" %}
-**country\_nationality, country\_address e country**
+**country\_nationality, country\_residence e country**
 
 Existem múltiplas formas distintas de se escrever o nome de cada país. A aplicação da PEPData consegue identificar todas as designações dos países presentes na [Lista dos Estados, territórios e moedas da União Europeia](https://publications.europa.eu/code/pt/pt-5000500.htm). No entanto, de forma a garantir maior robustez, recomendamos a utilização do formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), sempre que possível.
 {% endhint %}

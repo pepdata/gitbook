@@ -12,13 +12,14 @@ description: >-
 
 ### Classificação
 
-Classe ou conjunto de classes atribuídas a uma [pessoa identificável](glossario-aplicacao.md#pessoa-identificavel), podendo estas ser:
+Classe ou conjunto de classes atribuídas a uma [pessoa identificável](glossario-aplicacao.md#pessoa-identificavel) ou [organização identificável](glossario-aplicacao.md#organizacao-identificavel),  podendo estas ser:
 
 1. [Pessoa Politicamente Exposta](glossario-legal-portugal.md#pessoa-politicamente-exposta) (PEP)
 2. [Familiar](glossario-aplicacao.md#familiar)
 3. [Associado](glossario-aplicacao.md#associado)
 4. [Sancionado](glossario-aplicacao.md#sancionado)
 5. [Titular de Outros Cargos Políticos ou Públicos](glossario-legal-portugal.md#titular-de-outros-cargos-politicos-ou-publicos)
+6. Sanctioned X (onde X designa a lista onde a entidade está identificada)
 
 ### Familiar
 

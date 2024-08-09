@@ -28,7 +28,9 @@ El archivo exportado tiene las siguientes columnas:
 * **Country\_Address**: País de dirección asociado a la validación. Esta columna solo se usa para almacenar información de validaciones de personas.
 * **Country\_Classifications**: Listas de los países sancionados, separados por ';' cuando hay varios. Formato: “Sanctioned X” donde X es la entidad que identifica al país como sancionado.&#x20;
 * **Id\_IPerson**: Identificador único relativo a la persona identificada. Esta columna solo se usa para almacenar información de validaciones de personas.
-* **IPerson\_Classifications**: Tipos de [clasificación](../../glossario/glossario-aplicacao.md#classificacao) de la persona identificable, separados por “;” en caso de varios. Pueden ser: “PEP”, “Family Member”, “Associate” o “Sanctioned X” donde X es la lista que identifica a la persona como sancionada. Esta columna solo se usa para almacenar información de validaciones de personas.
+* **entity\_classifications**: Tipos de [clasificación](../../glossario/glossario-aplicacao.md#classificacao) de la persona u organización identificable, separados por “;” en caso de varios.
+  * En el caso de una persona, los tipos de clasificación pueden ser: “PEP”, “Family Member”, “Associate” o “Sanctioned X” donde X es la lista que identifica a la persona como sancionada.&#x20;
+  * En el caso de una organización, el tipo de clasificación puede ser “Sanctioned X” donde X es la lista que identifica a la persona como sancionada.
 * **IPerson\_Name**: Nombre de la persona identificada. Esta columna solo se usa para almacenar información de validaciones de personas.
 * **IPerson\_Birth\_Date**: Fecha de nacimiento de la persona identificada. Esta columna solo se usa para almacenar información de validaciones de personas.
 * **IPerson\_Occupations**: Ocupaciones asociadas a la person identificada, separadas por ";" en caso de que sean varios. Esta columna solo se usa para almacenar información de validaciones de personas.

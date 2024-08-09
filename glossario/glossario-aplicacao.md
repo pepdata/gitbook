@@ -12,13 +12,14 @@ description: >-
 
 ### Clasificación
 
-Clase o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#persona-identificable), que pueden  ser:
+Clase o conjunto de clases asignadas a una [persona identificable](glossario-aplicacao.md#persona-identificable) u [organización identificable](glossario-aplicacao.md#organizacion-identificable), que pueden  ser:
 
 1. [Persona con Responsabilidad Pública ](glosario-legal.md#pessoa-politicamente-exposta)(PRP)
 2. [Familiar](glossario-aplicacao.md#familiar)
 3. [Asociado](glossario-aplicacao.md#associado)
 4. [Sancionado](glossario-aplicacao.md#sancionado)
 5. [Titular de Otros](glosario-legal.md#titular-de-outros-cargos-politicos-ou-publicos)[ Cargos Políticos o Públicos](glosario-legal.md#titular-de-outros-cargos-politicos-ou-publicos)
+6. Sanctioned X (donde X designa la lista donde se identifica la entidad)
 
 
 

@@ -1,0 +1,3 @@
+transaction_id;vat_number;relationship_type;representative_vat_number
+001; 197957110; seller;
+002; 164577190; seller_representative; 169702383

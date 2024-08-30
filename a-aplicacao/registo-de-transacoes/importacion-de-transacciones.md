@@ -103,3 +103,7 @@ Después de crear uno o varios de estos archivos, podrá proceder a la importaci
 | **vat\_number**             | NIF/CIF de la relación a insertar. Esta persona/empresa debe existir ya en el sistema.                                                               |
 | **relationship\_type**      | <p>Tipo de relación.<br><br>Valores aceptados: </p><ul><li>seller</li><li>buyer</li><li>seller_representative</li><li>buyer_representative</li></ul> |
 | representative\_vat\_number | NIF/CIF del representante de la relación a insertar. Esta persona debe existir ya en el sistema.                                                     |
+
+#### Archivo ejemplo
+
+{% file src="../../.gitbook/assets/transactions relationships.txt" %}

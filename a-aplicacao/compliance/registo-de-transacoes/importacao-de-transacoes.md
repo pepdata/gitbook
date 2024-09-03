@@ -100,9 +100,9 @@ Após a criação de um ou mais destes ficheiros, poderá proceder à sua import
 | Campos                      | Notas                                                                                                                                            |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **transaction\_id**         | Identificador da transação utilizado pela sua organização. Tem de ser único.                                                                     |
-| **vat\_number**             | NIF/NIPC da relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                                                       |
+| **vat\_number**             | NIF/NIPC do vendedor/comprador associado à relação a ser inserida. Este indivíduo/organização já deve existir no sistema.                        |
 | **relationship\_type**      | <p>Tipo de relação.<br><br>Valores aceites:</p><ul><li>seller</li><li>buyer</li><li>seller_representative</li><li>buyer_representative</li></ul> |
-| representative\_vat\_number | NIF/NIPC do representante da relação a ser inserida. Este indivíduo já deve existir no sistema.                                                  |
+| representative\_vat\_number | NIF/NIPC do representante do vendedor/comprador associado à relação a ser inserida. Este indivíduo já deve existir no sistema.                   |
 
 #### Ficheiro exemplo
 

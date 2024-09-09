@@ -99,7 +99,7 @@ Después de crear uno o varios de estos archivos, podrá proceder a la importaci
 
 | Campos                      | Notas                                                                                                                                                |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **transaction\_id**         | Identificador de la transacción utilizado por su organización. Tiene que ser único.                                                                  |
+| **id\_custom**              | Identificador de la transacción utilizado por su organización. Tiene que ser único.                                                                  |
 | **vat\_number**             | NIF/CIF del vendedor/comprador asociado a la relación a insertar. Esta persona/empresa debe existir ya en el sistema.                                |
 | **relationship\_type**      | <p>Tipo de relación.<br><br>Valores aceptados: </p><ul><li>seller</li><li>buyer</li><li>seller_representative</li><li>buyer_representative</li></ul> |
 | representative\_vat\_number | NIF/CIF del representante del vendedor/comprador asociado a la relación a insertar. Esta persona debe existir ya en el sistema.                      |

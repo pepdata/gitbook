@@ -152,7 +152,7 @@ Este endpoint executa uma pesquisa nas organizações presentes nas seguintes li
 
 ## Obtenção de relatório de pesquisa de entidades
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/`get\_entities\_search\_report
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_entities_search_report`
 
 #### Headers
 
@@ -175,7 +175,7 @@ Exemplo de relatório de pesquisa de entidades
 {% endfile %}
 {% endtab %}
 
-{% tab title="400: Nome não fornecido" %}
+{% tab title="400: Nome não introduzido" %}
 ```json
 {
     "message": {

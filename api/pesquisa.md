@@ -1,25 +1,26 @@
 # Búsqueda
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/search_iperson" method="post" summary="Búsqueda de Persona Identificable" %}
-{% swagger-description %}
+## Búsqueda de Persona Identificable
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/search_iperson`
+
 Endpoint para buscar una persona identificable.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" %}
-Nombre de la persona que se busca
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="birth_date" type="string" %}
-Fecha de nacimiento de la validación. \
-Formato: yyyy-mm-dd\
-Default: null
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200: OK" description="Búsqueda completada con éxito." %}
+| Name        | Type   | Description                                                                           |
+| ----------- | ------ | ------------------------------------------------------------------------------------- |
+| name        | string | Nombre de la persona que se busca                                                     |
+| birth\_date | string | <p>Fecha de nacimiento de la validación. <br>Formato: yyyy-mm-dd<br>Default: null</p> |
+
+{% tabs %}
+{% tab title="200: OK Búsqueda completada con éxito." %}
 ```
 {
     "data": {
@@ -48,9 +49,9 @@ Default: null
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Nombre inválido" %}
+{% tab title="400: Bad Request Nombre inválido" %}
 
 
 ```json
@@ -62,8 +63,8 @@ Default: null
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -79,20 +80,26 @@ Default: null
 Para obtener los mejores resultados, se recomienda leer la documentación relativa a su área de [búsqueda](../a-aplicacao/pesquisa.md).
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/search_organization" method="post" summary="Búsqueda de organizaciones sancionadas" %}
-{% swagger-description %}
+## Búsqueda de organizaciones sancionadas
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/search_organization`
+
 Endpoint para buscar una organización sancionada.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="name" type="string" %}
-Nombre de la organización a buscar
-{% endswagger-parameter %}
+| Name           | Type   | Description     |
+| -------------- | ------ | --------------- |
+| Authentication | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Búsqueda completada con éxito." %}
+#### Request Body
+
+| Name | Type   | Description                        |
+| ---- | ------ | ---------------------------------- |
+| name | string | Nombre de la organización a buscar |
+
+{% tabs %}
+{% tab title="200: OK Búsqueda completada con éxito." %}
 ```
 {
     "data": {
@@ -108,9 +115,9 @@ Nombre de la organización a buscar
     "timestamp": 1588599744111
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Nombre no ingresado." %}
+{% tab title="400: Bad Request Nombre no ingresado." %}
 
 
 ```json
@@ -122,8 +129,8 @@ Nombre de la organización a buscar
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ### Leyenda
 
@@ -141,3 +148,43 @@ Este endpoint realiza una búsqueda en organizaciones presentes en las siguiente
 
 **Importante:** por el momento, el nombre de la organización debe coincidir con el de la lista de sanciones para que se devuelven resultados.
 {% endhint %}
+
+## Obtener informe de búsqueda de entidades
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_entities_search_report`
+
+**Headers**
+
+| Name             | Type   | Description     |
+| ---------------- | ------ | --------------- |
+| Authentication\* | string | key \[API\_KEY] |
+
+**Request Body**
+
+| Name   | Type   | Description                   |
+| ------ | ------ | ----------------------------- |
+| name\* | string | Nombre de la entidad a buscar |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Informe generado con éxito" %}
+{% file src="../.gitbook/assets/PEPData - Informe de Búsqueda de Entidades - António Silva.pdf" %}
+Ejemplo de informe de búsqueda de entidades
+{% endfile %}
+
+
+{% endtab %}
+
+{% tab title="400: Bad Request Nombre no ingresado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "Por favor, introduzca un nombre."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}

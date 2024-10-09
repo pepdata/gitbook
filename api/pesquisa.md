@@ -149,3 +149,41 @@ Este endpoint executa uma pesquisa nas organizações presentes nas seguintes li
 
 **Importante:** de momento, o nome da organização deverá coincidir com o nome presente na lista de sanções para que sejam devolvidos resultados.
 {% endhint %}
+
+## Obtenção de relatório de pesquisa de entidades
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/`get\_entities\_search\_report
+
+#### Headers
+
+| Name                                             | Type   | Description     |
+| ------------------------------------------------ | ------ | --------------- |
+| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                   | Type   | Description                  |
+| -------------------------------------- | ------ | ---------------------------- |
+| name<mark style="color:red;">\*</mark> | string | Nome da entidade a pesquisar |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Report gerado com sucesso" %}
+{% file src="../.gitbook/assets/PEPData - Relatório de Pesquisa de Entidades - António Silva.pdf" %}
+Exemplo de relatório de pesquisa de entidades
+{% endfile %}
+{% endtab %}
+
+{% tab title="400: Nome não fornecido" %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "Por favor insira um nome."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}

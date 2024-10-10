@@ -155,13 +155,25 @@ Endpoint para agregar un registro de clientes y transacciones.
 ```
 {% endtab %}
 
-{% tab title="409: Conflict El registro no fue creado, ya existe en la lista" %}
+{% tab title="409: Conflict Ya existe un registro con el mismo nif/cif o ID personalizado." %}
 ```
 {
     "message": {
         "version": 0.1,
         "timestamp": 1660060761083,
-        "message": "El registro no se ha creado, ya existe en la lista."
+        "message": "Ya existe un registro con el mismo nif/cif o ID personalizado."
+    }
+}
+```
+{% endtab %}
+
+{% tab title="409: Conflict (Transaciónes) Ya existe un registro con el mismo identificador personalizado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1660060761083,
+        "message": "Ya existe un registro con el mismo identificador personalizado."
     }
 }
 ```

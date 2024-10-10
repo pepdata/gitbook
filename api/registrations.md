@@ -155,14 +155,24 @@ Endpoint para adicionar um registo de clientes e transações.
 ```
 {% endtab %}
 
-{% tab title="409: Conflict O registo não foi criado, já existe na lista." %}
+{% tab title="409: Conflict Já existe um registo com o mesmo nif/nipc ou ID personalizado." %}
 ```javascript
 {
     "message": {
         "version": 0.1,
         "timestamp": 1660060761083,
-        "message": "O registo não foi criado, já existe na lista."
+        "message": "Já existe um registo com o mesmo nif/nipc ou ID personalizado."
     }
+}
+```
+{% endtab %}
+
+{% tab title="409: Conflict (Transação) Já existe um registo com o mesmo ID personalizado. " %}
+```javascript
+"message": {
+    "version": 0.1,
+    "timestamp": 1660060761083,
+    "message": "Já existe um registo com o mesmo ID personalizado."
 }
 ```
 {% endtab %}

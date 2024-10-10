@@ -84,9 +84,19 @@ Todas as chamadas ao webhook incluem um header "Authorization" que contém uma c
 ```
 {% endtab %}
 
+{% tab title="409: Conflict A pessoa já existe na base de dados. " %}
+```javascript
+{    
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697022273147,
+        "message": "A pessoa já existe na base de dados."
+    }
+}
+```
+{% endtab %}
+
 {% tab title="400: Bad Request NIF/NIPC inválido" %}
-
-
 ```json
 {
     "message": {
@@ -156,9 +166,19 @@ Todas as chamadas ao webhook incluem um header "Authorization" que contém uma c
 ```
 {% endtab %}
 
+{% tab title="409: Conflict A organização já existe na base de dados. " %}
+```javascript
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697022273147,
+        "message": "A organização já existe na base de dados."
+    }
+}
+```
+{% endtab %}
+
 {% tab title="400: Bad Request NIF/NIPC inválido" %}
-
-
 ```json
 {
     "message": {

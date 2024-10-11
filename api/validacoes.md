@@ -14,15 +14,15 @@ Endpoint para obter validações.
 
 #### Request Body
 
-| Name       | Type   | Description                                                                                                                                                                                                                                           |
-| ---------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| page       | number | <p>Página das validações</p><p></p><p>Default: 1</p>                                                                                                                                                                                                  |
-| source     | string | <p>Origem das validações</p><p></p><p>Default: all</p><p></p><p>Valores possíveis: </p><ul><li>all</li><li>upload</li><li>manual</li></ul>                                                                                                            |
-| status     | string | <p></p><p>Estado das validações</p><p></p><p>Default: all</p><p></p><p>Valores possíveis: </p><ul><li>all</li><li>complete</li><li>complete_identified,</li><li>complete_not_identified</li><li>complete_needs_attention</li><li>incomplete</li></ul> |
-| id         | string | Id da validação                                                                                                                                                                                                                                       |
-| id\_custom | string | Id personalizável da validação                                                                                                                                                                                                                        |
-| sort\_by   | string | <p>Propriedade usada para a ordenação das validações<br><br>Valores possíveis: </p><ul><li>added_at</li><li>determined_at</li><li>name</li></ul>                                                                                                      |
-| sort\_dir  | string | <p>Ordenação descendente ou ascendente das validações<br><br>Valores possíveis: </p><ul><li>desc</li><li>asc</li></ul>                                                                                                                                |
+| Name       | Type   | Description                                                                                                                                                                                                                                  |
+| ---------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| page       | number | <p>Página das validações</p><p></p><p>Default: 1</p>                                                                                                                                                                                         |
+| source     | string | <p>Origem das validações</p><p></p><p>Default: all</p><p></p><p>Valores possíveis: </p><ul><li>all</li><li>upload</li><li>manual</li></ul>                                                                                                   |
+| status     | string | <p></p><p>Estado das validações</p><p></p><p>Default: all</p><p></p><p>Valores possíveis: </p><ul><li>all</li><li>complete</li><li>complete_identified,</li><li>complete_not_identified</li><li>needs_attention</li><li>incomplete</li></ul> |
+| id         | string | Id da validação                                                                                                                                                                                                                              |
+| id\_custom | string | Id personalizável da validação                                                                                                                                                                                                               |
+| sort\_by   | string | <p>Propriedade usada para a ordenação das validações<br><br>Valores possíveis: </p><ul><li>added_at</li><li>determined_at</li><li>name</li></ul>                                                                                             |
+| sort\_dir  | string | <p>Ordenação descendente ou ascendente das validações<br><br>Valores possíveis: </p><ul><li>desc</li><li>asc</li></ul>                                                                                                                       |
 
 {% tabs %}
 {% tab title="200: OK Validações obtidas com sucesso." %}

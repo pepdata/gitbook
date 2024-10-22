@@ -75,6 +75,7 @@
 
 ## Outros
 
+* [Subcontratantes](outros/subcontratantes.md)
 * [Motivos de Suspeição](outros/motivos-de-suspeicao.md)
 * [FAQs Gerais](outros/faqs-gerais.md)
 * [Contactos](outros/contactos.md)

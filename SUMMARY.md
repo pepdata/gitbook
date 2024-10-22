@@ -75,10 +75,10 @@
 
 ## Outros
 
-* [Subcontratantes](outros/subcontratantes.md)
 * [Motivos de Suspeição](outros/motivos-de-suspeicao.md)
 * [FAQs Gerais](outros/faqs-gerais.md)
 * [Contactos](outros/contactos.md)
 * [Fontes relevantes](outros/fontes-relevantes.md)
 * [Termos e Condições](outros/termos-e-condicoes.md)
 * [Política de Privacidade](outros/politica-de-privacidade.md)
+* [Subcontratantes](outros/subcontratantes.md)

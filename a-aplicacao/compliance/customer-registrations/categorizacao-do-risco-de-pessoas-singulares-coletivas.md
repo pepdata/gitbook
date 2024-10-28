@@ -46,9 +46,9 @@ A propagação do risco de um questionário relacionado é ajustada de acordo co
   * Beneficiário efetivo A (20% percentagem de capital, 30% direitos de voto) - Risco 1
   * Beneficiário efetivo B (80% percentagem de capital, 70% direitos de voto) - Risco 3
 
-Para obtenção da percentagem a usar para cada relação é feito o **Máximo entre a percentagem de capital e a percentagem dos direitos de voto e caso essa percentagem seja superior a 50%, o risco do questionário será contado na totalidade.**
+Para obtenção da percentagem a usar para cada relação é feito o **máximo entre a percentagem de capital e a percentagem dos direitos de voto e caso essa percentagem seja superior a 50%, o risco do questionário será contado na totalidade.**
 
-Para o exemplo acima apresentado o risco contabilizado final será de 3, ou seja, o _**máximo**_ entre 0.2 (20% do risco do Beneficiário efetivo A) e  3 (risco total do Beneficiário efetivo B)
+Para o exemplo acima apresentado o risco contabilizado final da secção será de 3, ou seja, o **máximo entre 0.2 (20% do risco do Beneficiário efetivo A) e 3 (risco total do Beneficiário efetivo B)**.
 
 {% hint style="warning" %}
 Poderão existir relações cíclicas entre organizações através dos Titulares de participações no capital/direitos de voto.

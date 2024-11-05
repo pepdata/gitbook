@@ -38,6 +38,8 @@ En la aplicación están disponibles los siguientes factores de riesgo:
   * **Países donde opera**: si hay varios, sólo se considera el nivel de riesgo más alto.
   * **Clasificación de la persona jurídica**: En caso de que existan varias clasificaciones, se sumarán sus niveles de riesgo o sólo se considerará el nivel más alto, dependiendo de si se establece la función Suma o Máxima en la pestaña "Personas identificables", respectivamente.
   * **Representantes de la persona jurídica**: en caso de que haya varios, sólo se considera el nivel de riesgo más alto.
+  * **Titulares de Órganos de Administración/Gestión:** si hay varios, sólo se considera el nivel de riesgo más alto.
+  * **Titulares de Acciones/Derechos de voto:** si hay varios, sólo se considera el nivel de riesgo más alto.
   * **Titulares reales**: si hay varios, sólo se considera el nivel de riesgo más alto.
   * **País de constitución**
   * **País de sede social**

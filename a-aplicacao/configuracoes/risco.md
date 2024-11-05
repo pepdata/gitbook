@@ -40,7 +40,7 @@ Estão disponíveis os seguintes fatores de risco na aplicação:
   * **Países de operações**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Classificação da pessoa coletiva**: no caso de existência de várias classificações, os seus níveis de risco são somados ou é considerado apenas o nível mais elevado, consoante se definida no separador "Pessoas Identificáveis" a função Soma ou Máximo, respetivamente.
   * **Representantes da pessoa coletiva**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
-  * Titulares de Órgãos de Administração/Gestão: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
+  * **Titulares de Órgãos de Administração/Gestão:** no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Titulares de Ações/Direitos de voto:** no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Beneficiários efetivos**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **País de constituição**

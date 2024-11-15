@@ -4,30 +4,28 @@
 Esta sección está todavía en versión **beta**.
 {% endhint %}
 
-{% swagger baseUrl="https://www.pepdata.com/api" path="/compare_beneficiary_owners" method="post" summary="Comparación de los titulares reales con el RETIR" %}
-{% swagger-description %}
+## Comparación de los titulares reales con el RETIR
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/compare_beneficiary_owners`
+
 Endpoint para comparar los beneficiarios reales con el portal RCBE.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="vatin" type="string" %}
-CIF de la organización a comparar
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-parameter in="body" name="beneficiary_onwers" type="array" %}
-Cada elemento debe contener el siguiente formato:\
-{ \
-&#x20;    "name": "Nombre completo de la persona", \
-&#x20;    "birth\_date": "DD/MM/YYYY",\
-&#x20;    "capital\_percentage": (Opcional) valor del capital, en %. Ejemplo: 91.725\
-}
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200" description="Archivo PDF con la prueba de la consulta, los resultados de la comparación con el portal RCBE y la prueba de la presentación de los resultados." %}
+| Name                | Type   | Description                                                                                                                                                                                                                                 |
+| ------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vatin               | string | CIF de la organización a comparar                                                                                                                                                                                                           |
+| beneficiary\_onwers | array  | <p>Cada elemento debe contener el siguiente formato:<br>{ <br>     "name": "Nombre completo de la persona", <br>     "birth_date": "DD/MM/YYYY",<br>     "capital_percentage": (Opcional) valor del capital, en %. Ejemplo: 91.725<br>}</p> |
+
+{% tabs %}
+{% tab title="200 Archivo PDF con la prueba de la consulta, los resultados de la comparación con el portal RCBE y la prueba de la presentación de los resultados." %}
 ```
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}

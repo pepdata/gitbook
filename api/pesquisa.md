@@ -8,9 +8,9 @@ Endpoint para buscar una persona identificable.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -88,9 +88,9 @@ Endpoint para buscar una organización sancionada.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -155,9 +155,9 @@ Este endpoint realiza una búsqueda en organizaciones presentes en las siguiente
 
 **Headers**
 
-| Name             | Type   | Description     |
-| ---------------- | ------ | --------------- |
-| Authentication\* | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 **Request Body**
 

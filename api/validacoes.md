@@ -8,9 +8,9 @@ Endpoint para obtener validaciones.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -173,9 +173,9 @@ Endpoint para obtener validaciones.
 
 **Headers**
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 **Body**
 
@@ -229,9 +229,9 @@ Endpoint para agregar una validación.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -304,9 +304,9 @@ Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicac
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -401,9 +401,9 @@ Endpoint para consultar los resultados obtenidos del análisis de una validació
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -529,9 +529,9 @@ Endpoint para determinar una validación.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -574,9 +574,9 @@ Endpoint para eliminar una validación.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -618,9 +618,9 @@ Endpoint para la aplicación de las reglas de validación.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 {% tabs %}
 {% tab title="200: OK Las reglas han empezado a aplicarse." %}
@@ -680,9 +680,9 @@ Endpoint para obtener comentarios.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -764,15 +764,15 @@ Endpoint para obtener comentarios.
 
 ## Añadir un comentario
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_comment`
 
 Endpoint para anãdir un comentario.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -819,15 +819,15 @@ Endpoint para anãdir un comentario.
 
 ## Editar un comentario
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_comment`
 
 Endpoint para editar un comentario.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -866,15 +866,15 @@ Endpoint para editar un comentario.
 
 ## Eliminar un comentário
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_comment`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_comment`
 
 Endpoint para eliminar un comentario.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -912,15 +912,15 @@ Endpoint para eliminar un comentario.
 
 ## Obtener relaciones de una validación
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiget_validation_relationships`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_validation_relationships`
 
 Endpoint para obtener relaciones de una validación.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -995,15 +995,15 @@ Endpoint para obtener relaciones de una validación.
 
 ## Agregar una relación a una validación
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiadd_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/add_validation_relationship`
 
 Endpoint para agregar una relación a una validación.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -1045,15 +1045,15 @@ Endpoint para agregar una relación a una validación.
 
 ## Editar una relación de validación
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apiedit_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_validation_relationship`
 
 Endpoint para editar una relación de validación.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -1090,15 +1090,15 @@ Endpoint para editar una relación de validación.
 
 ## Eliminar una relación de validación
 
-<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/apidelete_validation_relationship`
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_validation_relationship`
 
 Endpoint para eliminar una relación de validación.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 

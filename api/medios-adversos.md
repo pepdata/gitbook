@@ -1,19 +1,25 @@
 # Medios Adversos
 
-{% swagger method="post" path="" baseUrl="https://www.pepdata.com/api/get_adverse_media" summary="Obtener Medios Adversos" %}
-{% swagger-description %}
+## Obtener Medios Adversos
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/get_adverse_media`
+
 Endpoint para la obtención de medios adversos.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" required="true" type="string" %}
-key \[API\_KEY]
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="search_term" required="true" type="string" %}
-Nombre de la entidad/persona a buscar
-{% endswagger-parameter %}
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
-{% swagger-response status="200: OK" description="Información de los medios adversos obtenida con éxito." %}
+#### Request Body
+
+| Name                                           | Type   | Description                           |
+| ---------------------------------------------- | ------ | ------------------------------------- |
+| search\_term<mark style="color:red;">\*</mark> | string | Nombre de la entidad/persona a buscar |
+
+{% tabs %}
+{% tab title="200: OK Información de los medios adversos obtenida con éxito." %}
 ```
 {
     "version": 0.1,
@@ -54,9 +60,9 @@ Nombre de la entidad/persona a buscar
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="El campo 'search_term' es obligatorio" %}
+{% tab title="400: Bad Request El campo 'search_term' es obligatorio" %}
 
 
 ```json
@@ -68,8 +74,8 @@ Nombre de la entidad/persona a buscar
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 La consulta incluye: **búsquedas en motores de búsqueda** (asociadas con el tema PBCFT), **procesos judiciales y listas de filtraciones** (Pandora Papers, Paradise Papers, Bahamas Leaks, Panama Papers y Offshore Leaks).

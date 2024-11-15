@@ -4,9 +4,9 @@
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 

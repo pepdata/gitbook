@@ -8,9 +8,9 @@ Endpoint para obter validações.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -168,9 +168,9 @@ Endpoint para obter validações.
 
 **Headers**
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 **Request Body**
 
@@ -221,9 +221,9 @@ Exemplo de ficheiro de exportação de validações
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -315,9 +315,9 @@ Endpoint para adicionar uma validação.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -390,9 +390,9 @@ Endpoint para consultar os resultados obtidos da análise de uma validação.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -519,9 +519,9 @@ Endpoint para determinar uma validação.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -564,9 +564,9 @@ Endpoint para apagar uma validação.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -610,9 +610,9 @@ Endpoint para aplicação das regras de validação.
 
 #### Headers
 
-| Name           | Type   | Description     |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 {% tabs %}
 {% tab title="200: OK Não existem validações elegíveis para aplicar as regras." %}
@@ -672,9 +672,9 @@ Endpoint para obter comentários.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -762,9 +762,9 @@ Endpoint para adicionar um comentário.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -817,9 +817,9 @@ Endpoint para editar um comentário.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -864,9 +864,9 @@ Endpoint para apagar um comentário.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -910,9 +910,9 @@ Endpoint para obter relações de uma validação.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -993,9 +993,9 @@ Endpoint para adicionar uma relação a uma validação.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -1043,9 +1043,9 @@ Endpoint para editar uma relação de validação
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -1088,9 +1088,9 @@ Endpoint para apagar uma relação de validação
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 

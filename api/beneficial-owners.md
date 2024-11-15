@@ -10,9 +10,9 @@ Esta secção ainda se encontra na versão **beta**.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -130,9 +130,9 @@ Esta secção ainda se encontra na versão **beta**.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -227,9 +227,9 @@ Esta secção ainda se encontra na versão **beta**.
 
 **Headers**
 
-| Name           | Type   | Value           |
-| -------------- | ------ | --------------- |
-| Authentication | string | key \[API\_KEY] |
+| Name                                            | Type   | Value           |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 **Body**
 
@@ -242,7 +242,7 @@ Esta secção ainda se encontra na versão **beta**.
 
 {% tabs %}
 {% tab title="200: OK Report gerado com sucesso" %}
-{% file src="../.gitbook/assets/123456789 - test org lda (1).pdf" %}
+{% file src="../.gitbook/assets/PEPData - Relatório da Consulta do RCBE 123456789.pdf" %}
 Exemplo de relatório RCBE
 {% endfile %}
 {% endtab %}

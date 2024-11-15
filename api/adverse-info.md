@@ -16,9 +16,9 @@ Endpoint para obter adverse media.
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 
@@ -126,9 +126,9 @@ Todas as chamadas ao webhook incluem um header "Authorization" que contém uma c
 
 #### Headers
 
-| Name                                             | Type   | Description     |
-| ------------------------------------------------ | ------ | --------------- |
-| Authentication<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
 
 #### Request Body
 

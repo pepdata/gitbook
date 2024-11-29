@@ -64,7 +64,7 @@ As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de
 * Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
 * Os nomes introduzidos contêm sempre o último apelido na última posição.
 
-Estando ativa a pesquisa tolerante a erros, permite que sejam retornados resultados mesmo que existam erros em uma ou mais palavras do nome pesquisado. Exemplo "João Pdro Soars da Silva".
+Com a pesquisa tolerante a erros ativada, será possível retornar resultados mesmo que existam erros em uma ou mais palavras do nome pesquisado. Por exemplo: "João Pdro Soars da Silva".
 
 Ao estarem ativas as últimas duas opções, permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.
 

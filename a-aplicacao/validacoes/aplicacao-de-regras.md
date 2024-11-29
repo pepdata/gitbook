@@ -36,7 +36,7 @@ Nas validações de pessoas, todos os nomes que formam o nome da [validação](.
 
 1. "João Pedro Silva" poderá ter como resultado o nome "João Pedro Soares da Silva".
 2. "João Pedro Pereira" **não** poderá ter como resultado o nome "João Pedro Soares da Silva", uma vez que este não possui o nome "Pereira".
-3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a\_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
+3. "João Pedro da Silva" poderá ter como resultado o nome "João Pedro Silva" uma vez que a [partícula ](https://www.irn.mj.pt/IRN/sections/irn/a_registral/registo-civil/docs-do-civil/dar-o-nome/)"da" é ignorada.
 
 Nas validações de pessoas, as abreviaturas, caso existam, são consideradas. Exemplificando:
 
@@ -60,10 +60,13 @@ No caso das validações de organizações, é-lhe apresentado, caso exista, um 
 
 As seguinte opções auxiliares podem ser ativadas ou desativadas na [página de configurações](../configuracoes/):
 
+* Pesquisa tolerante a erros.
 * Os nomes introduzidos contêm sempre o primeiro nome próprio na primeira posição.
 * Os nomes introduzidos contêm sempre o último apelido na última posição.
 
-Ao estarem ativas, estas opções permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.
+Estando ativa a pesquisa tolerante a erros, permite que sejam retornados resultados mesmo que existam erros em uma ou mais palavras do nome pesquisado. Exemplo "João Pdro Soars da Silva".
+
+Ao estarem ativas as últimas duas opções, permitem que o sistema considere que o primeiro e último nome introduzidos correspondem sempre ao primeiro e último nome da pessoa, conduzindo a melhores resultados, nestas situações.
 
 Estas opções devem estar de acordo com a qualidade dos dados que recolhe dos seus clientes.
 {% endhint %}

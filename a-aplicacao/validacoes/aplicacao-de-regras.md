@@ -61,10 +61,13 @@ En validaciones de organizaciones, se le presenta, si lo hay, un resultado cuyo 
 
 Las siguientes opciones auxiliares pueden activarse o desactivarse en la [página de configuración](../configuracoes/):&#x20;
 
+* Búsqueda tolerante a errores.
 * Los nombres introducidos siempre contienen el primer nombre en la primera posición.
 * Los nombres introducidos siempre contienen el último apellido en la última posición.
 
-Cuando estas opciones están activas, permiten que el sistema considere que el nombre y los apellidos introducidos se corresponden siempre con el nombre y los apellidos de la persona, lo que permite obtener mejores resultados en estas situaciones.
+Con la búsqueda tolerante a errores activada, será posible obtener resultados incluso si hay errores en una o más palabras del nombre buscado. Por ejemplo: "João Pdro Soars da Silva".
+
+Cuando las dos últimas opciones están activas, permiten que el sistema considere que el primer y último nombre introducidos corresponden siempre al primer y último nombre de la persona, conduciendo a mejores resultados en estas situaciones.
 
 Estas opciones deben estar en consonancia con la calidad de los datos que recoge de sus clientes.
 {% endhint %}

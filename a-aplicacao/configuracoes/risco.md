@@ -35,6 +35,9 @@ Estão disponíveis os seguintes fatores de risco na aplicação:
   * **Local de nascimento**
   * **País de residência**
   * **Existência de notícias adversas**
+  *   **Suspeição da pessoa singular ou documentação apresentada**
+
+
 * Fórmula de risco para pessoas coletivas
   * **Setores de atividade**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
   * **Países de operações**: no caso de existência de vários, é considerado apenas o nível de risco mais elevado.
@@ -47,6 +50,7 @@ Estão disponíveis os seguintes fatores de risco na aplicação:
   * **País da sede**
   * **Data de fundação**
   * **Existência de notícias adversas**
+  * **Suspeição da pessoa singular ou documentação apresentada**
 
 #### Sintaxe da fórmula
 

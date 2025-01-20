@@ -9,6 +9,7 @@ Na página de [análise patrimonial](./), pode exportar pedidos em diferentes fo
 O ficheiro exportado possui as seguintes colunas:
 
 * **Id**: identificador único relativo ao [pedido](./).
+* **Id\_Custom:** Identificador associado ao [pedido](./) e introduzido pelo utilizador.
 * **Name**: Nome introduzido, pelo utilizador, no [pedido](./).
 * **Vat\_Number**: Número de Identificação Fiscal associado ao [pedido](./).
 * **Notes**: Notas introduzidas pelo utilizador no [pedido](./).

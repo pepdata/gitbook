@@ -22,10 +22,11 @@ De forma a que o ficheiro possa ser interpretado corretamente pela aplicação, 
 | **name**        | Poderá ver [aqui](importacao-de-pedidos.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                                                                  |
 | **vat\_number** | Apenas são aceites números de contribuinte portugueses.                                                                                                                                                    |
 | notes           | <p>Campo de texto livre onde pode inserir informações extra necessárias.<br><strong>Nota:</strong> não introduza ponto e vírgula nas suas notas de forma a não interferir com a importação do ficheiro</p> |
+| id\_custom      | Identificador do pedido de análise patrimonial                                                                                                                                                             |
 
 #### Ficheiro exemplo
 
-{% file src="../../.gitbook/assets/importação pedidos (1).txt" %}
+{% file src="../../.gitbook/assets/importação pedidos (2).txt" %}
 
 ### Regras a cumprir
 
@@ -65,7 +66,7 @@ Nota: Por limitação de espaço, caso exista uma elevada quantidade de erros, e
 
 ### Codificação incorreta do ficheiro
 
-Um [ficheiro de texto](https://pt.wikipedia.org/wiki/Arquivo\_de\_texto) contém informação que apenas consegue ser corretamente interpretada caso se saiba a sua codificação. Apenas deste modo um computador consegue "compreender" o que nele se encontra escrito, podendo distinguir cada um dos caracteres.
+Um [ficheiro de texto](https://pt.wikipedia.org/wiki/Arquivo_de_texto) contém informação que apenas consegue ser corretamente interpretada caso se saiba a sua codificação. Apenas deste modo um computador consegue "compreender" o que nele se encontra escrito, podendo distinguir cada um dos caracteres.
 
 Infelizmente, não existe uma codificação universal que seja utilizada em todos os computadores, o que poderá levar a dificuldades na interpretação de alguns ficheiros de texto, com especial relevância nos caracteres com acentos. Caso um computador utilize uma codificação que não corresponde à do ficheiro, poderá interpretar o caracter "é" como "", por exemplo, não conseguindo compreender o seu significado.
 

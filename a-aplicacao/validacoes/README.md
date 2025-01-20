@@ -29,7 +29,7 @@ Caso pretenda eliminar uma [validação](../../glossario/glossario-aplicacao.md#
 
 ## Filtros
 
-Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado. Por predefinição, quando abre a página são mostradas todas as validações_._
+Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar as [validações](../../glossario/glossario-aplicacao.md#validacao) quanto ao seu estado. Por predefinição, quando abre a página são mostradas todas as validaçõe&#x73;_._
 
 ![Filtros de validações](../../.gitbook/assets/2.png)
 

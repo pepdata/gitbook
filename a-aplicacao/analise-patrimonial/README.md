@@ -24,7 +24,7 @@ Caso pretenda eliminar um pedido, poderá sempre carregar no botão “🗑️".
 
 ## Filtros
 
-Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar os seus pedidos quanto ao estado, podendo este ser: “Por processar”, “Em processamento” e “Concluído”. Por predefinição, quando abre a página, são mostrados todos os pedidos, independentemente do estado em que se encontram_._
+Nesta página, são-lhe ainda disponibilizados filtros que permitem mostrar os seus pedidos quanto ao estado, podendo este ser: “Por processar”, “Em processamento” e “Concluído”. Por predefinição, quando abre a página, são mostrados todos os pedidos, independentemente do estado em que se encontra&#x6D;_._
 
 ### FAQs
 

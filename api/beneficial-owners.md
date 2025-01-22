@@ -233,10 +233,11 @@ Esta secção ainda se encontra na versão **beta**.
 
 **Body**
 
-| Name       | Type   | Description                  |
-| ---------- | ------ | ---------------------------- |
-| vatin      | string | NIPC da organização a tratar |
-| rcbe\_code | string | Código RCBE                  |
+| Name             | Type   | Description                                                                                     |
+| ---------------- | ------ | ----------------------------------------------------------------------------------------------- |
+| vatin            | string | NIPC da organização a tratar                                                                    |
+| rcbe\_code       | string | Código RCBE                                                                                     |
+| reponsible\_name | string | <p>Nome do responsável pelo relatório.<br>Default: Nome do utilizador que efetuou o pedido.</p> |
 
 **Response**
 

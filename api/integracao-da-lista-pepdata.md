@@ -135,3 +135,37 @@ Neste momento para cada PEP a lista devolve a seguinte informação:
 ### Exemplo do ficheiro exportado
 
 {% file src="../.gitbook/assets/Example of list export.xml" %}
+
+## Efetua o download da lista PEPData em formato XML
+
+
+
+<mark style="color:blue;">`GET`</mark> `https://www.pepdata.com/api/get_list_xml_export`
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+{% tabs %}
+{% tab title="200: OK " %}
+
+{% endtab %}
+{% endtabs %}
+
+## Efetua o download da lista PEPData em formato ZIP
+
+
+
+<mark style="color:blue;">`GET`</mark> `https://www.pepdata.com/api/get_list_xml_export_zip`
+
+#### Headers
+
+<table><thead><tr><th width="334">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>Authorization<mark style="color:red;">*</mark></td><td>string</td><td>key [API_KEY]</td></tr></tbody></table>
+
+{% tabs %}
+{% tab title="200: OK" %}
+
+{% endtab %}
+{% endtabs %}

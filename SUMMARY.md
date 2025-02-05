@@ -54,7 +54,6 @@
   * [Risco](a-aplicacao/configuracoes/risco.md)
   * [Canal de Denúncias](a-aplicacao/configuracoes/canal-de-denuncias.md)
 * [Administração de Utilizadores](a-aplicacao/administracao-de-utilizadores.md)
-* [Integração da lista PEPData](a-aplicacao/integracao-da-lista-pepdata.md)
 
 ## API
 
@@ -66,7 +65,7 @@
 * [Beneficiários Efetivos](api/beneficial-owners.md)
 * [Utilizadores](api/users.md)
 * [Compliance](api/compliance.md)
-* [Integração da lista PEPData](api/list-download.md)
+* [Integração da lista PEPData](api/integracao-da-lista-pepdata.md)
 * [Exemplos de utilização](api/exemplos-de-utilizacao.md)
 
 ## Relatórios

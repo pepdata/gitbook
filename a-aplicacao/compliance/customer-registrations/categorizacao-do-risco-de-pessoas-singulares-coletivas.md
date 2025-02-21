@@ -3,32 +3,50 @@
 ## Metodologia
 
 O modelo de risco criado pela PEPData foi desenvolvido de forma a ser flexível, mantendo um grau de simplicidade que o permite ser facilmente compreendido.\
-Este é composto por 3 categorias distintas de risco: baixo, médio e alto. Cada pessoa ou organização é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:
+Este é composto por 3 categorias distintas de risco com os seguintes limites (em pontos):
+
+* Baixo: \[0 - 1\[
+* Médio: \[1 - 2\[
+* Alto: 2+
+
+\
+Cada pessoa ou organização é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:
 
 ### Pessoas
 
 * Existência de suspeição
   * Caso suspeite da documentação apresentada ou da pessoa em si
+    * Aumenta o risco em 2 pontos.
 * Países sancionados
   * Caso a pessoa tenha naturalidade, nacionalidade ou residência em países sancionados internacionalmente
+    * Aumenta o risco em 2 pontos.
 * Paraísos fiscais
   * Caso a pessoa tenha residência num país considerado como tendo um "regime de tributação privilegiada" pela lei portuguesa
+    * Aumenta o risco em 1 ponto.
 * Classificação enquanto [pessoa identificável](../../../glossario/glossario-aplicacao.md#pessoa-identificavel)
+  * Aumenta o risco em 1 ponto.
 * Classificação enquanto [pessoa sancionada](../../../glossario/glossario-aplicacao.md#sancionado)
+  * Aumenta o risco em 2 pontos.
 
 ### Organizações
 
 * Existência de suspeição
   * Caso suspeite da documentação apresentada ou da organização em si
+    * Aumenta o risco em 2 pontos.
 * Países sancionados
   * Caso o país de constituição, o país de morada da sede social ou o(s) país(es) de proveniência dos negócios seja(m) sancionado(s)
+    * Aumenta o risco em 2 pontos.
 * Paraísos fiscais
   * Caso o país de constituição, o país de morada da sede social ou o(s) país(es) de proveniência dos negócios seja(m) considerado(s) como tendo um "regime de tributação privilegiada" pela lei portuguesa
+    * Aumenta o risco em 1 ponto.
 * Outros critérios geográficos
   * Caso não tenha sede em território nacional
+    * Aumenta o risco em 1 ponto.
 * Classificação da atividade económica
   * Caso algum dos CAEs da organização seja considerado como risco elevado
+    * Aumenta o risco em 1 ponto.
 * Classificação enquanto [organização sancionada](../../../glossario/glossario-aplicacao.md#sancionado)
+  * Aumenta o risco em 2 pontos.
 * Representação da organização
   * Caso algum dos representantes esteja classificado com nível de risco médio ou alto
 * Titulares de órgãos de Administração/Gestão ou equivalente

@@ -9,7 +9,6 @@ Este é composto por 3 categorias distintas de risco com os seguintes limites (e
 * Médio: \[1 - 2\[
 * Alto: 2+
 
-\
 Cada pessoa ou organização é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:
 
 ### Pessoas

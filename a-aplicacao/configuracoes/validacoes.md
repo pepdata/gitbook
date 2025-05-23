@@ -23,6 +23,10 @@ Ajuste o valor do threshold de validação consoante as suas preferências.\
 Utilizar um valor mais elevado permite-lhe ter maior certeza na identificação mas deixará mais [validações](../../glossario/glossario-aplicacao.md#validacao) por completar. O inverso acontecerá para valores mais baixos.
 {% endhint %}
 
+### Threshold de não correspondência
+
+O threshold de não correspondência é o valor usado para filtrar a lista de correspondências. Todos os nomes que possuam grau de semelhança inferior ao threshold de não correspondência serão ignorados no processo de identificação automática das validações.&#x20;
+
 ## Monitorização
 
 Nesta secção é possível ativar a monitorização de adverse media ou de processos judiciais nas suas validações. Pode ainda determinar o intervalo de monitorização (em dias) para que a plataforma vá buscar novas informações com o intervalo definido.

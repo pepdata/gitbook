@@ -25,6 +25,7 @@ Ao carregar em "Aplicar regras", o sistema irá proceder do seguinte modo, para 
    1. Caso não existam resultados, se a regra 1 se encontrar ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como não sendo identificável.
    2. Caso exista apenas um resultado e o seu [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) seja superior ao [threshold de validação](../configuracoes/#threshold-de-validacao), se a regra 2 se encontrar ativa, a [validação](../../glossario/glossario-aplicacao.md#validacao) irá ser definida como identificável.
    3. Caso existam múltiplos resultados a [validação](../../glossario/glossario-aplicacao.md#validacao) irá permanecer incompleta, sendo necessário realizar uma [análise manual](analise-manual.md).
+   4. Quando se encontra definido um threshold de não correspondência, da lista de resultados serão ignorados todos aqueles que possuem grau de semelhança inferior ao mesmo.
 {% endhint %}
 
 {% hint style="info" %}

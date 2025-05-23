@@ -25,7 +25,7 @@ Utilizar um valor mais elevado permite-lhe ter maior certeza na identificação 
 
 ### Threshold de não correspondência
 
-O threshold de não correspondência é o valor usado para filtrar a lista de correspondências. Todos os nomes que possuam grau de semelhança inferior ao threshold de não correspondência serão ignorados no processo de identificação automática das validações.&#x20;
+O threshold de não correspondência é o valor usado para filtrar a lista de correspondências. Todos os nomes que possuam [grau de semelhança](../../glossario/glossario-aplicacao.md#grau-de-semelhanca) inferior ao threshold de não correspondência serão ignorados no processo de identificação automática das validações.&#x20;
 
 ## Monitorização
 

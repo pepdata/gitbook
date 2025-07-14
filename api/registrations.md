@@ -56,7 +56,7 @@ Endpoint para obter os registos de clientes e transações.
                 "invited_submission_by": null,
                 "invited_submission_at": null,
                 "data_treatment_accepted_at": null,
-                "needs_attention": null,
+                "needs_attention": "[{\"reason\":\"onboarding:quick_registration.needs_attention.risk_configurations_changed\",\"needs_attention_date\":\"2025-06-26\",\"old_risk_category_key\":\"medium\",\"new_risk_category_key\":\"low\"}]",
                 "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
                 "id_custom": null,
                 "invited_at": null,
@@ -112,7 +112,7 @@ Endpoint para obter os registos de clientes e transações.
 * **invited\_at:** data a que o convite ao preenchimento foi enviado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **invited\_by\_organization\_name:** nome da organização que enviou o convite ao preenchimento.
 * **language:** língua em que foi enviado o convite ao preenchimento.
-* **organization\_id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **organization\_id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 * **id\_iperson:** id da pessoa identificável correspondente. null caso não tenha existido correspondência.
 * **type:** tipo de registo,
 * **id\_questionnaire\_data:** id do registo onde está guardada a informação do questionário.

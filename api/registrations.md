@@ -106,7 +106,7 @@ Endpoint para obter os registos de clientes e transações.
 * **invited\_submission\_by:** id do utilizador convidado que aceitou o convite ao preenchimento.
 * **invited\_submission\_at:** data a que o convite ao preenchimento foi aceite, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **data\_treatment\_accepted\_at:** data a que o foram aceites as codições de tratamento dos dados do utilizador convidado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
-* **needs\_attention:** booleano que descreve se o registo precisa de atenção.
+* **needs\_attention:** array de objetos com informação sobre o motivo de cada um dos alertas.
 * **id\_organization:** id da organização que criou o registo.
 * **id\_custom:** id personalizável inserido pelo utilizador.
 * **invited\_at:** data a que o convite ao preenchimento foi enviado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.

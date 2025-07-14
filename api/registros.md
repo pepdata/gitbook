@@ -56,7 +56,7 @@ Endpoint para obtener registros de transacciones y clientes.
                 "invited_submission_by": null,
                 "invited_submission_at": null,
                 "data_treatment_accepted_at": null,
-                "needs_attention": null,
+                "needs_attention": "[{\"reason\":\"onboarding:quick_registration.needs_attention.risk_configurations_changed\",\"needs_attention_date\":\"2025-06-26\",\"old_risk_category_key\":\"medium\",\"new_risk_category_key\":\"low\"}]",
                 "id_organization": "6cc1b6c1-33a9-4095-a4a4-aaca0db8d647",
                 "id_custom": null,
                 "invited_at": null,
@@ -106,7 +106,7 @@ Endpoint para obtener registros de transacciones y clientes.
 * **invited\_submission\_by:** id del usuario invitado que aceptó la invitación a rellenar
 * **invited\_submission\_at:** fecha en la que se aceptó la invitación de finalización, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
 * **data\_treatment\_accepted\_at:** fecha en la que se aceptaron las condiciones de tratamiento de datos del usuario invitado, en forma de número de milisegundos desde el 1 de enero de 1970 00:00:00 UTC
-* **needs\_attention:** booleano que describe si el registro necesita atención
+* **needs\_attention:** array de objetos con información sobre el motivo de cada una de las alertas.
 * **id\_organization:** id de la organización que creó el registro
 * **id\_custom:** id personalizable ingresado por el usuario
 * **invited\_at:** fecha en que se envió la invitación a llenar, expresada en milisegundos desde el 1 de enero de 1970 00:00:00 UTC

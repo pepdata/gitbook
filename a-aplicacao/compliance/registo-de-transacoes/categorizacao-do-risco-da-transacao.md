@@ -1,4 +1,4 @@
-# Categorização do risco da transação
+# Categorização do risco
 
 ## Metodologia
 
@@ -11,6 +11,14 @@ Este é composto por 3 categorias distintas de risco com os seguintes limites (e
 
 Cada transação é enquadrada nas várias categorias de risco tendo em consideração os seguintes critérios:
 
+* Valor da transação
+  * Caso o valor da transação seja entre 20 000€ e 50 000€
+    * Aumenta o risco em 1 ponto.
+  * Caso o valor da transação seja superior a 50 000€
+    * Aumenta o risco em 2 pontos.
+* Tipo de bens transacionáveis:
+  * Caso o tipo de bem seja considerado de elevado risco elevado
+    * Aumenta o risco em 2 pontos.
 * Existência de suspeição:
   * Caso suspeite da documentação apresentada ou da transação em si.
     * Aumenta o risco em 2 pontos.
@@ -38,10 +46,10 @@ Cada transação é enquadrada nas várias categorias de risco tendo em consider
     * Aumenta o risco em 2 pontos.
 
 {% hint style="info" %}
-* Ativos virtuais regulamentados:
+- Ativos virtuais regulamentados:
   * Bitcoin (BTH);
   * Ethereum (ETH)
-* Pode consultar [aqui ](https://www.bportugal.pt/sites/default/files/lista\_entidades\_ativos\_virtuais\_pt.pdf)a lista de entidades portuguesas registadas para o exercício de atividades com ativos virtuais.
+- Pode consultar [aqui ](https://www.bportugal.pt/sites/default/files/lista_entidades_ativos_virtuais_pt.pdf)a lista de entidades portuguesas registadas para o exercício de atividades com ativos virtuais.
 {% endhint %}
 
 

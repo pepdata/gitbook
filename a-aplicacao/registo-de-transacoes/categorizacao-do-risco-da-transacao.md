@@ -11,6 +11,14 @@ Se compone de 3 categorías de riesgo distintas con los siguientes límites (en 
 
 Cada operación se clasifica en las distintas categorías de riesgo teniendo en cuenta los siguientes criterios:
 
+* Valor de la transacción
+  * Si el valor de la transacción está entre 20.000 € y 50.000 €
+    * El riesgo aumenta en 1 punto.
+  * Si el valor de la transacción supera los 50.000 €
+    * El riesgo aumenta en 2 puntos.
+* Tipo de bienes transaccionados:
+  * Si el tipo de bien se considera de alto riesgo
+    * El riesgo aumenta en 2 puntos.
 * Existencia de sospecha:&#x20;
   * Si sospecha de la documentación presentada o de la propia transacción.
     * Aumenta el riesgo en 2 puntos.
@@ -30,10 +38,10 @@ Cada operación se clasifica en las distintas categorías de riesgo teniendo en 
       * Aumenta el riesgo en 2 puntos.
 
 {% hint style="info" %}
-* Activos virtuales regulados:
+- Activos virtuales regulados:
   * Bitcoin (BTH);
   * Ethereum (ETH)
-* Puede consultar [aquí](https://www.bportugal.pt/sites/default/files/lista\_entidades\_ativos\_virtuais\_pt.pdf) la lista de entidades registradas para realizar actividades con activos virtuales.
+- Puede consultar [aquí](https://www.bportugal.pt/sites/default/files/lista_entidades_ativos_virtuais_pt.pdf) la lista de entidades registradas para realizar actividades con activos virtuales.
 {% endhint %}
 
 Nota: nuestro algoritmo de cálculo del riesgo está en constante desarrollo. Si tiene alguna propuesta de mejora o específica en su área profesional, no dude en [contactarnos](../../outros/contactos.md).

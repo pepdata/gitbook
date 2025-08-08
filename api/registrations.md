@@ -251,11 +251,11 @@ Endpoint para editar um registo de clientes e transações.
 * **risk:** valor do risco do registo/transação editado/a.
 * **risk\_category:** categoria em que se insere o valor do risco do registo/transação editado/a.
 
-## Eliminação um registo
+## Eliminação de registos
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_questionnaire`
 
-Endpoint para apagar um registo de clientes ou transações.
+Endpoint para apagar registos de clientes ou transações.
 
 #### Headers
 
@@ -265,9 +265,9 @@ Endpoint para apagar um registo de clientes ou transações.
 
 #### Request Body
 
-| Name                                 | Type   | Description                |
-| ------------------------------------ | ------ | -------------------------- |
-| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+| Name                                  | Type  | Description                 |
+| ------------------------------------- | ----- | --------------------------- |
+| ids<mark style="color:red;">\*</mark> | array | Ids dos registos a eliminar |
 
 {% tabs %}
 {% tab title="200: OK O registo de clientes ou transações foi apagado com sucesso." %}
@@ -276,7 +276,7 @@ Endpoint para apagar um registo de clientes ou transações.
     "version": 0.1,
     "timestamp": 1695892485159,
     "data": {
-        "message": "O registo foi eliminado com sucesso."
+        "message": "Registo(s) eliminado(s) com sucesso."
     }
 }
 ```

@@ -267,9 +267,9 @@ Endpoint para eliminar registros de clientes o transacciones.
 
 #### Request Body
 
-| Name                                  | Type  | Description                     |
-| ------------------------------------- | ----- | ------------------------------- |
-| ids<mark style="color:red;">\*</mark> | array | id de registros o transacciónes |
+| Name                                  | Type  | Description                      |
+| ------------------------------------- | ----- | -------------------------------- |
+| ids<mark style="color:red;">\*</mark> | array | ids de registros o transacciónes |
 
 {% tabs %}
 {% tab title="200: OK El registro de clientes o transacciones fue eliminado con éxito" %}

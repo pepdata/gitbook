@@ -18,13 +18,13 @@ Endpoint para obtener registros de transacciones y clientes.
 
 #### Request Body
 
-| Name         | Type    | Description                                                                                                                                                                                       |
-| ------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id           | string  | Id de registro o transacción                                                                                                                                                                      |
-| id\_custom   | string  | Id personalizable de registro o transacción                                                                                                                                                       |
-| search\_term | string  | Término de búsqueda: Buscar en las columnas name, vatin e id\_custom                                                                                                                              |
-| page         | integer | <p>Página de registros o transacciones<br>Default: 1</p>                                                                                                                                          |
-| type         | String  | <p>Tipo de registros</p><p>Default: <strong>customer</strong></p><p>Valores aceptados:</p><p><strong>customer</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| Name                                   | Type    | Description                                                                                                                                                                                                              |
+| -------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                                     | string  | Id de registro o transacción                                                                                                                                                                                             |
+| id\_custom                             | string  | Id personalizable de registro o transacción                                                                                                                                                                              |
+| search\_term                           | string  | Término de búsqueda: Buscar en las columnas name, vatin e id\_custom                                                                                                                                                     |
+| page                                   | integer | <p>Página de registros o transacciones<br>Default: 1</p>                                                                                                                                                                 |
+| type<mark style="color:red;">\*</mark> | String  | <p>Tipo de registros</p><p>Valores aceptados:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
 
 {% tabs %}
 {% tab title="200: OK Registros obtenidos con éxito" %}
@@ -253,11 +253,11 @@ Endpoint para editar un registro de clientes y transacciones.
 * **risk:** valor de riesgo del registro/transación editado/a.
 * **risk\_category:** categoria en la que se inserta el valor de riesgo del registro/transación editado/a.
 
-## Eliminación de un registro
+## Eliminación de registros
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/delete_questionnaire`
 
-Endpoint para eliminar un registro de clientes o transacciones.
+Endpoint para eliminar registros de clientes o transacciones.
 
 #### Headers
 
@@ -267,9 +267,9 @@ Endpoint para eliminar un registro de clientes o transacciones.
 
 #### Request Body
 
-| Name                                 | Type   | Description                   |
-| ------------------------------------ | ------ | ----------------------------- |
-| id<mark style="color:red;">\*</mark> | string | id del registro o transacción |
+| Name                                  | Type  | Description                     |
+| ------------------------------------- | ----- | ------------------------------- |
+| ids<mark style="color:red;">\*</mark> | array | id de registros o transacciónes |
 
 {% tabs %}
 {% tab title="200: OK El registro de clientes o transacciones fue eliminado con éxito" %}
@@ -280,7 +280,7 @@ Endpoint para eliminar un registro de clientes o transacciones.
     "version": 0.1,
     "timestamp": 1695892485159,
     "data": {
-        "message": "El registro fue eliminado con éxito."
+        "message": "Registro(s) eliminado(s) con éxito."
     }
 }
 ```

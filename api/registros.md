@@ -24,7 +24,8 @@ Endpoint para obtener registros de transacciones y clientes.
 | id\_custom                             | string  | Id personalizable de registro o transacción                                                                                                                                                                              |
 | search\_term                           | string  | Término de búsqueda: Buscar en las columnas name, vatin e id\_custom                                                                                                                                                     |
 | page                                   | integer | <p>Página de registros o transacciones<br>Default: 1</p>                                                                                                                                                                 |
-| type<mark style="color:red;">\*</mark> | String  | <p>Tipo de registros</p><p>Valores aceptados:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| type<mark style="color:red;">\*</mark> | string  | <p>Tipo de registros</p><p>Valores aceptados:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| approval\_state                        | string  | <p>Estado de aprobación<br>Valores aceptados:<br><strong>rejected</strong><br><strong>to_decide</strong><br><strong>approved</strong><br><strong>incomplete</strong><br><strong>needs_attention</strong></p>             |
 
 {% tabs %}
 {% tab title="200: OK Registros obtenidos con éxito" %}

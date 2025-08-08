@@ -18,13 +18,13 @@ Endpoint para obter os registos de clientes e transações.
 
 #### Request Body
 
-| Name         | Type    | Description                                                                                                                                                                                    |
-| ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id           | string  | Id do registo ou transação                                                                                                                                                                     |
-| id\_custom   | string  | Id personalizável do registo ou transação                                                                                                                                                      |
-| search\_term | string  | <p>Termo de pesquisa:</p><p>Pesquisa sobre as colunas name, vatin e id_custom</p>                                                                                                              |
-| page         | integer | <p>Página dos registos ou transações</p><p>\</p><p>Default: 1</p>                                                                                                                              |
-| type         | String  | <p>Tipo de registos</p><p>Default: <strong>customer</strong></p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| Name                                   | Type    | Description                                                                                                                                                                                                           |
+| -------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                     | string  | Id do registo ou transação                                                                                                                                                                                            |
+| id\_custom                             | string  | Id personalizável do registo ou transação                                                                                                                                                                             |
+| search\_term                           | string  | <p>Termo de pesquisa:</p><p>Pesquisa sobre as colunas name, vatin e id_custom</p>                                                                                                                                     |
+| page                                   | integer | <p>Página dos registos ou transações</p><p>\</p><p>Default: 1</p>                                                                                                                                                     |
+| type<mark style="color:red;">\*</mark> | String  | <p>Tipo de registos</p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
 
 {% tabs %}
 {% tab title="200: OK Registos obtidos com sucesso." %}

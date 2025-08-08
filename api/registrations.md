@@ -24,8 +24,8 @@ Endpoint para obter os registos de clientes e transações.
 | id\_custom                             | string  | Id personalizável do registo ou transação                                                                                                                                                                             |
 | search\_term                           | string  | <p>Termo de pesquisa:</p><p>Pesquisa sobre as colunas name, vatin e id_custom</p>                                                                                                                                     |
 | page                                   | integer | <p>Página dos registos ou transações</p><p>\</p><p>Default: 1</p>                                                                                                                                                     |
-| type<mark style="color:red;">\*</mark> | String  | <p>Tipo de registos</p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
-| approval\_state                        | string  | <p>Estado de aprovação<br>Valores aceites:<br><strong>rejected</strong><br><strong>to_decide</strong><br><strong>approved</strong><br><strong>incomplete</strong><br><strong>needs_attention</strong></p>             |
+| type<mark style="color:red;">\*</mark> | sString | <p>Tipo de registos</p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| status                                 | string  | <p>Estado do registo<br>Valores aceites:<br><strong>rejected</strong><br><strong>to_decide</strong><br><strong>approved</strong><br><strong>incomplete</strong><br><strong>needs_attention</strong></p>               |
 
 {% tabs %}
 {% tab title="200: OK Registos obtidos com sucesso." %}

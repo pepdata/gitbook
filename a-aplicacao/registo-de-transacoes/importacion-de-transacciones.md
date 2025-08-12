@@ -29,7 +29,7 @@ Después de crear uno o varios de estos archivos, podrá proceder a la importaci
 | **name**                       |                                                                                    |
 | id\_custom                     | Identificador de la transacción utilizado por su organización. Tiene que ser único |
 | description                    |                                                                                    |
-| value\_in_\__euros             | Ejemplo: 100,50                                                                    |
+| value\_i&#x6E;_\__&#x65;uros   | Ejemplo: 100,50                                                                    |
 | payment\_method                | Tipos de formato de medio de pago: efectivo/cuotas                                 |
 | installment\_in\_euros         | Ejemplo: 100,50                                                                    |
 | installments\_frequency        | Frecuencia del pago:mensual, anual, trimestral, semestral, quincenal, otro.        |

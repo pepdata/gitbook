@@ -758,3 +758,23 @@ Endpoint para obtener el informe de riesgos de un registro en formato pdf.
 | id<mark style="color:red;">\*</mark> | string | Id de lo registro o transacción |
 
 **Response**
+
+{% tabs %}
+{% tab title="200: OK Informe generado exitosamente" %}
+{% file src="../.gitbook/assets/PEPData - Informe de Evaluación de riesgos.pdf" %}
+Exemplo de relatório de avaliação de risco
+{% endfile %}
+{% endtab %}
+
+{% tab title="400: Bad Request Registro no encontrado" %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "No se ha podido encontrar el registro deseado"
+    }
+}
+```
+{% endtab %}
+{% endtabs %}

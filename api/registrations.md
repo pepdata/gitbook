@@ -744,3 +744,25 @@ Endpoint para obter o relatório de risco de um registo em formato pdf.
 | Name                                 | Type   | Description                |
 | ------------------------------------ | ------ | -------------------------- |
 | id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |
+
+**Response**
+
+{% tabs %}
+{% tab title="200: OK Report gerado com sucesso" %}
+{% file src="../.gitbook/assets/PEPData - Relatório de Avaliação de risco.pdf" %}
+Exemplo de relatório de avaliação de risco
+{% endfile %}
+{% endtab %}
+
+{% tab title="400: Bad Request Registo não encontrado" %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697030777756,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}

@@ -738,3 +738,23 @@ Endpoint que entrega automáticamente todos los registros no enviados.\*
 ### Leyenda
 
 * **time\_to\_conclusion:** tiempo estimado en segundos para que se complete la operación.
+
+## Exportar el informe de riesgos
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/export_risk_pdf`
+
+Endpoint para obtener el informe de riesgos de un registro en formato pdf.
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                 | Type   | Description                     |
+| ------------------------------------ | ------ | ------------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id de lo registro o transacción |
+
+**Response**

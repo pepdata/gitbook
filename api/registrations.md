@@ -726,3 +726,21 @@ Endpoint que submete automaticamente todos os registos não submetidos.\*
 ### Legenda <a href="#legenda-2" id="legenda-2"></a>
 
 * **time\_to\_conclusion:** tempo estimado em segundos para a conclusão da operação.
+
+## Exportar o relatório de risco
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/export_risk_pdf`
+
+Endpoint para obter o relatório de risco de um registo em formato pdf.
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                 | Type   | Description                |
+| ------------------------------------ | ------ | -------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id do registo ou transação |

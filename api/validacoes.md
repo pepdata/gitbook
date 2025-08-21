@@ -128,8 +128,8 @@ Endpoint para obtener validaciones.
 * **source**: origen de la validación.
 * **name**: nombre de validación.
 * **birth\_date**: fecha de nacimiento de la validación.
-* **id\_country\_nationality**: país de nacionalidad de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
-* **id\_country\_residence**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **id\_country\_nationality**: país de nacionalidad de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+* **id\_country\_residence**: país de residencia de la validación, en el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 * **decision**: booleano que describe si ha habido una coincidencia con una persona identificable.
 * **id\_iperson**: id de la persona identificable correspondiente. null si no se ha encontrado ninguna coincidencia.
 * **iperson\_classifications:** lista de clasificaciones de la persona identificable, posibles valores:
@@ -293,7 +293,7 @@ Endpoint para agregar una validación.
 {% hint style="info" %}
 **country\_nationality, country\_residence e country**
 
-Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2), siempre que sea posible.
+Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicación PEPData es capaz de identificar todas las denominaciones de los países presentes en la [Lista de Estados, territorios y monedas de la Unión Europea](https://publications.europa.eu/code/pt/pt-5000500.htm). Sin embargo, para garantizar una mayor robustez, recomendamos utilizar el formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2), siempre que sea posible.
 {% endhint %}
 
 
@@ -382,7 +382,7 @@ Hay múltiples formas diferentes de escribir el nombre de cada país. La aplicac
 * **id\_validation:**  id de validación.
 * **name**: nombre de la persona idenficiable.
 * **birth\_date**: fecah de nacimiento de la persona identificable.
-* **id\_country\_nationality**: código del país de la nacionalidad, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).
+* **id\_country\_nationality**: código del país de la nacionalidad, en formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 * **added\_at**: fecha en que se creó la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
 * **resolved\_at:** fecha en que se resolvió la alerta, expressada en milisegundos desde el 1 de enero de 1970 a las 1970 00:00:00 UTC.
 * **resolved\_by:** usuario que resolvió la alerta.
@@ -1126,6 +1126,55 @@ Endpoint para eliminar una relación de validación.
         "version": 0.1,
         "timestamp": 1697798319930,
         "message": "Lo identificador de la tabla de información de relaciones no es válido."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Exportar el informe de validación
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/export_validation_pdf`
+
+Endpoint para obtener el informe de validación en formato PDF.
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                 | Type   | Description                                                                                                                                                                                         |
+| ------------------------------------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark> | string | Id de la validación                                                                                                                                                                                 |
+| timezone                             | string | <p>Zona horaria en la que se mostrarán las fechas y horas del informe.<br></p><p>Ejemplos de valores posibles:</p><ul><li>Europe/Lisbon</li><li>America/Los_Angeles</li><li>Europe/Madrid</li></ul> |
+
+{% tabs %}
+{% tab title="200: OK Informe generado correctamente." %}
+{% file src="../.gitbook/assets/PEPData - Validation report of Susete Filomena Maurício.pdf" %}
+{% endtab %}
+
+{% tab title="400: Bad Request Validación no encontrada." %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1755787849316,
+        "message": "No se encontró la validación"
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Huso horario no es válido." %}
+```json
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1755787849316,
+        "message": "El huso horario no es válido."
     }
 }
 ```

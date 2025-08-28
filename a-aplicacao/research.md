@@ -8,20 +8,20 @@ A funcionalidade de investigação permite-lhe obter precisamente a informação
 
 Neste momento, encontram-se disponíveis as seguintes secções de informação:
 
-* Informação básica:&#x20;
+* Informação básica:
   * Nome completo da empresa
   * Morada e código postal
   * País
   * Número de identificação fiscal
 * Beneficiários efetivos
 * Estrutura de Propriedade e Controlo
-* Divergências face ao RCBE:&#x20;
+* Divergências face ao RCBE:
   * Nota: Apenas disponível para Portugal
 * Sanções:
   * Existência de sanções numa das seguintes listas:
     * [Nações Unidas (ONU)](https://www.un.org/securitycouncil/)
     * [União Europeia (UE)](https://www.sanctionsmap.eu/#/main)
-    * [Departamento do Tesouro dos EUA (OFAC) ](https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx)
+    * [Departamento do Tesouro dos EUA (OFAC)](https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx)
     * [Tesouro de Sua Majestade do Reino Unido (HM Treasury)](https://www.gov.uk/government/organisations/hm-treasury)
 
 ## Como funciona
@@ -40,9 +40,9 @@ Neste momento, encontram-se disponíveis as seguintes secções de informação:
 <summary>Quais as características do ficheiro a carregar?</summary>
 
 O ficheiro a carregar deverá ter, na primeira linha, os campos: "vat\_number" e/ou "name" e "country" das organizações a investigar. Exemplo:\
-vat\_number; name; country\
-514932295; PEPDATA; Portugal\
-ESA28382927; IBERINFORM; Espanha
+vat\_number; name; country;rbce\_code\
+514932295; PEPDATA; Portugal;a1b2c3d4-e5f6-7890-1234-567890abcdef\
+ESA28382927; IBERINFORM; Espanha;
 
 </details>
 

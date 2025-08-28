@@ -41,7 +41,7 @@ Actualmente están disponibles los siguientes apartados de información:
 
 El archivo que se cargue debe tener, en la primera línea, los campos: "vat\_number", y/o "name", y/o "rcbe\_code" y "country" de las organizaciones a investigar. Ejemplo:\
 vat\_mumber, name; country; rcbe\_code\
-514932295, PEPDATA; Portugal;a1b2c3d4-e5f6-7890-1234-567890abcdef\
+514932295, PEPDATA; Portugal; a1b2c3d4-e5f6-7890-1234-567890abcdef\
 ESA28382927, IBERINFORM; Espanha;
 
 </details>

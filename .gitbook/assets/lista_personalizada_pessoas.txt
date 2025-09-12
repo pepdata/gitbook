@@ -1,0 +1,4 @@
+name;birth_date;country_nationality
+Carla Sofia Nogueira Almeida;22/04/1986;Portugal
+Pedro Miguel Alves da Costa;09/12/1991;Brasil
+Inês Maria Duarte e Silva;15/08/1979;Moçambique

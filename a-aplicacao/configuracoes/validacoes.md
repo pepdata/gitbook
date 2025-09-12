@@ -46,7 +46,7 @@ No momento do upload, é possível associar a lista a uma classificação existe
 #### Detalhes Gerais
 
 * A primeira linha deve conter o nome das colunas que representam a informação a importar
-* A separação de colunas deve ser feita por ponto e vírgula (;), para ficheiros .txt e .csv
+* A separação de colunas deve ser feita por ponto e vírgula (;)
 * Extensão: .txt
 
 #### Ficheiro das pessoas

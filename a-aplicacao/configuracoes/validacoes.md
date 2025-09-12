@@ -56,7 +56,7 @@ No momento do upload, é possível associar a lista a uma classificação existe
 
 | Campos               | Notas                                                                                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**             | Poderá ver [aqui](validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                                                           |
+| **name**             | Poderá ver [aqui](../validacoes/importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes.                               |
 | birth\_date          | <p>A data de nascimento deve seguir um dos seguintes formatos:</p><ul><li> dd-mm-yyyy</li><li>dd/mm/yyyy</li><li>yyyy-mm-dd</li><li>yyyy/mm/dd</li></ul> |
 | country\_nationality | Poderá ver [aqui](validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos países.                                                          |
 
@@ -69,9 +69,9 @@ No momento do upload, é possível associar a lista a uma classificação existe
 * Deve conter uma organização por linha
 * Propriedades aceites (obrigatórias a negrito):&#x20;
 
-| Campos   | Notas                                                                                          |
-| -------- | ---------------------------------------------------------------------------------------------- |
-| **name** | Poderá ver [aqui](validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes. |
+| Campos   | Notas                                                                                                                      |
+| -------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **name** | Poderá ver [aqui](../validacoes/importacao-de-validacoes.md#regras-a-cumprir) as regras a cumprir relativamente aos nomes. |
 
 #### Ficheiro exemplo
 

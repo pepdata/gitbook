@@ -24,7 +24,7 @@ Endpoint para obter os registos de clientes e transações.
 | id\_custom                             | string  | Id personalizável do registo ou transação                                                                                                                                                                             |
 | search\_term                           | string  | <p>Termo de pesquisa:</p><p>Pesquisa sobre as colunas name, vatin e id_custom</p>                                                                                                                                     |
 | page                                   | integer | <p>Página dos registos ou transações</p><p>\</p><p>Default: 1</p>                                                                                                                                                     |
-| type<mark style="color:red;">\*</mark> | sString | <p>Tipo de registos</p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
+| type<mark style="color:red;">\*</mark> | string  | <p>Tipo de registos</p><p>Valores aceites:</p><p><strong>customer</strong></p><p><strong>supplier</strong></p><p><strong>employee</strong></p><p><strong>transaction</strong></p><p><strong>relationship</strong></p> |
 | status                                 | string  | <p>Estado do registo<br>Valores aceites:<br><strong>rejected</strong><br><strong>to_decide</strong><br><strong>approved</strong><br><strong>incomplete</strong><br><strong>needs_attention</strong></p>               |
 
 {% tabs %}
@@ -36,6 +36,7 @@ Endpoint para obter os registos de clientes e transações.
             {
                 "id": "7dd49ce1-9385-0cd1-7835-828393771ea0",
                 "name": "individual",
+                "name_normalized": "individual",
                 "vatin": null,
                 "value": "{\"entity_proof\":{\"type\":\"\",\"identification_metadata\":{\"document_number\":\"\",\"document_validity\":\"\",\"is_document_perpetual\":\"\",\"document_issuing_entity\":\"\",\"document_issuing_date\":\"\",\"document_issuing_location\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"personal_data\":{\"name\":\"individual\",\"vatin\":null,\"email\":\"\",\"birth_date\":\"\",\"nationalities\":[],\"birth_place\":\"\",\"documentUpload\":{\"files\":[]}},\"address_data\":{\"type\":null,\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"occupation_data\":{\"type\":null,\"profession\":\"\",\"employer\":\"\",\"eni\":{\"commercial_name\":\"\",\"is_same_address\":null,\"address\":{\"country\":null,\"cep\":\"\",\"address_line_1\":\"\",\"address_line_2\":\"\",\"city\":\"\",\"district\":\"\"},\"cae\":\"\"},\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null}},\"data_verification\":{\"type\":null,\"client_email\":\"\",\"documentUpload\":{\"files\":[],\"type\":null,\"source\":null,\"extraData\":null,\"is_trustworthy\":null},\"invite_sent\":false},\"adverse_media_data\":{\"adverse_media\":[]},\"suspicion_data\":{\"is_suspect\":null,\"reason\":\"\"},\"questionnaire_id\":\"7dd49ce1-9385-0cd1-7835-828393771ea0\",\"name\":\"individual\"}",
                 "entity_type": "individual",
@@ -48,9 +49,11 @@ Endpoint para obter os registos de clientes e transações.
                 "approval_state": null,
                 "approval_change_reason": null,
                 "risk": 0,
+                "manual_risk": null,
                 "risk_change_reason": null,
                 "saved_at": 1693491414116,
                 "assigned_to": null,
+                "is_disabled": false,
                 "id_invited_user": null,
                 "locked_by": null,
                 "locked_at": null,
@@ -63,8 +66,14 @@ Endpoint para obter os registos de clientes e transações.
                 "invited_at": null,
                 "invited_by_organization_name": null,
                 "language": null,
+                
                 "organization_id_country": "PT",
                 "id_iperson": "ID1",
+                "id_iorganization": null,
+                "determined_at": null,
+                "adverse_media_searched_at": null,
+                "judicial_processes_searched_at": null,
+                "forensics_searched_at": null,
                 "type": "customer",
                 "id_questionnaire_data": "4ba763f9-6675-949b-482c-35c689991d65",
                 "risk_category": "low"
@@ -86,6 +95,7 @@ Endpoint para obter os registos de clientes e transações.
 
 * **id**: id do registo.
 * **name:** nome do registo.
+* **name\_normalized**: nome normalizado do registo.
 * **vatin:** NIF/NIPC do registo.
 * **value:** informação do registo.
 * **entity\_type:** tipo de entidade (individual, coletiva ou transação).
@@ -98,9 +108,11 @@ Endpoint para obter os registos de clientes e transações.
 * **approval\_state:** estado de aprovação do registo (_**0 -**_ aguarda decisão, _**1 -**_ aprovado, _**-1**_ - rejeitado).
 * **approval\_change\_reason:** justificação para alteração do estado de aprovação.
 * **risk:** valor do risco do registo.
+* **manual\_risk:** valor do risco associado manualmente.
 * **risk\_change\_reason:** justificação para alteração de categoria de risco.
 * **saved\_at:** data a que o registo foi gravado pela última vez, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **assigned\_to:** id do responsável do registo.
+* **is\_disabled:** registo inativo.
 * **id\_invited\_user:** id do utilizador convidado ao preenchimento do registo.
 * **locked\_by:** id do utilizador que tem o registo aberto.
 * **locked\_at:** data a que o registo foi aberto pela última vez, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
@@ -115,6 +127,11 @@ Endpoint para obter os registos de clientes e transações.
 * **language:** língua em que foi enviado o convite ao preenchimento.
 * **organization\_id\_country:** país da organização que criou o registo em formato [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 * **id\_iperson:** id da pessoa identificável correspondente. null caso não tenha existido correspondência.
+* **id\_iorganization:** id da organização identificável correspondente. null caso não tenha existido correspondência.
+* **determined\_at:** data a que o registo foi determinado, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **adverse\_media\_searched\_at:** data a que a última pesquisa de adverse media foi realizada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **judicial\_processes\_searched\_at:** data a que a última pesquisa de processos judiciais foi realizada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
+* **forensics\_searched\_at:** data a que a última pesquisa de informação forense foi realizada, sob a forma de número de milissegundos desde 1 de Janeiro de 1970 00:00:00 UTC.
 * **type:** tipo de registo,
 * **id\_questionnaire\_data:** id do registo onde está guardada a informação do questionário.
 * **risk\_category:** categoria em que se insere o valor do risco.

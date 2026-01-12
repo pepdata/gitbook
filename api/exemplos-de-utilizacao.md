@@ -46,7 +46,7 @@ De forma a obter melhores resultados, recomenda-se que leia a documentação ref
 
 ## Registos e obtenção do risco
 
-O registo dos seus clientes e transações permite-lhe registar toda a a informação necessária para o cumprimento da lei, obtendo ainda um [score de risco](broken-reference) associado a cada registo. Para o fazer, necessita de utilizar pelo menos dois [endpoints de registos](registrations.md). Exemplificando:
+O registo dos seus clientes e transações permite-lhe registar toda a a informação necessária para o cumprimento da lei, obtendo ainda um [score de risco](/broken/pages/-MVHlozpg6d8P7CPvddp) associado a cada registo. Para o fazer, necessita de utilizar pelo menos dois [endpoints de registos](registrations.md). Exemplificando:
 
 1. Adicione o cliente ou transação através do endpoint [`/add_questionnaire`](registrations.md#adicao-de-um-registo). Este endpoint aceita várias propriedades enviadas num objeto `questionnaire_data`, permitindo-lhe popular uma grande parte dos campos disponíveis logo no momento da criação do registo.\
    Esta função irá retornar o `id` do cliente ou transação criado(a).

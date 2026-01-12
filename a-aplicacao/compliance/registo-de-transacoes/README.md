@@ -12,7 +12,7 @@ Após ter criado a transação, esta ficará disponível numa tabela, podendo o 
 
 ![Tabela de transações](../../../.gitbook/assets/transacoesPT.jpg)
 
-Após submissão do questionário da transação, irão ser criados automaticamente todos os "Registos rápidos" dos intervenientes na transação, com exceção da sua própria empresa. Estes registos rápidos poderão ser acedidos na página de [Registo de Clientes](broken-reference).
+Após submissão do questionário da transação, irão ser criados automaticamente todos os "Registos rápidos" dos intervenientes na transação, com exceção da sua própria empresa. Estes registos rápidos poderão ser acedidos na página de [Registo de Clientes](/broken/pages/-MIxvjfeV-Nrg-dr_2uw).
 
 Os questionários já submetidos poderão ser visualizados através do botão "👁".
 

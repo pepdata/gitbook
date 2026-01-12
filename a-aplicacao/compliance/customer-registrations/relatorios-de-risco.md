@@ -4,4 +4,4 @@ Um relatório de risco, é um documento em pdf, gerado a partir dos dados inseri
 
 Ao completar o preenchimento de um registo, este apresentará um nível de risco e dar-lhe-á a possibilidade de fazer download deste relatório. Este é um documento completo em pdf que inclui todos os fatores que de alguma forma influenciaram o risco: a atribuição da notação de risco determinada pela plataforma, a devida aprovação ou recusa e as respetivas justificações.
 
-Se pretender configurar o seu nível de risco, consulte o nosso menu de ["Modelação do Risco"](broken-reference).
+Se pretender configurar o seu nível de risco, consulte o nosso menu de ["Modelação do Risco"](/broken/pages/Bi3KLbTE1OvCMs7VLBri).

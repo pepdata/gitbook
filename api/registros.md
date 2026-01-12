@@ -589,6 +589,57 @@ Endpoint para editar el estado de aprobación de un cliente o registro de transa
 {% endtab %}
 {% endtabs %}
 
+## Editar el estado de un registro (Activo/Inactivo)
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_questionnaire_active_state`
+
+Endpoint para cambiar el estado (activo/inactivo) de un registro o transacción.
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                 | Type    | Description                                                                                                                                                  |
+| ------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id<mark style="color:red;">\*</mark> | string  | id del registro o transacción                                                                                                                                |
+| disabled                             | boolean | <p>Estado de un registro o transacción<br></p><p>Valores aceptados:<br><strong>true</strong> registro inactivo<br><strong>false</strong> registro activo</p> |
+
+{% tabs %}
+{% tab title="200: OK El estado del registro se actualizó correctamente." %}
+
+
+```json
+{
+    "version": 0.1,
+    "timestamp": 1696238603806,
+    "data": {
+        "is_disabled": 0
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Registro de cliente o transación no encontrado" %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023313540,
+        "message": "No se ha podido encontrar el registro deseado"
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Leyenda
+
+* **is\_disabled:**  estado de un registro o transacción
+
 ## Revertir el riesgo de un registro
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/revert_questionnaire_risk`

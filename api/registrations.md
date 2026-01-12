@@ -600,6 +600,51 @@ Endpoint para editar o estado de aprovação de um registo de clientes ou transa
 {% endtab %}
 {% endtabs %}
 
+## Editar o estado de um registo (Activo/Inactivo)
+
+<mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_qestionnaire_active_state`
+
+Endpoint para alterar o estado (ativo/inativo) de um registo ou transações.
+
+#### Headers
+
+| Name                                            | Type   | Description     |
+| ----------------------------------------------- | ------ | --------------- |
+| Authorization<mark style="color:red;">\*</mark> | string | key \[API\_KEY] |
+
+#### Request Body
+
+| Name                                       | Type    | Description                                                                                                                                       |
+| ------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id<mark style="color:red;">\*</mark>       | string  | Id do registo ou transação                                                                                                                        |
+| disabled<mark style="color:red;">\*</mark> | boolean | <p>Estado do registo ou transação<br></p><p>Valores aceites:<br><strong>true</strong> registo inativo<br><strong>false</strong> registo ativo</p> |
+
+{% tabs %}
+{% tab title="200: OK A alteração do estado do registo foi alterada com sucesso." %}
+```javascript
+{
+    "version": 0.1,
+    "timestamp": 1696238603806,
+    "data": {
+        "disabled": false
+    }
+}
+```
+{% endtab %}
+
+{% tab title="400: Bad Request Registo de cliente ou transação não encontrado. " %}
+```
+{
+    "message": {
+        "version": 0.1,
+        "timestamp": 1697023212378,
+        "message": "O registo pretendido não foi encontrado."
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ## Reverter o risco de um registo
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/revert_questionnaire_risk`

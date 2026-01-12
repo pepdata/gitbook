@@ -604,7 +604,7 @@ Endpoint para editar o estado de aprovação de um registo de clientes ou transa
 
 <mark style="color:green;">`POST`</mark> `https://www.pepdata.com/api/edit_qestionnaire_active_state`
 
-Endpoint para alterar o estado (ativo/inativo) de um registo ou transações.
+Endpoint para alterar o estado (ativo/inativo) de um registo ou transação.
 
 #### Headers
 
@@ -626,7 +626,7 @@ Endpoint para alterar o estado (ativo/inativo) de um registo ou transações.
     "version": 0.1,
     "timestamp": 1696238603806,
     "data": {
-        "disabled": false
+        "is_disabled": false
     }
 }
 ```
@@ -644,6 +644,10 @@ Endpoint para alterar o estado (ativo/inativo) de um registo ou transações.
 ```
 {% endtab %}
 {% endtabs %}
+
+### Legenda <a href="#legenda-2" id="legenda-2"></a>
+
+* **is\_disabled:** estado do registo ou transação.
 
 ## Reverter o risco de um registo
 
